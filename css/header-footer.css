@@ -67,6 +67,7 @@ header ul .header-name{
 header .header-return{
     font-size: 14px;
     color: #000;
+    cursor: pointer;
 }
 
 header .enter{
@@ -74,7 +75,7 @@ header .enter{
     padding: 5px 25px;
     border: 1px solid #49a9ee;
     border-radius: 5px;
-    color: blue;
+    color: #49a9ee;
     cursor: pointer;
 }
 
@@ -104,7 +105,7 @@ footer .footer-copyright{
     display: block;
     font-size: 20px;
     transform: scale(1.6);
-    color: blue;
+    color: #49a9ee;
     margin: 0 auto;
 }
 
@@ -127,7 +128,7 @@ footer span{
 /*侧边锚点*/
 .anchor{
     position: fixed;
-    right: 0;
+    right: 10px;
     top: 50%;
     transform: translate(0,-50%);
     background-color: rgba(0,0,0,0.1);

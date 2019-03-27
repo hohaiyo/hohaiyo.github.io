@@ -16,14 +16,14 @@ a:hover{
 }
 
 @media screen and (min-width: 770px){
-    input{
+    form input{
         width: 82%;
     }
-    form .login, form .return{
+    form .form-login , form .form-return{
         margin-left: 80px;
         width: 83%;
     }
-    .send{
+    .verify-send{
         right: 0;
     }
     .container{
@@ -36,10 +36,10 @@ a:hover{
     input{
         width: 100%;
     }
-    .enterprise-hide{
+    .form-hide{
         display: none;
     }
-    form .login, form .return{
+    form .form-login , form .form-return{
         width: 100%;
     }
 }
@@ -68,22 +68,10 @@ main form{
     margin: 55px auto;
 }
 
-form input::placeholder{
-    color: #ccc;
-    font-size: 14px;
-}
-
 form label{
     display: block;
     margin-bottom: 20px;
     font-size: 0;
-}
-
-form .title{
-    font-size: 28px;
-    text-align: center;
-    color: blue;
-    line-height: 60px;
 }
 
 form span{
@@ -96,62 +84,93 @@ form span{
 form input{
     height: 45px;
     border-radius: 5px;
-    border: 1px solid blue;
+    border: 1px solid #49a9ee;
     font-size: 16px;
     outline: none;
     text-indent: 1em
 }
 
-form .verify{
+form input::placeholder{
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form .form-title{
+    font-size: 28px;
+    text-align: center;
+    color: #49a9ee;
+    line-height: 60px;
+}
+
+form .form-verify{
     box-sizing: border-box;
     position: relative;
 }
 
-form .verify button{
+form .form-verify button{
     position: absolute;
     top: 0;
     right: 0;
     white-space: nowrap;
     line-height: 45px;
     border: none;
-    border-left: 1px solid blue;
+    border-left: 1px solid #49a9ee;
     outline: none;
     padding: 0 .06rem;
     background-color: transparent;
-    color: blue;
+    color: #49a9ee;
     font-size: 14px;
     cursor: pointer;
 }
 
-form .sure{
+form .form-verify .send-disabled{
+    cursor: not-allowed;
+}
+
+form .form-sure{
     font-size: 14px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-form .sure i{
+form .form-sure .sure-check{
     display: inline-block;
     width: 14px;
     height: 14px;
     border: 1px solid #000;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-form .sure .ready{
+form .form-sure .sure-check i{
+    display: none;
+    line-height: 10px;
+    position: absolute;
+    background-color: #108ee9;
+    color: #fff;
+    right: 0px;
+    width: 13px;
+    height: 14px;
+}
+
+form .form-sure .sure-ready{
     white-space: nowrap;
     font-size: 14px;
     margin: 0 5px;
     line-height: 16px;
+    color: #727f8f;
 }
 
-form .sure a{
-    color: blue;
+form .form-sure a{
+    color: #49a9ee;
     cursor: pointer;
 }
 
-form .login,
-form .return{
+form .form-login,
+form .form-return{
     background-color: #3a79c2;
     border: none;
     border-radius: 5px;
@@ -163,7 +182,7 @@ form .return{
     font-size: 14px;
 }
 
-form .return{
+form .form-return{
     background-color: transparent;
     color: #000;
     margin-bottom: 100px;
