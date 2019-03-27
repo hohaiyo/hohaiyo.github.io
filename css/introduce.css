@@ -1,0 +1,78 @@
+html,body{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	/*overflow:hidden;*/
+}
+.main_wrap{
+	min-height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	text-align: center;
+}
+.header{
+	background:#7B899A;
+	height: 330px;
+	padding-top: 28px;
+}
+.top{
+	padding: 0 28px;
+	line-height: 64px;
+}
+.logo{
+	text-align: center;
+}
+.logo img{
+	width: 100px;
+}
+.nav a,.right_zone a{
+	display: inline-block;
+	width: 84px;
+	color: #fff;
+}
+.introdction{
+	padding: 56px 0;
+	background-color: #DDE3EB;
+}
+.box{
+	width: 50%;
+	line-height: 35px;
+	margin: 0 auto;
+	text-align: left;
+	text-indent: 2em;
+}
+.contact{
+	padding: 56px 0;
+	background-color: #fff;
+}
+.contact_in{
+	width: 50%;
+	margin: 50px auto;
+	border: 1px solid #D4D6D8;
+}
+.location_name,.location{
+	width: 50%;
+}
+.location_name{
+	border-right: 1px solid #D4D6D8;
+	font-size: 21px;
+	line-height: 78px;
+}
+.location{
+	padding: 20px 0;
+	font-size: 14px;
+}
+.footer{
+	background-color: #000;
+	height: 56px;
+	line-height: 56px;
+	color: #fff;
+	font-size: 14px;
+}
+.footer a{
+	color: #49a9ee;
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 10px;
+}
