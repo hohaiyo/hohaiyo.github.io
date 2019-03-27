@@ -1,0 +1,190 @@
+
+@media screen and (max-width: 768px){
+    .anchor{
+        display: none;
+    }
+    .header-name,.header-span{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .anchor-pic{
+        display: block;
+    }
+    header li{
+        margin-right: 20px;
+    }
+    .header-return{
+        display: none;
+    }
+}
+
+
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    height: 29px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 15px;
+}
+
+header ul li{
+    /*margin-right: 20px;*/
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+header ul .header-name{
+    font-weight: bold;
+    color: #49a9ee;
+    transform: scale(1.4);
+    animation: name 1s;
+    cursor: pointer;
+}
+
+@keyframes name{
+    0%{ transform: scale(1.4) }
+    50%{ transform: scale(1.8) }
+    100%{ transform: scale(1.4) }
+}
+
+header .header-return{
+    font-size: 14px;
+    color: #000;
+}
+
+header .enter{
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+header .enter:hover{
+    background-color: #49a9ee;
+}
+
+header .enter:hover a{
+    color: #fff;
+}
+
+
+
+/*底部*/
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent;
+    z-index: 999;
+}
+
+footer .footer-copyright{
+    display: block;
+    font-size: 20px;
+    transform: scale(1.6);
+    color: blue;
+    margin: 0 auto;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: #49a9ee;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+footer span{
+    font-size: 14px;
+    color: #727f8f;
+}
+
+
+/*侧边锚点*/
+.anchor{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 8px 0 0 8px;
+    z-index: 999;
+}
+
+.anchor ul{
+    position: relative;
+    width: 40px;
+    height: 150px;
+    margin: 0;
+}
+
+.anchor ul li{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    padding-left: 12px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.anchor ul li i{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.anchor ul .anchor-consult{
+    border-radius: 8px 0 0 0px;
+}
+
+.anchor ul .anchor-about{
+    top:50px;
+}
+
+.anchor ul .anchor-top{
+    border-radius: 0 0 0 8px;
+    top:100px;
+    position: relative;
+}
+
+.anchor ul .hover{
+    border-radius: 8px 0 0 8px;
+}
+
+.anchor span{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    background: url(../img/get-started-label-black.png) center no-repeat;
+}
