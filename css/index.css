@@ -15,6 +15,7 @@ body{
     height: 100%;
     min-height: 900px;
     overflow-x: hidden;
+    font-size: 0.16rem;
 }
 
 ul,ol{
@@ -30,6 +31,33 @@ a{
     margin: 0;
     padding: 0;
 }
+/* 小屏幕（平板，大于等于768px） */
+
+@media (min-width: 768px) {
+
+    .qqq {
+    
+    font-size:26px;
+    
+    }
+    
+   
+    
+}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+
+@media (min-width: 992px) {
+
+    .qqq {
+    
+    font-size:42px;
+    
+    }
+    
+    
+    
+}
+
 /* 头部 */
 .header{
     width: 100%;
@@ -61,18 +89,17 @@ a{
 /* 数据 */
 .datedate{
     width: 100%;
-    height: 113px;
+    /* height: 113px; */
     border-bottom: 1px solid rgba(151,159,168,.2);
     padding: 14px 0;
 }
 .date1{
-    max-width: 980px;
+    width: 62.5%;
     margin: 0 auto;
     color: #8796A8;
 }
 .date1-1{
     display:inline-block;
-    width: 33%;
     text-align: center;
 }
 .date1-1 p:nth-child(1){
@@ -82,17 +109,28 @@ a{
     font-size: 14px;
 }
 
+/* 项目列表 */
+.aaa .col-sm-3{
+    background-color: red;
+}
+.aaa .col-sm-9{
+    background-color: yellow;
+}
 
+.container{
+    padding: 0;
+    margin: 0 auto;
+}
 /* 交易与服务流程 */
 .container h1{
     text-align: center;
     padding-top: 56px;
 }
-.row{
-    width: 980px;
+.bbb{
+    width: 62.5%;
     margin: 0 auto;
 }
-.col-sm-6{
+.bbb .col-sm-6{
     height: 419px;
     background-color: antiquewhite;
 }
@@ -118,6 +156,7 @@ a{
     height: 100%;
   }
   .swiper-slide {
+      min-width: 175px;
     text-align: center;
     font-size: 18px;
     background: #fff;

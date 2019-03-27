@@ -7,40 +7,34 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="js/swiper.min.js">
+  <script src="js/swiper.animate1.0.3.min.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <script src="js/header-footer.js"></script>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_x5zkc8ffr39.css">
 </head>
 <body>
     <div class="box">
         <!-- 头部 -->
+    
         <div class="header">
             <!-- 导航栏 -->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">嘛事</a>
-                    </div>
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">项目</a></li>
-                            <li><a href="#">估价</a></li>
-                            <li><a href="#">会员</a></li>
-                            <li><a href="#">开发者</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    帮助
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">常见问题</a></li>
-                                    <li><a href="#">我是需求方</a></li>
-                                    <li><a href="#">我是开发方</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <header id="header-top">
+                <ul class="header-left">
+                    <li class="header-name">小白外包</li>
+                    <li class="header-return">
+                        <i class="iconfont icon-xiangzuo-copy"></i>
+                    </li>
+                    <li class="header-span">小白外包服务平台</li>
+                </ul>
+                <ul class="header-right">
+                    <li class="header-span">什么，已经有账号了?</li>
+                    <li class="enter">
+                        <a href="#">登录</a>
+                    </li>
+                </ul>
+            </header>
             <!-- 轮播图 -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- 轮播（Carousel）指标 -->
@@ -73,26 +67,35 @@
             </div>
         </div>
         <!-- 数据统计 -->
-        <div class="datedate">
-            <div class="date1">
-                <div class="date1-1">
-                    <p>229,555,203</p>
+        <div class="container datedate">
+            <div class="row date1">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 date1-1">
+                    <p class="qqq">229,555,203</p>
                     <p>累计总金额</p>
                 </div>
-                <div class="date1-1">
-                    <p>7,935</p>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 date1-1">
+                    <p class="qqq">7,935</p>
                     <p>项目数量</p>
                 </div>
-                <div class="date1-1">
-                    <p>121,621</p>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 date1-1">
+                    <p class="qqq">121,621</p>
                     <p>注册开发者</p>
                 </div>
             </div>
         </div>
+    
+        <!-- 项目列表 -->
+        <div class="container aaa">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs">1</div>
+                <div class="col-sm-9">2</div>
+            </div>
+        </div>
+    
         <!-- 交易与服务流程 -->
         <div class="container">
             <h1>马师傅和奥富豪俄方</h1>
-            <div class="row">
+            <div class="row bbb">
                 <div class="col-sm-6">1</div>
                 <div class="col-sm-6">2</div>
             </div>
@@ -126,10 +129,38 @@
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-                
+    
             </div>
         </div>
-    </div>
+        <!-- 底部 -->
+        <footer>
+                <i class="iconfont icon-banquan footer-copyright"></i>
+                <p>
+                    <a href="#">小白外包</a>
+                    <span href="#">XXXXXX&copy;2014-2020</span>
+                </p>
+            </footer>
+            <!--侧边栏-->
+        <div class="anchor">
+                <ul>
+                    <li class="anchor-consult">
+                        <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+                        咨询
+                    </li>
+                    <li class="anchor-about">
+                        <i class="iconfont icon-guanyu"></i>
+                        关于我们
+                    </li>
+                    <li class="anchor-top">
+                        <i class="iconfont icon-top"></i>
+                        TOP
+                        <a href="#header-top"></a>
+                    </li>
+                </ul>
+                <span></span>
+            </div>
+        </div>
+    
 
 
   
