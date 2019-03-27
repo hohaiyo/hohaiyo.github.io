@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>999</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="js/swiper.min.js">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="box">
+        <!-- 头部 -->
+        <div class="header">
+            <!-- 导航栏 -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">嘛事</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">项目</a></li>
+                            <li><a href="#">估价</a></li>
+                            <li><a href="#">会员</a></li>
+                            <li><a href="#">开发者</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    帮助
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">常见问题</a></li>
+                                    <li><a href="#">我是需求方</a></li>
+                                    <li><a href="#">我是开发方</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 轮播图 -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active lunbo">
+                        <!-- <img src="img/1.png" alt="First slide"> -->
+                    </div>
+                    <div class="item lunbo">
+                        <!-- <img src="img/1.png" alt="Second slide"> -->
+                    </div>
+                    <div class="item lunbo">
+                        <!-- <img src="img/1.png" alt="Third slide"> -->
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- 数据统计 -->
+        <div class="datedate">
+            <div class="date1">
+                <div class="date1-1">
+                    <p>229,555,203</p>
+                    <p>累计总金额</p>
+                </div>
+                <div class="date1-1">
+                    <p>7,935</p>
+                    <p>项目数量</p>
+                </div>
+                <div class="date1-1">
+                    <p>121,621</p>
+                    <p>注册开发者</p>
+                </div>
+            </div>
+        </div>
+        <!-- 交易与服务流程 -->
+        <div class="container">
+            <h1>马师傅和奥富豪俄方</h1>
+            <div class="row">
+                <div class="col-sm-6">1</div>
+                <div class="col-sm-6">2</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">1</div>
+                <div class="col-sm-6">2</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">1</div>
+                <div class="col-sm-6">2</div>
+            </div>
+        </div>
+        <!-- 看看他们怎么说 -->
+        <div class="comment">
+            <h1>看看他们怎么说</h1>
+            <div class="anle">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+  
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+ 
+</body>
+</html>
