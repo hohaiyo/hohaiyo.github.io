@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 770px){
     .anchor{
         display: none;
     }
@@ -8,7 +8,7 @@
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 770px){
     .anchor-pic{
         display: block;
     }
@@ -91,7 +91,7 @@ header .enter:hover a{
 /*底部*/
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     box-sizing: border-box;
