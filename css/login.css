@@ -112,10 +112,21 @@ header .enter:hover a{
     height: 140px;
     background-color: lightgray;
     border-radius: 10px;
+    transition: 1s;
 }
 .gzs img{
     width: 100px;
     height: 70px;
+}
+.gzs a{
+    color: #333;
+    text-decoration: none;
+}
+.gzs:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10%);
+    transition: 1s;
 }
 .userimg{
     margin-top: 35px;
