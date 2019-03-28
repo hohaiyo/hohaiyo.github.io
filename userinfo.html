@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <!-- 阿里云图标CDN -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_dgbb2bktimj.css">
+    <!-- 当前页面的样式 建议在最上面 -->
+    <link rel="stylesheet" href="css/userinfo.css">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 移动端文字适配 -->
+    <!-- <script src="./js/rem.js"></script> -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- 公共样式封装 -->
+    <link rel="stylesheet" href="css/initialize.css">
+</head>
+<body>
+    <!-- //顶部导航栏测试 -->
+    <div class="test"></div>
+    <!-- //结束 -->
+    <div class="content-wrapper">
+        <div class="content">
+            <div >
+                <div class="wrapper">
+                    <div class="fl clearfloat left-menu">
+                        <div>
+                            <div class="side-nav">
+                                <ul>
+                                    <li class="list-header border-radius-top">
+                                        <span>基本信息</span>
+                                    </li>
+                                    <li class="list-item activied">
+                                        <a href="###" class="nav-link">
+                                            <i class="iconfont icon-user11"></i>
+                                            <span>账户信息</span>
+                                            <i class="iconfont icon-gou"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item ">
+                                        <a href="###" class="nav-link">
+                                            <i class="iconfont icon-shezhi-tianchong"></i>
+                                            <span>小白认证</span>
+                                            <i class="iconfont icon-gou"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="list-header border-radius-top">
+                                        <span>开发者信息</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="###" class="nav-link">
+                                            <i class="iconfont icon-fanwei"></i>
+                                            <span>业务范围</span>
+                                            <i class="iconfont icon-gou"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item ">
+                                        <a href="###" class="nav-link">
+                                            <i class="iconfont icon-anli"></i>
+                                            <span>成功案例</span>
+                                            <i class="iconfont icon-gou"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl clearfloat right-content">
+                        <div class="right-content-mian">
+                            <div class="headportrait">
+                                <div class="fl clearfloat headimg">
+                                    <div class="headIcon" id="headIcon">
+                                        <div id="iconimg">
+                                            <label for="userimg"><i class="iconfont icon-xiugai"></i></label> 
+                                            <input type="file" id="userimg" style="display:none;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fl clearfloat right-content-info">
+                                    <span>sinfate</span>
+                                    <span><img src="./img/vip.png" alt=""></span>
+                                    <div class="right-content-info-button">
+                                        升级获得更多权益
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Accountinformation">
+                                <p>账户信息</p>
+                                <hr />
+                                <div class="message">
+                                    <div class="message-p-box">
+                                        <p>标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
+                                        <p>您的个人信息不会透露给任何第三方，请放心填写。</p>
+                                    </div>
+                                    <div class="account-item">
+                                        <div class="fl clearfloat item-head">
+                                            <span>工作邮箱</span>
+                                            <span>*</span>
+                                            <span class="validation">未验证</span>
+                                        </div>
+                                        <div class="fl clearfloat item-content">
+                                            <div class="input-wrapper">
+                                                <span>无</span>
+                                            </div>
+                                            <div class="operation">
+                                                <a href="###">
+                                                    <i class="iconfont icon-xiugai"></i> 修改
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-item">
+                                            <div class="fl clearfloat item-head">
+                                                <span>工作手机</span>
+                                                <span>*</span>
+                                                <span class="authenticated">已验证</span>
+                                            </div>
+                                            <div class="fl clearfloat item-content" id="phone">
+                                                <div class="input-wrapper">
+                                                    <span>无</span>
+                                                </div>
+                                                <div class="operation">
+                                                    <a href="###">
+                                                        <i class="iconfont icon-xiugai"></i> 修改
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form-content">
+                                                <form>
+                                                    <div class="item-one">
+                                                        <div class="item-one-yi">
+                                                            <input type="text" placeholder="邮箱">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //头像hover效果
+    $('#headIcon').hover(
+        function(){
+        $('#iconimg').css('display','block');
+        },function(){
+        $('#iconimg').css('display','none');    
+        }
+    );
+</script>
+</html>
