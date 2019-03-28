@@ -1,0 +1,36 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,div,img,table,form,th,td,textarea,fieldset,hr,blockquote,dl,dt,dd,button,input,select{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #fff;
+	font-size: 16px;
+	font-family: sans-serif,微软雅黑;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	/*color: #FFF;*/
+}
+a:hover{
+	text-decoration: underline;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.flex_between{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+}
