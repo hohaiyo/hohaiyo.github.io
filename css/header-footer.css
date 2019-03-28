@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> wcy
 @media screen and (max-width: 770px){
     .anchor{
         display: none;
@@ -67,7 +72,10 @@ header ul .header-name{
 header .header-return{
     font-size: 14px;
     color: #000;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> wcy
 }
 
 header .enter{
@@ -75,7 +83,11 @@ header .enter{
     padding: 5px 25px;
     border: 1px solid #49a9ee;
     border-radius: 5px;
+<<<<<<< HEAD
     color: #49a9ee;
+=======
+    color: blue;
+>>>>>>> wcy
     cursor: pointer;
 }
 
@@ -105,7 +117,11 @@ footer .footer-copyright{
     display: block;
     font-size: 20px;
     transform: scale(1.6);
+<<<<<<< HEAD
     color: #49a9ee;
+=======
+    color: blue;
+>>>>>>> wcy
     margin: 0 auto;
 }
 
@@ -128,7 +144,11 @@ footer span{
 /*侧边锚点*/
 .anchor{
     position: fixed;
+<<<<<<< HEAD
     right: 10px;
+=======
+    right:0;
+>>>>>>> wcy
     top: 50%;
     transform: translate(0,-50%);
     background-color: rgba(0,0,0,0.1);
@@ -188,4 +208,8 @@ footer span{
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> wcy
