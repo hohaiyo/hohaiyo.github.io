@@ -7,7 +7,11 @@ sub{ vertical-align:text-bottom; }
 legend { color:#000; }  
 fieldset, img { border:0; }  
 <<<<<<< HEAD
+<<<<<<< HEAD
 body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }  
 =======
 body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }  
 >>>>>>> zztS
+=======
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }  
+>>>>>>> zrq

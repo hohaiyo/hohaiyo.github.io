@@ -1,9 +1,12 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 
 >>>>>>> wcy
+=======
+>>>>>>> zrq
 @media screen and (max-width: 770px){
     .anchor{
         display: none;
@@ -73,9 +76,13 @@ header .header-return{
     font-size: 14px;
     color: #000;
 <<<<<<< HEAD
+<<<<<<< HEAD
     cursor: pointer;
 =======
 >>>>>>> wcy
+=======
+    cursor: pointer;
+>>>>>>> zrq
 }
 
 header .enter{
@@ -84,10 +91,14 @@ header .enter{
     border: 1px solid #49a9ee;
     border-radius: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #49a9ee;
 =======
     color: blue;
 >>>>>>> wcy
+=======
+    color: #49a9ee;
+>>>>>>> zrq
     cursor: pointer;
 }
 
@@ -104,12 +115,21 @@ header .enter:hover a{
 /*底部*/
 footer{
     position: absolute;
+<<<<<<< HEAD
     bottom: 10px;
+=======
+    bottom: 0px;
+>>>>>>> zrq
     left: 0;
     right: 0;
     box-sizing: border-box;
     text-align: center;
+<<<<<<< HEAD
     background-color: transparent;
+=======
+    /* background-color: transparent; */
+    background-color: #2B3747;
+>>>>>>> zrq
     z-index: 999;
 }
 
@@ -118,10 +138,14 @@ footer .footer-copyright{
     font-size: 20px;
     transform: scale(1.6);
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #49a9ee;
 =======
     color: blue;
 >>>>>>> wcy
+=======
+    color: #49a9ee;
+>>>>>>> zrq
     margin: 0 auto;
 }
 
@@ -145,10 +169,14 @@ footer span{
 .anchor{
     position: fixed;
 <<<<<<< HEAD
+<<<<<<< HEAD
     right: 10px;
 =======
     right:0;
 >>>>>>> wcy
+=======
+    right: 0;
+>>>>>>> zrq
     top: 50%;
     transform: translate(0,-50%);
     background-color: rgba(0,0,0,0.1);
@@ -209,7 +237,11 @@ footer span{
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> wcy
+=======
+}
+>>>>>>> zrq
