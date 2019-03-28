@@ -1,9 +1,7 @@
-html,body{
-	height: 100%;
-}
+/*介绍页面 pc端css*/
 body{
 	min-height: 100%;
-	/*overflow:hidden;*/
+	min-width: 760px;
 }
 .main_wrap{
 	min-height: 100%;
@@ -43,7 +41,7 @@ body{
 	text-indent: 2em;
 }
 .contact{
-	padding: 56px 0;
+	padding: 44px 0;
 	background-color: #fff;
 }
 .contact_in{
