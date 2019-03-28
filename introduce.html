@@ -6,13 +6,17 @@
 	<title>关于我们</title>
 	<link rel="stylesheet" href="css/introduce.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<!-- <link rel="stylesheet" href="css/introduce_mobile.css"> -->
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/help.js"></script>
 </head>
 <body>
 	<div class="main_wrap">
 		<header class="header">
 			<nav class="top flex_between">
 				<div class="flex_between">
-					<a href="javascript:;" class="logo"><img src="images/logo.png" alt=""></a>
+					<a href="javascript:;" class="logo"><img src="images/logo_blue.png" alt="">
+					<!-- <a href="javascript:;" class="nav_btn"><img src="images/nav.png" alt=""></a></a> --><!-- 移动端菜单下拉按钮 隐藏已有菜单-->
 					<ul class="nav flex_between">
 						<li><a href="javascript:;">项目</a></li>
 						<li><a href="javascript:;">估计</a></li>
@@ -36,17 +40,20 @@
 			</div>
 			<div class="contact">
 				<h1>联系我们</h1>
-				<div class="contact_in flex_between">
-					<div class="location_name">总部</div>
+				<div class="contact_in flex_between"><!-- 移动端去除flex_between类 -->
+					<div class="location_name"><span>总部</span></div>
 					<div class="location">
-						<p>0755-82788632 | support@codemart.com</p>
+						<p>0755-28788632 | support@codemart.com</p>
 						<p>杭州市·下城区·费家塘·星火科技园</p>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer class="footer"><a href="javascript:;">小白外包</a><span>Copyright &copy; 2014-2018 
-</span></footer>
+		<footer class="footer">
+			<a href="javascript:;">小白外包</a>
+			<span>Copyright &copy; 2014-2018 </span>
+		</footer>
 	</div>
+
 </body>
 </html>
