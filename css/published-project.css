@@ -1,0 +1,93 @@
+body{
+    background-color: #F0F2F5;
+    height: auto;
+}
+
+/*内容*/
+.container{
+    padding: 10px 0;
+}
+
+.container > .container-title{
+    color: #e84d60;
+    padding: 10px 20px;
+    background-color: #fff6de;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+}
+
+.project-right{
+    position: relative;
+}
+
+.project-right > .form-status{
+    padding: 5px 25px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.project-right > .form-status:hover ~ .form-pulldown,
+.project-right > .form-pulldown:hover{
+    display: block;
+}
+
+.project-right > .form-pulldown{
+    position: absolute;
+    top: 34px;
+    padding: 5px 0;
+    width: 126px;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    line-height: 34px;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px #e9e9e9;
+    display: none;
+}
+
+.project-right > .form-pulldown::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 15px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #fff;
+}
+
+.project-right > .form-pulldown > li{
+    width: 100%;
+}
+
+.project-right > .form-pulldown > li:hover{
+    transition: 400ms;
+    background-color: rgba(66, 137, 219, 0.1);
+    color: #108ee9;
+}
+
+.project-right > .btn-publish{
+    background-color: #49a9ee;
+    color: #fff;
+    padding: 6px 20px;
+}
+
+.project-right > .btn-publish:hover{
+    background-color: #2892df;
+}
+
+/*项目列表*/
+.container > .project-list{
+
+}
+
+/*底部*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f2d3d;
+}
