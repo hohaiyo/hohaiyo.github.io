@@ -41,6 +41,7 @@ body{
 .project-right > .form-pulldown{
     position: absolute;
     top: 34px;
+    z-index: 2;
     padding: 5px 0;
     width: 126px;
     margin: 0;
@@ -87,6 +88,7 @@ body{
     background-color: #fff;
     border-radius: 8px;
     padding: 21px 28px;
+    margin-bottom: 20px;
 }
 
 .project-list > .list-top{
@@ -127,34 +129,126 @@ body{
     width: 1px;
     background-color: #dde3eb;
 }
-.list-info > .list-cancel{
-    margin-left: 10px;
-    cursor: pointer;
-    padding: 1px 8px;
-    border-radius: 5px;
-    background-color: #49a9ee;
-    color: #fff;
+
+/*招募中*/
+.list-info > .list-recruit{
+    color: #71e871;
 }
+/*待支付*/
+.list-info > .list-unpaid{
+    color: #e4db39;
+}
+/*开发中*/
+.list-info > .list-develop{
+    color: #70b2ea;
+}
+/*已结束*/
+.list-info > .list-finish{
+    color: #fa6868;
+}
+
 
 /*项目列表底部*/
 .list-bottom{
-    padding: 20px 15px 0;
+    padding: 20px 15px 10px;
 }
 
 .list-bottom > img{
-    width: 220px;
-    height: 120px;
     padding: 0;
-    /*margin: 1px;*/
     border-radius: 5px;
+}
+
+.list-bottom > .bottom-info{
+    padding: 0 0 0 20px;
+}
+
+.bottom-info > p{
+    margin-bottom: 20px;
+}
+
+.bottom-info > p > .i-computer{
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.bottom-info > p > .bottom-gray{
+    color: #8796a8;
+}
+
+.bottom-info > p > span{
+    margin-right: 8px;
+}
+
+.bottom-money > .bottom-gray{
+    border-right: 1px solid #8796a8;
+    padding-right: 10px;
+}
+
+/*状态底部三个按钮*/
+.bottom-info > .bottom-btn{
+    margin-top: 42px;
+}
+
+.bottom-info > .bottom-btn > button{
+    margin-left: 20px;
+}
+
+/*编辑按钮*/
+.bottom-btn > .btn-edit{
+    color: #49a9ee;
+    border: 1px solid #49a9ee;
+}
+
+/*查看项目状态按钮*/
+.bottom-btn > .btn-examine{
+    color: #fff;
+    background-color: #49a9ee;
+}
+
+/*禁用按钮类名*/
+.bottom-btn > .btn-disabled{
+    pointer-events: none;
+}
+
+/*点击取消发布弹出弹窗*/
+.container > .cancel-alert{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 2px #ccc;
+    display: none;
+}
+
+.cancel-alert > p{
+    background-color: #49a9ee;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 0;
+}
+
+/*关闭图标*/
+.cancel-alert > p > .alert-close{
+    cursor: pointer;
+    font-size: 18px;
+    transform: translate(0,-2px);
+}
+
+.cancel-alert > div{
+    padding: 20px;
+}
+
+.cancel-alert > div > button{
+    font-size: 12px;
 }
 
 
 /*底部*/
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    overflow: hidden;
     background-color: #1f2d3d;
 }
