@@ -2,7 +2,7 @@ $(function () {
     $(".anchor li").mouseover(function () {
         $(this).css({
             left:'-100px',
-            backgroundColor: "rgba(0,0,0,0.7)",
+            backgroundColor: "rgba(0,0,0,0.7)"
         });
         $(this).addClass("hover");
     })
