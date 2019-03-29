@@ -1,7 +1,3 @@
-html,body,div,p,a,span,ul,ol,li,h1,h2,h3,h4,h5,h6,b,i{
-    margin: 0;
-    padding: 0;
-}
 
 html{
     width: 100%;
@@ -64,7 +60,7 @@ a{
 	padding: 5px 0;
 	margin-top:30px;
 	outline:none;
-	text-indent: 0.03rem;
+	text-indent: 1rem;
 	border-radius: 4px;
     border: none;
 	font-size: 12px;
@@ -75,12 +71,40 @@ a{
 	display:flex;
 	justify-content:space-between;
 }
-.enter i{
-	display:inline-block;
-	width:11px;
-	height:11px;
-	border:1px solid#000;
-	margin-right: 5px;
+
+.sure-check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+	transform: translate(0,3px);
+}
+
+/*勾选框*/
+.sure-check > i{
+    display: none;
+    border-radius: 3px;
+    line-height: 10px;
+    position: absolute;
+    background-color: #108ee9;
+    color: #fff;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.sure-check > i::before{
+    display: block;
+    margin-top: 1px;
+}
+
+
+.enter-ul li:last-child a:hover{
+	color:#337ab7;
 }
 .enter-login{
 	width: 100%;
@@ -91,6 +115,114 @@ a{
 	background-color:#49a9ee;
 	color:#fff;
 
+}
+
+
+
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 15px;
+}
+
+header ul li{
+    /*margin-right: 20px;*/
+    font-size: 14px;
+    white-space: nowrap;
+	color:#757f8f;
+}
+
+header ul .header-name{
+    font-weight: bold;
+    color: #49a9ee;
+    transform: scale(1.0);
+    animation: name 2s;
+    cursor: pointer;
+	margin-right:20px;
+}
+
+@keyframes name{
+    0%{ transform: scale(1.4) }
+    50%{ transform: scale(1.8) }
+    100%{ transform: scale(1.4) }
+}
+
+header .header-return{
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+header .top-enter{
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: #49a9ee;
+    cursor: pointer;
+	margin: 0 20px 0 10px;
+}
+
+header .top-enter:hover{
+    background-color: #49a9ee;
+}
+
+header .top-enter:hover a{
+    color: #fff;
+}
+
+
+
+/*底部*/
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent;
+    z-index: 999;
+}
+
+footer .footer-copyright{
+    display: block;
+    font-size: 20px;
+    transform: scale(1.6);
+    color: #49a9ee;
+    margin: 0 auto;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: #49a9ee;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+footer span{
+    font-size: 14px;
+    color: #727f8f;
 }
 
 

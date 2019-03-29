@@ -6,25 +6,86 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes” />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>小白外包-账户概览</title>
+    <title>小白-专业的大学生外包平台</title>
+	<!-- ico logo -->
+	<link rel="shortcut icon" href="./img/logo.ico">
 	<!-- 清除默认样式 -->
     <link rel="stylesheet" href="./css/initialize.css">
 	<!-- 阿里图库 -->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_wvlqeh0153.css">
     <!-- bootstarp -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/Account.css">
+    <!-- 头部css -->
+	<link rel="stylesheet" href="./css/header-footer.css">
+	<link rel="stylesheet" href="./css/Account.css">
 	
 	
-    <script src="./jQuery/jquery.js"></script>
-    <script src="./jQuery/rem.js"></script>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./jQuery/header-footer.js"></script>
+    <script src="./jQuery/Account.js"></script>
 </head>
 <body>
 	<!--头部-->
-       
-	
+    <header id="nav-white">
+    <nav class=" navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="./img/logo_blue.png" alt="logo">
+                </a>
+                <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+                <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
+                <a class="navbar-brand navbar-hide" href="#">收藏</a>
+                <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown nav-oneself">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="iconfont icon-huabanfuben1"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">早上好，杨先生</a></li>
+                            <li class="divider"></li>
+                            <li><a href="userinfo.html">
+                                <i class="iconfont icon-geren"></i>
+                                个人中心
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="account.html">
+                                <i class="iconfont icon-huaban-"></i>
+                                我的账户
+                            </a></li>
+                            <li><a href="published-project.html">
+                                <i class="iconfont icon-xiangmu"></i>
+                                我发布的项目
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconfont icon-lanzi"></i>
+                                我的报价单
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html">
+                                <i class="iconfont icon-tuichu"></i>
+                                退出登录
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>   
 	<!-- 登陆内容 -->
 	<div class="Account container ">
 		
@@ -33,126 +94,143 @@
 			<li class="iconfont icon-jiang-copy pull-left"></li>
 			<li class="pull-left">账户概览</li>
 		</ul>
-		<div class="Account-top row">
+		<div class="Account-top row" style="position:relative;">
 		
 		<!-- 左侧 -->
 		
 			<div class="col-md-3 Account-left">
-				<ul>
-					<li style="padding-top:5px;"><a href="#" style=" background-color:#fff;"><i class="iconfont icon-zhanghugailan" style="padding-right:5px"></i>账户概览</a></li>
+				<ul class="left-ul">
+					<li style="padding-top:5px;"><a href="#" class="left-a"><i class="iconfont icon-zhanghugailan" style="padding-right:5px"></i>账户概览</a></li>
+					
 					<li><a href="#"><i class="iconfont icon-jiaoyijilu" style="padding-right:5px"></i>交易记录</a></li>
+					
 					<li><a href="#"><i class="iconfont icon-jiaoyimima" style="padding-right:5px"></i>交易密码</a></li>
 				</ul>
 			</div>
 			
 		<!-- 右侧 -->
+			<!-- 账号概览 -->
 			
-			<!-- <div class="col-md-9 Account-right"> -->
-				<!-- <div class="Account-right-top"> -->
-					<!-- <p>年税务局要求，2019年6月1日起小白不在支持开局发票，仅提供资金托收托付服务。如果开票要求请于2019年5月30日前提交或与开发服务协商开票</p> -->
-				<!-- </div> -->
-				
-				<!-- <div class="Account-right-head"> -->
-					<!-- <p><span class="iconfont icon-shendunju" style="font-size:40px;color:#49a9ee;padding-left:15px;"></span></p> -->
-					<!-- <ul class="Account-right-head-ul center-block"> -->
-						<!-- <li>开发宝余额</li> -->
-						<!-- <li>0<span>元</span></li> -->
-						<!-- <li>可提现余额：<span>0.00元</span></li> -->
-					<!-- </ul> -->
-					<!-- <div class=" Account-right-head-div"> -->
-						<!-- <input type="button" value="充值" class="Account-right-head-recharge"> -->
-						<!-- <input type="button" value="提现" class="Account-right-head-advance"> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <div class="Account-right-bottom clearfix"> -->
-					<!-- <h3>交易记录</h3> -->
-					<!-- <ul class='clearfix'> -->
-						<!-- <li class='pull-left clearfix'> -->
-							<!-- <div class="pull-left" style="padding:0 40px 0 15px;">创建时间</div> -->
-							<!-- <div class='pull-left'>名称</div> -->
-						<!-- </li> -->
-						
-						<!-- <li class='pull-right clearfix'> -->
-							<!-- <div class='pull-left'>交易金额</div> -->
-							<!-- <div class='pull-left' style="padding:0 40px;">状态</div> -->
-							<!-- <div class='pull-left' style="padding-right:15px">余额</div> -->
-						<!-- </li> -->
-					<!-- </ul> -->
-					<!-- <p>没有找到相关交易记录</p> -->
-					<!-- <a href="#"><p>查看更多记录</p></a> -->
-					
-				<!-- </div>				 -->
-			<!-- </div> -->
-			
-			<!-- 交易记录 -->
-			
-			<!-- <div class="col-md-9 Account-right"> -->
-				<!-- <div class="Account-right-top"> -->
-					<!-- <p>年税务局要求，2019年6月1日起小白不在支持开局发票，仅提供资金托收托付服务。如果开票要求请于2019年5月30日前提交或与开发服务协商开票</p> -->
-				<!-- </div> -->
-				<!-- <div class="Account-right-bottom clearfix"> -->
-					<!-- <h3>交易记录</h3> -->
-					
-					
-					<!-- <form class="dropdown"> -->
-						<!-- <div style="margin:30px 0;position:relative;"> -->
-							<!-- <label>创建时间</label> -->
-							<!-- <button type="button" class="dropdown-button">全部<span class="iconfont icon-xiangxia" style="position: absolute;right: 10px; color:#999"></span> -->
-							<!-- </button> -->
-							
-							<!-- <ul class="dropdown-ul" > -->
-									<!-- <li style="background-color:#108ee9;color:#fff;">一周内</li> -->
-									<!-- <li>三周内</li> -->
-									<!-- <li>一个月内</li> -->
-									<!-- <li>三个月内</li> -->
-									<!-- <li>半年内</li> -->
-							<!-- </ul> -->
-							
-						<!-- </div> -->
-						
-						<!-- <div class="clearfix dropdown-div "> -->
-							<!-- <label class="pull-left">交易记录</label> -->
-							<!-- <div class="clearfix"> -->
-								<!-- <li class="pull-left"><i></i>入账</li> -->
-								<!-- <li class="pull-left"><i></i>付款</li> -->
-								<!-- <li class="pull-left"><i></i>提现</li> -->
-								<!-- <li class="pull-left"><i></i>其他</li> -->
-							<!-- </div> -->
-						<!-- </div> -->
-						
-						<!-- <div class="clearfix dropdown-div" > -->
-							<!-- <label class="pull-left">交易状态</label> -->
-							<!-- <div class="clearfix"> -->
-								<!-- <li class="pull-left"><i></i>处理中</li> -->
-								<!-- <li class="pull-left" style="padding:0 6px"><i></i>已完成</li> -->
-								<!-- <li class="pull-left"><i></i>已取消</li> -->
-								<!-- <li class="pull-left" style="padding:0 6px"><i></i>已失败</li> -->
-							<!-- </div> -->
-						<!-- </div> -->
-						
-					<!-- </form> -->
-					
-					<!-- <ul class='clearfix'> -->
-						<!-- <li class='pull-left clearfix'> -->
-							<!-- <div class="pull-left" style="padding:0 40px 0 15px;">创建时间</div> -->
-							<!-- <div class='pull-left'>名称</div> -->
-						<!-- </li> -->
-						
-						<!-- <li class='pull-right clearfix'> -->
-							<!-- <div class='pull-left'>交易金额</div> -->
-							<!-- <div class='pull-left' style="padding:0 40px;">状态</div> -->
-							<!-- <div class='pull-left' style="padding-right:15px">余额</div> -->
-						<!-- </li> -->
-					<!-- </ul> -->
-					<!-- <span class="clearfix-span">没有找到相关交易记录</span> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			
-			<div class="col-md-9 Account-right">
+			<div class="col-md-9 Account-right " style="display:block;">
 				<div class="Account-right-top">
 					<p>年税务局要求，2019年6月1日起小白不在支持开局发票，仅提供资金托收托付服务。如果开票要求请于2019年5月30日前提交或与开发服务协商开票</p>
 				</div>
+				
+				<div class="Account-right-head">
+					<p><span class="iconfont icon-shendunju" style="font-size:40px;color:#49a9ee;padding-left:15px;"></span></p>
+					<ul class="Account-right-head-ul center-block">
+						<li>开发宝余额</li>
+						<li>0<span>元</span></li>
+						<li>可提现余额：<span>0.00元</span></li>
+					</ul>
+					<div class=" Account-right-head-div">
+						<input type="button" value="充值" class="Account-right-head-recharge">
+						<input type="button" value="提现" class="Account-right-head-advance">
+					</div>
+				</div>
+				
+				<div class="Account-right-bottom clearfix">
+					<h3>交易记录</h3>
+					<ul class='clearfix'>
+						<li class='pull-left clearfix'>
+							<div class="pull-left" style="padding:0 40px 0 15px;">创建时间</div>
+							<div class='pull-left'>名称</div>
+						</li>
+						
+						<li class='pull-right clearfix'>
+							<div class='pull-left'>交易金额</div>
+							<div class='pull-left' style="padding:0 40px;">状态</div>
+							<div class='pull-left' style="padding-right:15px">余额</div>
+						</li>
+					</ul>
+					<p>没有找到相关交易记录</p>
+					<a href="#"><p>查看更多记录</p></a>
+					
+				</div>				
+			</div>
+			
+			<!-- 交易记录 -->
+			
+			<div class="col-md-9 Account-right " style='display:none'>
+				<div class="Account-right-top">
+					<p>年税务局要求，2019年6月1日起小白不在支持开局发票，仅提供资金托收托付服务。如果开票要求请于2019年5月30日前提交或与开发服务协商开票</p>
+				</div>
+				<div class="Account-right-bottom clearfix">
+					<h3>交易记录</h3>
+					
+					
+					<form class="dropdown">
+						<div style="margin:30px 0;position:relative;">
+							<label>创建时间</label>
+							<input type="button" value="全部" ><span class="iconfont icon-xiangxia" style="position: absolute;left: 230px;top:8px; color:#999"></span>
+							
+							
+							<ul class="dropdown-ul" >
+									<li style="background-color:#108ee9;color:#fff;">全部</li>
+									<li>一周内</li>
+									<li>三周内</li>
+									<li>一个月内</li>
+									<li>三个月内</li>
+									<li>半年内</li>
+							</ul>
+							
+						</div>
+						
+						<div class="clearfix dropdown-div ">
+							<label class="pull-left">交易记录</label>
+							<div class="clearfix">
+								<li class="pull-left"><i></i>入账</li>
+								<li class="pull-left"><i></i>付款</li>
+								<li class="pull-left"><i></i>提现</li>
+								<li class="pull-left"><i></i>其他</li>
+							</div>
+						</div>
+						
+						<div class="clearfix dropdown-div" >
+							<label class="pull-left">交易状态</label>
+							<div class="clearfix">
+								<li class="pull-left"><i></i>处理中</li>
+								<li class="pull-left" style="padding:0 6px"><i></i>已完成</li>
+								<li class="pull-left"><i></i>已取消</li>
+								<li class="pull-left" style="padding:0 6px"><i></i>已失败</li>
+							</div>
+						</div>
+						
+					</form>
+					
+					<ul class='clearfix'>
+						<li class='pull-left clearfix'>
+							<div class="pull-left" style="padding:0 40px 0 15px;">创建时间</div>
+							<div class='pull-left'>名称</div>
+						</li>
+						
+						<li class='pull-right clearfix'>
+							<div class='pull-left'>交易金额</div>
+							<div class='pull-left' style="padding:0 40px;">状态</div>
+							<div class='pull-left' style="padding-right:15px">余额</div>
+						</li>
+					</ul>
+					<span class="clearfix-span">没有找到相关交易记录</span>
+				</div>
+			</div>
+			
+		<!-- 交易密码	 -->
+			
+			<div class="col-md-9 Account-right " style="display:none">
+				<div class="Account-right-top">
+					<p>年税务局要求，2019年6月1日起小白不在支持开局发票，仅提供资金托收托付服务。如果开票要求请于2019年5月30日前提交或与开发服务协商开票</p>
+				</div>
+				
+		<!-- 还未设置交易密码		 -->
+		
+				<div class="right-head">
+					<h3>您还未设置交易密码!</h3>
+					<p>在提现、使用账户余额进行支付时需要输入交易密码，请妥善保管。</p>
+					
+				</div>
+				
+				
+				
 				<div class="Account-right-bottom clearfix">
 					<h3>设置交易密码</h3>
 				</div>
@@ -165,7 +243,7 @@
 						<li><label>手机号码</label>+86 185****2034</li>
 						<li><label>交易密码</label><input type="text" value=""></li>
 						<li><label>确认交易密码</label><input type="text" value=""></li>
-						<li><label>短信验证码</label><input type="text" value="" placeholder="验证码"></li>
+						<li style="position:relative;"><label>短信验证码</label><input type="text" value="" placeholder="验证码"><span>获取验证码</span></li>
 						<button>确认</button>
 					</form>
 				</div>
@@ -175,17 +253,38 @@
 		
 		
 	</div>
-		
-	
-	
-	<!--底部-->
+   <!-- 底部 -->
+	<footer class="footer-footer"> 
+	    <div class="footer_warp">
+	        <a href="#" class="pull-left">
+				<img src="./img/logo_blue.png">
+	        </a>
+	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
+	    </div>
+	</footer>
+	<!--侧边栏-->
+	<div class="anchor">
+		<ul>
+			<li class="anchor-consult">
+				<i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+				咨询
+			</li>
+			<li class="anchor-about">
+				<i class="iconfont icon-guanyu"></i>
+				关于我们
+			</li>
+			<li class="anchor-top">
+				<i class="iconfont icon-top"></i>
+				TOP
+				<a href="#header-top"></a>
+			</li>
+		</ul>
+		<span></span>
+	</div>	
+
+
+
    
-
-
-
-   <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="./jQuery/Account.js"></script>
 </body>
 </html>
 	
