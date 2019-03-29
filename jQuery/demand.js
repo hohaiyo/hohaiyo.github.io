@@ -20,7 +20,6 @@ $(document).ready(function(){
 		});	
 	});
 	//验证码input
-var demand_li = $('#list-inline-demand').children('li')
 	$('#list-inline-demand').children('li').click(function(){
 		$('#list-inline-demand').children('li').css({
 			'border-color':'',
