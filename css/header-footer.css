@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @media screen and (max-width: 770px){
     .anchor{
@@ -123,6 +124,8 @@ footer span{
     font-size: 14px;
     color: #727f8f;
 } */
+=======
+>>>>>>> zztS
 /*头部导航栏*/
 .navbar-default{
     background-color: #fff;
@@ -236,7 +239,10 @@ footer > p > span{
     position: fixed;
     right: 10px;
     top: 50%;
+<<<<<<< HEAD
     background-color: rgba(0,0,0,0.1);
+=======
+>>>>>>> zztS
     transform: translate(0,-50%);
     border-radius: 8px 0 0 8px;
     z-index: 999;
@@ -294,4 +300,8 @@ footer > p > span{
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> zztS
