@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/logo.ico" />	
 	<link rel="stylesheet" type="text/css" href="css/initialize.css">
 	<!-- 清除原始样式 -->
 	<link rel="stylesheet" type="text/css" href="css/demand.css">
@@ -13,12 +14,11 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<!-- bootstrap框架 -->
 	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
-	<link rel="stylesheet" type="text/css" href="css/login-enterprise.css">
 	<!-- 阿里小图标 -->
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_ezv0y0x9w0a.css">
 	<!-- 头部 尾部 锚点样式 -->
-	<link rel="stylesheet" type="text/css" href="css/usually.css">
-	<!-- 勾选框样式 -->
+	<link rel="stylesheet" type="text/css" href="css/zxf_page.css">
+	<!-- 分页器样式 -->
 	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
 	<!-- jQuery框架 -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -29,7 +29,9 @@
 	<!-- 寻找需求的css -->
 	<script type="text/javascript" src="jQuery/header-footer.js"></script>
 	<!-- 头部 锚点 尾部js -->
-	<title>小白外包-互联网外包平台</title>
+	<script type="text/javascript" src="jQuery/zxf_page.js"></script>
+	<!-- 分页器插件 -->
+	<title>小白-专业的大学生外包服务平台</title>
 </head>
 <body>
 
@@ -99,9 +101,270 @@
 	<div class="nothing"></div>
 	<div class="demand_content">
 		<!-- 左侧内容 -->
-		<div class="demand_content_left pull-left">
-			
-			
+		<div class="find_demand_content_left pull-left">
+
+			<div class="find_demand_content_left_box">
+				<div class="find_demand_content_left_item_type">
+					<div class="pull-left find_demand_content_left_item_type_left">项目类型 :</div>
+					<div class="pull-left find_demand_content_left_item_type_right" id="item_box">
+							<a href="#" class="item_active" id="item_all">全部</a>
+							<a href="#">IT软件开发</a>
+							<a href="#">UI设计</a>
+							<a href="#">营销策划</a>
+							<a href="#">APP开发</a>
+							<a href="#">小程序开发</a>
+							<a href="#">其他</a>
+					</div>
+				</div>
+				<div class="find_demand_content_left_item_type">
+					<div class="pull-left find_demand_content_left_item_type_left">项目类型 :</div>
+					<div class="pull-left find_demand_content_left_item_type_right" id="item_box_two">
+							<a href="#" class="item_active" id="item_all_two">全部</a>
+							<a href="#">招募中</a>
+							<a href="#">开发中</a>
+							<a href="#">已结束</a>
+					</div>
+				</div>
+				<div class="find_demand_content_left_item_type_two">
+					<div class="pull-left find_demand_content_left_item_type_left">项目类型 :</div>
+					<div class="pull-left find_demand_content_left_item_type_right" id="item_box_three">
+							<a href="#" class="item_active" id="item_all_three">全部</a>
+							<a href="#">项目经理</a>
+							<a href="#">产品经理</a>
+							<a href="#">设计师</a>
+							<a href="#">Android开发</a>
+							<a href="#">IOS开发</a>
+							<a href="#">前端开发</a>
+							<a href="#">后端开发</a>
+							<a href="#">全栈开发</a>
+							<a href="#">应用开发</a>
+							<a href="#">开发团队</a>
+							<a href="#">测试工程师</a>						
+					</div>
+				</div>								
+			</div>
+
+			<div class="find_demand_content_left_box">
+				
+				<form class="find_demand_content_left_form">
+					<label>
+						<input type="text" name="">
+						<span><svg t="1553845992793" class="icon" style="" viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2833" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><defs><style type="text/css"></style></defs><path d="M978.631393 885.421656a67.599192 67.599192 0 1 1-95.585257 95.585258l-219.224181-219.224181a64.962824 64.962824 0 0 1-10.951069-16.494203 411.543882 411.543882 0 1 1 90.582918-89.704128 65.165621 65.165621 0 0 1 15.953409 10.613073zM418.031292 145.210501a270.396769 270.396769 0 1 0 270.396769 270.396769 270.396769 270.396769 0 0 0-270.396769-270.396769z" p-id="2834" fill="#2c2c2c"></path></svg></span>
+					</label>
+				</form>
+
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_green pull-left">招募中</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_blue pull-left">开发中</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>	
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_gray pull-left">已结束</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>	
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_green pull-left">招募中</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_blue pull-left">开发中</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>	
+				<div class="find_demand_content_left_box_item">
+					<div class="find_demand_content_left_box_item_img pull-left">
+						<img src="img/find_demand_person_test.png">
+					</div>
+
+					<div class="pull-left find_demand_item_div">
+						<p class="find_demand_item_p">
+							<span class="find_demand_content_left_box_item_num pull-left">NO.666</span>
+							<span class="find_demand_content_left_box_item_num pull-left">麻将机开发</span>
+							<a href="#" class="find_demand_item_status_gray pull-left">已结束</a>
+							<span class="find_demand_item_price pull-right">
+								<span>¥</span><span>50000</span><span>元</span>
+							</span>
+							
+						</p>
+						<p class="find_demand_item_p_two">
+							<span>
+								<span class="color_gray">招募:</span>
+								<span>前端开发</span>							
+							</span>
+							<span>
+								<span class="color_gray">类型:</span>
+								<span>HTML5应用</span>								
+							</span>
+							<span>
+								<span class="color_gray">周期:</span>
+								<span>15天</span>								
+							</span>
+
+						</p>
+						<p>
+							<span class="color_gray">20天前发布</span><span class="color_gray">丨</span><span class="color_gray">10人报名</span>
+						</p>
+					</div>
+				</div>														
+				<div class="zxf_pagediv"></div>
+			</div>
 
 		</div>
 		<!-- 左侧内容 -->
@@ -109,22 +372,33 @@
 		<!-- 右侧内容 -->
 		<div class="visible-lg" id="demand_content_right">
 			<div class="demand_content_right">
-				<div class="demand_content_right_title">
-					<p>需求方工作指南</p>
+				<div class="demand_content_right_title find_demand_content_right_title">
+					<p class="pull-left">需求方工作指南</p>
+					<a href="#" class="find_demand_more">了解更多</a>
 				</div>
-				<div class="demand_content_right_advice">
-					<p>越详细的需求描述能获得越多的开发者关注，您可参考以下建议：</p>
-
-					<p><a href="#">1. 如何注册成需求方？</a></p>
-					<p><a href="#">2. 发布项目后如何取消？</a></p>
-					<p><a href="#">3. 项目发布后如何查看报名者信息？</a></p>
-					<p><a href="#">4. 确定人选后如何启动项目？</a></p>
-				</div>
-					
-				<div class="demand_content_right_more">
-					<p>更多指引请查看<a href="#">帮助中心</a></p>
-					<p>如有疑问请<a href="#">联系客服</a></p>
-					<p>或<a href="#">邮件反馈</a></p>
+				<div class="demand_content_right_advice find_demand_content_right_advice">
+					<div class="find_demand_right_ball">
+						<span class="find_demand_right_ball_one">1</span>
+						<span>发布项目需求</span>
+					</div>
+					<div class="find_demand_right_ball">
+						<span class="find_demand_right_ball_one">2</span>
+						<span>招募开发者</span>
+					</div>
+					<div class="find_demand_right_ball">
+						<span class="find_demand_right_ball_one">3</span>
+						<span>确认合作开发者</span>
+					</div>
+					<div class="find_demand_right_ball">
+						<span class="find_demand_right_ball_one">4</span>
+						<span>预付款项启动项目</span>
+					</div>
+					<div class="find_demand_right_ball">
+						<span class="find_demand_right_ball_one">5</span>
+						<span>阶段验收支付</span>
+					</div>																		
+					<div class="find_demand_right_line"></div>	
+					<a href="demand.html" class="find_demand_right_btn">立即发布需求</a>
 				</div>
 			</div>			
 		</div>	
@@ -174,6 +448,16 @@
     	demand_right.style.top = scrollTop+'px';   	
     } 	
     // 右侧内容随随滚动条变换位置
+
+    		//翻页
+		$(".zxf_pagediv").createPage({
+			pageNum: 40,
+			current: 1,
+			backfun: function(e) {
+				//console.log(e);//回调
+			}
+		});
+    
     </script>
 </body>
 </html>
