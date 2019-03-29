@@ -12,11 +12,19 @@
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
+<<<<<<< HEAD
+=======
+    box-shadow:none;
+>>>>>>> wcy
     border: none;
     border-radius: 0;
     width: 100%;
     min-width: 700px;
+<<<<<<< HEAD
     position: fixed;
+=======
+    position: absolute;
+>>>>>>> wcy
     top: 0;
     z-index:2992;
     padding: 2px 0;
@@ -88,6 +96,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 header .enter{
     font-size: 12px;
     padding: 5px 25px;
@@ -97,12 +106,15 @@ header .enter{
     color: blue;
     color: #49a9ee;
 =======
+=======
+>>>>>>> wcy
 .index-head .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #ccc;
     background-color: transparent;
 }
 .navbar-nav>li>a {
     padding: 22px 18px;
+<<<<<<< HEAD
 >>>>>>> zrq
 }
 
@@ -237,6 +249,10 @@ color:#ccc;
     padding: 22px 18px;
 }
 
+=======
+}
+
+>>>>>>> wcy
 
 /* 通用 */
 .navbar-default{
@@ -266,7 +282,11 @@ color:#ccc;
     color:#ccc;
 }
 .navbar-default .navbar-nav>li>a:hover{
+<<<<<<< HEAD
     color:#ccc;
+=======
+color:#ccc;
+>>>>>>> wcy
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -277,6 +297,7 @@ color:#ccc;
 }
 .navbar-header > .navbar-brand{
     font-size: 15px;
+<<<<<<< HEAD
 }
 
 .navbar-header > .navbar-brand:hover{
@@ -319,6 +340,12 @@ color:#ccc;
     color: #424242;
     background-color: transparent;
 >>>>>>> ykm
+=======
+}
+
+.navbar-header > .navbar-brand:hover{
+    color: #49a9ee;
+>>>>>>> wcy
 }
 
 .navbar-nav > .nav-information i{
@@ -330,6 +357,7 @@ color:#ccc;
     display: inline-block;
     transform: scale(1.4);
 }
+<<<<<<< HEAD
 
 .navbar-nav > .nav-oneself > .dropdown-menu{
     left: -100px;
@@ -357,8 +385,37 @@ color:#ccc;
     color: #424242;
     background-color: transparent;
 }
+=======
+>>>>>>> wcy
 
+.navbar-nav > .nav-oneself > .dropdown-menu{
+    left: -100px;
+    border-radius: 5px;
+}
+.dropdown-menu > li > a{
+    padding: 8px 30px 8px 20px;
+}
+.dropdown-menu > li > a > i{
+    margin-right: 10px;
+}
+.dropdown-menu > li > a:hover{
+    background-color: #49a9ee;
+    color: #fff;
+    transition: 500ms;
+}
+.dropdown-menu > .divider{
+    margin: 5px 0
+}
+.nothing{
+    width: 100%;
+    height: 60px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #424242;
+    background-color: transparent;
+}
 /*底部*/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /* footer{
@@ -384,8 +441,16 @@ footer{
     text-align: center;
     background-color: #1f2d3d;;
 >>>>>>> ykm
+=======
+footer{
+    box-sizing: border-box;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1f2d3d;;
+>>>>>>> wcy
     z-index: 999;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 footer .footer-copyright{
@@ -580,6 +645,28 @@ color:#ccc;
 >>>>>>> yp
 .navbar-header > .navbar-brand{
     font-size: 15px;
+=======
+.footer_warp{
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    min-width: 700px;
+}
+
+.footer_warp > a > img{
+    height: 30px;
+}
+
+.footer_warp > span{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer-text{
+    color: #8796a8;
+    line-height: 33px;
+>>>>>>> wcy
 }
 
 .navbar-header > .navbar-brand:hover{
@@ -720,6 +807,7 @@ footer > p > span{
     position: absolute;
     right: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     top: 50%;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -735,6 +823,9 @@ footer > p > span{
 =======
     transition: 500ms;
 >>>>>>> ykm
+=======
+    transition: 500ms;
+>>>>>>> wcy
     border-radius: 8px 0 0 8px;
     z-index: 999;
 }
@@ -769,7 +860,10 @@ footer > p > span{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> wcy
 .anchor > ul > li > a{
     width: 100%;
     height: 100%;
@@ -777,7 +871,10 @@ footer > p > span{
     transform: translate(-8px,-53px);
 }
 
+<<<<<<< HEAD
 >>>>>>> ykm
+=======
+>>>>>>> wcy
 .anchor > ul > .anchor-consult{
     border-radius: 8px 0 0 0px;
 }
@@ -805,6 +902,7 @@ footer > p > span{
     background: url(../img/get-started-label-black.png) center no-repeat;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -818,3 +916,6 @@ footer > p > span{
     background-color: transparent;
 }
 >>>>>>> yp
+=======
+}
+>>>>>>> wcy
