@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="ch">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人中心</title>
+    <!-- 公共样式封装 -->
+    <link rel="stylesheet" href="css/initialize.css">
     <!-- 阿里云图标CDN -->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_dgbb2bktimj.css">
     <!-- 当前页面的样式 建议在最上面 -->
     <link rel="stylesheet" href="css/userinfo.css">
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- 网页标题小图标 -->
+    <link rel="shortcut icon" href="./img/logo.ico" />
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
-    <!-- 移动端文字适配 -->
-    <!-- <script src="./js/rem.js"></script> -->
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <!-- 公共样式封装 -->
-    <link rel="stylesheet" href="css/initialize.css">
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <!-- bootstrap的js文件 -->
+    <!-- <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+    <!-- 地市区三级联动选择框 -->
+    <script src="./jQuery/js/sanjiliandong/js/distpicker.data.js"></script>
+    <script src="./jQuery/js/sanjiliandong/js/distpicker.js"></script>
+    <script src="./jQuery/js/sanjiliandong/js/main.js"></script>
 </head>
+
 <body>
     <!-- //顶部导航栏测试 -->
     <div class="test"></div>
     <!-- //结束 -->
     <div class="content-wrapper">
         <div class="content">
-            <div >
+            <div>
                 <div class="wrapper">
                     <div class="fl clearfloat left-menu">
                         <div>
@@ -78,7 +84,7 @@
                                 <div class="fl clearfloat headimg">
                                     <div class="headIcon" id="headIcon">
                                         <div id="iconimg">
-                                            <label for="userimg"><i class="iconfont icon-xiugai"></i></label> 
+                                            <label for="userimg"><i class="iconfont icon-xiugai"></i></label>
                                             <input type="file" id="userimg" style="display:none;">
                                         </div>
                                     </div>
@@ -99,13 +105,51 @@
                                         <p>标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
                                         <p>您的个人信息不会透露给任何第三方，请放心填写。</p>
                                     </div>
-                                    <div class="account-item">
+                                    <div class="account-item account-item-bottom">
                                         <div class="fl clearfloat item-head">
                                             <span>工作邮箱</span>
                                             <span>*</span>
                                             <span class="validation">未验证</span>
                                         </div>
-                                        <div class="fl clearfloat item-content">
+                                        <div class="fl clearfloat item-content" id="item-content-id">
+                                            <div class="input-wrapper">
+                                                <span>无</span>
+                                            </div>
+                                            <div class="operation">
+                                                <a href="###" class="xiugai">
+                                                    <i class="iconfont icon-xiugai"></i> 修改
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="form-content fr">
+                                            <form>
+                                                <div class="item-one">
+                                                    <div class="item-one-yi fl form-number">
+                                                        <input type="text" placeholder="邮箱" id="email">
+                                                    </div>
+                                                    <div class="item-one-er fl">
+                                                        <a href="##" id="quxiao">取消</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item-two">
+                                                    <div class="item-two-yi">
+                                                        <input type="text" maxlength="6" placeholder="验证码">
+                                                        <button type="button" class="send">发送验证码</button>
+                                                    </div>
+                                                    <div class="item-one-er fl">
+                                                        <a href="###" id="queding">确定</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="account-item">
+                                        <div class="fl clearfloat item-head">
+                                            <span>工作手机</span>
+                                            <span>*</span>
+                                            <span class="authenticated">已验证</span>
+                                        </div>
+                                        <div class="fl clearfloat item-content" id="phone">
                                             <div class="input-wrapper">
                                                 <span>无</span>
                                             </div>
@@ -116,32 +160,65 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="account-item">
-                                            <div class="fl clearfloat item-head">
-                                                <span>工作手机</span>
-                                                <span>*</span>
-                                                <span class="authenticated">已验证</span>
-                                            </div>
-                                            <div class="fl clearfloat item-content" id="phone">
-                                                <div class="input-wrapper">
-                                                    <span>无</span>
-                                                </div>
-                                                <div class="operation">
-                                                    <a href="###">
-                                                        <i class="iconfont icon-xiugai"></i> 修改
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="form-content">
-                                                <form>
-                                                    <div class="item-one">
-                                                        <div class="item-one-yi">
-                                                            <input type="text" placeholder="邮箱">
-                                                        </div>
+                                </div>
+                            </div>
+                            <div class="personaldata">
+                                <div>
+                                    <p>个人资料</p>
+                                    <hr />
+                                    <div class="personform">
+                                        <form id="personform-now">
+                                            <div class="team-form">
+                                                <label class="fl clearfloat team-form-label">团队名称 *</label>
+                                                <div class="fl clearfloat team-form-name">
+                                                    <div class="fl clearfloat">sinfate</div>
+                                                    <div class="operation fr clearfloat team-a">
+                                                        <a href="###" class="teamxiugai">
+                                                            <i class="iconfont icon-xiugai"></i> 修改
+                                                        </a>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="team-form">
+                                                <label class="fl clearfloat team-form-label">QQ</label>
+                                                <div class="fl clearfloat team-form-name">
+                                                    <div class="fl clearfloat">123456789</div>
+                                                </div>
+                                            </div>
+                                            <div class="team-form">
+                                                <label class="fl clearfloat team-form-label">所在地 *</label>
+                                                <div class="fl clearfloat team-form-name">
+                                                    <div class="fl clearfloat">杭州市 下城区</div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form id="personform-set">
+                                            <div class="team-form">
+                                                <label class="team-set-label fl clearfloat">团队名称 *</label>
+                                                <div class="fl clearfloat team-set-shuru">
+                                                    <input type="text" placeholder="请输入名称">
+                                                </div>
+                                            </div>
+                                            <div class="team-form">
+                                                <label class="team-set-label fl clearfloat">QQ</label>
+                                                <div class="fl clearfloat team-set-shuru">
+                                                    <input type="text" placeholder="请输入QQ">
+                                                </div>
+                                            </div>
+                                            <div class="team-set-select">
+                                                <label class="fl clearfloat">所在地 *</label>
+                                                <div class="team-set-diqu fl clearfloat" data-toggle="distpicker">
+                                                        <select data-province="---- 选择省 ----"></select>
+                                                        <select data-city="---- 选择市 ----"></select>
+                                                        <select data-district="---- 选择区 ----"></select>
+                                                </div>
+                                            </div>
+                                            <div class="team-set-button">
+                                                <button type="submit" class="team-set-btn">确定</button>
+                                                <button class="team-set-btn-quxiao">取消</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -154,11 +231,69 @@
 <script>
     //头像hover效果
     $('#headIcon').hover(
-        function(){
-        $('#iconimg').css('display','block');
-        },function(){
-        $('#iconimg').css('display','none');    
+        function () {
+            $('#iconimg').css('display', 'block');
+        }, function () {
+            $('#iconimg').css('display', 'none');
         }
     );
+    //验证码
+    $(window).mousemove(function () {
+        if ($(".form-number > input").val().length > 11 && $(".send").text() == "发送验证码") {
+            $(".send").removeAttr("disabled").removeClass("send-disabled")
+        } else {
+            $(".send").attr("disabled", "disabled").addClass("send-disabled");
+        }
+    });
+
+    //验证码点击
+    $(".send").click(function () {
+        var num = 60;
+        send(num);
+    });
+    var timer = null;
+    function send(a) {
+        var num = a--;
+        $(".send").text("重新发送(" + a + "s)").css("color");
+        $(".send").attr("disabled", "disabled").addClass("send-disabled");
+        clearInterval(timer);
+        timer = setInterval(function () {
+            if (a == 0) {
+                clearInterval(timer);
+                var time = null;
+                clearTimeout(time);
+                time = setTimeout(function () { $(".send").text("发送验证码") }, 5000);
+            } else {
+                send(a)
+            }
+        }, 1000);
+    };
+    //修改按钮效果
+    $('#quxiao').click(function () {
+        $('.form-content').css('display', 'none');
+        $('#item-content-id').css('display', 'block');
+    });
+    $('#queding').click(function () {
+        $('.form-content').css('display', 'none');
+        $('#item-content-id').css('display', 'block');
+    });
+    $('.xiugai').click(function () {
+        $('.form-content').css('display', 'block');
+        $('#item-content-id').css('display', 'none');
+    });
+    //个人资料的消失隐藏
+    $('.teamxiugai').click(function(){
+        $('#personform-now').css('display','none');
+        $('#personform-set').css('display','block');
+    })
+    $('.team-set-btn').click(function(){
+        $('#personform-now').css('display','block');
+        $('#personform-set').css('display','none');
+    })
+    $('.team-set-btn-quxiao').click(function(){
+        $('#personform-now').css('display','block');
+        $('#personform-set').css('display','none');
+    })
 </script>
+
 </html>

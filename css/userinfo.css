@@ -29,7 +29,7 @@
 .content-wrapper{
     padding-top: 64px;
     padding-bottom: 56px;
-    height: 1100px;
+    height: 890px;
     background: #f0f2f5;
 }
 .content{
@@ -105,7 +105,7 @@
     margin-bottom: 40px;
     padding-bottom: 30px;
     background-color: #fff;
-    min-height: 1000px;
+    min-height: 792px;
     width: 750px;
     box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
     font-size: 14px;
@@ -114,7 +114,7 @@
 }
 .right-content-mian{
     width: 582px;
-    height: 893px;
+    height: 750px;
     padding: 42px 84px 0 84px;
 }
 .headportrait{
@@ -184,7 +184,8 @@
 }
 .Accountinformation{
     width: 582px;
-    height: 240px;
+    height: 300px;
+    margin-bottom: 36px;
 }
 .Accountinformation p{
     width: 582px;
@@ -200,7 +201,7 @@
 }
 .message{
     width: 582px;
-    height: 183px;
+    height: 240px;
 }
 .message-p-box p{
     width: 582px;
@@ -213,6 +214,9 @@
     width: 582px;
     height: 45.5px;
     margin-top: 21px;
+}
+.account-item-bottom{
+    margin-bottom: 70px;
 }
 .item-head{
     width: 128px;
@@ -267,17 +271,52 @@
 .form-content{
     width: 436.5px;
     height: 90px;
+    display: none;
 }
 /* 不要问为什么有one two这些了，因为已经放弃治疗了 */
 .item-one{
     width: 366px;
     height: 39px;
-    padding-left: 70px;
+    padding-left: 50px;
 }
 .item-one-yi{
     width: 280px;
     height: 39px;
     float: left;
+}
+.item-two-yi{
+    width: 280px;
+    height: 37px;
+    float: left;
+    border: 1px solid #cad3de;
+    border-radius: 5px;
+}
+.item-two-yi input{
+    border: 0;
+    width: 171px;
+    height: 37px;
+    border: 0;
+    outline: none;
+    padding-left: 14px;
+    border-radius: 5px;
+}
+.item-two-yi button{
+    width: 95px;
+    height: 37px;
+    border: 0;
+    border-left: 1px solid #cad3de;
+    background: #fff;
+    float: right;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* cursor: pointer; */
+    color: #08c;
+    font-size: 12px;
+    outline: none;
+}
+/* //验证码的手样式 */
+.send{
+    cursor: pointer;
 }
 .item-one-yi input{
     border: 1px solid #cad3de;
@@ -287,6 +326,138 @@
     outline: none;
     border-radius: 5px;
 }
+.send-disabled{
+    cursor: not-allowed;
+}
 .item-one-yi input:focus{
     border:1px solid  #08c;
+}
+.item-one-er{
+    width: 28px;
+    height: 21px;
+    padding-top: 10.5px;
+    margin-left: 21px;
+}
+.item-one-er a{
+    color:#08c;
+}
+.item-two{
+    width: 366px;
+    height: 39px;
+    padding-left: 50px;
+    margin-top: 11px;
+}
+.personaldata{
+    width: 582px;
+    height: 280px;
+    margin-bottom: 36px;
+}
+.personaldata p{
+    width: 582px;
+    height: 31px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.personaldata hr{
+    width: 582px;
+    border: none;
+    border-top: 1px solid hsla(212,9%,63%,.2);
+    margin: 11px 0 14px 0;
+}
+.personform{
+    width: 582px;
+    height: 215px;
+    margin-top: 21px;
+}
+#personform-set{
+    display: none;
+}
+.team-form{
+    width: 582px;
+    height: 40px;
+    margin: 14px 0;
+}
+.team-form-label{
+    width: 145px;
+    height: 40px;
+    line-height: 40px;
+}
+.team-form-name{
+    width: 436.5px;
+    height: 40px;
+    line-height: 40px;
+}
+.team-a{
+    line-height: 15px;
+}
+.team-set-label{
+    width: 145px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+}
+.team-set-shuru{
+    width: 436.5px;
+    height: 40px;
+    line-height: 40px;
+}
+.team-set-shuru input{
+    width: 406px;
+    height: 22px;
+    padding: 8px 14px;
+    border: 1px solid #cad3de;
+    border-radius: 5px;
+    outline: none;
+}
+.team-set-shuru input:focus{
+    border: 1px solid #08c;
+}
+.team-set-select{
+    width: 582px;
+    height: 100px;
+    margin: 14px 0;
+}
+.team-set-select label{
+    width: 145px;
+    height: 53px;
+    display: inline-block;
+    line-height: 40px;
+}
+.team-set-diqu{
+    width: 436.5px;
+    height: 53px;
+    line-height: 40px;
+}
+.team-set-diqu select{
+    /* width: 88px; */
+    height: 39px;
+    line-height: 39px;
+    padding: 5px;
+    margin: 7px 14px 7px 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+}
+.team-set-button{
+    width: 582px;
+    height: 40px;
+}
+.team-set-btn,.team-set-btn-quxiao{
+    width: 58px;
+    height: 40px;
+    padding: 8px 14px ;
+    border: 1px solid #08c;
+    background-color: #08c;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 14px;
+    outline: none;
+}
+.team-set-btn-quxiao{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #d9d9d9;
 }
