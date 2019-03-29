@@ -1,150 +1,221 @@
-
-@media screen and (max-width: 770px){
-    .anchor{
-        display: none;
-    }
-    .header-name,.header-span{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 770px){
-    .anchor-pic{
-        display: block;
-    }
-    header li{
-        margin-right: 20px;
-    }
-    .header-return{
-        display: none;
-    }
-}
-
-
 /*头部导航栏*/
-header{
-    box-shadow: 0 1px 2px 1px #ccc;
-    background-color: #fff;
-    overflow: hidden;
+
+/* 透明背景头部 */
+.index-head .navbar-default{
+    background-color:transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    min-width: 700px;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
+    z-index:2992;
+    padding: 2px 0;
+}
+.index-head .navbar-header{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.index-head .navbar-header > .navbar-logo > img{
+    height: 30px;
+    transform: translate(0,-20%)
+}
+.index-head .navbar-default .navbar-nav>li>a{
+    color:#fff;
+}
+.index-head .navbar-default .navbar-nav>li>a:focus{
+    color:#ccc;
+}
+.index-head .navbar-default .navbar-nav>li>a:hover{
+    color:#ccc;
+}
+.index-head .navbar-header > .navbar-brand{
+    margin-right: 30px;
+    color:#fff;
+}
+.index-head .navbar-header > .navbar-brand:focus{
+    color:#fff;
+}
+.index-head .navbar-header > .navbar-brand{
+    font-size: 15px;
 }
 
-header ul{
-    height: 29px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-    margin: 0 15px;
+.index-head .navbar-header > .navbar-brand:hover{
+    color: #ccc;
 }
 
-header ul li{
-    /*margin-right: 20px;*/
-    font-size: 16px;
-    white-space: nowrap;
-}
-
-header ul .header-name{
-    font-weight: bold;
-    color: #49a9ee;
+.index-head .navbar-nav > .nav-information i{
+    display: block;
     transform: scale(1.4);
-    animation: name 1s;
-    cursor: pointer;
 }
 
-@keyframes name{
-    0%{ transform: scale(1.4) }
-    50%{ transform: scale(1.8) }
-    100%{ transform: scale(1.4) }
+.index-head .nav-oneself > .dropdown-toggle > i{
+    display: inline-block;
+    transform: scale(1.4);
 }
 
-header .header-return{
-    font-size: 14px;
-    color: #000;
-    cursor: pointer;
-}
-
-header .enter{
-    font-size: 12px;
-    padding: 5px 25px;
-    border: 1px solid #49a9ee;
+.index-head .navbar-nav > .nav-oneself > .dropdown-menu{
+    left: -100px;
     border-radius: 5px;
-    color: #49a9ee;
-    cursor: pointer;
 }
 
-header .enter:hover{
+.index-head .dropdown-menu > li > a{
+    padding: 8px 30px 8px 20px;
+}
+
+.index-head .dropdown-menu > li > a > i{
+    margin-right: 10px;
+}
+
+.index-head .dropdown-menu > li > a:hover{
     background-color: #49a9ee;
-}
-
-header .enter:hover a{
     color: #fff;
+    transition: 500ms;
+}
+
+.index-head .dropdown-menu > .divider{
+    margin: 5px 0
+}
+
+.index-head .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-nav>li>a {
+    padding: 22px 18px;
 }
 
 
+/* 通用 */
+.navbar-default{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    min-width: 700px;
+    position: fixed;
+    top: 0;
+    z-index:2992;
+    padding: 2px 0;
+}
+.container-fluid>.navbar-header{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navbar-header > .navbar-logo > img{
+    height: 30px;
+    transform: translate(0,-20%)
+}
+.navbar-default .navbar-nav>li>a{
+    color:#ccc;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    color:#ccc;
+}
+.navbar-default .navbar-nav>li>a:hover{
+color:#ccc;
+}
+.navbar-header > .navbar-brand{
+    margin-right: 30px;
+    color:#424242;
+}
+.navbar-header > .navbar-brand:focus{
+    color:#424242;
+}
+.navbar-header > .navbar-brand{
+    font-size: 15px;
+}
+
+.navbar-header > .navbar-brand:hover{
+    color: #49a9ee;
+}
+
+.navbar-nav > .nav-information i{
+    display: block;
+    transform: scale(1.4);
+}
+
+.nav-oneself > .dropdown-toggle > i{
+    display: inline-block;
+    transform: scale(1.4);
+}
+
+.navbar-nav > .nav-oneself > .dropdown-menu{
+    left: -100px;
+    border-radius: 5px;
+}
+.dropdown-menu > li > a{
+    padding: 8px 30px 8px 20px;
+}
+.dropdown-menu > li > a > i{
+    margin-right: 10px;
+}
+.dropdown-menu > li > a:hover{
+    background-color: #49a9ee;
+    color: #fff;
+    transition: 500ms;
+}
+.dropdown-menu > .divider{
+    margin: 5px 0
+}
+.nothing{
+    width: 100%;
+    height: 60px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #424242;
+    background-color: transparent;
+}
 
 /*底部*/
 footer{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
     box-sizing: border-box;
+    padding: 10px 0;
     text-align: center;
-    /* background-color: transparent; */
-    background-color: #2B3747;
+    background-color: #1f2d3d;;
     z-index: 999;
+
+/*    position: fixed;
+    bottom: 0;
+    left: 0;*/
 }
 
-footer .footer-copyright{
-    display: block;
-    font-size: 20px;
-    transform: scale(1.6);
-    color: #49a9ee;
-    margin: 0 auto;
+.footer_warp{
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    min-width: 700px;
 }
 
-footer p{
-    margin: 0;
+.footer_warp > a > img{
+    height: 30px;
 }
 
-footer a{
-    color: #49a9ee;
-    font-size: 20px;
-    margin-right: 8px;
+.footer-text{
+    color: #8796a8;
+    line-height: 33px;
 }
-
-footer span{
-    font-size: 14px;
-    color: #727f8f;
-}
-
 
 /*侧边锚点*/
 .anchor{
     position: fixed;
-    right: 0;
+    right: 10px;
     top: 50%;
     transform: translate(0,-50%);
-    background-color: rgba(0,0,0,0.1);
     border-radius: 8px 0 0 8px;
     z-index: 999;
 }
 
-.anchor ul{
+.anchor > ul{
     position: relative;
     width: 40px;
     height: 150px;
     margin: 0;
 }
 
-.anchor ul li{
+.anchor > ul > li{
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -153,36 +224,36 @@ footer span{
     line-height: 50px;
     width: 150px;
     height: 50px;
-    padding-left: 12px;
+    padding-left: 16px;
     transition: 300ms;
     cursor: pointer;
 }
 
-.anchor ul li i{
+.anchor > ul > li > i{
     display: inline-block;
     margin-right: 15px;
     font-size: 22px;
 }
 
-.anchor ul .anchor-consult{
+.anchor > ul > .anchor-consult{
     border-radius: 8px 0 0 0px;
 }
 
-.anchor ul .anchor-about{
+.anchor > ul > .anchor-about{
     top:50px;
 }
 
-.anchor ul .anchor-top{
+.anchor > ul > .anchor-top{
     border-radius: 0 0 0 8px;
     top:100px;
     position: relative;
 }
 
-.anchor ul .hover{
+.anchor > ul > .hover{
     border-radius: 8px 0 0 8px;
 }
 
-.anchor span{
+.anchor > span{
     width: 80px;
     height: 70px;
     position: absolute;
