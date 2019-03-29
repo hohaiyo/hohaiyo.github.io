@@ -122,17 +122,17 @@ form > .form-title{
     line-height: 60px;
 }
 
-form > .form-number{
+form > .form-img{
     position: relative;
 }
 
-form > .form-number > i{
+form >  .form-img > i{
     position: absolute;
     top: 50%;
     left: 3px;
     transform: translate(0,-50%);
     color: #49a9ee;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 form > .form-verify{

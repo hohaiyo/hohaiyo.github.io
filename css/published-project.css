@@ -17,6 +17,10 @@ body{
     box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
 }
 
+.container > form{
+    margin-bottom: 20px;
+}
+
 .project-right{
     position: relative;
 }
@@ -80,8 +84,71 @@ body{
 
 /*项目列表*/
 .container > .project-list{
-
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 21px 28px;
 }
+
+.project-list > .list-top{
+    border-bottom: 1px solid #dde3eb;
+    margin: 0 1px;
+    padding-bottom: 15px;
+}
+
+/*项目列表标题*/
+.project-list > .list-top > p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.list-info{
+    margin: 0 1px;
+}
+
+.list-info > p{
+    margin: 0;
+    color: #8796a8;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.list-info > .list-apply{
+    position: relative;
+    padding-right: 16px;
+}
+
+.list-info > .list-apply::after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    content: "";
+    height: 18px;
+    width: 1px;
+    background-color: #dde3eb;
+}
+.list-info > .list-cancel{
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 1px 8px;
+    border-radius: 5px;
+    background-color: #49a9ee;
+    color: #fff;
+}
+
+/*项目列表底部*/
+.list-bottom{
+    padding: 20px 15px 0;
+}
+
+.list-bottom > img{
+    width: 220px;
+    height: 120px;
+    padding: 0;
+    /*margin: 1px;*/
+    border-radius: 5px;
+}
+
 
 /*底部*/
 footer{
