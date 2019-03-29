@@ -2,58 +2,120 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>关于我们</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 清除原始样式 -->	
+	<link rel="stylesheet" type="text/css" href="css/initialize.css">
+	<!-- bootstrap框架 -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 头部 尾部 样式 -->
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<!-- 侧边栏用的阿里小图标 -->
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_x5zkc8ffr39.css">
+	<!-- 本页主体样式 -->
 	<link rel="stylesheet" href="css/introduce.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<!-- <link rel="stylesheet" href="css/introduce_mobile.css"> -->
-	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="js/help.js"></script>
+	<!-- jQuery框架 -->
+	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
+	<!-- bootstrap框架的js -->
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>	
+    <!-- 头部 锚点 尾部js -->
+	<script type="text/javascript" src="jQuery/header-footer.js"></script>
+	<title>介绍页面</title>
 </head>
 <body>
-	<div class="main_wrap">
-		<header class="header">
-			<nav class="top flex_between">
-				<div class="flex_between">
-					<a href="javascript:;" class="logo"><img src="images/logo_blue.png" alt="">
-					<!-- <a href="javascript:;" class="nav_btn"><img src="images/nav.png" alt=""></a></a> --><!-- 移动端菜单下拉按钮 隐藏已有菜单-->
-					<ul class="nav flex_between">
-						<li><a href="javascript:;">项目</a></li>
-						<li><a href="javascript:;">估计</a></li>
-						<li><a href="javascript:;">会员</a></li>
-						<li><a href="javascript:;">开发者</a></li>
-						<li><a href="javascript:;">帮助</a></li>
-					</ul>
-				</div>
-				<div class="right_zone">
-					<a href="javascript:;">登录</a>
-					<a href="javascript:;">注册</a>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<div class="introdction">
-				<div class="box">
-					<p>小白是一个软件外包服务平台，通过智能匹配系统快速连接开发者与需求方，提供在线的项目管理工具与资金托管服务，提高软件交付的效率，保障需求方和开发者权益，帮助软件开发行业实现高效的资源匹配。</p>
-					<p>小白希望通过这个项目外包人才外包网络平台，使企业能够找到好的项目团队，学生初创企业能在这个平台接到业务，从而达到企业和创业团队的双赢，使得企业和学生创业团队健康发展。</p>
-				</div>
-			</div>
-			<div class="contact">
-				<h1>联系我们</h1>
-				<div class="contact_in flex_between"><!-- 移动端去除flex_between类 -->
-					<div class="location_name"><span>总部</span></div>
-					<div class="location">
-						<p>0755-28788632 | support@codemart.com</p>
-						<p>杭州市·下城区·费家塘·星火科技园</p>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<a href="javascript:;">小白外包</a>
-			<span>Copyright &copy; 2014-2018 </span>
-		</footer>
-	</div>
-
+	<!-- 头部 -->
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse"
+	                    data-target="#example-navbar-collapse">
+	                <span class="sr-only">切换导航</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand navbar-logo" href="#">
+	                <img src="./img/logo.png" alt="logo">
+	            </a>
+	            <a class="navbar-brand navbar-hide" href="#">项目列表</a>
+	            <a class="navbar-brand navbar-hide" href="#">项目发布</a>
+	            <a class="navbar-brand navbar-hide" href="#">开发方</a>
+	            <a class="navbar-brand navbar-hide" href="#">收藏</a>
+	            <a class="navbar-brand navbar-hide" href="#">帮助</a>
+	        </div>
+	        <!--倒塌-->
+	        <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
+	            <ul class="nav navbar-nav">
+	                <li class="nav-information">
+	                    <a href="#">
+	                        <i class="iconfont icon-tongzhi"></i>
+	                    </a>
+	                </li>
+	                <li class="dropdown nav-oneself">
+	                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                        <i class="iconfont icon-huabanfuben1"></i>
+	                        <b class="caret"></b>
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">早上好，杨先生</a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#">
+	                            <i class="iconfont icon-geren"></i>
+	                            个人中心
+	                        </a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#">
+	                            <i class="iconfont icon-huaban-"></i>
+	                            我的开发宝
+	                        </a></li>
+	                        <li><a href="#">
+	                            <i class="iconfont icon-xiangmu"></i>
+	                            我发布的项目
+	                        </a></li>
+	                        <li><a href="#">
+	                            <i class="iconfont icon-lanzi"></i>
+	                            我的报价单
+	                        </a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#">
+	                            <i class="iconfont icon-tuichu"></i>
+	                            退出登录
+	                        </a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>	
+	<!-- 底部 -->
+	<footer>
+	    <div class="footer_warp">
+	        <a href="#" class="pull-left">
+	                <img src="./img/logo1.02.png">
+	        </a>
+	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
+	    </div>
+	</footer>
+	 <!--侧边栏-->
+    <div class="anchor">
+            <ul>
+                <li class="anchor-consult">
+                    <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+                    咨询
+                </li>
+                <li class="anchor-about">
+                    <i class="iconfont icon-guanyu"></i>
+                    关于我们
+                </li>
+                <li class="anchor-top">
+                    <i class="iconfont icon-top"></i>
+                    TOP
+                    <a href="#header-top"></a>
+                </li>
+            </ul>
+            <span></span>
+    </div>	
 </body>
 </html>
