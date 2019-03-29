@@ -15,21 +15,11 @@
 .clearfloat{
     zoom: 1;
 }
-/* //顶部导航栏测试样式，可删除 */
-.test{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    background-color: #fff;
-    z-index: 999;
-}
 /* 测试结束 */
 .content-wrapper{
     padding-top: 64px;
     padding-bottom: 56px;
-    height: 890px;
+    height: 985px;
     background: #f0f2f5;
 }
 .content{
@@ -42,22 +32,22 @@
     margin-top: 75px;
 }
 .left-menu{
-    max-width: 300px;
+    max-width: 220px;
 }
 .side-nav{
-    max-width: 300px;
+    max-width: 220px;
     left: 0;
     margin: 0;
 }
 .side-nav ul>li{
     position: relative;
     margin: 0;
-    box-sizing: border-box;/* box-sizing：允许你以某种方式定义某些元素，以适应指定区域 */
+    /* box-sizing: border-box;box-sizing：允许你以某种方式定义某些元素，以适应指定区域 */
 }
 .list-header{
     background: #e6ebf0;
     padding: 7px 0 7px 21px;
-    width: 220px;
+    width: 200px;
     box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
 }
 .list-header span{
@@ -105,7 +95,7 @@
     margin-bottom: 40px;
     padding-bottom: 30px;
     background-color: #fff;
-    min-height: 792px;
+    min-height: 895px;
     width: 750px;
     box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
     font-size: 14px;
@@ -114,7 +104,7 @@
 }
 .right-content-mian{
     width: 582px;
-    height: 750px;
+    height: 854px;
     padding: 42px 84px 0 84px;
 }
 .headportrait{
@@ -460,4 +450,158 @@
     background-color: #fff;
     color: #000;
     border: 1px solid #d9d9d9;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    min-width: 1200px;
+    height: 33px;
+    padding: 10px 0;
+    background-color: #1f2d3d;
+}
+.footer-box{
+    width: 1200px;
+    margin: 0 auto;
+    height: 33px;
+    line-height: 33px;
+}
+/* 侧边栏 */
+.anchor{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 8px 0 0 8px;
+    z-index: 999;
+}
+
+.anchor > ul{
+    position: relative;
+    width: 40px;
+    height: 150px;
+    margin: 0;
+}
+
+.anchor > ul > li{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    padding-left: 16px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.anchor > ul > li > i{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.anchor > ul > .anchor-consult{
+    border-radius: 8px 0 0 0px;
+}
+
+.anchor > ul > .anchor-about{
+    top:50px;
+}
+
+.anchor > ul > .anchor-top{
+    border-radius: 0 0 0 8px;
+    top:100px;
+    position: relative;
+}
+
+.anchor > ul > .hover{
+    border-radius: 8px 0 0 8px;
+}
+
+.anchor > span{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    background: url(../img/get-started-label-black.png) center no-repeat;
+}
+/* 导航栏 */
+.top-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #fff;
+    z-index: 999;
+}
+.top-navbox{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+}
+.top-navbox-img{
+    padding: 10px 0;
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+.top-navbox-img img{
+    height: 30px;
+}
+.top-navbox-list{
+    width: 500px;
+    height: 50px;
+    margin-left: 30px;
+}
+.top-navbox-list ul{
+    width: 500px;
+    height: 20px;
+    padding: 15px;
+}
+.top-navbox-list ul li{
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.top-navbox-list ul li a{
+    color: #777;
+    text-decoration: none;
+}
+.top-navbox-list ul li a:hover{
+    color: #337ab7;
+}
+.top-navbox-user{
+    width: 106px;
+    height: 22px;
+    padding: 14px 15px;
+}
+.top-navbox-user ul li{
+    float: left;
+    overflow: hidden;
+}
+.icon-tongzhi,.icon-huabanfuben1{
+    font-size: 24px;
+}
+.icon-tongzhi{
+    color: #08c;
+}
+.icon-xiangxia,.icon-huabanfuben1{
+    color: #777;
+}
+.icon-xiangxia{
+    margin-bottom: 3px;
+}
+.user-top{
+    cursor: pointer;
+    margin-left: 40px;
+}
+.user-top:hover i{
+    color: #000;
+}
+.icon-xiangxia{
+    font-size: 12px;
 }
