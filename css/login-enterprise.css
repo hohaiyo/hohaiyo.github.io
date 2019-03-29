@@ -1,18 +1,12 @@
 html{
-<<<<<<< HEAD
-=======
     height: 100%;
->>>>>>> wyj
     width: 100%;
     font-size: 100px;
     overflow-x: hidden;
 }
 
 body{
-<<<<<<< HEAD
-=======
     height: 100%;
->>>>>>> wyj
     width: 100%;
     font-size: 16px;
     overflow-x: hidden;
@@ -35,11 +29,8 @@ a:hover{
         right: 0;
     }
     .container{
-<<<<<<< HEAD
         padding-bottom: 280px;
-=======
         /*padding-bottom: 230px;*/
->>>>>>> wyj
     }
 }
 
@@ -60,15 +51,9 @@ a:hover{
 .container{
     min-width: 320px;
     height: 100%;
-<<<<<<< HEAD
-    min-height: 650px;
-    position: relative;
-    /*padding-bottom: 280px;*/
-=======
     min-height: 770px;
     position: relative;
     overflow: hidden;
->>>>>>> wyj
 }
 
 /*内容*/
@@ -83,11 +68,7 @@ main{
 main form{
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     margin: 55px auto;
-=======
-    margin: 90px auto 0;
->>>>>>> wyj
 }
 
 form label{
@@ -118,31 +99,19 @@ form input::placeholder{
     font-weight: 400;
 }
 
-<<<<<<< HEAD
-form .form-title{
-=======
 form > .form-title{
->>>>>>> wyj
     font-size: 28px;
     text-align: center;
     color: #49a9ee;
     line-height: 60px;
 }
 
-<<<<<<< HEAD
-form .form-verify{
-=======
 form > .form-verify{
->>>>>>> wyj
     box-sizing: border-box;
     position: relative;
 }
 
-<<<<<<< HEAD
-form .form-verify button{
-=======
 form > .form-verify > button{
->>>>>>> wyj
     position: absolute;
     top: 0;
     right: 0;
@@ -158,30 +127,18 @@ form > .form-verify > button{
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-form .form-verify .send-disabled{
-    cursor: not-allowed;
-}
-
-form .form-sure{
-=======
 form > .form-verify > .send-disabled{
     cursor: not-allowed;
 }
 
 form > .form-sure{
->>>>>>> wyj
     font-size: 14px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-form .form-sure .sure-check{
-=======
 form > .form-sure > .sure-check{
->>>>>>> wyj
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -191,11 +148,7 @@ form > .form-sure > .sure-check{
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-form .form-sure .sure-check i{
-=======
 form > .form-sure > .sure-check > i{
->>>>>>> wyj
     display: none;
     line-height: 10px;
     position: absolute;
@@ -206,11 +159,7 @@ form > .form-sure > .sure-check > i{
     height: 14px;
 }
 
-<<<<<<< HEAD
-form .form-sure .sure-ready{
-=======
 form > .form-sure > .sure-ready{
->>>>>>> wyj
     white-space: nowrap;
     font-size: 14px;
     margin: 0 5px;
@@ -218,22 +167,13 @@ form > .form-sure > .sure-ready{
     color: #727f8f;
 }
 
-<<<<<<< HEAD
-form .form-sure a{
-=======
 form > .form-sure > a{
->>>>>>> wyj
     color: #49a9ee;
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-form .form-login,
-form .form-return{
-=======
 form > .form-login,
 form > .form-return{
->>>>>>> wyj
     background-color: #3a79c2;
     border: none;
     border-radius: 5px;
@@ -245,14 +185,8 @@ form > .form-return{
     font-size: 14px;
 }
 
-<<<<<<< HEAD
-form .form-return{
-    background-color: transparent;
-    color: #000;
-=======
 form > .form-return{
     background-color: transparent;
     color: #727f8f;
->>>>>>> wyj
     margin-bottom: 100px;
 }

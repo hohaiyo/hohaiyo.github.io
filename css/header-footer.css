@@ -1,13 +1,4 @@
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    
-
->>>>>>> wcy
-=======
->>>>>>> zrq
 @media screen and (max-width: 770px){
     .anchor{
         display: none;
@@ -76,14 +67,7 @@ header ul .header-name{
 header .header-return{
     font-size: 14px;
     color: #000;
-<<<<<<< HEAD
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> wcy
-=======
-    cursor: pointer;
->>>>>>> zrq
 }
 
 header .enter{
@@ -91,16 +75,9 @@ header .enter{
     padding: 5px 25px;
     border: 1px solid #49a9ee;
     border-radius: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     color: #49a9ee;
-=======
     color: blue;
->>>>>>> wcy
-=======
     color: #49a9ee;
->>>>>>> zrq
-    cursor: pointer;
 }
 
 header .enter:hover{
@@ -114,23 +91,14 @@ header .enter:hover a{
 
 
 /*底部*/
-footer{
+/* footer{
     position: absolute;
-<<<<<<< HEAD
-    bottom: 10px;
-=======
     bottom: 0px;
->>>>>>> zrq
     left: 0;
     right: 0;
     box-sizing: border-box;
     text-align: center;
-<<<<<<< HEAD
-    background-color: transparent;
-=======
-    /* background-color: transparent; */
     background-color: #2B3747;
->>>>>>> zrq
     z-index: 999;
 }
 
@@ -138,16 +106,7 @@ footer .footer-copyright{
     display: block;
     font-size: 20px;
     transform: scale(1.6);
-<<<<<<< HEAD
-<<<<<<< HEAD
     color: #49a9ee;
-=======
-    color: blue;
->>>>>>> wcy
-=======
-    color: #49a9ee;
->>>>>>> zrq
-    margin: 0 auto;
 }
 
 footer p{
@@ -163,9 +122,7 @@ footer a{
 footer span{
     font-size: 14px;
     color: #727f8f;
-}
-
-=======
+} */
 /*头部导航栏*/
 .navbar-default{
     background-color: #fff;
@@ -273,49 +230,26 @@ footer > p > span{
     color: #8796a8;
     line-height: 33px;
 }
->>>>>>> wyj
 
 /*侧边锚点*/
 .anchor{
     position: fixed;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     right: 10px;
-=======
-    right:0;
->>>>>>> wcy
-=======
-    right: 0;
->>>>>>> zrq
     top: 50%;
-    transform: translate(0,-50%);
     background-color: rgba(0,0,0,0.1);
-=======
-    right: 10px;
-    top: 50%;
     transform: translate(0,-50%);
->>>>>>> wyj
     border-radius: 8px 0 0 8px;
     z-index: 999;
 }
 
-<<<<<<< HEAD
-.anchor ul{
-=======
 .anchor > ul{
->>>>>>> wyj
     position: relative;
     width: 40px;
     height: 150px;
     margin: 0;
 }
 
-<<<<<<< HEAD
-.anchor ul li{
-=======
 .anchor > ul > li{
->>>>>>> wyj
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -324,36 +258,17 @@ footer > p > span{
     line-height: 50px;
     width: 150px;
     height: 50px;
-<<<<<<< HEAD
-    padding-left: 12px;
-=======
     padding-left: 16px;
->>>>>>> wyj
     transition: 300ms;
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-.anchor ul li i{
-=======
 .anchor > ul > li > i{
->>>>>>> wyj
     display: inline-block;
     margin-right: 15px;
     font-size: 22px;
 }
 
-<<<<<<< HEAD
-.anchor ul .anchor-consult{
-    border-radius: 8px 0 0 0px;
-}
-
-.anchor ul .anchor-about{
-    top:50px;
-}
-
-.anchor ul .anchor-top{
-=======
 .anchor > ul > .anchor-consult{
     border-radius: 8px 0 0 0px;
 }
@@ -363,41 +278,20 @@ footer > p > span{
 }
 
 .anchor > ul > .anchor-top{
->>>>>>> wyj
     border-radius: 0 0 0 8px;
     top:100px;
     position: relative;
 }
 
-<<<<<<< HEAD
-.anchor ul .hover{
-    border-radius: 8px 0 0 8px;
-}
-
-.anchor span{
-=======
 .anchor > ul > .hover{
     border-radius: 8px 0 0 8px;
 }
 
 .anchor > span{
->>>>>>> wyj
     width: 80px;
     height: 70px;
     position: absolute;
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> wcy
-=======
-}
->>>>>>> zrq
-=======
-}
->>>>>>> wyj
