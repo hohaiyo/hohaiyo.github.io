@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @media screen and (max-width: 770px){
     .anchor{
@@ -127,6 +128,95 @@ footer span{
 =======
 >>>>>>> zztS
 /*头部导航栏*/
+=======
+/* 透明背景头部 */
+.index-head .navbar-default{
+    background-color:transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    min-width: 700px;
+    position: fixed;
+    top: 0;
+    z-index:2992;
+    padding: 2px 0;
+}
+.index-head .navbar-header{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.index-head .navbar-header > .navbar-logo > img{
+    height: 30px;
+    transform: translate(0,-20%)
+}
+.index-head .navbar-default .navbar-nav>li>a{
+    color:#fff;
+}
+.index-head .navbar-default .navbar-nav>li>a:focus{
+    color:#ccc;
+}
+.index-head .navbar-default .navbar-nav>li>a:hover{
+    color:#ccc;
+}
+.index-head .navbar-header > .navbar-brand{
+    margin-right: 30px;
+    color:#fff;
+}
+.index-head .navbar-header > .navbar-brand:focus{
+    color:#fff;
+}
+.index-head .navbar-header > .navbar-brand{
+    font-size: 15px;
+}
+
+.index-head .navbar-header > .navbar-brand:hover{
+    color: #ccc;
+}
+
+.index-head .navbar-nav > .nav-information i{
+    display: block;
+    transform: scale(1.4);
+}
+
+.index-head .nav-oneself > .dropdown-toggle > i{
+    display: inline-block;
+    transform: scale(1.4);
+}
+
+.index-head .navbar-nav > .nav-oneself > .dropdown-menu{
+    left: -100px;
+    border-radius: 5px;
+}
+
+.index-head .dropdown-menu > li > a{
+    padding: 8px 30px 8px 20px;
+}
+
+.index-head .dropdown-menu > li > a > i{
+    margin-right: 10px;
+}
+
+.index-head .dropdown-menu > li > a:hover{
+    background-color: #49a9ee;
+    color: #fff;
+    transition: 500ms;
+}
+
+.index-head .dropdown-menu > .divider{
+    margin: 5px 0
+}
+
+.index-head .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-nav>li>a {
+    padding: 22px 18px;
+}
+
+
+/* 通用 */
+>>>>>>> xwt
 .navbar-default{
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
@@ -137,17 +227,45 @@ footer span{
     position: fixed;
     top: 0;
     z-index:2992;
+<<<<<<< HEAD
 }
 
+=======
+    padding: 2px 0;
+}
+.container-fluid>.navbar-header{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+>>>>>>> xwt
 .navbar-header > .navbar-logo > img{
     height: 30px;
     transform: translate(0,-20%)
 }
+<<<<<<< HEAD
 
 .navbar-header > .navbar-brand{
     margin-right: 30px;
 }
 
+=======
+.navbar-default .navbar-nav>li>a{
+    color:#ccc;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    color:#ccc;
+}
+.navbar-default .navbar-nav>li>a:hover{
+color:#ccc;
+}
+.navbar-header > .navbar-brand{
+    margin-right: 30px;
+    color:#424242;
+}
+.navbar-header > .navbar-brand:focus{
+    color:#424242;
+}
+>>>>>>> xwt
 .navbar-header > .navbar-brand{
     font-size: 15px;
 }
@@ -159,7 +277,10 @@ footer span{
 .navbar-nav > .nav-information i{
     display: block;
     transform: scale(1.4);
+<<<<<<< HEAD
     color: blue;
+=======
+>>>>>>> xwt
 }
 
 .nav-oneself > .dropdown-toggle > i{
@@ -171,6 +292,7 @@ footer span{
     left: -100px;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
 .dropdown-menu > li > a{
     padding: 8px 30px 8px 20px;
@@ -180,20 +302,41 @@ footer span{
     margin-right: 10px;
 }
 
+=======
+.dropdown-menu > li > a{
+    padding: 8px 30px 8px 20px;
+}
+.dropdown-menu > li > a > i{
+    margin-right: 10px;
+}
+>>>>>>> xwt
 .dropdown-menu > li > a:hover{
     background-color: #49a9ee;
     color: #fff;
     transition: 500ms;
 }
+<<<<<<< HEAD
 
 .dropdown-menu > .divider{
     margin: 5px 0
 }
 
+=======
+.dropdown-menu > .divider{
+    margin: 5px 0
+}
+>>>>>>> xwt
 .nothing{
     width: 100%;
     height: 60px;
 }
+<<<<<<< HEAD
+=======
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #424242;
+    background-color: transparent;
+}
+>>>>>>> xwt
 
 /*底部*/
 footer{
@@ -240,9 +383,12 @@ footer > p > span{
     right: 10px;
     top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: rgba(0,0,0,0.1);
 =======
 >>>>>>> zztS
+=======
+>>>>>>> xwt
     transform: translate(0,-50%);
     border-radius: 8px 0 0 8px;
     z-index: 999;
@@ -301,7 +447,11 @@ footer > p > span{
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> zztS
+=======
+}
+>>>>>>> xwt
