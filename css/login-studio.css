@@ -1,0 +1,250 @@
+html{
+    height: auto;
+    width: 100%;
+    font-size: 100px;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+    background-color: #F0F2F5;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*大盒子*/
+.container{
+    min-width: 1000px;
+    height: 100%;
+    position: relative;
+}
+
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header > ul{
+    box-sizing: border-box;
+    /*display: flex;*/
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 15px;
+}
+
+header > ul > li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+header > ul > .header-name{
+    animation: name 1s;
+    cursor: pointer;
+}
+
+@keyframes name{
+    50%{ transform: scale(1.4) }
+}
+
+header ul .header-name > img{
+    height: 30px;
+}
+
+.header-right > .enter,
+.header-right > .login{
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: #49a9ee;
+    cursor: pointer;
+}
+
+.header-right > .enter > a,
+.header-right > .login > a{
+    color: #49a9ee;
+}
+
+.header-right > .enter:hover,
+.header-right > .login:hover{
+    background-color: #49a9ee;
+}
+
+.header-right > .enter:hover > a,
+.header-right > .login:hover > a{
+    color: #fff;
+}
+
+
+/*内容*/
+/*表格*/
+.container > form{
+    margin: 90px auto;
+    padding: 0 15px;
+    width: 380px;
+}
+
+form > label{
+    display: block;
+    font-size: 0;
+}
+
+.form-group > input{
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #49a9ee;
+    font-size: 16px;
+    text-indent: 1em;
+    outline: none;
+}
+
+.form-group > input::placeholder{
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+form > .form-title{
+    font-size: 28px;
+    text-align: center;
+    color: #49a9ee;
+    line-height: 60px;
+}
+
+form > .form-img{
+    position: relative;
+}
+
+form >  .form-img > i{
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translate(0,-50%);
+    color: #49a9ee;
+    font-size: 22px;
+}
+
+form > .form-verify{
+    box-sizing: border-box;
+    position: relative;
+}
+
+form > .form-verify > button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #49a9ee;
+    outline: none;
+    background-color: transparent;
+    color: #49a9ee;
+    cursor: pointer;
+}
+
+form > .form-verify > .send-disabled{
+    cursor: not-allowed;
+}
+
+form > .form-verify > .form-control[disabled]{
+    background-color: transparent;
+}
+form > .form-sure{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form > .form-sure > .sure-check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/*勾选框*/
+.sure-check > i{
+    display: none;
+    border-radius: 3px;
+    line-height: 10px;
+    position: absolute;
+    background-color: #108ee9;
+    color: #fff;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.sure-check > i::before{
+    display: block;
+    margin-top: 1px;
+}
+
+form > .form-sure > .sure-ready{
+    white-space: nowrap;
+    font-size: 14px;
+    margin: 0 5px;
+    line-height: 16px;
+    color: #727f8f;
+}
+
+form > .form-sure > a{
+    color: #49a9ee;
+    cursor: pointer;
+}
+
+.form-group > .form-login,
+.form-group > .form-return{
+    background-color: #3a79c2;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group > .form-return{
+    background-color: transparent;
+    color: #727f8f;
+    margin-bottom: 100px;
+    box-shadow: none;
+}
+
+
+/*底部*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+footer > .footer-copyright{
+    display: block;
+    font-size: 20px;
+    transform: scale(1.6);
+    color: #49a9ee;
+    margin: 0 auto;
+}

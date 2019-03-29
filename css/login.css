@@ -1,0 +1,127 @@
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header > ul{
+    box-sizing: border-box;
+    /*display: flex;*/
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 15px;
+}
+
+header > ul > li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+header > ul > .header-name{
+    animation: name 1s;
+    cursor: pointer;
+}
+
+@keyframes name{
+    50%{ transform: scale(1.4) }
+}
+
+header ul .header-name > img{
+    height: 30px;
+}
+
+.header-right > .enter,
+.header-right > .login{
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: #49a9ee;
+    cursor: pointer;
+}
+
+.header-right > .enter > a,
+.header-right > .login > a{
+    color: #49a9ee;
+}
+
+.header-right > .enter:hover,
+.header-right > .login:hover{
+    background-color: #49a9ee;
+}
+
+.header-right > .enter:hover > a,
+.header-right > .login:hover > a{
+    color: #fff;
+}
+
+
+/*登陆界面身份选择*/
+.Identitychoice{
+    width: 100%;
+    min-width: 1220px;
+    height: 550px;
+}
+.choicebox{
+    width: 1220px;
+    margin: 0 auto;
+    height: 550px;
+}
+.xuanzehezi{
+    width: 1220px;
+    height: 550px;
+    padding-top: 150px;
+}
+.loginchoice{
+    margin: 50px auto 0 auto;
+    width: 700px;
+    height: 150px;
+}
+.xuanzehezi h2{
+    text-align: center;
+}
+.gzs{
+    width: 300px;
+    height: 140px;
+    background-color: lightgray;
+    border-radius: 10px;
+    transition: 1s;
+}
+.gzs img{
+    width: 100px;
+    height: 70px;
+}
+.gzs a{
+    color: #333;
+    text-decoration: none;
+}
+.gzs:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.userimg{
+    margin-top: 35px;
+}
+.userword{
+    width: 110px;
+    height: 70px;
+    margin-top: 45px;
+}
+.userword p{
+    margin-top: 10px;
+}
+.enterprise{
+    margin-left: 100px;
+}
+
+
+
