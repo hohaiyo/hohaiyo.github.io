@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./img/logo.ico" />	
+    <link rel="shortcut icon" href="./img/logo.ico" />		
+    <link rel="stylesheet" type="text/css" href="css/particles_style.css">
+    <!-- 粒子特效css样式 -->
 	<link rel="stylesheet" type="text/css" href="css/initialize.css">
 	<!-- 清除原始样式 -->
 	<link rel="stylesheet" type="text/css" href="css/demand.css">
@@ -17,84 +19,81 @@
 	<!-- 头部 尾部 锚点样式 -->
 	<link rel="stylesheet" type="text/css" href="css/usually.css">
 	<!-- 勾选框样式 -->
-	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
-	<!-- jQuery框架 -->
-	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<!-- bootstrap框架的js -->
-	<script type="text/javascript" src="jQuery/demand.js"></script>
-	<!-- 本网站js -->
-	<script type="text/javascript" src="jQuery/header-footer.js"></script>
-	<!-- 头部 锚点 尾部js -->
-	<script type="text/javascript" src="jQuery/usually.js"></script>
-	<!-- 勾选框 -->
+
 	<title>小白-专业的大学生外包服务平台</title>
 </head>
 <body>
+	<!-- top锚点 -->
+	<div id="header-top"></div>
+	<!-- top锚点 -->
 
-	<nav class="navbar navbar-default" role="navigation">
-	    <div class="container-fluid">
-	        <div class="navbar-header">
-	            <button type="button" class="navbar-toggle" data-toggle="collapse"
-	                    data-target="#example-navbar-collapse">
-	                <span class="sr-only">切换导航</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	            </button>
-	            <a class="navbar-brand navbar-logo" href="#">
-	                <img src="./img/logo_blue.png" alt="logo">
-	            </a>
-	            <a class="navbar-brand navbar-hide" href="#">项目列表</a>
-	            <a class="navbar-brand navbar-hide" href="#">项目发布</a>
-	            <a class="navbar-brand navbar-hide" href="#">开发方</a>
-	            <a class="navbar-brand navbar-hide" href="#">收藏</a>
-	            <a class="navbar-brand navbar-hide" href="#">帮助</a>
-	        </div>
-	                                   <!--倒塌-->
-	        <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
-	            <ul class="nav navbar-nav">
-	                <li class="nav-information">
-	                    <a href="#">
-	                        <i class="iconfont icon-tongzhi"></i>
-	                    </a>
-	                </li>
-	                <li class="dropdown nav-oneself">
-	                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-	                        <i class="iconfont icon-huabanfuben1"></i>
-	                        <b class="caret"></b>
-	                    </a>
-	                    <ul class="dropdown-menu">
-	                        <li><a href="#">早上好，杨先生</a></li>
-	                        <li class="divider"></li>
-	                        <li><a href="#">
-	                            <i class="iconfont icon-geren"></i>
-	                            个人中心
-	                        </a></li>
-	                        <li class="divider"></li>
-	                        <li><a href="#">
-	                            <i class="iconfont icon-huaban-"></i>
-	                            我的开发宝
-	                        </a></li>
-	                        <li><a href="#">
-	                            <i class="iconfont icon-xiangmu"></i>
-	                            我发布的项目
-	                        </a></li>
-	                        <li><a href="#">
-	                            <i class="iconfont icon-lanzi"></i>
-	                            我的报价单
-	                        </a></li>
-	                        <li class="divider"></li>
-	                        <li><a href="#">
-	                            <i class="iconfont icon-tuichu"></i>
-	                            退出登录
-	                        </a></li>
-	                    </ul>
-	                </li>
-	            </ul>
-	        </div>
-	    </div>
-	</nav>	
-	<div class="nothing"></div>
+	<!-- 头部 -->
+	<header id="nav-white">
+		    <nav class=" navbar navbar-default" role="navigation">
+		        <div class="container-fluid">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse"
+		                        data-target="#example-navbar-collapse">
+		                    <span class="sr-only">切换导航</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand navbar-logo" href="index.html">
+		                    <img src="./img/logo_blue.png" alt="logo">
+		                </a>
+		                <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+		                <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+		                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
+		                <a class="navbar-brand navbar-hide" href="#">收藏</a>
+		                <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+		            </div>
+		            <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
+		                <ul class="nav navbar-nav">
+		                    <li class="dropdown nav-oneself">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                            <i class="iconfont icon-huabanfuben1"></i>
+		                            <b class="caret"></b>
+		                        </a>
+		                        <ul class="dropdown-menu">
+		                            <li><a href="#">早上好，杨先生</a></li>
+		                            <li class="divider"></li>
+		                            <li><a href="userinfo.html">
+		                                <i class="iconfont icon-geren"></i>
+		                                个人中心
+		                            </a></li>
+		                            <li class="divider"></li>
+		                            <li><a href="account.html">
+		                                <i class="iconfont icon-huaban-"></i>
+		                                我的账户
+		                            </a></li>
+		                            <li><a href="published-project.html">
+		                                <i class="iconfont icon-xiangmu"></i>
+		                                我发布的项目
+		                            </a></li>
+		                            <li><a href="#">
+		                                <i class="iconfont icon-lanzi"></i>
+		                                我的报价单
+		                            </a></li>
+		                            <li class="divider"></li>
+		                            <li><a href="index.html">
+		                                <i class="iconfont icon-tuichu"></i>
+		                                退出登录
+		                            </a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		    </nav>
+	</header>
+	<!-- 头部	 -->
+
+	<!-- 空盒子 顶下中间内容用 -->
+	<div class="nothing_box"></div>
+	<!-- 空盒子 顶下中间内容用 -->
+
+	<!-- 主要内容 -->
 	<div class="demand_content">
 		<!-- 左侧内容 -->
 		<div class="demand_content_left pull-left">
@@ -266,7 +265,8 @@
 
 		<!-- 右侧内容 -->
 	</div>	
-	
+	<!-- 主要内容 -->
+
 	<!-- 底部 -->
 	<footer>
 	    <div class="footer_warp">
@@ -275,7 +275,6 @@
 	        </a>
 	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
 	    </div>
-
 	</footer>
 
         <!--侧边栏-->
@@ -297,26 +296,46 @@
             </ul>
             <span></span>
         </div>	
+		
+		<div id="particles-js"></div>
+	<!-- 底部 -->
 
+	<!--侧边栏-->
+	<div class="anchor">
+	    <ul>
+	        <li class="anchor-consult">
+	            <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+	            帮助
+	            <a href="help/help.html"></a>
+	        </li>
+	        <li class="anchor-about">
+	            <i class="iconfont icon-guanyu"></i>
+	            关于我们
+	            <a href="about.html"></a>
+	        </li>
+	        <li class="anchor-top">
+	            <i class="iconfont icon-top"></i>
+	            TOP
+	            <a href="#header-top"></a>
+	        </li>
+	    </ul>
+	    <span></span>
+	</div>
+	<!-- 侧边栏 -->
 
-
-    <script type="text/javascript">
-     $(function () {
-        //勾选框
-        $(".sure-check").click(function () {
-            $(".sure-check i").toggle()
-        });
-
-    });      
-
-    window.onscroll = window.onresize= function(){
-    	var demand_right = document.getElementById('demand_content_right');
-    	var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
-    	// var demand_content=document.getElementById('demand_content');
-    	demand_right.style.top = scrollTop+'px';   	
-    } 	
-    // 右侧内容随随滚动条变换位置
-
-    </script>
+	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
+	<!-- jQuery框架 -->
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<!-- bootstrap框架的js -->
+	<script type="text/javascript" src="jQuery/demand.js"></script>
+	<!-- 本网站js -->
+	<script type="text/javascript" src="jQuery/header-footer.js"></script>
+	<!-- 头部 锚点 尾部js -->
+	<script type="text/javascript" src="jQuery/usually.js"></script>
+	<!-- 勾选框 -->
+	<script src="jQuery/particles.js"></script>
+	<!-- 粒子特效框架 -->
+	<script src="jQuery/particles_app.js"></script>
+	<!-- 粒子特效参数js文件 -->
 </body>
 </html>

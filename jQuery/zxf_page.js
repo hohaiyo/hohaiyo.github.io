@@ -52,7 +52,7 @@
 				}
 				/*尾部*/
 				obj.append('<span>'+'共'+'<b>'+pageinit.pageNum+'</b>'+'页，'+'</span>');
-				obj.append('<span>'+'到第'+'<input type="number" class="zxfinput" value="5"/>'+'页'+'</span>');
+				obj.append('<span>'+'到第'+'<input type="number" class="zxfinput" value=""/>'+'页'+'</span>');
 				obj.append('<span class="zxfokbtn">'+'确定'+'</span>');
 			}());
 		},
@@ -102,3 +102,12 @@
 		zp.init(this,pageinit);
 	}
 }(jQuery));
+
+    		//翻页
+		$(".zxf_pagediv").createPage({
+			pageNum: 30,
+			current: 1,
+			backfun: function(e) {
+				//console.log(e);//回调
+			}
+		});
