@@ -6,6 +6,7 @@ body{
 /*内容*/
 .container{
     padding: 10px 0;
+    margin-top: 70px;
 }
 
 .container > .container-title{
@@ -130,7 +131,7 @@ body{
     background-color: #dde3eb;
 }
 
-/*招募中*/
+/*招标中*/
 .list-info > .list-recruit{
     color: #71e871;
 }
@@ -215,6 +216,7 @@ body{
     position: fixed;
     top: 50%;
     left: 50%;
+    z-index: 2;
     transform: translate(-50%,-50%);
     opacity: 0;
     width: 200px;
