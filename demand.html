@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./img/logo.ico" />		
-    <link rel="stylesheet" type="text/css" href="css/particles_style.css">
-    <!-- 粒子特效css样式 -->
 	<link rel="stylesheet" type="text/css" href="css/initialize.css">
 	<!-- 清除原始样式 -->
 	<link rel="stylesheet" type="text/css" href="css/demand.css">
@@ -45,7 +43,6 @@
 		                <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
 		                <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
 		                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
-		                <a class="navbar-brand navbar-hide" href="#">收藏</a>
 		                <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
 		            </div>
 		            <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
@@ -94,7 +91,7 @@
 	<!-- 空盒子 顶下中间内容用 -->
 
 	<!-- 主要内容 -->
-	<div class="demand_content">
+	<div class="demand_content" id="demand_content">
 		<!-- 左侧内容 -->
 		<div class="demand_content_left pull-left">
 			<div class="demand_content_left_title">
@@ -139,19 +136,16 @@
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目名称</div>
 				<div class="pull-right demand_item_input">
-					<input type="text" name="" class="form-control" maxlength="30" placeholder="30字以内">
+					<input type="text" name="" class="form-control" maxlength="30" placeholder="30字以内"  id="demand_name">
+					<!-- <span class="demand_warm">请填写项目名称</span> -->
 				</div>
 			</div>
 
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目预算</div>
 				<div class="pull-right demand_item_input_two">
-					<input type="text" name="" class="form-control" placeholder="个人项目金额不低于50000元">
+					<input type="text" name="" class="form-control" placeholder="个人项目金额不低于50000元" id="demand_budget">
 					<span>元</span>
-					<div class="usually_checkbox usually_checkbox_two" onclick="choose_index(this)">
-						<img src="img/yes.png" class="yes_img" id="yes_img">
-					</div>
-					<span>可议价</span>
 				</div>
 			</div>
 			<div class="under_hint">
@@ -164,7 +158,7 @@
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">期望周期</div>
 				<div class="pull-right demand_item_input_two">
-					<input type="text" name="" class="form-control" placeholder="请输入交付周期">
+					<input type="text" name="" class="form-control" placeholder="请输入交付周期" id="demand_day">
 					<span>天</span>
 				</div>
 			</div>
@@ -172,7 +166,7 @@
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目介绍</div>
 				<div class="pull-right demand_item_input">
-					<textarea type="textarea" rows="4" placeholder="请尽量详细描述您的项目，以吸引更多有相关开发经验的开发者报名（20 个字符以上）"></textarea>
+					<textarea type="textarea" rows="4" placeholder="请尽量详细描述您的项目，以吸引更多有相关开发经验的开发者报名（20 个字符以上）" id="demand_introduce"></textarea>
 				</div>
 			</div>
 
@@ -198,7 +192,7 @@
 			<div  class="demand_content_left_item">
 				<div class="pull-left demand_item_name">招标要求</div>
 				<div class="pull-right demand_item_input">
-					<textarea type="textarea" rows="4" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求"></textarea>
+					<textarea type="textarea" rows="4" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" id="demand_call_for"></textarea>
 				</div>
 			</div>
 
@@ -207,32 +201,32 @@
 				<div class=" pull-right demand_item_input_three">
 					<div>
 						<p>您的姓名</p>
-						<input type="text" name="" class="form-control" placeholder="姓名">
+						<input type="text" name="" class="form-control" placeholder="姓名" id="demand_user_name">
 					</div>
 					<div>
 						<p>您的邮箱</p>
-						<input type="text" name="" class="form-control" placeholder="邮箱">
+						<input type="text" name="" class="form-control" placeholder="邮箱" id="demand_user_email">
 					</div>
 					<div>
 						<p>您的手机号码</p>
-						<input type="text" name="" class="form-control" placeholder="手机号码">
+						<input type="text" name="" class="form-control" placeholder="手机号码" maxlength="11" id="demand_user_tel">
 					</div>
 					<div class="security_code" id="security_code">
 						<p>验证码</p>
-							<input type="text" name="" class="security_code_input" placeholder="验证码" maxlength="10" id="security_code_input"><button id="security_code_btn">发送验证</button>
+							<input type="text" name="" class="security_code_input" placeholder="验证码" maxlength="10" id="security_code_input"><input type="button" class="security_code_button_input" value="发送验证" id="security_code_btn" onclick="settime(this)">
 					</div>												
 				</div>
 			</div>
 
 			<div class="demand_agree demand_content_left_item">
 				<div class="demand_clause">
-					<div class="usually_checkbox" onclick="choose_index(this)">
+					<div class="usually_checkbox" onclick="choose_index(this)" id="demand_checkbox">
 						<img src="img/yes.png" class="yes_img" id="yes_img">
 					</div>
 					<span>我同意遵守《小白外包用户权责条款》</span>				
 				</div>
 				<div class="demand_issue">
-					<a href="#">立即发布</a>
+					<a href="find_demand.html" id="demand_submit">立即发布</a>
 				</div>
 
 			</div>
@@ -277,8 +271,8 @@
 	    </div>
 	</footer>
 
-        <!--侧边栏-->
-        <div class="anchor">
+    <!--侧边栏-->
+    <div class="anchor">
             <ul>
                 <li class="anchor-consult">
                     <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
@@ -295,9 +289,8 @@
                 </li>
             </ul>
             <span></span>
-        </div>	
+    </div>	
 		
-		<div id="particles-js"></div>
 	<!-- 底部 -->
 
 	<!--侧边栏-->
@@ -333,9 +326,5 @@
 	<!-- 头部 锚点 尾部js -->
 	<script type="text/javascript" src="jQuery/usually.js"></script>
 	<!-- 勾选框 -->
-	<script src="jQuery/particles.js"></script>
-	<!-- 粒子特效框架 -->
-	<script src="jQuery/particles_app.js"></script>
-	<!-- 粒子特效参数js文件 -->
 </body>
 </html>

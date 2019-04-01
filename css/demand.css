@@ -189,7 +189,7 @@ textarea:-ms-input-placeholder {
 	width: 50%;
 }
 
-.security_code>button{
+.security_code_button_input{
 	width: 49%;
 	background-color: white;
 	border-top-right-radius: 5px;
@@ -250,6 +250,16 @@ textarea:-ms-input-placeholder {
 	text-decoration: none;
 	color: white;
 }
+
+#demand_submit:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#demand_submit:active{
+	text-decoration: none;
+	color: white;
+}
 /*左侧内容*/
 
 
@@ -292,8 +302,6 @@ textarea:-ms-input-placeholder {
 .demand_content_right_more{
 	padding: 10px 30px;	
 }
-
-
 
 /*右侧内容*/
 

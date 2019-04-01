@@ -83,7 +83,6 @@
 .find_demand_content_left_form>label{
 	width: 230px;
 	height: 30px;
-	/*line-height: 30px;*/
 	padding-left: 10px;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 4px;
@@ -106,6 +105,7 @@
 /*开头的搜索*/
 
 .find_demand_content_left_box_item{
+	min-width: 600px;
 	width: 100%;
 	overflow: hidden;
 	padding-top: 20px;
@@ -137,7 +137,8 @@
 }
 
 .find_demand_item_p{
-	width: 100%;
+	/*width: 100%;*/
+	min-width: 600px;
 	overflow: hidden;
 }
 
