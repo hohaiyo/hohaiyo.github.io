@@ -12,7 +12,8 @@ $(document).ready(function(){
 	//验证码按钮
 	$('#security_code_input').blur(function(){
 		$('#security_code_btn').css({
-			'border-color': ''
+			'border-color': '',
+			'box-shadow':''
 		});	
 		$(this).css({
 			'border-color':'#ccc',
@@ -32,4 +33,12 @@ $(document).ready(function(){
 		});		
 	});
 });
+
+    window.onscroll = window.onresize= function(){
+    	var demand_right = document.getElementById('demand_content_right');
+    	var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+    	// var demand_content=document.getElementById('demand_content');
+    	demand_right.style.top = scrollTop+'px';   	
+    } 	
+    // 右侧内容随随滚动条变换位置
 //单项选择项目类型

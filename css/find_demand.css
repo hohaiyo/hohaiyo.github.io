@@ -19,7 +19,14 @@
 	overflow: hidden;
 	padding-bottom: 10px;
 	margin-top: 10px;
+}
+
+.item_other_border-bottom{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.item_other_margin{
+	margin-top: 30px;
 }
 
 .find_demand_content_left_item_type_two{
@@ -68,18 +75,19 @@
 /*左侧筛选*/
 
 /*左侧主要内容*/
-.find_demand_content_left_form{
-	padding-bottom: 10px;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+.find_demand_content_other_padding{
+	padding-bottom: 0px;
 }
 
 .find_demand_content_left_form>label{
 	width: 230px;
 	height: 30px;
-	line-height: 30px;
+	/*line-height: 30px;*/
 	padding-left: 10px;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 4px;
+	position: relative;
 }
 
 .find_demand_content_left_form>label input{
@@ -90,6 +98,9 @@
 }
 
 .find_demand_content_left_form>label span{	
+	position: absolute;
+	top: 5px;
+	right: 5px;
 	cursor: pointer;
 }
 /*开头的搜索*/
@@ -151,8 +162,8 @@
 	line-height: 20px;
 	text-align: center;
 	font-size: 14px;
-	color: green;
-	border: 1px solid green;
+	color: #71e871;
+	border: 1px solid #71e871;
 	border-radius: 4px;
 }
 
@@ -168,8 +179,8 @@
 	line-height: 20px;
 	text-align: center;
 	font-size: 14px;
-	color: gray;
-	border: 1px solid gray;
+	color: #70b2ea;
+	border: 1px solid #70b2ea;
 	border-radius: 4px;
 }
 
@@ -185,8 +196,8 @@
 	line-height: 20px;
 	text-align: center;
 	font-size: 14px;
-	color: dodgerblue;
-	border: 1px solid dodgerblue;
+	color: #fa6868;
+	border: 1px solid #fa6868;
 	border-radius: 4px;
 }
 
@@ -201,6 +212,11 @@
 
 .find_demand_item_price span{
 	margin: 0 2px;
+}
+
+.find_demand_neg{
+	margin-right: 20px;
+	color: #8796a8;
 }
 /*左侧主要内容*/
 /*左侧*/
