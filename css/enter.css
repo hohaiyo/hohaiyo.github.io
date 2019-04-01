@@ -42,7 +42,7 @@ a{
 
 }
 .enter-content{
-	width:300px;
+	/* width:300px;	 */
 	height:auto;
 	margin:0 auto;
 	padding: 30px 25px 50px 25px;
@@ -68,8 +68,13 @@ a{
 .enter-ul{
 	width: 100%;
 	margin:10px 0;
-	display:flex;
-	justify-content:space-between;
+	overflow:hidden;
+}
+.enter-ul li:first-child{
+	float:left;
+}
+.enter-ul li:last-child{
+	float:right;
 }
 
 .sure-check{

@@ -233,13 +233,10 @@ form{
 	
 }
 .dropdown-div i{
-	display: inline-block;
-    width: 17px;
-    height: 17px;
-    border: 1px solid #cad3de;
-    border-radius: 2px;
-    margin-right: 5px;
-    vertical-align: middle;
+	position:absolute;
+	top:-5px;
+	color:#fff;
+	
 }
 .dropdown-div li{
 	list-style:none;
@@ -344,5 +341,21 @@ form{
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+
+/* 勾选按钮 */
+.dropdown-div span{
+	position:relative;
+	display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #cad3de;
+    border-radius: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+	/* background: #108ee9; */
+	/* background: #fff; */
+    
 }
 
