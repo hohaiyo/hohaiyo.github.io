@@ -1,6 +1,4 @@
 $(function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$(window).scroll(function(){
 		$(".anchor").css("top",($(window).height() - $('.anchor').outerHeight())/2 + $(document).scrollTop())
 	})
@@ -21,28 +19,4 @@ $(function () {
 		});
 		$(this).removeClass("hover");
 	});
-=======
-=======
-    $(window).scroll(function(){
-        $(".anchor").css("top",($(window).height() - $('.anchor').outerHeight())/2 + $(document).scrollTop())
-    })
-
->>>>>>> wyj
-    $(".anchor li").mouseover(function () {
-        $(this).css({
-            left:'-100px',
-            width: "150px",
-            backgroundColor: "rgba(0,0,0,0.7)"
-        });
-        $(this).addClass("hover");
-    });
-    $(".anchor li").mouseout(function(){
-        $(this).css({
-            left:"0",
-            width: "50px",
-            backgroundColor: "rgba(0,0,0,0.3)"
-        });
-        $(this).removeClass("hover");
-    });
->>>>>>> zrq
-});
+})

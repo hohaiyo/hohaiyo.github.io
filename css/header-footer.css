@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 /*头部导航栏*/
->>>>>>> wyj
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
@@ -9,14 +6,8 @@
     border-radius: 0;
     width: 100%;
     min-width: 700px;
-<<<<<<< HEAD
-    position: absolute;
-    top: 0;
-    box-shadow: none;
-=======
     position: fixed;
     top: 0;
->>>>>>> wyj
     z-index:2992;
     padding: 2px 0;
 }
@@ -122,11 +113,7 @@
     color:#ccc;
 }
 .navbar-default .navbar-nav>li>a:hover{
-<<<<<<< HEAD
-color:#ccc;
-=======
     color:#ccc;
->>>>>>> wyj
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -179,11 +166,7 @@ color:#ccc;
     color: #424242;
     background-color: transparent;
 }
-<<<<<<< HEAD
-=======
 
-
->>>>>>> wyj
 
 /*底部*/
 footer{
