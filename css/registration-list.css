@@ -1,0 +1,297 @@
+body{
+    background-color: #F0F2F5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/*步骤*/
+.step-bg{
+    margin-top: 74px;
+    background-color: #F9F9FB;
+}
+
+.step-bg > .step{
+    width: 1160px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.step > div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*步骤里的所有 i标签*/
+.step > div > i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #49a9ee;
+    color: white;
+    margin-right: 8px;
+}
+
+/*所有线*/
+.step > div > .line{
+    display: inline-block;
+    width: 250px;
+    height: 2px;
+    margin-left: 8px;
+    background-color: #49a9ee;
+    vertical-align: middle;
+    transform: translate(0,-50%);
+    position: relative;
+}
+
+.step > div > .line::before,
+.step > div > .line::after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: -2px;
+}
+
+.step > div > .line::after{
+    right: 0;
+}
+
+/*灰色的线*/
+/*注意权重关系*/
+.step > .step-recruit > .line,
+.step > .step-develop > .line{
+    background-color: #E1E7EF;
+}
+
+/*灰色的图标*/
+.step > .step-develop > i,
+.step > .step-finish > i{
+    background-color: #ccc;
+}
+
+/*灰色的字*/
+.step > .step-develop > span,
+.step > .step-finish > span{
+    color: #ccc;
+    font-weight: bold;
+}
+
+/*内容*/
+.container{
+    padding: 10px 0;
+}
+
+.container > .container-title{
+    color: #e84d60;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 0 0 15px 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+}
+
+.container > .main{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px #e9e9e9;
+    padding-bottom: 200px;
+}
+
+/*报名列表*/
+.main > .main-top{
+    padding: 20px 30px;
+    position: relative;
+    border-bottom: 1px solid #E1E7EF;
+}
+
+.main-top > h2,
+.main-top > .developer{
+    display: inline-block;
+    margin: 0;
+}
+
+.main-top > h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.developer{
+    padding: 5px 25px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.developer:hover ~ .developer-pulldown,
+.developer-pulldown:hover{
+    display: block;
+}
+
+.developer-pulldown{
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    z-index: 2;
+    padding: 5px 0;
+    width: 126px;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    line-height: 34px;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px #e9e9e9;
+    display: none;
+}
+
+.developer-pulldown::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 15px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #49a9ee;
+}
+
+.developer-pulldown > li{
+    width: 100%;
+}
+
+.developer-pulldown > li:hover{
+    transition: 400ms;
+    background-color: rgba(66, 137, 219, 0.1);
+    color: #108ee9;
+}
+
+.main > .main-bottom{
+    padding: 25px;
+    border: 1px solid #E1E7EF;
+    margin: 34px;
+}
+
+/*底部左侧*/
+.main > .main-bottom > .bottom-left{
+    display: inline-block;
+    width: 70%;
+    border-right: 1px solid #E1E7EF;
+}
+
+/*头像*/
+.bottom-left > .head-portrait{
+    width: 100px;
+    float: left;
+    margin-right: 25px;
+}
+
+/*个人信息*/
+.bottom-left > .oneself-info{
+    float: left;
+}
+
+.oneself-info > .item{
+    padding: 3px 0;
+}
+
+.oneself-info > .item > .infos{
+    margin-right: 4px;
+}
+
+/*第一行*/
+.oneself-info > .item1{
+    padding-bottom: 8px;
+}
+
+.oneself-info > .item1 > h3{
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.oneself-info > .item1 > i{
+    display: inline-block;
+    margin-left: 6px;
+    color: #49a9ee;
+    transform: translate(0,-3px);
+}
+
+/*第二行*/
+.oneself-info > .item2{
+    padding-bottom: 16px;
+}
+
+.oneself-info > .item2 > span{
+    padding: 0 5px;
+    border-right: 2px solid #ccc;
+}
+
+.oneself-info > .item2 > span:first-child{
+    padding-left: 0;
+}
+
+.oneself-info > .item2 > .marks{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.oneself-info > .item2 > i{
+    color: #f5d752;
+}
+
+/*底部右侧*/
+.main-bottom > .bottom-right{
+    padding: 73px 0;
+    display: block;
+    margin: auto 0;
+    width: 315px;
+    text-align:center;
+}
+
+.bottom-right > i,
+.bottom-right > button{
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.bottom-right > i{
+    padding: 6px 16px;
+    margin-left: 30px;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid #E1E7EF;
+    color: #ccc;
+}
+
+.bottom-right > button{
+    padding: 6px 15px;
+}
+
+.bottom-right > .btn-rejuect{
+    color: #ECA189;
+    background-color: #fff;
+    border: 1px solid #ECA189;
+}
+
+.bottom-right > .btn-agree{
+    color: white;
+    background-color: #49a9ee;
+    border: 1px solid #49a9ee;
+}
+
+
+/*底部*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
