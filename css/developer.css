@@ -1,6 +1,21 @@
 body{
     height: 2000px;
 }
+a{
+    color:#ccc;
+}
+a:hover{
+    text-decoration: none;
+}
+.gaine{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear::after{
+    display: block;
+    content: "";
+    clear: both;
+}
 .banner{
     height: 640px;
     background: #000;
@@ -30,8 +45,228 @@ body{
 
 
 
+/* 轮播 */
+.lunbo,.lunbo2,.lunbo3{
+    width: 100%;
+    height: 640px;
+    padding-top: 10%;
+    background: url(../img/banner-kaifa.jpg) center/cover no-repeat;
+}
+.lunbo2{
+    background: url(../img/banner-jiaru.jpg) center/cover no-repeat;
+}
+/* .lunbo3{
+    background: url(../img/yangban2.0.jpg) center/cover no-repeat;
+} */
+.navphoto1{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+.navphoto1 p:nth-child(2){
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn-list a{
+    margin: 53px auto 0;
+    border: none;
+    width: 193px;
+    line-height: 49px;
+    display: inline-block;
+    height: 49px;
+    text-align: center;
+    background-color: #4187DB;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-list a:nth-child(2){
+    background: 0 0;
+    border: 1px solid #FFF;
+    margin-left: 40px;
+}
+.btn-list a:hover{
+    background-color: #fff;
+    color:#4187DB;
+    transition: 0.5s;
+}
+.navphoto2{
+    width: 100%;
+    height: 640px;
+}
+.navphoto3{
+    width: 100%;
+    height: 640px;
+}
+.navigation,.navigation:hover{
+    background-image: none !important;
+}
+.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right{
+    font-size: 50px;
+}
+
+/* 四步走 */
+.step{
+    text-align: center;
+}
+.steps{
+    margin-top:20px;
+}
+.step-title{
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #ccc;
+}
+.step-title-1{
+    margin-right: 3px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.step-title-2{
+    font-size: 20px;
+    line-height: 24px;
+}
+.step-desc{
+    margin-top: 10px;
+}
+.step-desc>p{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.demand-box{
+    margin-top: 80px;
+}
+.demand{
+    display: block;
+    width: 200px;
+    padding: 12px 50px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background: #3366CC;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.demand:hover{
+    color:#fff;
+}
+.main{
+    padding-bottom: 80px;
+}
 
 
+/* 排行榜 */
+.ranking-box{
+    padding-top: 80px;
+    background: #f6f6f6;
+}
+.ranking-main{
+    padding-bottom: 100px;
+}
+.ranking-top{
+    text-align: center;
+}
+.ranking-title{
+    text-align: center;
+}
+.conceal{
+    display: none;
+}
+.ranking-title>li{
+    cursor: pointer;
+}
+
+.income,.comment,.strive{
+    padding: 3px 5px;
+    margin: 15px 15px;
+}
+
+.income>a:hover,.comment>a:hover,.strive>a:hover{
+    color:#424242;
+}
+.ranking{
+    background: #fff;
+    border-radius: 5px;
+    padding:10px;
+    margin-top: 15px;
+}
+.red{
+    color: #CC3300;
+}
+.ranking>.ranking-head>div{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    overflow: hidden;
+    padding: 0;
+}
+.ranking-head>div>img{
+    height: 60px;
+}
+.ranking>li{
+    float: left;
+}
+.ranking>li>h3{
+    color: #ccc;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 80px;
+    padding: 0 20px 0 20px;
+}
+.ranking-head{
+    padding: 10px 20px 10px 10px;
+}
+.studio-message{
+    font-size: 12px;
+}
+.studio-message>p{
+    margin-top: 5px;
+}
+.gray{
+    color:#ccc;
+}
+.studio-id{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.fulfill{
+    margin-left: 20px;
+}
+.ranking>li>.years{
+    padding: 0 20px 0 10px;
+}
+
+/* 邀请 */
+.invite{
+    display: inline-block;
+    margin-left: 100px;
+    padding: 1px 15px;
+    border: 1px solid #FFC125;
+    border-radius: 3px;
+    color: #FFC125;
+    cursor: pointer;
+}
+.invite:hover{
+    color: #FFC125;
+}
+.invite>i{
+    color: #FFC125;
+    vertical-align:-2px;
+}
+
+/* 星星 */
+.stars{
+    color: #FFD700;
+}
+.stars>i{
+    margin-left: -5px;
+}
 
 
 
