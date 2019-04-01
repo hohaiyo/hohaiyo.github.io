@@ -31,5 +31,23 @@ $(function(){
 		$('.left-ul a').css('background','#f0f2f5').eq($(this).index()).css('background','#fff');	
 		
 	})
+	
+	//勾选框
+		// $('.dropdown-div span').click(function(){
+			// var n=0;
+			// n++;
+			// if(n%2==0){
+				
+				// $(this).eq($(this).index()).css('background','#108ee9')
+				// console.log(1);
+			// }else{
+				// $(this).eq($(this).index()).css('background','#fff')
+				// console.log(2);
+			// }
+				
+		
+		// })
+	
+	
 		
 })
