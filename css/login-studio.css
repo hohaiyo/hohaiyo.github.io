@@ -140,6 +140,10 @@ form > .form-verify{
     position: relative;
 }
 
+form > .form-verify > .input-disabled{
+    cursor: not-allowed;
+}
+
 form > .form-verify > button{
     position: absolute;
     top: 0;

@@ -59,11 +59,11 @@
                 <i class="iconfont icon-youxiang"></i>
                 <input class="form-control" type="text" maxlength="11" placeholder="请输入您的邮箱号">
             </div>
-            <div class="form-group form-password form-img">
+            <div class="form-group form-password form-img form-password1">
                 <i class="iconfont icon-mima"></i>
                 <input class="form-control" type="password" maxlength="16" placeholder="请输入您的密码">
             </div>
-            <div class="form-group form-password">
+            <div class="form-group form-password form-password2">
                 <input class="form-control" type="password" maxlength="16" placeholder="请确认您的密码">
             </div>
             <div class="form-group form-verify">
@@ -93,27 +93,6 @@
                 <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
             </div>
         </footer>
-        <!--侧边栏-->
-        <!--<div class="anchor">-->
-            <!--<ul>-->
-                <!--<li class="anchor-consult">-->
-                    <!--<i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>-->
-                    <!--帮助-->
-                    <!--<a href="help/help.html"></a>-->
-                <!--</li>-->
-                <!--<li class="anchor-about">-->
-                    <!--<i class="iconfont icon-guanyu"></i>-->
-                    <!--关于我们-->
-                    <!--<a href="about.html"></a>-->
-                <!--</li>-->
-                <!--<li class="anchor-top">-->
-                    <!--<i class="iconfont icon-top"></i>-->
-                    <!--TOP-->
-                    <!--<a href="#header-top"></a>-->
-                <!--</li>-->
-            <!--</ul>-->
-            <!--<span></span>-->
-        <!--</div>-->
     </div>
 
 
@@ -132,9 +111,11 @@
         //验证码
         $(window).mousemove(function () {
             if($(".form-number > input").val().length == 11 && $(".send").text() == "发送验证码"){
-                $(".send").removeAttr("disabled").removeClass("send-disabled")
+                $(".send").removeAttr("disabled").removeClass("send-disabled");
+                $(".form-verify > input").removeAttr("disabled").removeClass("input-disabled");
             }else{
                 $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
+                $(".form-verify > input").attr( "disabled","disabled" ).addClass( "input-disabled" );
             }
         });
 
@@ -166,11 +147,12 @@
             var enterprisename = $(".form-enterprisename > input");
             var username = $(".form-username > input");
             var number = $(".form-number > input");
-            var password = $(".form-password > input");
+            var password1 = $(".form-password1 > input");
+            var password2 = $(".form-password2 > input");
             var verify = $(".form-verify > input");
             var check = $(".sure-check > i").css("display");
-            var arr = [enterprisename, username, number, password, verify];
-            if( enterprisename.val().length == 0 || username.val().length == 0 || number.val().length == 0 || password.val().length == 0 || verify.val().length == 0){
+            var arr = [enterprisename, username, number, password1, password2, verify];
+            if( enterprisename.val().length == 0 || username.val().length == 0 || number.val().length == 0 || password1.val().length == 0 || password2.val().length == 0 || verify.val().length == 0){
                 for( var i = 0; i < arr.length; i++){
                     if(arr[i].val().length != 0){
                         arr[i].css("border","1px solid #49a9ee")
@@ -182,6 +164,7 @@
                 for(var x = 0; x < arr.length; x++){
                     arr[x].css("border","1px solid #49a9ee")
                 }
+                location.href = "enter.html";
             };
             if(check == "none"){
                 $(".sure-check").css("border","2px solid red")

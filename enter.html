@@ -60,7 +60,7 @@
 						</li>
 						<li><a href="#">找回密码</a></li>
 					</ul>
-					<input type="button" class="enter-login" value="登陆 ">
+					<input type="button" class="enter-login" value="登陆">
 				</div>
 			</div>	
 		</div>
@@ -77,7 +77,22 @@
 	</footer>
 	
 	
+	<script>
+		$(function(){
+			$(".top-enter").on("click",function(){
+				location.href = "login.html";
+			});
 
+			$(".enter-login").on("click",function(){
+				if($(".enter-user").val().length == 0 && $(".enter-pwd").val().length == 0){
+					$(".enter-user").css("border","2px solid red")
+					$(".enter-pwd").css("border","2px solid red")
+				}else{
+					location.href = "index.html";
+				}
+			})
+		})
+	</script>
 </body>
 </html>
 	

@@ -15,21 +15,6 @@ a:hover{
     text-decoration: none;
 }
 
-@media screen and (min-width: 770px){
-    form input{
-        width: 82%;
-    }
-    form .form-login , form .form-return{
-        margin-left: 80px;
-        width: 83%;
-    }
-    .verify-send{
-        right: 0;
-    }
-    .container{
-        padding-bottom: 280px;
-        /*padding-bottom: 230px;*/
-    }
 /*大盒子*/
 .container{
     min-width: 1000px;
@@ -153,6 +138,10 @@ form > .form-img > i{
 form > .form-verify{
     box-sizing: border-box;
     position: relative;
+}
+
+form > .form-verify > .input-disabled{
+    cursor: not-allowed;
 }
 
 form > .form-verify > button{
