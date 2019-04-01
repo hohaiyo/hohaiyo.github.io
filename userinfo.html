@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_dgbb2bktimj.css">
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- 当前页面的样式 建议在最上面 -->
+    <!-- 当前页面的css样式 建议在最上面 -->
     <link rel="stylesheet" href="css/userinfo.css">
     <!-- 网页标题小图标 -->
     <link rel="shortcut icon" href="./img/logo.ico" />
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="./jQuery/jquery-1.12.4.js"></script>
+    <!-- 当前页面的js样式 -->
+    <script src="jQuery/userinfo.js"></script>
     <!-- bootstrap的js文件 -->
     <!-- <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
     <!-- 地市区三级联动选择框 -->
@@ -37,11 +39,10 @@
             </div>
             <div class="top-navbox-list fl clearfloat">
                 <ul>
-                    <li><a href="###">列表项目</a></li>
-                    <li><a href="###">项目发布</a></li>
-                    <li><a href="###">开发方</a></li>
-                    <li><a href="###">收藏</a></li>
-                    <li><a href="###">帮助</a></li>
+                    <li><a href="find_demand.html">列表项目</a></li>
+                    <li><a href="demand.html">项目发布</a></li>
+                    <li><a href="developer.html">开发方</a></li>
+                    <li><a href="help/help.html">帮助</a></li>
                 </ul>
             </div>
             <div class="fr clearfloat top-navbox-user">
@@ -52,14 +53,24 @@
                     <li class="user-top">
                         <i class="iconfont icon-huabanfuben1"></i>
                         <i class="iconfont icon-xiangxia"></i>
-                        <ul class="top-navbox-drop-down">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-word"><a href="javascript:;">早上好，杨先生</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-word"><a href="userinfo.html"><i
+                                            class="iconfont icon-geren"></i>　个人中心</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-word"><a href="account.html"><i
+                                            class="iconfont icon-huaban-">　我的开发宝</i></a></li>
+                                <li class="dropdown-word"><a href="published-project.html"><i
+                                            class="iconfont icon-xiangmu"></i>　我发布的项目</a></li>
+                                <li class="dropdown-word"><a href="businessscope.html"><i class="iconfont icon-lanzi"></i>　广告位购买</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-word"><a href="index.html"><i
+                                            class="iconfont icon-tuichu"></i>　退出登陆</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -79,16 +90,16 @@
                                         <span>基本信息</span>
                                     </li>
                                     <li class="list-item activied">
-                                        <a href="###" class="nav-link">
+                                        <a href="userinfo.html" class="nav-link">
                                             <i class="iconfont icon-user11"></i>
                                             <span>账户信息</span>
                                             <i class="iconfont icon-gou"></i>
                                         </a>
                                     </li>
                                     <li class="list-item ">
-                                        <a href="###" class="nav-link">
+                                        <a href="authentication.html" class="nav-link">
                                             <i class="iconfont icon-shezhi-tianchong"></i>
-                                            <span>小白认证</span>
+                                            <span>实名认证</span>
                                             <i class="iconfont icon-gou"></i>
                                         </a>
                                     </li>
@@ -97,15 +108,15 @@
                                     <li class="list-header border-radius-top">
                                         <span>开发者信息</span>
                                     </li>
-                                    <li class="list-item">
-                                        <a href="###" class="nav-link">
+                                    <!-- <li class="list-item">
+                                        <a href="businessscope.html" class="nav-link">
                                             <i class="iconfont icon-fanwei"></i>
                                             <span>业务范围</span>
                                             <i class="iconfont icon-gou"></i>
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="list-item ">
-                                        <a href="###" class="nav-link">
+                                        <a href="Successfulcases.html" class="nav-link">
                                             <i class="iconfont icon-anli"></i>
                                             <span>成功案例</span>
                                             <i class="iconfont icon-gou"></i>
@@ -271,7 +282,7 @@
             <div class="fl clearfloat">
                 <img src='./img/logo1.02.png' alt="">
             </div>
-            <div class="fr clearfloat">
+            <div class="fr clearfloat footer-copy">
                 Copyright &copy; 2014-2020
             </div>
         </div>
@@ -294,11 +305,17 @@
                 <a href="#header-top"></a>
             </li>
         </ul>
-        <span></span>
+        <!-- <span></span> -->
     </div>
     <!-- 结束 -->
 </body>
-<script>
+<!-- <script>
+    //下拉菜单
+    $('.user-top').click(
+        function () {
+            $('.dropdown').toggle();
+        }
+    )
     //头像hover效果
     $('#headIcon').hover(
         function () {
@@ -364,6 +381,6 @@
         $('#personform-now').css('display', 'block');
         $('#personform-set').css('display', 'none');
     })
-</script>
+</script> -->
 
 </html>

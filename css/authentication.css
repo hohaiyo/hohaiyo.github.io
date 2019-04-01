@@ -1,0 +1,99 @@
+.right-content-mian-top h3{
+    font-weight: 500;
+    font-size: 18px;
+    height: 31px;
+}
+.right-content-mian-top hr{
+    border: none;
+    border-top: 1px solid hsla(212,9%,63%,.2);
+    margin: 11px 0 21px 0;
+}
+.right-content-mian-tips{
+    height: 42px;
+    margin-bottom: 28px;
+}
+.right-content-mian-tips p{
+    color: #8796a8;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.right-content-mian-tips a{
+    color: #08c;
+}
+.right-content-mian-form{
+    height: 718px;
+}
+.right-content-mian-form-idcard{
+    height: 40px;
+    width: 582px;
+    margin: 28px 0;
+}
+.right-content-mian-form-idcard label{
+    width: 116px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: right;
+    margin-right: 15px;
+}
+.right-content-mian-form-idcard input{
+    width: 194px;
+    height: 20px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cad3de;
+}
+.right-content-mian-form-statement{
+    width: 540px;
+    height: 367px;
+    padding: 21px;
+    margin: 21px 0;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+}
+.right-content-mian-form-statement h2{
+    text-align: center;
+    font-weight: 400;
+}
+.right-content-mian-form-statement p{
+    margin-bottom: 5px;
+}
+.right-content-mian-form-statement br{
+    height: 16px;;
+}
+.indent{
+    text-indent: 2em;
+}
+.right-content-mian-form-check{
+    height: 21px;
+    margin: 14px 0;
+}
+.right-content-mian-form-check input{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.right-content-mian-form-check span a{
+    color: #08c;
+}
+.right-content-mian-form-submit{
+    height: 40px;
+    margin: 28px 0;
+}
+.right-content-mian-form-submit button{
+    width: 86px;
+    height: 40px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: 1px solid #08c;
+    background-color: #08c;
+    color: #fff;  
+    outline: none; 
+}
+.not-allowed{
+    cursor: not-allowed;
+}
+.pointer{
+    cursor: pointer;
+}
