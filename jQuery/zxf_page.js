@@ -11,23 +11,24 @@
 				obj.empty();
 				/*上一页*/
 				if (pageinit.current > 1) {
-					obj.append('<a href="javascript:;" class="prebtn">上一页</a>');
+					obj.append('<a href="javascript:;" class="prebtn"><i class="iconfont icon-fanhui-left"></i></a>');
 				} else{
 					obj.remove('.prevPage');
-					obj.append('<span class="disabled">上一页</span>');
+					obj.append('<span class="disabled"><i class="iconfont icon-fanhui-left"></i></span>');
 				}
 				/*中间页*/
-				if (pageinit.current >4 && pageinit.pageNum > 4) {
+				if (pageinit.current >3 && pageinit.pageNum > 3) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
-					obj.append('<a href="javascript:;" class="zxfPagenum">'+2+'</a>');
+					// obj.append('<a href="javascript:;" class="zxfPagenum">'+2+'</a>');
 					obj.append('<span>...</span>');
 				}
-				if (pageinit.current >4 && pageinit.current <= pageinit.pageNum-5) {
-					var start  = pageinit.current - 2,end = pageinit.current + 2;
-				}else if(pageinit.current >4 && pageinit.current > pageinit.pageNum-5){
-					var start  = pageinit.pageNum - 4,end = pageinit.pageNum;
-				}else{
-					var start = 1,end = 9;
+				if (pageinit.current >3 && pageinit.current <= pageinit.pageNum-3) {
+					var start  = pageinit.current - 1,end = pageinit.current + 1;
+				}else if(pageinit.current >3 && pageinit.current > pageinit.pageNum-3){
+					var start  = pageinit.pageNum - 3,end = pageinit.pageNum;
+				}
+				else{
+					var start = 1,end = 4;
 				}
 				for (;start <= end;start++) {
 					if (start <= pageinit.pageNum && start >=1) {
@@ -42,13 +43,14 @@
 				}
 				if (end < pageinit.pageNum) {
 					obj.append('<span>...</span>');
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
 				/*下一页*/
 				if (pageinit.current >= pageinit.pageNum) {
 					obj.remove('.nextbtn');
-					obj.append('<span class="disabled">下一页</span>');
+					obj.append('<span class="disabled"><i class="iconfont icon-fanhui-copy"></i></span>');
 				} else{
-					obj.append('<a href="javascript:;" class="nextbtn">下一页</a>');
+					obj.append('<a href="javascript:;" class="nextbtn"><i class="iconfont icon-fanhui-copy"></i></a>');
 				}
 				/*尾部*/
 				obj.append('<span>'+'共'+'<b>'+pageinit.pageNum+'</b>'+'页，'+'</span>');
@@ -105,7 +107,7 @@
 
     		//翻页
 		$(".zxf_pagediv").createPage({
-			pageNum: 30,
+			pageNum: 20,
 			current: 1,
 			backfun: function(e) {
 				//console.log(e);//回调
