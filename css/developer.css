@@ -1,6 +1,3 @@
-body{
-    height: 2000px;
-}
 a{
     color:#ccc;
 }
@@ -269,72 +266,79 @@ a:hover{
 }
 
 
-
-
-
-
-
-
-/* 侧边 */
-.anchor{
-    position: fixed;
-    right: 10px;
-    top: 50%;
-    transform: translate(0,-50%);
-    border-radius: 8px 0 0 8px;
-    z-index: 999;
-}
-
-.anchor > ul{
-    position: relative;
-    width: 40px;
-    height: 150px;
-    margin: 0;
-}
-
-.anchor > ul > li{
-    position: absolute;
-    left: 0;
-    font-size: 16px;
-    background-color: rgba(0,0,0,0.3);
+.bottom1{
+    width: 100%;
+    height: 325px;
     color: #fff;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    padding-left: 16px;
-    transition: 300ms;
-    cursor: pointer;
+    text-align: center;
+    background-color: #2b3747;
+    display: table;
 }
-
-.anchor > ul > li > i{
-    display: inline-block;
-    margin-right: 15px;
+.bottom1-1{
+    width: 410px;
+    margin: 0 auto;
+    margin-top: 80px;
+    vertical-align: middle;
+}
+.bottom1-1>p{
+    font-size: 30px;
+    margin-bottom: 40px;
+    line-height: 46px;
+}
+.seek{
+    border-radius: 5px;
+    background: #fff;
+}
+.seek>i{
+    padding-left:2px;
     font-size: 22px;
+    font-weight: 600;
+    color: #ccc;
 }
-
-.anchor > ul > .anchor-consult{
-    border-radius: 8px 0 0 0px;
+.seek>input{
+    width: 360px;
+    /* height: 46px; */
+    border:none;
+    outline: none;
+    color: #424242;
+    font-size: 16px;
+    vertical-align: 3px;
 }
-
-.anchor > ul > .anchor-about{
-    top:50px;
+/* 底部1 */
+.bottom{
+    width: 100%;
+    height: 300px;
+    background-color: #273444;
 }
-
-.anchor > ul > .anchor-top{
-    border-radius: 0 0 0 8px;
-    top:100px;
-    position: relative;
+.bottom .row{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 0;
 }
-
-.anchor > ul > .hover{
-    border-radius: 8px 0 0 8px;
+.bottom .row ul{
+    margin-right: 50px;
 }
-
-.anchor > span{
-    width: 80px;
-    height: 70px;
-    position: absolute;
-    top: -70px;
-    left: -80px;
-    background: url(../img/get-started-label-black.png) center no-repeat;
+.bottom-li{
+    text-align: center;
+    color: #8796a8;
+    margin-top: 10px;
+}
+.row .col-md-2 .bottom-ul{
+    margin-right: 0;
+}
+.bottom .row ul li:nth-child(1){
+    color: #fff;
+    font-size: 16px;
+}
+.bottom .row ul li{
+    color: #8796a8;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.bottom .row ul li a:hover{
+    color: #2e72dc;
+}
+.bottom .row ul li img{
+    width: 160px;
 }

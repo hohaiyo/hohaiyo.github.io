@@ -7,6 +7,7 @@ $(function(){
             $("#nav-white").fadeOut();
             $("#anchor").fadeOut();
         }
+        
     })
     $('.income>a').css('color','#424242');
     $('.ranking-title>li').click(function(){

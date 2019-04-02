@@ -6,7 +6,4 @@ sup { vertical-align:text-top; }
 sub{ vertical-align:text-bottom; }  
 legend { color:#000; }  
 fieldset, img { border:0; }  
-body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
-html{
-    overflow-x: hidden;
-}  
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }  
