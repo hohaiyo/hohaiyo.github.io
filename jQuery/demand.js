@@ -61,30 +61,6 @@ $(document).ready(function(){
 	    var pos = 0;
 
 
-		// var code_btn = document.getElementById("security_code_btn");
-
-		// code_btn.onclick = function(){
-		// 	var wait=60;
-		// 	function time(o) {
-		// 		if (wait == 0) {
-		// 			o.removeAttribute("disabled");    
-		// 			o.value="免费获取验证码";
-		// 			wait = 60;
-		// 		} 
-		// 		else {
-		// 			o.setAttribute("disabled", true);
-		// 			o.value="重新发送(" + wait + ")";
-		// 			wait--;
-		// 			setTimeout(function() {
-		// 			time(o)
-		// 			},
-		// 			1000)
-		// 		}
-		// 	}
-		// }
-
-		// 验证码
-
 	    // 是否选择项目类型
 	    for(var i=0; i<demand_type.length; i++){
 	    	if(demand_type[i].style.borderColor=='dodgerblue'){

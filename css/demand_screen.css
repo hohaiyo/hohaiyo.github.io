@@ -1,0 +1,367 @@
+/*大型PC屏幕下专用样式*/
+@media screen and (min-width:1200px) {
+
+}
+
+/*中等PC屏幕下的专用样式*/
+@media screen and (min-width:992px) and (max-width: 1024px) {
+
+    .demand_content {
+        margin:0px;
+    }
+    /*左侧部分宽度*/
+    .demand_content_left{
+        width: 100%;
+    }
+
+    /*左侧开头标题*/
+    .demand_content_left_title h3{
+        font-size: 40px;
+    } 
+    
+    /*input高度和里面的字体大小*/
+    .form-control,.security_code_input,.security_code_button_input{
+        height: 50px !important;
+        font-size: 20px !important;
+    }
+
+    /*下面填写表单左边的文字介绍*/
+    .demand_item_name{
+        font-size: 30px;
+    }
+    
+    /*文本域高度和字体大小*/
+    textarea::-webkit-input-placeholder {
+      font-size: 20px;
+    }
+    textarea:-moz-placeholder {
+      font-size: 20px;
+    }
+    textarea::-moz-placeholder {
+      font-size: 20px;
+    }
+    textarea:-ms-input-placeholder {
+      font-size: 20px;
+    }
+
+    .demand_item_input textarea{
+        height: 100px;
+        font-size: 20px;
+    }    
+
+    /*项目类型*/
+    .list-inline_li_type{
+        font-size: 30px;
+    } 
+
+    .list-inline>li{
+        width: 240px;
+        height: 150px;
+    }    
+
+    /*项目预算下面的补充*/
+    .under_hint,.under_hint a{
+        font-size: 18px;
+    }
+
+    .demand_item_input_two span{
+        font-size: 20px;
+    }
+
+    /*相关文档旁边的选填*/
+    .demand_small{
+        font-size: 18px;
+    }
+    
+    .click_upload{
+        width: 240px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }  
+    .click_upload_svg{
+        width: 40px;
+        height: 40px;
+        vertical-align: sub;
+    }      
+
+    /*联系方式*/
+    .demand_item_input_three p{
+        font-size: 24px;
+    }
+
+    /*同意条款*/
+    .demand_clause{
+        font-size: 24px;
+    }
+
+    .usually_checkbox{
+        width: 36px;
+        height: 36px;
+        vertical-align: middle;
+    }
+
+    .yes_img{
+        width: 36px;
+        height: 36px;
+    }
+
+    /*立即发布*/
+    .demand_issue a{
+        width: 240px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+
+    }    
+}
+
+/*PAD屏幕下的专用样式*/
+@media screen and (min-width: 768px) and (max-width:991px ){
+    /*左侧版块*/
+    .demand_content {
+        margin:0px;
+    }    
+    .demand_content_left{
+        width: 100%;
+    }
+    /*项目类型字体*/
+    .list-inline_li_type{
+        font-size: 20px;
+    }  
+
+    /*左侧开头标题*/
+    .demand_content_left_title h3{
+        font-size: 30px;
+    } 
+    
+    /*input高度和里面的字体大小*/
+    .form-control,.security_code_input,.security_code_button_input{
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+    /*下面填写表单左边的文字介绍*/
+    .demand_item_name{
+        font-size: 24px;
+    }
+    
+    /*文本域高度和字体大小*/
+    textarea::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+    textarea:-moz-placeholder {
+      font-size: 16px;
+    }
+    textarea::-moz-placeholder {
+      font-size: 16px;
+    }
+    textarea:-ms-input-placeholder {
+      font-size: 16px;
+    }
+
+    .demand_item_input textarea{
+        height: 100px;
+        font-size: 20px;
+    }    
+
+    /*项目类型*/
+    .list-inline_li_type{
+        font-size: 24px;
+    } 
+
+    /*项目类型选项大小*/
+    .list-inline>li{
+        width: 200px;
+        height: 130px;
+    }    
+
+    /*项目预算下面的补充*/
+    .under_hint,.under_hint a{
+        font-size: 14px;
+    }
+
+    .demand_item_input_two span{
+        font-size: 20px;
+    }
+
+    /*相关文档旁边的选填*/
+    .demand_small{
+        font-size: 18px;
+    }
+    
+    .click_upload{
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+    }  
+    .click_upload_svg{
+        width: 30px;
+        height: 30px;
+        vertical-align: sub;
+    }      
+
+    /*联系方式*/
+    .demand_item_input_three p{
+        font-size: 24px;
+    }
+
+    /*同意条款*/
+    .demand_clause{
+        font-size: 20px;
+    }
+
+    .usually_checkbox{
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+
+    .yes_img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /*立即发布*/
+    .demand_issue a{
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+
+    }        
+}
+
+/*PHONE屏幕下的专用样式*/
+@media screen and (max-width:767px) {
+    /*左侧版块*/
+    .demand_content {
+        margin:0px;
+    }    
+    .demand_content_left{
+        width: 100%;
+        padding-left: 20px;
+    }
+    /*项目类型字体*/
+    .list-inline_li_type{
+        font-size: 20px;
+    }  
+
+    /*左侧开头标题*/
+    .demand_content_left_title h3{
+        font-size: 20px;
+    } 
+    
+    /*input高度和里面的字体大小*/
+    .form-control,.security_code_input,.security_code_button_input{
+        height: 40px !important;
+        font-size: 12px !important;
+    }
+
+    /*下面填写表单左边的文字介绍*/
+    .demand_item_name{
+        font-size: 16px;
+    }
+    
+    /*文本域高度和字体大小*/
+    textarea::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+    textarea:-moz-placeholder {
+      font-size: 12px;
+    }
+    textarea::-moz-placeholder {
+      font-size: 12px;
+    }
+    textarea:-ms-input-placeholder {
+      font-size: 12px;
+    }
+
+    .demand_item_input textarea{
+        height: 100px;
+        font-size: 12px;
+    }    
+
+    /*项目类型*/
+    .list-inline_li_type{
+        font-size: 10px;
+    } 
+
+    /*项目类型选项大小*/
+    .list-inline>li{
+        width: 78px;
+        height: 90px;
+    }    
+    
+    /*项目类型图案大小*/
+    .demand_content_left_type_svg{
+        width: 30px;
+        height: 30px;
+    }    
+    /*项目预算*/
+    .demand_item_input_two input{
+        width: 70%;
+    }    
+
+    /*项目预算下面的补充*/
+    .under_hint,.under_hint a{
+        font-size: 12px;
+    }
+
+    .demand_item_input_two span{
+        font-size: 14px;
+    }
+
+    /*相关文档旁边的选填*/
+    .demand_small{
+        font-size: 12px;
+    }
+    
+    .click_upload{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }  
+    .click_upload_svg{
+        width: 20px;
+        height: 20px;
+        vertical-align: sub;
+    }      
+
+    /*联系方式*/
+    .demand_item_input_three p{
+        font-size: 14px;
+    }
+
+    .demand_item_input_three div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*同意条款*/
+    .demand_clause{
+        font-size: 14px;
+    }
+
+    .usually_checkbox{
+        width: 16px;
+        height: 16px;
+        vertical-align: sub;
+    }
+
+    .yes_img{
+        width: 16px;
+        height: 16px;
+    }
+
+    /*立即发布*/
+    .demand_issue a{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+
+    }        
+}
+ 
