@@ -45,6 +45,11 @@ body{
 .main_content_box{
 	margin-bottom: 30px;
 }
+@media screen and (max-width: 770px){
+	.main_content_box{
+		margin-bottom: 0;
+	}
+}
 .title{
 	margin:30px 0;
 }
@@ -93,6 +98,14 @@ body{
 	margin: 0 48px 30px;
 	overflow: hidden;
 }
+@media screen and (max-width: 770px) {
+	.content_wrap{
+		margin: 0 15px 20px;
+	}
+	.problem_list{
+		padding: 0;
+	}
+}
 .problem_lists_box{
 	overflow:hidden;
 	border-top: 1px solid #ddd;
@@ -113,19 +126,9 @@ body{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-@media screen and (max-width: 768px){
-	.problem_list ul li{
+@media screen and (max-width: 770px){
+	.problem_list>ul>li{
 	width: 100%;
-	overflow:hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	line-height: 24px;
-	}
-	.header{
-		display: none;
-	}
-	.white_header{
-		display: none;
 	}
 	
 }
@@ -152,6 +155,11 @@ body{
 	border: 1px solid #488DD7;
 	color: #fff;
 }
+@media screen and (max-width: 770px){
+	.online_btn{
+		margin-bottom: 40px;
+	}
+}
 .imgs img{
 	max-width: 100%;
 	display: block;
@@ -160,14 +168,22 @@ body{
 	padding-right:15px;
 }
 .content_li{
-	margin: 0 15px;
+	margin:0 15px;
+}
+@media screen and (max-width: 770px){
+	.tip_content{
+		padding-right:0;
+	}
+	.content_li{
+		margin-left: -15px;
+	}
 }
 /*问题详情*/
 .details{
 	padding: 20px 0;
 }
 .details img{
-	width: 100%;
+	width: 168px;
 	margin-bottom: 20px;
 }
 .details ol li{

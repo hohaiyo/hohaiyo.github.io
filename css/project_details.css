@@ -55,6 +55,15 @@ em{
 .project_tags>li:last-child{
 	float: right;
 }
+@media screen and (max-width: 770px){
+	.project_tags>li{
+		float: none;
+		margin: 5px 0;
+	}
+	.su{
+		display: none;
+	}
+}
 .project_tags>li>em{
 	margin-right: 5px;
 }
@@ -83,10 +92,21 @@ i{
 .projec_contain{
 	background-color: #fff;
 	border: 1px solid #EDEDED;
-	padding: 30px 30px;
+	padding: 30px;
 }
 .project_descript{
-	width: 72%;
+	width: 88%;
+}
+@media screen and (max-width: 770px){
+	.projec_contain{
+		padding: 20px;
+	}
+	.project_descript{
+	width: 100%;
+	}
+}
+.project_maindetails>ol>li{
+	margin: 10px 0;
 }
 .project_descript ol{
 	margin: 15px 0;
@@ -97,4 +117,20 @@ i{
 }
 .project_descript_through{
 	padding-left:50px;
+}
+.project_descript_through>li{
+	margin: 10px 0;
+}
+@media screen and (max-width: 770px) {
+	.project_descript_through{
+		padding-left:0;
+	}
+}
+.sucess_project{
+	height: 300px;
+	background-color: green;
+}
+.project_maindetails{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 30px;
 }
