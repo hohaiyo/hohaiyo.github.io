@@ -181,10 +181,11 @@ footer{
 
 .footer_warp{
     margin:0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     overflow: hidden;
     position: relative;
-    min-width: 700px;
+    /*min-width: 700px;*/
+    padding: 0 20px;
 }
 
 .footer_warp > a > img{
