@@ -1,100 +1,71 @@
-.right-main-hr{
+.formad{
     width: 582px;
-    height: 0px;
-    border: 0;
-    border-top: 1px solid #d7d8d7;
-    margin: 7px 0 20px 0;
-}
-.showtime{
-    width: 582px;
-}
-.showtme-top{
-    color: gray;
-    margin-bottom: 20px;
-    width: 582px;
-    height: 21px;
-}
-.showtime-title{
-    width: 582px;
-    border-bottom:  1px solid #d7d8d7;;
-    height: 46px;
-    line-height: 46px;
-    margin-bottom: 20px;
-}
-.showtime-title h3{
-    color: #2D3238;
-    font-size: 18px;
-    font-weight: 500;
-}
-.showtime-content{
-    width: 552px;
-    background-color: rgba(0, 0, 0, 0.05);
-    height: 365px;
-    padding: 15px;
+    height: 24px;
     margin-bottom: 15px;
 }
-.ul{
-    width: 552px;
-    height: 30px;
-}
-.ul>li{
-    width: 100px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    float: left;
-    overflow: hidden;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
-}
-.con{
-    width: 552px;
-    height: 335px;
-    overflow: hidden;
-}
-.con>div{
-    float: left;
-    background: #fff;
-    width: 522px;
-    height: 305px;
-    display: none;
-    padding: 15px;
-}
-.ul li.active{
-    background-color: #fff;
-    color: #333;
-}
-.con div.active{
-    display: block;
-}
-.con-tab>p{
-    height: 20px;
-    line-height: 20px;
-    margin-bottom: 10px;
-}
-.chk-label input{
+.formad input{
     width: 24px;
     height: 24px;
+    border: 0;
     cursor: pointer;
+    /* vertical-align: middle; */
 }
-.xxk-tab{
-    height: 72px;
-}
-.chk-label{
-    height: 24px;
-    width: 127px;
-    margin-bottom: 10px;
-}
-.chk-label label{
+.formad label{
+    font-size: 16px;
     vertical-align: top;
-    line-height: 24px;
-    font-size: 14px;
-    width: 56px;
-    height: 24px;
-    display: inline-block;
+    margin: 0 10px;
+}
+.formad span{
+    font-size: 16px;
+    vertical-align: top;
     margin-left: 10px;
 }
-.showtime-textarea{
-    outline: none;
+.bottom-fix{
+    margin-bottom: 35px;
+}
+.form-p{
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.ad-artile{
+    margin-bottom: 35px;
+}
+#adtitle{
     padding: 15px;
+    outline: none;
+}
+.buy{
+    height: 50px;
+    margin-top: 45px;
+    text-align: center;
+}
+.buy button{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: cornflowerblue;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#form-jiafile{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    background-color: #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#form-file{
+    display: none;
+}
+.ad-sc{
+    height: 50px;
 }

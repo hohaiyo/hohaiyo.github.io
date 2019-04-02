@@ -25,3 +25,10 @@
     line-height: 70px;
     font-size: 18px;
 }
+/* 星星 */
+.stars{
+    color: #FFD700;
+}
+.stars>i{
+    margin-left: -5px;
+}

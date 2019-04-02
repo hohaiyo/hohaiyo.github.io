@@ -136,7 +136,46 @@
                     </div>
                     <div class="fl clearfloat right-content">
                         <div class="right-content-mian">
-                            123
+                            <form>
+                                <p class="form-p">请选择你想要的位置</p>
+                                <div class="formad">
+                                    <input type="checkbox" id="ad-chk">
+                                    <label for="ad-chk">网站的黄金位置之一，位于网站首页的两旁。</label>
+                                    <span>$10</span>
+                                </div>
+                                <div class="formad">
+                                    <input type="checkbox" id="ad-chk2">
+                                    <label for="ad-chk2">网站的黄金位置之一，位于网站登陆页面。</label>
+                                    <span>$25</span>
+                                </div>
+                                <div class="formad">
+                                    <input type="checkbox" id="ad-chk3">
+                                    <label for="ad-chk3">网站的黄金位置之一，位于网站推荐页面。</label>
+                                    <span>$10</span>
+                                </div>
+                                <div class="formad">
+                                    <input type="checkbox" id="ad-chk4">
+                                    <label for="ad-chk4">网站注册页面的广告位，朴实无华的位置</label>
+                                    <span>$5</span>
+                                </div>
+                                <div class="formad bottom-fix">
+                                    <input type="checkbox" id="ad-chk5">
+                                    <label for="ad-chk5">网站日常推送，顶级的广告位</label>
+                                    <span>$60</span>
+                                </div>
+                                <div class="ad-artile">
+                                    <p class="form-p">请输入你想好的广告语</p>
+                                    <textarea name="" id="adtitle" cols="76" rows="10"></textarea>
+                                </div>
+                                <div class="ad-sc">
+                                    <p class="form-p fl clearfloat">请上传你的广告图</p>
+                                    <div id="form-jiafile" class="fr clearfloat">请选择</div>
+                                    <input type="file" id="form-file">
+                                </div>
+                                <div class="buy">
+                                    <button type="submit">购买</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -176,7 +215,13 @@
         <!-- <span></span> -->
     </div>
     <!-- 结束 -->
-
+    <script>
+        $(function(){
+            $('#form-jiafile').click(function(){
+                $('#form-file').click();
+            })
+        })
+    </script>
 </body>
 
 
