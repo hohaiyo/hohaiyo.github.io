@@ -45,7 +45,7 @@ body{
 .main_content_box{
 	margin-bottom: 30px;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
 	.main_content_box{
 		margin-bottom: 0;
 	}
@@ -98,7 +98,7 @@ body{
 	margin: 0 48px 30px;
 	overflow: hidden;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
 	.content_wrap{
 		margin: 0 15px 20px;
 	}
@@ -111,14 +111,8 @@ body{
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-.problem_list{
-	padding-bottom: 30px;
-}
-.problem_list ul{
-	padding-top: 30px;
-}
 .problem_list_li{
-	padding: 30px 0 0;
+	padding: 30px 0;
 }
 .problem_list_li li{
 	line-height: 24px;
@@ -126,13 +120,15 @@ body{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
 	.problem_list>ul>li{
 	width: 100%;
 	}
-	
+	.problem_list_li{
+		padding: 10px 0;
+	}
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
 	.right_part{
 	margin-top: 30px;
 	}
@@ -155,7 +151,7 @@ body{
 	border: 1px solid #488DD7;
 	color: #fff;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
 	.online_btn{
 		margin-bottom: 40px;
 	}
@@ -170,7 +166,7 @@ body{
 .content_li{
 	margin:0 15px;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
 	.tip_content{
 		padding-right:0;
 	}
@@ -188,4 +184,26 @@ body{
 }
 .details ol li{
 	color: #337AB7;
+}
+/*调整字体大小*/
+@media (max-width: 1200px) and (min-width: 768px){
+	.left_part,.right_part,a{
+		font-size: 20px;
+		line-height: 36px;
+	}
+	.main h2{
+		font-size: 30px;
+	}
+	span,.ap{
+		font-size: 20px;
+	}
+	.navbar-header > .navbar-brand{
+		font-size: 20px;
+	}
+	.banner_txt{
+		font-size: 50px;
+	}
+	.details h2{
+		padding: 30px 0;
+	}
 }
