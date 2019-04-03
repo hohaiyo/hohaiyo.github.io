@@ -11,8 +11,6 @@ html{
 
 body{
     width: 100%;
-    height: 100%;
-    min-height: 900px;
     font-size: 14px;
     background-color: #f1f2f6;
 }
@@ -36,32 +34,6 @@ a{
 }
 .box{
     width: 100%;
-}
-/* 小屏幕（平板，大于等于768px） */
-
-@media (min-width: 768px) {
-
-    .qqq {
-    
-    font-size:26px;
-    
-    }
-    
-   
-    
-}
-/* 中等屏幕（桌面显示器，大于等于992px） */
-
-@media (min-width: 992px) {
-
-    .qqq {
-    
-    font-size:42px;
-    
-    }
-    
-    
-    
 }
 
 /* 头部 */
@@ -147,42 +119,60 @@ a{
     box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 .date1{
-    width: 62.5%;
-    margin: 0 auto;
+    /* width: 62.5%; */
+    /* margin: 0 auto; */
     color: #8796A8;
+    /* padding: 0 10%; */
+    margin: 0;
 }
 .date1-1{
-    display:inline-block;
+    /* display:inline-block; */
+    text-align: center;
+    padding: 0;
+}
+/* .date1-2{
     text-align: center;
 }
-.date1-1 p:nth-child(1){
+.date1-3{
+    text-align: left;
+} */
+/* .date1-1 p:nth-child(1){
     font-size: 42px;
-}
+} */
 .date1-1 p:nth-child(2){
     font-size: 14px;
+    text-align: center;
 }
 /* 项目分类 */
 .module{
-    width:1200px;
+    /* width:1200px; */
     margin: 0 auto;
     margin-top: 50px;
     position: relative;
     height: 215px;
+    /* padding: 50px 0; */
 }
 .module .col-lg-2{
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
     background-color: #fff;
     color: #000;
-    width: 200px;
-    font-size: 22px;
+    /* width: 200px; */
+    font-size:22px;
     text-align: center;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    padding: 20px 0;
+    /* margin-right: 40px;
+    margin-bottom: 50px; */
+    padding: 20px 10px;
 }
 .module .col-lg-2 img{
+    /* margin-bottom: 20px; */
+    /* width: 86px; */
+    margin: 0 auto;
     margin-bottom: 10px;
+}
+.module-p{
+    /* font-size: 22px; */
+    /* margin-top: 10px; */
 }
 #it,#UI,#yingxiao,#app,#other{
     position: absolute;
@@ -195,7 +185,7 @@ a{
     left: -80%;
 }
 #yingxiao{
-    left: 40%;
+    left: 42%;
 }
 #app{
     right: -80%;
@@ -241,7 +231,7 @@ a{
 /* 项目列表 */
 .aaa{
     /* background-color: #fff; */
-    width: 1200px;
+    /* width: 1200px; */
     /* border-radius: 10px; */
     /* box-shadow: 0 0 5px rgba(0,0,0,.2);  */
 }
@@ -249,7 +239,7 @@ a{
     margin: 0;
     padding: 0;
 }
-.aaa .row .col-sm-3,.list{
+.aaa .row .col-md-3,.list{
     padding: 0;
     margin: 0;
     border-radius: 10px;
@@ -325,14 +315,15 @@ a{
 }
 .list{
     width: 100%;
-    position: relative;
+    /* position: relative; */
     padding: 20px;
 }
 .more{
     width: 100%;
     text-align: center;
-    position: absolute;
-    bottom: 10px;
+    margin-top: 10px;
+    /* position: absolute;
+    bottom: 10px; */
 }
 .more a{
     color: #0099ff;
@@ -375,6 +366,12 @@ a{
     /* line-height: 35px; */
     /* vertical-align: middle; */
 }
+/* .phone-wa{
+    display: inline-block;
+}
+.phone-wa-a{
+    line-height: 20px;
+} */
 .recommend{
     width: 30px;
     height: 20px;
@@ -418,7 +415,7 @@ a{
 .advertising{
     background-color: pink;
     height: 100px;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -440,7 +437,7 @@ a{
     box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 .deal{
-    width: 1200px;
+    width: 62.5%;
     margin: 0 auto;
     /* background-color: #c2c2c2; */
     padding: 50px 50px 0 50px;;
@@ -459,7 +456,7 @@ a{
 .deal .bbb{
     border: none;
 }
-.deal .row .col-sm-5{
+.deal .row .col-md-5{
     height:419px;
     /* display:flex;
     justify-content:center;
@@ -480,7 +477,7 @@ a{
     vertical-align: middle;
     text-align: left;
 }
-.deal .row .col-sm-7{
+.deal .row .col-md-7{
     height: 419px;
     padding: 0;
     display: table;
@@ -490,18 +487,18 @@ a{
     vertical-align: middle;
     text-align: center;
 }
-.deal .row .col-sm-5 p:nth-child(1){
+.deal .row .col-md-5 p:nth-child(1){
     font-size: 36px;
 }
-.deal .row .col-sm-5 p:nth-child(2){
+.deal .row .col-md-5 p:nth-child(2){
     font-size: 40px;
 }
-.deal .row .col-sm-5 p:nth-child(3){
+.deal .row .col-md-5 p:nth-child(3){
     font-size: 16px;
 }
 /* 成功案例展示 */
 .comment{
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -619,7 +616,7 @@ a{
     background-color: #273444;
 }
 .bottom .row{
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
     padding: 50px 20px 0;
 }
@@ -634,7 +631,7 @@ a{
 .row .col-md-2 .bottom-ul{
     margin-right: 0;
 }
-.bottom .row ul li:nth-child(1) a{
+.bottom .row ul li:nth-child(1){
     color: #fff;
     font-size: 16px;
 }
@@ -655,6 +652,121 @@ a{
 
 #nav-white,#anchor{
     display: none;
+}
+@media (max-width: 320px){
+    .list-contant-img{
+        display: none;
+    }
+    .list-contant-character{
+        width: 100% !important;
+    }
+}
+@media (max-width: 767px) {
+    .anchor{
+        display: none;
+    }
+    .date1{
+        padding: 0 1%;
+    }
+    .qqq{
+        font-size: 18px;
+    }
+    .date1-1 p:nth-child(2) {
+        font-size: 12px;
+    }
+    .module-p{
+        font-size: 12px;
+    }
+    .module {
+        margin-top: 25px;
+        height: 170px;
+    }
+    .p-none,.zhouqi{
+        display: none;
+    }
+    .p-jieshao{
+        display: none;
+    }
+    .p-time{
+        float: left;
+    }
+    .recommend{
+        display: none;
+    }
+    .demand a {
+        font-size: 18px;
+    }
+    .list{
+        padding: 15px 10px;
+        height: auto;
+    }
+    .list-contant {
+        height: 90px;
+    }
+    .list-contant-img {
+        height: 88px;
+    }
+    .list-contant-character {
+        padding: 10px 0 10px 15px;
+        height: 88px;
+        width: 78%;
+    }
+    .list-contant p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .p-demand{
+        width: 98%;
+    }
+    .demand-s1{
+        float: right;
+    }
+    /* .demand p {
+        line-height: 28px;
+    } */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .anchor{
+        display: none;
+    }
+    .qqq{
+        font-size: 30px;
+    }
+    .module-p{
+        font-size: 14px;
+    }
+    .module {
+        margin-top: 35px;
+        height: 190px;
+    }
+    .p-none,.zhouqi{
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .qqq{
+        font-size: 36px;
+    }
+    .module-p{
+        font-size: 18px;
+    }
+    .p-none,.zhouqi{
+        display: none;
+    }
+    .resume {
+        width: 64%;
+    }
+}
+@media (min-width: 1200px) {
+    .qqq{
+        font-size: 42px;
+    }
+    .date1{
+        padding: 0 20%;
+    }
+    .date1-1 p:nth-child(2) {
+        font-size: 16px;
+    }
 }
 
 
