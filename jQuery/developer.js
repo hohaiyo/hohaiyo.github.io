@@ -15,7 +15,6 @@ $(function(){
         var index = $(this).index();
         $(this).parent().siblings('.nrbox').children().eq(index).css('display','block').siblings().css('display','none')
     })
-    
 })
 
   
