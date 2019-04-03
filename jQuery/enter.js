@@ -9,5 +9,23 @@ $(function(){
 				}
 			});
 
+			$('.enter-login').click(function(){
+				
+				if($('.enter-user').val().length!=0 &&	 $('.enter-pwd').val().length!=0){
+					
+					$('.enter-user').css('border','1px solid #49a9ee')
+					$('.enter-pwd').css('border','1px solid #49a9ee')
+						
+					
+				}else if($('.enter-user').val().length!=0 &&	 $('.enter-pwd').val().length==0){
+						$('.enter-pwd').css('border','1px solid red')
+						$('.warn').css({'display':'block'})
+				}else{
+						$('.enter-user').css('border','1px solid red')
+						$('.warn').css({'display':'block'})
+				
+				}
+				
+			})
 			
 		})

@@ -231,6 +231,42 @@ footer span{
 }
 
 
+/* 媒体查询 */
+@media screen and (max-width:480px){
+	.enter_nav{ width:100%;}
+	.enter_nav{margin:0;}
+	.header-span{display:none;}
+	
+}
+@media screen and (max-width: 768px) and (min-width: 481px){
+	.header-left>.header-span{display:none}
+	.enter_nav{margin:0 auto;}
+	
+}
+
+@media screen and (max-width: 768px){
+	header .top-enter{margin:0 0 0 10px;}
+	header .top-enter a{font-size:16px;}
+	.enter{background-image:none;}
+	.enter-user,.enter-pwd{border: 1px solid #cad3de;height:40px;line-height:40px;}
+	.enter-login{ height:40px;line-height:40px;}	
+}
+
+/* 警告 */
+.warn{
+    width: 55%;
+    height: 27px;
+    line-height: 27px;
+    background-color: rgba(221,221,221,0.5);
+    text-align: center;
+    display: none; 
+}
+
+.warn i{
+	font-size:24px;
+	color:#e2374a;
+	vertical-align:middle;
+}
 
 
 
