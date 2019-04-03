@@ -1,607 +1,70 @@
-/* 浮动以及清除 */
-.fl{
-    float: left;
+.panel-body-bottomborder{
+    border-bottom: 1px solid #ddd;
 }
-.fr{
-    float: right;
+.unactived{
+    background-color: #f0f2f5;
 }
-.clearfloat:after{
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
+.actived{
+    background-color: #fff;
 }
-.clearfloat{
-    zoom: 1;
+.panel-body-padding{
+    padding: 45px 80px;
 }
-/* 测试结束 */
-.content-wrapper{
-    padding-top: 64px;
-    padding-bottom: 56px;
-    height: 985px;
-    background: #f0f2f5;
+.panel-heading{
+    border-top: 1px solid #ddd;
 }
-.content{
-    /* height: 100%; */
-    max-width: 980px;
-    margin: auto;
-}
-.wrapper{
-    width: 100%;
-    margin-top: 75px;
-}
-.left-menu{
-    max-width: 220px;
-}
-.side-nav{
-    max-width: 220px;
-    left: 0;
-    margin: 0;
-}
-.side-nav ul>li{
-    position: relative;
-    margin: 0;
-    /* box-sizing: border-box;box-sizing：允许你以某种方式定义某些元素，以适应指定区域 */
-}
-.list-header{
-    background: #e6ebf0;
-    padding: 7px 0 7px 21px;
-    width: 200px;
-    box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
-}
-.list-header span{
-    font-size:12px; 
-}
-.border-radius-top{
-    border-top-left-radius:4px;
-    border-top-right-radius:4px;
-}
-.list-item{
-    background-color:#f0f2f5;
-    width: 220px;
-    height: 48px;
-    box-shadow: 0 -1px 0 0 #e6e6e6, inset 0 1px 0 0 #fff, 0 2px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
-}
-.activied{
-    background: #fff;
-}
-.nav-link{
+.panel-body-title a{
     color: #979fa8;
-    display: block;
-    padding: 14px 0 14px 50px;
-    line-height: 18px;
-    text-decoration: none ;
-    font-weight: 500;
-}
-.nav-link>i:first-child{
-    position: absolute;
-    top: 16px;
-    left: 20px;
-}
-.nav-link>i:last-child{
-    position: absolute;
-    top: 16px;
-    right: 10px;
-}
-.nav-link>span{
-    font-size: 14px;
-}
-.icon-user11{
-    color: gray;
-}
-.right-content{
-    margin-left: 10px;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    background-color: #fff;
-    min-height: 895px;
-    width: 750px;
-    box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
-    font-size: 14px;
-    border-radius: 4px;
-    color: #333;
-}
-.right-content-mian{
-    width: 582px;
-    height: 854px;
-    padding: 42px 84px 0 84px;
-}
-.headportrait{
-    width: 538px;
-    height: 98px;
-    padding: 21px;
-    margin-bottom: 35px;
-    border: 1px solid #dde3eb;
-    border-radius: 4px;
-}
-.headimg{
-    width: 105px;
-    height: 98px;
-}
-.headIcon{
-    width: 98px;
-    height: 98px;
-    text-align: center;
-    line-height: 98px;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    overflow: hidden;
-    background:url(../img/headimg.png) no-repeat center center;
-}
-#iconimg{
-    display: none;
-    background: rgba(0,0,0, 0.3);
-}
-#iconimg label{
-    cursor: pointer;
-}
-.right-content-info{
-    position: relative;
-    width: 422px;
-    height: 98px;
-    margin-left: 10px;
-}
-.right-content-info span{
-    display: block;
-    width: 422px;
-    height: 31px;
-    margin-top: 4px;
-}
-.right-content-info span:first-child{
-    font-size: 20px;
-}
-.right-content-info img{
-    width: 65px;
-    margin-top: 6px;
-}
-.right-content-info-button{
-    width: 96px;
-    height: 20px;
-    padding: 4.2px 21px;
-    font-size: 12px;
-    color: #fff;
-    background: #f75288;
-    border: 1px solid #f75288;
-    line-height: 20px;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.Accountinformation{
-    width: 582px;
-    height: 300px;
-    margin-bottom: 36px;
-}
-.Accountinformation p{
-    width: 582px;
-    height: 31px;
-    font-size: 20px;
-    font-weight: 400;
-}
-.Accountinformation hr{
-    width: 582px;
-    border: none;
-    border-top: 1px solid hsla(212,9%,63%,.2);
-    margin: 11px 0 14px 0;
-}
-.message{
-    width: 582px;
-    height: 240px;
-}
-.message-p-box p{
-    width: 582px;
-    height: 21px;
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #8796a8;
-}
-.account-item{
-    width: 582px;
-    height: 45.5px;
-    margin-top: 21px;
-}
-.account-item-bottom{
-    margin-bottom: 70px;
-}
-.item-head{
-    width: 128px;
-    height: 21px;
-    margin-bottom: 14px;
-    padding-top: 10.5px;
-    font-size: 14px;
-}
-.validation{
-    padding: 4px 7px 4px 6px;
-    background-color: pink;
-    color: red;
-    border-radius: 5px;
-    font-size: 12px;
-    margin-left: 5px;
-}
-.authenticated{
-    padding: 4px 7px 4px 6px;
-    background-color: lightgreen;
-    color: green;
-    border-radius: 5px;
-    font-size: 12px;
-    margin-left: 5px;
-}
-.item-content{
-    width: 384px;
-    height: 45.5px;
-    padding-left: 70px;
-}
-.input-wrapper{
-    width: 252px;
-    height: 30px;
-    float: left;
-}
-.input-wrapper span{
-    padding-top: 9px;
-    display: inline-block;
-}
-.operation{
-    width: 50px;
-    height: 21px;
-    padding-top: 10.5px;
-    float: right;
-}
-.operation a{
-    color: #08c;
-}
-.operation i{
-    vertical-align: middle;
-    font-size: 14px;
-}
-.form-content{
-    width: 436.5px;
-    height: 90px;
-    display: none;
-}
-/* 不要问为什么有one two这些了，因为已经放弃治疗了 */
-.item-one{
-    width: 366px;
-    height: 39px;
-    padding-left: 50px;
-}
-.item-one-yi{
-    width: 280px;
-    height: 39px;
-    float: left;
-}
-.item-two-yi{
-    width: 280px;
-    height: 37px;
-    float: left;
-    border: 1px solid #cad3de;
-    border-radius: 5px;
-}
-.item-two-yi input{
-    border: 0;
-    width: 171px;
-    height: 37px;
-    border: 0;
-    outline: none;
-    padding-left: 14px;
-    border-radius: 5px;
-}
-.item-two-yi button{
-    width: 95px;
-    height: 37px;
-    border: 0;
-    border-left: 1px solid #cad3de;
-    background: #fff;
-    float: right;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    /* cursor: pointer; */
-    color: #08c;
-    font-size: 12px;
-    outline: none;
-}
-/* //验证码的手样式 */
-.send{
-    cursor: pointer;
-}
-.item-one-yi input{
-    border: 1px solid #cad3de;
-    width: 250px;
-    height: 20px;
-    padding: 8.4px 14px;
-    outline: none;
-    border-radius: 5px;
-}
-.send-disabled{
-    cursor: not-allowed;
-}
-.item-one-yi input:focus{
-    border:1px solid  #08c;
-}
-.item-one-er{
-    width: 28px;
-    height: 21px;
-    padding-top: 10.5px;
-    margin-left: 21px;
-}
-.item-one-er a{
-    color:#08c;
-}
-.item-two{
-    width: 366px;
-    height: 39px;
-    padding-left: 50px;
-    margin-top: 11px;
-}
-.personaldata{
-    width: 582px;
-    height: 280px;
-    margin-bottom: 36px;
-}
-.personaldata p{
-    width: 582px;
-    height: 31px;
-    font-size: 20px;
-    font-weight: 400;
-}
-.personaldata hr{
-    width: 582px;
-    border: none;
-    border-top: 1px solid hsla(212,9%,63%,.2);
-    margin: 11px 0 14px 0;
-}
-.personform{
-    width: 582px;
-    height: 215px;
-    margin-top: 21px;
-}
-#personform-set{
-    display: none;
-}
-.team-form{
-    width: 582px;
-    height: 40px;
-    margin: 14px 0;
-}
-.team-form-label{
-    width: 145px;
-    height: 40px;
-    line-height: 40px;
-}
-.team-form-name{
-    width: 436.5px;
-    height: 40px;
-    line-height: 40px;
-}
-.team-a{
-    line-height: 15px;
-}
-.team-set-label{
-    width: 145px;
-    height: 40px;
-    display: inline-block;
-    line-height: 40px;
-}
-.team-set-shuru{
-    width: 436.5px;
-    height: 40px;
-    line-height: 40px;
-}
-.team-set-shuru input{
-    width: 406px;
-    height: 22px;
-    padding: 8px 14px;
-    border: 1px solid #cad3de;
-    border-radius: 5px;
-    outline: none;
-}
-.team-set-shuru input:focus{
-    border: 1px solid #08c;
-}
-.team-set-select{
-    width: 582px;
-    height: 100px;
-    margin: 14px 0;
-}
-.team-set-select label{
-    width: 145px;
-    height: 53px;
-    display: inline-block;
-    line-height: 40px;
-}
-.team-set-diqu{
-    width: 436.5px;
-    height: 53px;
-    line-height: 40px;
-}
-.team-set-diqu select{
-    /* width: 88px; */
-    height: 39px;
-    line-height: 39px;
-    padding: 5px;
-    margin: 7px 14px 7px 0;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #d9d9d9;
-}
-.team-set-button{
-    width: 582px;
-    height: 40px;
-}
-.team-set-btn,.team-set-btn-quxiao{
-    width: 58px;
-    height: 40px;
-    padding: 8px 14px ;
-    border: 1px solid #08c;
-    background-color: #08c;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 14px;
-    outline: none;
-}
-.team-set-btn-quxiao{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #d9d9d9;
-}
-/*footer*/
-.footer{
-    width: 100%;
-    min-width: 1200px;
-    height: 33px;
-    padding: 10px 0;
-    background-color: #1f2d3d;
-}
-.footer-box{
-    width: 1200px;
-    margin: 0 auto;
-    height: 33px;
-    line-height: 33px;
-}
-/* 侧边栏 */
-.anchor{
-    position: fixed;
-    right: 10px;
-    top: 50%;
-    transform: translate(0,-50%);
-    border-radius: 8px 0 0 8px;
-    z-index: 999;
-}
-
-.anchor > ul{
-    position: relative;
-    width: 40px;
-    height: 150px;
-    margin: 0;
-}
-
-.anchor > ul > li{
-    position: absolute;
-    left: 0;
-    font-size: 16px;
-    background-color: rgba(0,0,0,0.3);
-    color: #fff;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
-    padding-left: 16px;
-    transition: 300ms;
-    cursor: pointer;
-}
-
-.anchor > ul > li > i{
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 22px;
-}
-
-.anchor > ul > .anchor-consult{
-    border-radius: 8px 0 0 0px;
-}
-
-.anchor > ul > .anchor-about{
-    top:50px;
-}
-
-.anchor > ul > .anchor-top{
-    border-radius: 0 0 0 8px;
-    top:100px;
-    position: relative;
-}
-
-.anchor > ul > .hover{
-    border-radius: 8px 0 0 8px;
-}
-
-.anchor > span{
-    width: 80px;
-    height: 70px;
-    position: absolute;
-    top: -70px;
-    left: -80px;
-    background: url(../img/get-started-label-black.png) center no-repeat;
-}
-/* 导航栏 */
-.top-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-color: #fff;
-    z-index: 999;
-}
-.top-navbox{
-    width: 1200px;
-    margin: 0 auto;
-    height: 50px;
-}
-.top-navbox-img{
-    padding: 10px 0;
-    height: 30px;
-    width: 60px;
-    cursor: pointer;
-}
-.top-navbox-img img{
-    height: 30px;
-}
-.top-navbox-list{
-    width: 500px;
-    height: 50px;
-    margin-left: 30px;
-}
-.top-navbox-list ul{
-    width: 500px;
-    height: 20px;
-    padding: 15px;
-}
-.top-navbox-list ul li{
-    float: left;
-    overflow: hidden;
-    margin-right: 30px;
-}
-.top-navbox-list ul li a{
-    color: #777;
     text-decoration: none;
 }
-.top-navbox-list ul li a:hover{
-    color: #337ab7;
+.panel-body-border{
+    padding: 21px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
-.top-navbox-user{
-    width: 106px;
-    height: 22px;
-    padding: 14px 15px;
+.panel-body-padding-border{
+    padding: 0;
 }
-.top-navbox-user ul li{
-    float: left;
+.panel-body-img{
+    width: 98px;
+    height: 98px;
     overflow: hidden;
-}
-.icon-tongzhi,.icon-huabanfuben1{
-    font-size: 24px;
-}
-.icon-tongzhi{
-    color: #08c;
-}
-.icon-xiangxia,.icon-huabanfuben1{
-    color: #777;
-}
-.icon-xiangxia{
-    margin-bottom: 3px;
-}
-.user-top{
     cursor: pointer;
-    margin-left: 40px;
 }
-.user-top:hover i{
-    color: #000;
+.panel-body-img img{
+    width: 100%;
+    height: 100%;
 }
-.icon-xiangxia{
-    font-size: 12px;
+.panel-body-border-title{
+    height: 98px;
+    padding: 13px 0;
+    margin-left: 15px;
+}
+.panel-body-border-title p:first-child{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-indent: 1em;
+}
+.panel-userifon-content{
+    padding: 35px 0;
+}
+.panel-userifon-content p:first-child{
+    font-size: 20px;
+}
+.panel-userifon-content hr{
+    border: none;
+    border-top: 1px solid hsla(212,9%,63%,.2);
+    margin: 13px 0;
+}
+.panel-userinfo-tips{
+    margin-bottom: 10px;
+    color: #8796a8;
+}
+@media screen  and (max-width: 768px){
+    .panel-body-padding{
+        padding: 10px 10px;
+    }
+    .panel-body-border{
+        height: 140px;
+    }
 }

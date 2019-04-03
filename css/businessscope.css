@@ -1,0 +1,120 @@
+body{
+    background-color: #f0f2f5;
+}
+/* container的样式修改 */
+.padding-top{
+    padding-top: 60px;
+}
+/* row的样式修改 */
+.row-style{
+    padding: 0 90px;
+    margin-top: 75px;
+}
+.panel-title{
+    font-size: 12px;
+    font-weight: 300;
+}
+.panel-body-title{
+    padding-left: 45px;
+    color: #979fa8;
+    position: relative;
+    font-size: 16px;
+}
+.cursor-P{
+    cursor: pointer;
+}
+.panel-body-i{
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+.col-md-9-padding{
+    /* border: 1px solid #ddd; */
+    /* border-radius: 5px; */
+    /* background: #fff; */
+    padding: 0 15px;
+}
+.panel-body--top-p{
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+.panel-body-divD{
+    margin-bottom: 10px;
+    white-space:nowrap;/*文字不换行*/
+    overflow:hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/*点点点*/
+}
+.panel-body-divD span,.panel-body-divD label{
+    margin: 0 10px;
+    vertical-align: bottom;
+    font-size: 16px;
+    font-weight: 400;
+}
+.panel-body-input-C{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.panel-body-divD textarea{
+    padding: 15px;
+}
+#panel-body-btn{
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    background-color: darkcyan;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+.panel-body-center{
+    text-align: center;
+    margin-top: 20px;
+}
+.panel-body-divD-submit-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: darkcyan;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+@media screen  and (max-width: 766px){
+    .row-style{
+        padding: 0 0px;
+        margin-top: 75px;
+    }
+    .panel-body-divD span,.panel-body-divD label{
+        margin: 0 0px;
+        vertical-align: bottom;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    /* .panel-body-divD{
+        padding: 10px;
+    } */
+    .panel-body-input-C{
+        width: 14px;
+        height: 14px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+    .panel-body-divD textarea{
+        width:100%;
+        height: 100%;
+    }
+    #panel-body-btn{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:1024px){
+    .panel-body-divD textarea{
+        width:100%;
+        height: 100%;
+    }
+}
