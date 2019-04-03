@@ -15,9 +15,19 @@ a:hover{
     text-decoration: none;
 }
 
+@media screen and (max-width: 770px){
+    /*头部小字隐藏*/
+    .header-hide{
+        display: none;
+    }
+    .enter > a{
+        display: block;
+        transform: scale(1.2 );
+    }
+}
+
 /*大盒子*/
 .container{
-    min-width: 1000px;
     height: 100%;
     position: relative;
 }
@@ -92,12 +102,27 @@ header ul .header-name > img{
 .container > form{
     margin: 90px auto;
     padding: 0 15px;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
 }
 
-form > label{
-    display: block;
-    font-size: 0;
+form > div{
+    position: relative;
+}
+
+/*警告*/
+form > div > .warn{
+    position: absolute;
+    bottom: -17px;
+    font-size: 12px;
+    color: #db5858;
+    display: none;
+}
+
+.warn > i {
+    display: inline-block;
+    font-size: 14px;
+    transform: translate(0,1px);
 }
 
 .form-group > input{
@@ -106,7 +131,8 @@ form > label{
     border: 1px solid #49a9ee;
     font-size: 16px;
     text-indent: 1em;
-    outline: none;
+    /*box-shadow: none;*/
+    /*outline: none;*/
 }
 
 .form-group > input::placeholder{
@@ -126,7 +152,7 @@ form > .form-img{
     position: relative;
 }
 
-form >  .form-img > i{
+form > .form-img > i{
     position: absolute;
     top: 50%;
     left: 3px;
@@ -152,6 +178,7 @@ form > .form-verify > button{
     background-color: transparent;
     color: #49a9ee;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 form > .form-verify > .send-disabled{

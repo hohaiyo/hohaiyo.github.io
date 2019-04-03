@@ -1,4 +1,21 @@
 $(function () {
+    
+    // 头部
+    $(".navbar-toggle").on("click", function () {
+        $(".navbar-nav").css("display","block")
+    });
+
+    //隐藏搜索框
+    $(".nav-oneself").on("click",function(){
+        if($(window).width() < 768 && $(".dropdown-menu").css("display") == "none"){
+            $(".seek").css("display","none");
+        }else if($(window).width() < 768 && $(".dropdown-menu").css("display") == "block"){
+            $(".seek").css("display","block");
+        }
+    })
+
+    
+    // 滚动条
     $(window).scroll(function(){
         $(".anchor").css("top",($(window).height() - $('.anchor').outerHeight())/2 + $(document).scrollTop())
     })
@@ -19,4 +36,10 @@ $(function () {
         });
         $(this).removeClass("hover");
     });
+
+    // 使底部logo居中
+    if($(window).width()<767){
+        $(".footer_warp").children(".pull-left").addClass("center-block").removeClass("pull-left")
+    }
+
 });
