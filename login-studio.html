@@ -27,14 +27,14 @@
 <div class="container">
     <!--头部-->
     <header id="header-top">
-        <ul class="header-left col-md-4">
+        <ul class="header-left col-md-4 col-sm-6  col-xs-4">
             <li class="header-name">
                 <img src="./img/logo_blue.png">
             </li>
-            <li>小白外包服务平台</li>
+            <li class="header-hide">小白外包服务平台</li>
         </ul>
         <ul class="header-right col-md-4 pull-right text-right">
-            <li>什么，已经有账号了?</li>
+            <li class="header-hide">什么，已经有账号了?</li>
             <li class="enter">
                 <a href="#">登录</a>
             </li>
@@ -46,25 +46,51 @@
     <!--内容-->
     <!--表单-->
     <form class="form" rale="form">
-        <div class="form-group form-title">开发方注册</div>
+        <div class="form-group form-title">企业方注册</div>
         <div class="form-group form-username form-img">
             <i class="iconfont icon-yonghuming"></i>
             <input class="form-control" type="text" maxlength="7" placeholder="请设置用户名，用户名不可修改">
+            <!--警告-->
+            <div class="warn">
+                <i class="iconfont icon-quxiao"></i>
+                <span>请输入用户名</span>
+            </div>
         </div>
         <div class="form-group form-number form-img">
             <i class="iconfont icon-youxiang"></i>
-            <input class="form-control" type="text" maxlength="11" placeholder="请输入您的邮箱号">
+            <input class="form-control" type="text" maxlength="20" placeholder="请输入您的邮箱号">
+            <!--警告-->
+            <div class="warn">
+                <i class="iconfont icon-quxiao"></i>
+                <span>请输入邮箱</span>
+            </div>
         </div>
         <div class="form-group form-password form-img form-password1">
             <i class="iconfont icon-mima"></i>
-            <input class="form-control" type="password" maxlength="16" placeholder="请输入您的密码">
+            <input class="form-control" type="password" maxlength="18" placeholder="请输入您的密码">
+            <!--警告-->
+            <div class="warn">
+                <i class="iconfont icon-quxiao"></i>
+                <span>请输入密码</span>
+            </div>
         </div>
-        <div class="form-group form-password form-password2">
-            <input class="form-control" type="password" maxlength="16" placeholder="请确认您的密码">
+        <div class="form-group form-password">
+            <input class="form-control" type="password" maxlength="18" placeholder="请确认您的密码">
+            <!--警告-->
+            <div class="warn">
+                <i class="iconfont icon-quxiao"></i>
+                <span>请确认密码</span>
+            </div>
         </div>
+        <!--验证码-->
         <div class="form-group form-verify">
             <input class="form-control" type="text" maxlength="6" placeholder="请输入验证码">
             <button class="form-control send" type="button">发送验证码</button>
+            <!--警告-->
+            <div class="warn">
+                <i class="iconfont icon-quxiao"></i>
+                <span>请填写验证码</span>
+            </div>
         </div>
         <div class="form-group form-sure">
                 <span class="sure-check">
@@ -85,11 +111,11 @@
         <div class="footer_warp">
             <a href="#" class="pull-left">
                 <img src="./img/logo_white.png">
+                <p class="visible-xs font-xb">小白</p>
             </a>
             <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
         </div>
     </footer>
-</div>
 
 
 
@@ -107,7 +133,7 @@
 
         //验证码
         $(window).mousemove(function () {
-            if($(".form-number > input").val().length == 11 && $(".send").text() == "发送验证码"){
+            if($(".form-number > input").val().length > 11 && $(".send").text() == "发送验证码"){
                 $(".send").removeAttr("disabled").removeClass("send-disabled")
                 $(".form-verify > input").removeAttr("disabled").removeClass("input-disabled");
             }else{
@@ -147,13 +173,15 @@
             var password2 = $(".form-password2 > input");
             var verify = $(".form-verify > input");
             var check = $(".sure-check > i").css("display");
-            var arr = [ username, number, password1, password2, verify];
-            if( username.val().length == 0 || number.val().length == 0 || password1.val().length == 0 || password2.val().length == 0 || verify.val().length == 0){
+            var arr = [username, number, password, verify];
+            if(username.val().length == 0 || number.val().length == 0 || password.val().length == 0 || verify.val().length == 0){
                 for( var i = 0; i < arr.length; i++){
                     if(arr[i].val().length != 0){
                         arr[i].css("border","1px solid #49a9ee")
+                        arr[i].parent().find(".warn").css("display","none")
                     }else{
-                        arr[i].css("border","2px solid red")
+                        arr[i].css("border","1px solid red")
+                        arr[i].parent().find(".warn").css("display","block")
                     };
                 };
             }else{
@@ -162,11 +190,6 @@
                 }
                 location.href = "enter.html";
             };
-            if(check == "none"){
-                $(".sure-check").css("border","2px solid red")
-            }else{
-                $(".sure-check").css("border","none")
-            }
         });
 
         //点击返回

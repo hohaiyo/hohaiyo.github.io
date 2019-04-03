@@ -3,10 +3,256 @@ body{
     height: auto;
 }
 
+/*768以下*/
+@media screen and (max-width: 767px){
+    /*我发布的项目*/
+    .form-project > p{
+        display: inline-block;
+    }
+    .project-right > .form-status{
+        width: 40%;
+    }
+    .project-right > .btn-publish{
+        padding: 6px 8px;
+    }
+
+    /*项目列表头部*/
+    .project-list{
+        padding: 12px 10px;
+    }
+    .project-list > .list-top{
+        padding-bottom: 8px;
+    }
+    .project-list > .list-top > p{
+        width: 100%;
+        text-align: center;
+    }
+    .list-info{
+        font-size: 12px;
+    }
+
+    /*项目列表底部*/
+    .list-bottom{
+        padding: 10px 15px;
+    }
+    .list-bottom > .bottom-info{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .bottom-info > .bottom-btn{
+        width: 70%;
+    }
+    .bottom-info > p{
+        margin-bottom: 10px;
+    }
+    .bottom-info > .bottom-btn > button{
+        margin-right: 4px;
+        display: inline-block;
+        width: 30%;
+        font-size: 12px;
+        padding: 0;
+    }
+    .cancel-alert > div > button{
+        width: 48%;
+        display: inline-block;
+    }
+
+    /*锚点*/
+    .anchor{
+        display: none;
+    }
+}
+
+/*400以下*/
+@media screen and (max-width: 500px){
+    .bottom-info > .bottom-btn{
+        width: 100%;
+    }
+}
+
+/*768 -- 992*/
+@media screen and (min-width: 767px) and (max-width: 992px){
+    .container > form{
+        margin-bottom: 20px;
+    }
+    .index-head .navbar-default{
+        background-color: #fff;
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-logo > img {
+        display: none;
+    }
+    .index-head .navbar-header > .navbar-logo > img:nth-child(2){
+        display: block;
+    }
+    .index-head .navbar-default .navbar-nav>li>a{
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-brand{
+        color: #c0c0c0;
+    }
+
+
+    /*我发布的项目*/
+    .form-project{
+        margin-bottom: 15px;
+    }
+    .form-project > .form-status{
+        width: 100%;
+    }
+    .project-right > .btn-publish{
+        padding: 6px 20px;
+    }
+
+    /*项目列表头部*/
+    .project-list{
+        padding: 21px 28px;
+    }
+    .project-list > .list-top{
+        padding-bottom: 15px;
+    }
+
+
+    /*项目列表底部*/
+    .bottom-info > .bottom-btn > button{
+        margin-left: 20px;
+    }
+    .bottom-info > p{
+        margin: 10px 0 15px 0;
+    }
+    .bottom-info > .bottom-btn{
+        margin-top: 44px;
+    }
+}
+
+/*992 - 1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .index-head .navbar-default{
+        background-color: #fff;
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-logo > img {
+        display: none;
+    }
+    .index-head .navbar-header > .navbar-logo > img:nth-child(2){
+        display: block;
+    }
+    .index-head .navbar-default .navbar-nav>li>a{
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-brand{
+        color: #c0c0c0;
+    }
+
+
+    .container > form{
+        margin-bottom: 20px;
+    }
+
+    /*我发布的项目*/
+    .form-project{
+        margin-bottom: 15px;
+    }
+    .form-project > .form-status{
+        width: 100%;
+    }
+    .project-right > .btn-publish{
+        padding: 6px 20px;
+    }
+
+    /*项目列表头部*/
+    .project-list{
+        padding: 21px 28px;
+    }
+    .project-list > .list-top{
+        padding-bottom: 15px;
+    }
+
+    /*项目列表底部*/
+    .bottom-info > .bottom-btn > button{
+        margin-left: 20px;
+    }
+    .bottom-info > p{
+        margin: 10px 0 15px 0;
+    }
+    .bottom-info > .bottom-btn{
+        margin-top: 11px;
+    }
+}
+
+/*1200以上*/
+@media screen and (min-width: 1200px){
+    .index-head .navbar-default{
+        background-color: #fff;
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-logo > img {
+        display: none;
+    }
+    .index-head .navbar-header > .navbar-logo > img:nth-child(2){
+        display: block;
+    }
+    .index-head .navbar-default .navbar-nav>li>a{
+        color: #c0c0c0;
+    }
+    .index-head .navbar-header > .navbar-brand{
+        color: #c0c0c0;
+    }
+
+
+    .container > form{
+        margin-bottom: 20px;
+    }
+
+    /*我发布的项目*/
+    .form-project{
+        margin-bottom: 15px;
+    }
+    .form-project > .form-status{
+        width: 100%;
+    }
+    .project-right > .btn-publish{
+        padding: 6px 20px;
+    }
+
+    /*项目列表头部*/
+    .project-list{
+        padding: 21px 28px;
+    }
+    .project-list > .list-top{
+        padding-bottom: 15px;
+    }
+
+    /*项目列表底部*/
+    .list-bottom > .bottom-info{
+        padding: 0 0 0 20px;
+    }
+    .bottom-info > p{
+        margin: 10px 0 15px 0;
+    }
+    .bottom-info > .bottom-btn{
+        margin-top: 38px;
+    }
+    .bottom-info > .bottom-btn > button{
+        margin-left: 20px;
+    }
+}
+
+
+.mobile-white{
+    z-index: 999;
+}
+
+
 /*内容*/
 .container{
-    padding: 10px 0;
     margin-top: 70px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container .row{
+    margin: 0;
 }
 
 .container > .container-title{
@@ -18,8 +264,8 @@ body{
     box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
 }
 
-.container > form{
-    margin-bottom: 20px;
+.form-project > p{
+    line-height: 30px;
 }
 
 .project-right{
@@ -27,11 +273,13 @@ body{
 }
 
 .project-right > .form-status{
-    padding: 5px 25px;
+    padding: 5px 20px;
     cursor: pointer;
     border: none;
     box-shadow: none;
     background-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .project-right > .form-status:hover ~ .form-pulldown,
@@ -77,7 +325,6 @@ body{
 .project-right > .btn-publish{
     background-color: #49a9ee;
     color: #fff;
-    padding: 6px 20px;
 }
 
 .project-right > .btn-publish:hover{
@@ -88,14 +335,12 @@ body{
 .container > .project-list{
     background-color: #fff;
     border-radius: 8px;
-    padding: 21px 28px;
     margin-bottom: 20px;
 }
 
 .project-list > .list-top{
     border-bottom: 1px solid #dde3eb;
     margin: 0 1px;
-    padding-bottom: 15px;
 }
 
 /*项目列表标题*/
@@ -150,21 +395,9 @@ body{
 
 
 /*项目列表底部*/
-.list-bottom{
-    padding: 20px 15px 10px;
-}
-
 .list-bottom > img{
     padding: 0;
     border-radius: 5px;
-}
-
-.list-bottom > .bottom-info{
-    padding: 0 0 0 20px;
-}
-
-.bottom-info > p{
-    margin-bottom: 20px;
 }
 
 .bottom-info > p > .i-computer{
@@ -183,15 +416,6 @@ body{
 .bottom-money > .bottom-gray{
     border-right: 1px solid #8796a8;
     padding-right: 10px;
-}
-
-/*状态底部三个按钮*/
-.bottom-info > .bottom-btn{
-    margin-top: 42px;
-}
-
-.bottom-info > .bottom-btn > button{
-    margin-left: 20px;
 }
 
 /*编辑按钮*/

@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*头部导航栏*/
 /* 通用 */
 .navbar-default{
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
 =======
+=======
+>>>>>>> ykm
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
@@ -105,6 +108,9 @@
 .container-fluid{
     position: relative;
 }
+.container-fluid{
+    position: relative;
+}
 .container-fluid>.navbar-header{
     margin-left: 10px;
     margin-top: 10px;
@@ -174,9 +180,13 @@
     color: #ccc;
     background-color: transparent;
 }
+<<<<<<< HEAD
 .navbar-nav>li>a {
     padding: 22px 18px;
 }
+=======
+
+>>>>>>> ykm
 /*底部*/
 footer{
     box-sizing: border-box;
@@ -186,9 +196,15 @@ footer{
     position: relative;
     z-index: 999;
 
+<<<<<<< HEAD
 /*    position: fixed;
     bottom: 0;
     left: 0;*/
+=======
+    /*    position: fixed;
+        bottom: 0;
+        left: 0;*/
+>>>>>>> ykm
 }
 
 .footer_warp{
@@ -289,6 +305,58 @@ footer > p > span{
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
 }
+<<<<<<< HEAD
+=======
+.container-fluid{
+    position: relative;
+}
+.navbar-collapse{
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.navbar-logo>.mobile-none-767{
+    display: block;
+}
+.navbar-logo>.mobile-block{
+    display: none;
+}
+.seek{
+    margin-top: 7px;
+    height: 35px;
+    max-width: 200px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.seek>i{
+    padding: 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ccc;
+}
+.seek>input{
+    max-width: 160px;
+    border:none;
+    outline: none;
+    color: #ccc;
+    font-size: 15px;
+    vertical-align: 3px;
+    background: transparent;
+    text-indent: 5px;
+
+}
+.seek>input::placeholder{
+    font-size: 14px;
+    color: #c0c0c0;
+}
+.hide-dot>li{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+>>>>>>> ykm
 @media screen and (min-width: 767px){
     .seek{
         display: none;
@@ -320,7 +388,11 @@ footer > p > span{
         border: 1px solid #ddd;
         border-radius: 5px;
         height: 30px;
+<<<<<<< HEAD
         width: 165px;
+=======
+        width: 150px;
+>>>>>>> ykm
         position: relative;
         overflow:hidden;
     }
