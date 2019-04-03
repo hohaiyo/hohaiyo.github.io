@@ -6,7 +6,7 @@
     border: none;
     border-radius: 0;
     width: 100%;
-    min-width: 700px;
+    /* min-width: 700px; */
     position: absolute;
     top: 0;
     z-index:2992;
@@ -93,7 +93,7 @@
     border: none;
     border-radius: 0;
     width: 100%;
-    min-width: 700px;
+    /* min-width: 700px; */
     position: fixed;
     top: 0;
     z-index:2992;
@@ -181,7 +181,6 @@ footer{
     max-width: 1200px;
     overflow: hidden;
     position: relative;
-    min-width: 700px;
 }
 
 .footer_warp > a > img{

@@ -13,6 +13,7 @@ $(document).ready(function(){
             }
     })
     })
+
 // 交易与服务流程
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -58,14 +59,14 @@ $(document).ready(function(){
         // console.log(topp);
         if($(document).scrollTop()>300){
             $("#it").css("display","block");
-            $("#it").animate({left:'0px'},'slow');
+            $("#it").animate({left:'2%'},'slow');
             $("#UI").css("display","block");
-            $("#UI").animate({left:'20%'},'slow');
+            $("#UI").animate({left:'22%'},'slow');
             $("#yingxiao").fadeIn('slow');
             $("#app").css("display","block");
-            $("#app").animate({right:'20%'},'slow');
+            $("#app").animate({left:'62%'},'slow');
             $("#other").css("display","block");
-            $("#other").animate({right:'0'},'slow');
+            $("#other").animate({left:'82%'},'slow');
         }
     })
     })
