@@ -55,7 +55,7 @@ em{
 .project_tags>li:last-child{
 	float: right;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.project_tags>li{
 		float: none;
 		margin: 5px 0;
@@ -97,7 +97,7 @@ i{
 .project_descript{
 	width: 88%;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.projec_contain{
 		padding: 20px;
 	}
@@ -121,7 +121,7 @@ i{
 .project_descript_through>li{
 	margin: 10px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.project_descript_through{
 		padding-left:0;
 	}
@@ -135,7 +135,7 @@ i{
 	padding-bottom: 30px;
 }
 /*调整字体大小*/
-@media (max-width: 1200px) and (min-width: 768px){
+@media (max-width: 1200px) and (min-width: 767px){
 	body,.navbar-header > .navbar-brand{
 		font-size: 20px;
 	}
