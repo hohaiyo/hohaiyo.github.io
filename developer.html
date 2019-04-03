@@ -7,26 +7,38 @@
     <title>小白-专业的大学生外包服务平台</title>
 	<!-- bootstrap框架 -->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!-- 清除原始样式 -->	
-	<link rel="stylesheet" href="css/initialize.css">
 	<!-- 阿里小图标 -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_qtte94fy9sj.css">
     <!-- 通用头部 -->
     <link rel="stylesheet" href="css/header-footer.css">
+=======
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_akkp1t0pm4.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="css/indexheader-footer.css">
+>>>>>>> yp
     <!-- 这是自己页面的css -->
     <link rel="stylesheet" href="css/developer.css">
     <!-- ico图标 -->
     <link rel="shortcut icon" href="img/logo.ico" />
+    <!-- swiperCSS -->
+    <link rel="stylesheet" href="../dist/idangerous.swiper.css">
+    <!-- 清除原始样式 -->	
+	<link rel="stylesheet" href="css/initialize.css">
 	<!-- jQuery框架 -->
 	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
+    <!-- SwiperJs -->
+    <script src="jQuery/idangerous.swiper.min.js"></script>
 	<!-- bootstrap框架的js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 自己页面的js -->
+    <script src="jQuery/developer.js"></script> 
 	<!-- 头部 锚点 尾部js -->
-    <script type="text/javascript" src="jQuery/header-footer.js"></script> 
-    <script src="jQuery/developer.js"></script>
+    <script type="text/javascript" src="jQuery/header-footer.js"></script>
 </head>
 <body>
     <div class="box" id="header-top">
+<<<<<<< HEAD
         <header class="index-head">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
@@ -40,55 +52,80 @@
                         </button>
                         <a class="navbar-brand navbar-logo" href="developer.html">
                             <img src="./img/logo_white.png" alt="logo">
+=======
+        <header class="index-head mobile-white">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-logo" href="developer.html">
+                            <img class="mobile-none-767" src="./img/logo_white.png" alt="logo">
+                            <img class="mobile-block" src="./img/logo_blue.png" alt="logo">
+>>>>>>> yp
                         </a>
                         <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
                         <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
                         <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                        <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
                     </div>
-                    <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            
-                            <li class="dropdown nav-oneself">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="iconfont icon-huabanfuben1"></i>
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">早上好，杨先生</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="userinfo.html">
-                                        <i class="iconfont icon-geren"></i>
-                                        个人中心
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="account.html">
-                                        <i class="iconfont icon-huaban-"></i>
-                                        我的开发宝
-                                    </a></li>
-                                    <li><a href="published-project.html">
-                                        <i class="iconfont icon-xiangmu"></i>
-                                        我发布的项目
-                                    </a></li>
-                                    <li><a href="#">
-                                        <i class="iconfont icon-lanzi"></i>
-                                        我的报价单
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="index.html">
-                                        <i class="iconfont icon-tuichu"></i>
-                                        退出登录
-                                    </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                    <div class="navbar-collapse pull-right" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav mobile">
+                                
+                                <li class="dropdown nav-oneself">
+                                    <a href="#" class="dropdown-toggle personage" data-toggle="dropdown">
+                                        <i class="iconfont icon-huabanfuben1"></i>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="mobile-none-767"><a href="#">
+                                            <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                            项目列表
+                                        </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li class="mobile-none-767"><a href="#">
+                                                <i class="iconfont icon-fabu1"></i>
+                                                项目发布
+                                            </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li><a href="userinfo.html">
+                                            <i class="iconfont icon-geren"></i>
+                                            个人中心
+                                        </a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account.html">
+                                            <i class="iconfont icon-huaban-"></i>
+                                            我的开发宝
+                                        </a></li>
+                                        <li><a href="published-project.html">
+                                            <i class="iconfont icon-xiangmu"></i>
+                                            我发布的项目
+                                        </a></li>
+                                        <li><a href="businessscope.html">
+                                            <i class="iconfont icon-lanzi"></i>
+                                            广告位申请
+                                        </a></li>
+                                        <li class="divider"></li>
+                                        <li class="mobile-none-767"><a href="help/help.html">
+                                            <i class="iconfont icon-bangzhu"></i>
+                                            帮助
+                                        </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li><a href="index.html">
+                                            <i class="iconfont icon-tuichu"></i>
+                                            退出登录
+                                        </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
             </nav>
         </header>
         <header id="nav-white">
-            <nav class=" navbar navbar-default" role="navigation">
+            <nav class=" navbar navbar-default mobile-none-767" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
+<<<<<<< HEAD
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
                                 data-target="#example-navbar-collapse">
                             <span class="sr-only">切换导航</span>
@@ -96,48 +133,64 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+=======
+>>>>>>> yp
                         <a class="navbar-brand navbar-logo" href="developer.html">
                             <img src="./img/logo_blue.png" alt="logo">
                         </a>
                         <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
                         <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
                         <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                        <p class="seek-gray pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
                     </div>
-                    <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown nav-oneself">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="iconfont icon-huabanfuben1"></i>
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">早上好，杨先生</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="userinfo.html">
-                                        <i class="iconfont icon-geren"></i>
-                                        个人中心
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="account.html">
-                                        <i class="iconfont icon-huaban-"></i>
-                                        我的账户
-                                    </a></li>
-                                    <li><a href="published-project.html">
-                                        <i class="iconfont icon-xiangmu"></i>
-                                        我发布的项目
-                                    </a></li>
-                                    <li><a href="#">
-                                        <i class="iconfont icon-lanzi"></i>
-                                        我的报价单
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="index.html">
-                                        <i class="iconfont icon-tuichu"></i>
-                                        退出登录
-                                    </a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="navbar-collapse pull-right">
+                            <ul class="nav navbar-nav mobile">
+                                <li class="dropdown nav-oneself">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="iconfont icon-huabanfuben1"></i>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="mobile-none-767"><a href="#">
+                                            <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                            项目列表
+                                        </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li class="mobile-none-767"><a href="#">
+                                                <i class="iconfont icon-fabu1"></i>
+                                                项目发布
+                                            </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li><a href="userinfo.html">
+                                            <i class="iconfont icon-geren"></i>
+                                            个人中心
+                                        </a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account.html">
+                                            <i class="iconfont icon-huaban-"></i>
+                                            我的开发宝
+                                        </a></li>
+                                        <li><a href="published-project.html">
+                                            <i class="iconfont icon-xiangmu"></i>
+                                            我发布的项目
+                                        </a></li>
+                                        <li><a href="businessscope.html">
+                                            <i class="iconfont icon-lanzi"></i>
+                                            广告位申请
+                                        </a></li>
+                                        <li class="divider"></li>
+                                        <li class="mobile-none-767"><a href="help/help.html">
+                                            <i class="iconfont icon-bangzhu"></i>
+                                            帮助
+                                        </a></li>
+                                        <li class="divider mobile-none-767"></li>
+                                        <li><a href="index.html">
+                                            <i class="iconfont icon-tuichu"></i>
+                                            退出登录
+                                        </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </nav>
@@ -153,17 +206,19 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active lunbo">
-                        <div class="navphoto1">
-                            <!-- <p>互联网软件外包服务平台</p>
+                            <!-- <img src="img/banner-jiaru.jpg" alt=""> -->
+                        <!-- <div class="navphoto1">
+                            <p>互联网软件外包服务平台</p>
                             <p>提供你所需要的全套软件开发服务</p>
                             <div class="btn-list">
                                 <a href="">发布您的需求</a>
                                 <a href="">查看项目列表</a>
-                            </div> -->
-                        </div>
+                            </div>
+                        </div> -->
                     </div>
                     <div class="item lunbo2">
-                        <div class="navphoto2"></div>
+                        <!-- <img src="img/banner-kaifa.jpg" alt=""> -->
+                        <!-- <div class="navphoto2"></div> -->
                     </div>
                     <!-- <div class="item lunbo3">
                         <div class="navphoto3"></div>
@@ -179,8 +234,14 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <div class="mobile-block-1023">
+                <!-- <img src="img/banner-jiaru.jpg" alt=""> -->
+            </div>
         </div>
+<<<<<<< HEAD
         
+=======
+>>>>>>> yp
         <!-- 内容 -->
         <div class="main">
             <!-- 四步走 -->
@@ -190,7 +251,7 @@
                 </div>
                 <ul class="steps container">
                     <!-- 第一步 -->
-                    <li class="step col-sm-3 list-inline">
+                    <li class="step col-sm-3 list-inline col-xs-6">
                         <div class="step-img">
                             <img src="img/kaifa-one.png" alt="">
                         </div>
@@ -204,7 +265,7 @@
                         </div>
                     </li>
                     <!-- 第二步 -->
-                    <li class="step col-sm-3 list-inline">
+                    <li class="step col-sm-3 list-inline col-xs-6">
                         <div class="step-img">
                             <img src="img/kaifa-two.png" alt="">
                         </div>
@@ -218,7 +279,7 @@
                         </div>
                     </li>
                     <!-- 第三步 -->
-                    <li class="step col-sm-3 list-inline">
+                    <li class="step col-sm-3 list-inline col-xs-6">
                         <div class="step-img">
                             <img src="img/kaifa-three.png" alt="">
                         </div>
@@ -232,7 +293,7 @@
                         </div>
                     </li>
                     <!-- 第四步 -->
-                    <li class="step col-sm-3 list-inline">
+                    <li class="step col-sm-3 list-inline col-xs-6">
                         <div class="step-img">
                             <img src="img/kaifa-four.png" alt="">
                         </div>
@@ -246,7 +307,11 @@
                         </div>
                     </li>
                 </ul>
+<<<<<<< HEAD
                 <div class="demand-box row">
+=======
+                <div class="demand-box">
+>>>>>>> yp
                     <a class="demand" href="find_demand.html">马上挑选项目</a>
                 </div>
             </div>
@@ -255,10 +320,6 @@
         <!-- 排行榜 -->
         <div class="ranking-box">
            <div class="gaine">
-               <!-- 搜索 -->
-               <div class="seek">
-                   <div class=""></div>
-               </div>
                 <div class="ranking-top">
                     <h2>工作室排行</h2>
                 </div>
@@ -269,212 +330,233 @@
                         <li class="strive"><a>投标达人</a></li>
                     </ul>
                     <div class="nrbox">
+                        <!-- 收入榜 -->
                         <div class="ranking-nr clear">
                            <div class="ranking-left col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>1</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>1</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>2</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>2</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>3</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>3</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>4</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>4</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>5</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>5</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                     
                            </div>
                            <div class="ranking-right col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>6</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>6</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>7</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>7</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>8</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>8</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>9</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>9</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3 class="years">10</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>10</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">总收入：</span><span class="red">￥</span><span class="red">100,000</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                            </div>
                         </div>
+
+                       
                         <!-- 好评榜 -->
                         <div class="ranking-nr clear conceal">
                             <div class="ranking-left col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>1</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>1</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -484,24 +566,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>2</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>2</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -511,24 +595,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>3</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>3</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -538,24 +624,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>4</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>4</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -565,24 +653,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>5</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>5</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -592,27 +682,29 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                     
                             </div>
                             <div class="ranking-right col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>6</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>6</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -622,24 +714,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>7</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>7</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -649,24 +743,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>8</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>8</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -676,24 +772,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>9</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>9</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -703,24 +801,26 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3 class="years">10</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>10</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
-                                        <p><span class="gray">评分：</span>
+                                        <p  class="grade"><span class="gray">评分：</span>
                                             <span class="stars">
                                                 <i class="iconfont icon-xingxing"></i>
                                                 <i class="iconfont icon-xingxing"></i>
@@ -730,194 +830,218 @@
                                             </span>
                                             <span>5.0</span>
                                         </p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        
                         <!-- 投标达人 -->
                         <div class="ranking-nr clear conceal">
                             <div class="ranking-left col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>1</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>1</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>2</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>2</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>3</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>3</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>4</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>4</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>5</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>5</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
                                     </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
+                                    </li>
                                 </ul>
-                                    
                             </div>
                             <div class="ranking-right col-sm-6">
                                 <ul class="ranking clear">
-                                    <li><h3>6</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>6</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>7</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>7</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>8</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>8</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3>9</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>9</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                                 <ul class="ranking clear">
-                                    <li><h3 class="years">10</h3></li>
-                                    <li class="ranking-head">
+                                    <li class="col-sm-3 col-xs-3 col-lg-2"><h3>10</h3></li>
+                                    <li class="ranking-head col-sm-3 col-xs-3 col-lg-2">
                                         <div><img src="img/list.png" alt=""></div>
                                     </li>
-                                    <li class="studio-message">
+                                    <li class="studio-message col-sm-6 col-xs-6 col-lg-5">
                                         <p class="studio-id">工作室名字</p>
                                         <p>
                                             <span class="gray">擅长：</span>
                                             <span>Web前端</span>
                                             <span class="gray fulfill">完成项目：</span>
                                             <span>0</span>
-                                            <!-- 邀请 -->
-                                            <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                         </p>
                                         <p><span class="gray">投标次数：</span><span>0</span></p>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <!-- 邀请 -->
+                                        <a class="invite"><i class="iconfont icon-flagqizi"></i>邀请</a>
                                     </li>
                                 </ul>
                             </div>
@@ -927,6 +1051,7 @@
            </div>
         </div>
     </div>
+<<<<<<< HEAD
     
     <div class="bottom1">
         <div class="bottom1-1">
@@ -940,6 +1065,13 @@
         <div class="row">
             <div class="col-md-2">
                 <ul>
+=======
+    <!-- 底部1 -->
+    <div class="container bottom">
+        <div class="row">
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <ul class="hide-dot">
+>>>>>>> yp
                     <li>新手指南</li>
                     <li><a href="">注册登录</a></li>
                     <li><a href="">广告位申请</a></li>
@@ -947,8 +1079,13 @@
                     <li><a href="">项目交易流程</a></li>
                 </ul>
             </div>
+<<<<<<< HEAD
             <div class="col-md-2">
                 <ul>
+=======
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <ul class="hide-dot">
+>>>>>>> yp
                     <li>关于我们</li>
                     <li><a href="">小白介绍</a></li>
                     <li><a href="">成功案例</a></li>
@@ -956,23 +1093,37 @@
                     <li><a href="">成功案例</a></li>
                 </ul>
             </div>
+<<<<<<< HEAD
             <div class="col-md-2">
                 <ul>
+=======
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <ul class="hide-dot">
+>>>>>>> yp
                     <li>帮助</li>
                     <li><a href="">注册登录问题</a></li>
                     <li><a href="">如何发布项目需求</a></li>
                     <li><a href="">更多>></a></li>
                 </ul>
             </div>
+<<<<<<< HEAD
             <div class="col-md-2"></div>
             <div class="col-md-2">
+=======
+            <div class="col-md-2 col-xs-6 mobile-none-992"></div>
+            <div class="col-md-2 col-xs-6 col-sm-3">
+>>>>>>> yp
                 <ul>
                     <li>联系我们</li>
                     <li>0571-11112222</li>
                     <li>1252555@qq.com</li>
                 </ul>
             </div>
+<<<<<<< HEAD
             <div class="col-md-2">
+=======
+            <div class="col-md-2 col-xs-6 col-sm-3">
+>>>>>>> yp
                 <ul class="bottom-ul">
                     <li class="bottom-li">
                         <img src="img/1553692895.png" alt="">
