@@ -5,175 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>广告位购买</title>
-    <!-- 公共样式封装 -->
-    <link rel="stylesheet" href="css/initialize.css">
-    <!-- 阿里云图标CDN -->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_dgbb2bktimj.css">
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- 当前页面的样式 建议在最上面 -->
-    <link rel="stylesheet" href="css/userinfo.css">
-    <link rel="stylesheet" href="css/authentication.css">
+    <title>广告位申请</title>
+    <!-- bootstrap框架 -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 阿里小图标 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_akkp1t0pm4.css">
+    <!-- 通用头部 -->
+    <link rel="stylesheet" href="css/header-footer.css">
+    <!-- 这是自己页面的css -->
     <link rel="stylesheet" href="css/businessscope.css">
-    <!-- 网页标题小图标 -->
-    <link rel="shortcut icon" href="./img/logo.ico" />
-    <!-- 选择框会出现选好的值特效的样式 -->
-    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="./jQuery/jquery-1.12.4.js"></script>
-    <!-- 本页面的jq代码 -->
+    <!-- ico图标 -->
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <!-- 清除原始样式 -->
+    <link rel="stylesheet" href="css/initialize.css">
+    <!-- jQuery框架 -->
+    <script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
+    <!-- bootstrap框架的js -->
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 自己页面的js -->
     <script src="jQuery/businessscope.js"></script>
-    <!-- bootstrap的js文件 -->
-    <!-- <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
-    <!-- 地市区三级联动选择框 -->
-    <script src="./jQuery/js/sanjiliandong/js/distpicker.data.js"></script>
-    <script src="./jQuery/js/sanjiliandong/js/distpicker.js"></script>
-    <script src="./jQuery/js/sanjiliandong/js/main.js"></script>
-    <!-- 选择框会出现选好的值特效的样式 -->
-    <script src="jQuery/check_select.js"></script>
     <!-- 头部 锚点 尾部js -->
-    <script src="./jQuery/header-footer.js"></script>
+    <script type="text/javascript" src="jQuery/header-footer.js"></script>
+
 </head>
 
 <body>
-    <!-- //顶部导航栏测试 -->
-    <div class="top-nav">
-        <div class="top-navbox">
-            <div class="top-navbox-img fl clearfloat">
-                <a href="index.html"><img src="./img/logo.png" alt=""></a>
-            </div>
-            <div class="top-navbox-list fl clearfloat">
-                <ul>
-                    <li><a href="find_demand.html">列表项目</a></li>
-                    <li><a href="demand.html">项目发布</a></li>
-                    <li><a href="developer.html">开发方</a></li>
-                    <li><a href="help/help.html">帮助</a></li>
-                </ul>
-            </div>
-            <div class="fr clearfloat top-navbox-user">
-                <ul>
-                    <li>
-                        <a href="###"><i class="iconfont icon-tongzhi"></i></a>
-                    </li>
-                    <li class="user-top">
-                        <i class="iconfont icon-huabanfuben1"></i>
-                        <i class="iconfont icon-xiangxia"></i>
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dropdown-word"><a href="javascript:;">早上好，杨先生</a></li>
+    <header id="nav-white">
+        <nav class=" navbar navbar-default mobile-none-767" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-logo" href="developer.html">
+                        <img src="./img/logo_blue.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+                    <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                    <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                    <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+                            placeholder="搜索工作室"></p>
+                </div>
+                <div class="navbar-collapse pull-right">
+                    <ul class="nav navbar-nav mobile">
+                        <li class="dropdown nav-oneself">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="iconfont icon-huabanfuben1"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                        项目列表
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-fabu1"></i>
+                                        项目发布
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li><a href="userinfo.html">
+                                        <i class="iconfont icon-geren"></i>
+                                        个人中心
+                                    </a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-word"><a href="userinfo.html"><i
-                                            class="iconfont icon-geren"></i>　个人中心</a></li>
+                                <li><a href="account.html">
+                                        <i class="iconfont icon-huaban-"></i>
+                                        我的开发宝
+                                    </a></li>
+                                <li><a href="published-project.html">
+                                        <i class="iconfont icon-xiangmu"></i>
+                                        我发布的项目
+                                    </a></li>
+                                <li><a href="businessscope.html">
+                                        <i class="iconfont icon-lanzi"></i>
+                                        广告位申请
+                                    </a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-word"><a href="account.html"><i
-                                            class="iconfont icon-huaban-">　我的开发宝</i></a></li>
-                                <li class="dropdown-word"><a href="published-project.html"><i
-                                            class="iconfont icon-xiangmu"></i>　我发布的项目</a></li>
-                                <li class="dropdown-word"><a href="businessscope.html"><i
-                                            class="iconfont icon-lanzi"></i>　广告位购买</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="dropdown-word"><a href="index.html"><i
-                                            class="iconfont icon-tuichu"></i>　退出登陆</a></li>
+                                <li class="mobile-none-767"><a href="help/help.html">
+                                        <i class="iconfont icon-bangzhu"></i>
+                                        帮助
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li><a href="index.html">
+                                        <i class="iconfont icon-tuichu"></i>
+                                        退出登录
+                                    </a></li>
                             </ul>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- //结束 -->
-    <!-- 主体开始 -->
-    <div class="content-wrapper">
-        <div class="content">
-            <div>
-                <div class="wrapper">
-                    <div class="fl clearfloat left-menu">
-                        <div>
-                            <div class="side-nav">
-                                <ul>
-                                    <li class="list-header border-radius-top">
-                                        <span>广告位信息</span>
-                                    </li>
-                                    <li class="list-item activied">
-                                        <a href="businessscope.html" class="nav-link">
-                                            <i class="iconfont icon-user11"></i>
-                                            <span>广告位购买</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                    <!-- <li class="list-item ">
-                                        <a href="authentication.html" class="nav-link">
-                                            <i class="iconfont icon-shezhi-tianchong"></i>
-                                            <span>实名认证</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li> -->
-                                </ul>
-                                <!-- <ul>
-                                    <li class="list-header border-radius-top">
-                                        <span>开发者信息</span>
-                                    </li>
-                                    <li class="list-item activied">
-                                        <a href="businessscope.html" class="nav-link">
-                                            <i class="iconfont icon-fanwei"></i>
-                                            <span>业务范围</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-item ">
-                                        <a href="###" class="nav-link">
-                                            <i class="iconfont icon-anli"></i>
-                                            <span>成功案例</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                </ul> -->
-                            </div>
+        </nav>
+    </header>
+    <div class="container padding-top">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 row-style">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color: #e6ebf0; color: #000;">
+                            <h3 class="panel-title">
+                                广告位信息
+                            </h3>
+                        </div>
+                        <div class="panel-body cursor-P panel-body-title">
+                            <i class="iconfont icon-fanwei panel-body-i"></i>
+                            广告位申请
+                            <i class="iconfont icon-gou pull-right"></i>
                         </div>
                     </div>
-                    <div class="fl clearfloat right-content">
-                        <div class="right-content-mian">
+                </div>
+                <div class="col-md-9 col-md-9-padding">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
                             <form>
-                                <p class="form-p">请选择你想要的位置</p>
-                                <div class="formad">
-                                    <input type="checkbox" id="ad-chk">
-                                    <label for="ad-chk">网站的黄金位置之一，位于网站首页的两旁。</label>
-                                    <span>$10</span>
+                                <p class="panel-body--top-p">请选择广告位置：</p>
+                                <div class="panel-body-divD">
+                                    <input type="checkbox" name="" id="panel-body-input-A" class="panel-body-input-C">
+                                    <label for="panel-body-input-A">网站的黄金位置，位于网站首页的两旁</label>
+                                    <span style="color: #ff5000;">￥998</span>
                                 </div>
-                                <div class="formad">
-                                    <input type="checkbox" id="ad-chk2">
-                                    <label for="ad-chk2">网站的黄金位置之一，位于网站登陆页面。</label>
-                                    <span>$25</span>
+                                <div class="panel-body-divD">
+                                    <input type="checkbox" name="" id="panel-body-input-B" class="panel-body-input-C">
+                                    <label for="panel-body-input-B">网站的黄金位置，位于网站登陆页面的banner图</label>
+                                    <span style="color: #ff5000;">￥998</span>
                                 </div>
-                                <div class="formad">
-                                    <input type="checkbox" id="ad-chk3">
-                                    <label for="ad-chk3">网站的黄金位置之一，位于网站推荐页面。</label>
-                                    <span>$10</span>
+                                <div class="panel-body-divD">
+                                    <input type="checkbox" name="" id="panel-body-input-C" class="panel-body-input-C">
+                                    <label for="panel-body-input-C">网站的顶级位置，网站日常推送位置</label>
+                                    <span style="color: #ff5000;">￥1998</span>
                                 </div>
-                                <div class="formad">
-                                    <input type="checkbox" id="ad-chk4">
-                                    <label for="ad-chk4">网站注册页面的广告位，朴实无华的位置</label>
-                                    <span>$5</span>
+                                <div class="panel-body-divD">
+                                    <input type="checkbox" name="" id="panel-body-input-D" class="panel-body-input-C">
+                                    <label for="panel-body-input-D">网站的一般位置，位于网站首页的底部</label>
+                                    <span style="color: #ff5000;">￥398</span>
                                 </div>
-                                <div class="formad bottom-fix">
-                                    <input type="checkbox" id="ad-chk5">
-                                    <label for="ad-chk5">网站日常推送，顶级的广告位</label>
-                                    <span>$60</span>
+                                <div class="panel-body-divD">
+                                    <input type="checkbox" name="" id="panel-body-input-E" class="panel-body-input-C">
+                                    <label for="panel-body-input-E">网站的一般位置，位于网站注册的底部</label>
+                                    <span style="color: #ff5000;">￥398</span>
                                 </div>
-                                <div class="ad-artile">
-                                    <p class="form-p">请输入你想好的广告语</p>
-                                    <textarea name="" id="adtitle" cols="76" rows="10"></textarea>
+                                <p class="panel-body--top-p">请输入您的广告语：</p>
+                                <div class="panel-body-divD panel-body-divD-bg">
+                                    <textarea name="" id="" cols="80" rows="10"></textarea>
                                 </div>
-                                <div class="ad-sc">
-                                    <p class="form-p fl clearfloat">请上传你的广告图</p>
-                                    <div id="form-jiafile" class="fr clearfloat">请选择</div>
-                                    <input type="file" id="form-file">
-                                </div>
-                                <div class="buy">
-                                    <button type="submit">购买</button>
+                                <span class="panel-body--top-p">请上传您的广告图：</span>
+                                <button id="panel-body-btn">上传图片</button>
+                                <input type="file" id="panel-body-file" style="display: none">
+                                <div class="panel-body-divD panel-body-center">
+                                    <button class="panel-body-divD-submit-btn" type="submit">提交</button>
                                 </div>
                             </form>
                         </div>
@@ -182,47 +159,34 @@
             </div>
         </div>
     </div>
-    <!-- 主体结束，取名狂魔终于结束了他罪恶的一生 -->
-    <!-- 尾部开始 -->
-    <div class="footer">
-        <div class="footer-box">
-            <div class="fl clearfloat">
-                <img src='./img/logo1.02.png' alt="">
+    <!-- 底部 -->
+	<footer class="footxwt">
+            <div class="footer_warp">
+                <a href="#" class="pull-left">
+                    <img src="../img/logo1.02.png">
+                </a>
+                <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
             </div>
-            <div class="fr clearfloat footer-copy">
-                Copyright &copy; 2014-2020
-            </div>
+        </footer>
+         <!--侧边栏-->
+        <div class="anchor">
+                <ul>
+                    <li class="anchor-consult">
+                        <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+                        咨询
+                    </li>
+                    <li class="anchor-about">
+                        <i class="iconfont icon-guanyu"></i>
+                        关于我们
+                    </li>
+                    <li class="anchor-top">
+                        <i class="iconfont icon-top"></i>
+                        TOP
+                        <a href="#header-top"></a>
+                    </li>
+                </ul>
+                <span></span>
         </div>
-    </div>
-    <!-- 尾部结束 -->
-    <!-- 侧边栏开始 -->
-    <div class="anchor">
-        <ul>
-            <li class="anchor-consult">
-                <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
-                咨询
-            </li>
-            <li class="anchor-about">
-                <i class="iconfont icon-guanyu"></i>
-                关于我们
-            </li>
-            <li class="anchor-top">
-                <i class="iconfont icon-top"></i>
-                TOP
-                <a href="#header-top"></a>
-            </li>
-        </ul>
-        <!-- <span></span> -->
-    </div>
-    <!-- 结束 -->
-    <script>
-        $(function(){
-            $('#form-jiafile').click(function(){
-                $('#form-file').click();
-            })
-        })
-    </script>
 </body>
-
 
 </html>

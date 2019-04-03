@@ -5,155 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人中心</title>
-    <!-- 公共样式封装 -->
-    <link rel="stylesheet" href="css/initialize.css">
-    <!-- 阿里云图标CDN -->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_dgbb2bktimj.css">
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- 当前页面的css样式 建议在最上面 -->
+    <title>广告位申请</title>
+    <!-- bootstrap框架 -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 阿里小图标 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_akkp1t0pm4.css">
+    <!-- 通用头部 -->
+    <link rel="stylesheet" href="css/header-footer.css">
+    <!-- 这是自己页面的css -->
+    <link rel="stylesheet" href="css/businessscope.css">
     <link rel="stylesheet" href="css/userinfo.css">
-    <!-- 网页标题小图标 -->
-    <link rel="shortcut icon" href="./img/logo.ico" />
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="./jQuery/jquery-1.12.4.js"></script>
-    <!-- 当前页面的js样式 -->
+    <!-- ico图标 -->
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <!-- 清除原始样式 -->
+    <link rel="stylesheet" href="css/initialize.css">
+    <!-- jQuery框架 -->
+    <script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
+    <!-- bootstrap框架的js -->
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 自己页面的js -->
     <script src="jQuery/userinfo.js"></script>
-    <!-- bootstrap的js文件 -->
-    <!-- <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
-    <!-- 地市区三级联动选择框 -->
-    <script src="./jQuery/js/sanjiliandong/js/distpicker.data.js"></script>
-    <script src="./jQuery/js/sanjiliandong/js/distpicker.js"></script>
-    <script src="./jQuery/js/sanjiliandong/js/main.js"></script>
     <!-- 头部 锚点 尾部js -->
-    <script src="./jQuery/header-footer.js"></script>
+    <script type="text/javascript" src="jQuery/header-footer.js"></script>
+
 </head>
 
 <body>
-    <!-- //顶部导航栏测试 -->
-    <div class="top-nav">
-        <div class="top-navbox">
-            <div class="top-navbox-img fl clearfloat">
-                <a href="index.html"><img src="./img/logo.png" alt=""></a>
-            </div>
-            <div class="top-navbox-list fl clearfloat">
-                <ul>
-                    <li><a href="find_demand.html">列表项目</a></li>
-                    <li><a href="demand.html">项目发布</a></li>
-                    <li><a href="developer.html">开发方</a></li>
-                    <li><a href="help/help.html">帮助</a></li>
-                </ul>
-            </div>
-            <div class="fr clearfloat top-navbox-user">
-                <ul>
-                    <li>
-                        <a href="###"><i class="iconfont icon-tongzhi"></i></a>
-                    </li>
-                    <li class="user-top">
-                        <i class="iconfont icon-huabanfuben1"></i>
-                        <i class="iconfont icon-xiangxia"></i>
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dropdown-word"><a href="javascript:;">早上好，杨先生</a></li>
+    <header id="nav-white">
+        <nav class=" navbar navbar-default mobile-none-767" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-logo" href="developer.html">
+                        <img src="./img/logo_blue.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+                    <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                    <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                    <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+                            placeholder="搜索工作室"></p>
+                </div>
+                <div class="navbar-collapse pull-right">
+                    <ul class="nav navbar-nav mobile">
+                        <li class="dropdown nav-oneself">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="iconfont icon-huabanfuben1"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                        项目列表
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-fabu1"></i>
+                                        项目发布
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li><a href="userinfo.html">
+                                        <i class="iconfont icon-geren"></i>
+                                        个人中心
+                                    </a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-word"><a href="userinfo.html"><i
-                                            class="iconfont icon-geren"></i>　个人中心</a></li>
+                                <li><a href="account.html">
+                                        <i class="iconfont icon-huaban-"></i>
+                                        我的开发宝
+                                    </a></li>
+                                <li><a href="published-project.html">
+                                        <i class="iconfont icon-xiangmu"></i>
+                                        我发布的项目
+                                    </a></li>
+                                <li><a href="businessscope.html">
+                                        <i class="iconfont icon-lanzi"></i>
+                                        广告位申请
+                                    </a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-word"><a href="account.html"><i
-                                            class="iconfont icon-huaban-">　我的开发宝</i></a></li>
-                                <li class="dropdown-word"><a href="published-project.html"><i
-                                            class="iconfont icon-xiangmu"></i>　我发布的项目</a></li>
-                                <li class="dropdown-word"><a href="businessscope.html"><i class="iconfont icon-lanzi"></i>　广告位购买</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="dropdown-word"><a href="index.html"><i
-                                            class="iconfont icon-tuichu"></i>　退出登陆</a></li>
+                                <li class="mobile-none-767"><a href="help/help.html">
+                                        <i class="iconfont icon-bangzhu"></i>
+                                        帮助
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li><a href="index.html">
+                                        <i class="iconfont icon-tuichu"></i>
+                                        退出登录
+                                    </a></li>
                             </ul>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- //结束 -->
-    <!-- 主体开始 -->
-    <div class="content-wrapper">
-        <div class="content">
-            <div>
-                <div class="wrapper">
-                    <div class="fl clearfloat left-menu">
-                        <div>
-                            <div class="side-nav">
-                                <ul>
-                                    <li class="list-header border-radius-top">
-                                        <span>基本信息</span>
-                                    </li>
-                                    <li class="list-item activied">
-                                        <a href="userinfo.html" class="nav-link">
-                                            <i class="iconfont icon-user11"></i>
-                                            <span>账户信息</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-item ">
-                                        <a href="authentication.html" class="nav-link">
-                                            <i class="iconfont icon-shezhi-tianchong"></i>
-                                            <span>实名认证</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li class="list-header border-radius-top">
-                                        <span>开发者信息</span>
-                                    </li>
-                                    <!-- <li class="list-item">
-                                        <a href="businessscope.html" class="nav-link">
-                                            <i class="iconfont icon-fanwei"></i>
-                                            <span>业务范围</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li> -->
-                                    <li class="list-item ">
-                                        <a href="Successfulcases.html" class="nav-link">
-                                            <i class="iconfont icon-anli"></i>
-                                            <span>成功案例</span>
-                                            <i class="iconfont icon-gou"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+        </nav>
+    </header>
+    <div class="container padding-top">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 row-style">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color: #e6ebf0; color: #000;">
+                            <h3 class="panel-title">
+                                基本信息
+                            </h3>
+                        </div>
+                        <div class="panel-body cursor-P panel-body-title panel-body-bottomborder actived">
+                            <i class="iconfont icon-user11 panel-body-i"></i>
+                            <a href="###">账户信息</a> 
+                            <i class="iconfont icon-gou pull-right"></i>
+                        </div>
+                        <div class="panel-body cursor-P panel-body-title unactived">
+                            <i class="iconfont icon-shezhi-tianchong panel-body-i"></i>
+                            <a href="###">实名认证</a> 
+                            <i class="iconfont icon-gou pull-right"></i>
+                        </div>
+                        <div class="panel-heading unactived" style="background-color: #e6ebf0; color: #000;">
+                            <h3 class="panel-title">
+                                开发者信息
+                            </h3>
+                        </div>
+                        <div class="panel-body cursor-P panel-body-title unactived">
+                            <i class="iconfont icon-anli panel-body-i"></i>
+                            <a href="###">成功案例</a> 
+                            <i class="iconfont icon-gou pull-right"></i>
                         </div>
                     </div>
-                    <div class="fl clearfloat right-content">
-                        <div class="right-content-mian">
-                            <div class="headportrait">
-                                <div class="fl clearfloat headimg">
-                                    <div class="headIcon" id="headIcon">
-                                        <div id="iconimg">
-                                            <label for="userimg"><i class="iconfont icon-xiugai"></i></label>
-                                            <input type="file" id="userimg" style="display:none;">
-                                        </div>
-                                    </div>
+                </div>
+                <div class="col-md-9 col-md-9-padding">
+                    <div class="panel panel-default">
+                        <div class="panel-body panel-body-padding">
+                            <div class="col-md-12 panel-body-border">
+                                <div class="pull-left col-md-3 panel-body-padding-border panel-body-img">
+                                    <img src="img/headimg.png" alt="" id="panel-body-img">
+                                    <input type="file" style="display: none;" id="panel-body-file-two">
                                 </div>
-                                <div class="fl clearfloat right-content-info">
-                                    <span>sinfate</span>
-                                    <span><img src="./img/vip.png" alt=""></span>
-                                    <div class="right-content-info-button">
-                                        升级获得更多权益
-                                    </div>
+                                <div class="pull-left col-md-9 panel-body-padding-border panel-body-border-title">
+                                    <p>sinfate</p>
+                                    <p><img src="img/vip.png" alt=""></p>
                                 </div>
                             </div>
-                            <div class="Accountinformation">
+                            <div class="col-md-12 panel-userifon-content">
                                 <p>账户信息</p>
                                 <hr />
-                                <div class="message">
-                                    <div class="message-p-box">
-                                        <p>标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
-                                        <p>您的个人信息不会透露给任何第三方，请放心填写。</p>
-                                    </div>
-                                    <div class="account-item account-item-bottom">
+                                <p class="panel-userinfo-tips">标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
+                                <p class="panel-userinfo-tips">您的个人信息不会透露给任何第三方，请放心填写。</p>
+                                <div class="account-item account-item-bottom">
                                         <div class="fl clearfloat item-head">
                                             <span>工作邮箱</span>
                                             <span>*</span>
@@ -191,83 +184,6 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="account-item">
-                                        <div class="fl clearfloat item-head">
-                                            <span>工作手机</span>
-                                            <span>*</span>
-                                            <span class="authenticated">已验证</span>
-                                        </div>
-                                        <div class="fl clearfloat item-content" id="phone">
-                                            <div class="input-wrapper">
-                                                <span>12345678910</span>
-                                            </div>
-                                            <div class="operation">
-                                                <a href="###">
-                                                    <i class="iconfont icon-xiugai"></i> 修改
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="personaldata">
-                                <div>
-                                    <p>个人资料</p>
-                                    <hr />
-                                    <div class="personform">
-                                        <form id="personform-now">
-                                            <div class="team-form">
-                                                <label class="fl clearfloat team-form-label">团队名称 *</label>
-                                                <div class="fl clearfloat team-form-name">
-                                                    <div class="fl clearfloat">sinfate</div>
-                                                    <div class="operation fr clearfloat team-a">
-                                                        <a href="###" class="teamxiugai">
-                                                            <i class="iconfont icon-xiugai"></i> 修改
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="team-form">
-                                                <label class="fl clearfloat team-form-label">QQ</label>
-                                                <div class="fl clearfloat team-form-name">
-                                                    <div class="fl clearfloat">123456789</div>
-                                                </div>
-                                            </div>
-                                            <div class="team-form">
-                                                <label class="fl clearfloat team-form-label">所在地 *</label>
-                                                <div class="fl clearfloat team-form-name">
-                                                    <div class="fl clearfloat">杭州市 下城区</div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form id="personform-set">
-                                            <div class="team-form">
-                                                <label class="team-set-label fl clearfloat">团队名称 *</label>
-                                                <div class="fl clearfloat team-set-shuru">
-                                                    <input type="text" placeholder="请输入名称">
-                                                </div>
-                                            </div>
-                                            <div class="team-form">
-                                                <label class="team-set-label fl clearfloat">QQ</label>
-                                                <div class="fl clearfloat team-set-shuru">
-                                                    <input type="text" placeholder="请输入QQ">
-                                                </div>
-                                            </div>
-                                            <div class="team-set-select">
-                                                <label class="fl clearfloat">所在地 *</label>
-                                                <div class="team-set-diqu fl clearfloat" data-toggle="distpicker">
-                                                    <select data-province="---- 选择省 ----"></select>
-                                                    <select data-city="---- 选择市 ----"></select>
-                                                    <select data-district="---- 选择区 ----"></select>
-                                                </div>
-                                            </div>
-                                            <div class="team-set-button">
-                                                <button type="submit" class="team-set-btn">确定</button>
-                                                <button class="team-set-btn-quxiao">取消</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -275,20 +191,16 @@
             </div>
         </div>
     </div>
-    <!-- 主体结束，取名狂魔终于结束了他罪恶的一生 -->
-    <!-- 尾部开始 -->
-    <div class="footer">
-        <div class="footer-box">
-            <div class="fl clearfloat">
-                <img src='./img/logo1.02.png' alt="">
-            </div>
-            <div class="fr clearfloat footer-copy">
-                Copyright &copy; 2014-2020
-            </div>
+    <!-- 底部 -->
+    <footer class="footxwt">
+        <div class="footer_warp">
+            <a href="#" class="pull-left">
+                <img src="../img/logo1.02.png">
+            </a>
+            <span href="index.html" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
         </div>
-    </div>
-    <!-- 尾部结束 -->
-    <!-- 侧边栏开始 -->
+    </footer>
+    <!--侧边栏-->
     <div class="anchor">
         <ul>
             <li class="anchor-consult">
@@ -305,82 +217,8 @@
                 <a href="#header-top"></a>
             </li>
         </ul>
-        <!-- <span></span> -->
+        <span></span>
     </div>
-    <!-- 结束 -->
 </body>
-<!-- <script>
-    //下拉菜单
-    $('.user-top').click(
-        function () {
-            $('.dropdown').toggle();
-        }
-    )
-    //头像hover效果
-    $('#headIcon').hover(
-        function () {
-            $('#iconimg').css('display', 'block');
-        }, function () {
-            $('#iconimg').css('display', 'none');
-        }
-    );
-    //验证码
-    $(window).mousemove(function () {
-        if ($(".form-number > input").val().length > 11 && $(".send").text() == "发送验证码") {
-            $(".send").removeAttr("disabled").removeClass("send-disabled")
-        } else {
-            $(".send").attr("disabled", "disabled").addClass("send-disabled");
-        }
-    });
-
-    //验证码点击
-    $(".send").click(function () {
-        var num = 60;
-        send(num);
-    });
-    var timer = null;
-    function send(a) {
-        var num = a--;
-        $(".send").text("重新发送(" + a + "s)").css("color");
-        $(".send").attr("disabled", "disabled").addClass("send-disabled");
-        clearInterval(timer);
-        timer = setInterval(function () {
-            if (a == 0) {
-                clearInterval(timer);
-                var time = null;
-                clearTimeout(time);
-                time = setTimeout(function () { $(".send").text("发送验证码") }, 5000);
-            } else {
-                send(a)
-            }
-        }, 1000);
-    };
-    //修改按钮效果
-    $('#quxiao').click(function () {
-        $('.form-content').css('display', 'none');
-        $('#item-content-id').css('display', 'block');
-    });
-    $('#queding').click(function () {
-        $('.form-content').css('display', 'none');
-        $('#item-content-id').css('display', 'block');
-    });
-    $('.xiugai').click(function () {
-        $('.form-content').css('display', 'block');
-        $('#item-content-id').css('display', 'none');
-    });
-    //个人资料的消失隐藏
-    $('.teamxiugai').click(function () {
-        $('#personform-now').css('display', 'none');
-        $('#personform-set').css('display', 'block');
-    })
-    $('.team-set-btn').click(function () {
-        $('#personform-now').css('display', 'block');
-        $('#personform-set').css('display', 'none');
-    })
-    $('.team-set-btn-quxiao').click(function () {
-        $('#personform-now').css('display', 'block');
-        $('#personform-set').css('display', 'none');
-    })
-</script> -->
 
 </html>
