@@ -1,4 +1,3 @@
-/*头部导航栏*/
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
@@ -92,11 +91,14 @@
     border: none;
     border-radius: 0;
     width: 100%;
-    min-width: 700px;
+    /*min-width: 700px;*/
     position: fixed;
     top: 0;
     z-index:2992;
     padding: 2px 0;
+}
+.container-fluid{
+    position: relative;
 }
 .container-fluid>.navbar-header{
     margin-top: 10px;
@@ -113,7 +115,7 @@
     color:#ccc;
 }
 .navbar-default .navbar-nav>li>a:hover{
-    color:#ccc;
+color:#ccc;
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -167,28 +169,39 @@
     background-color: transparent;
 }
 
-
-
 /*底部*/
 footer{
     box-sizing: border-box;
     padding: 10px 0;
     text-align: center;
     background-color: #1f2d3d;;
-    position: relative;
     z-index: 999;
+
+/*    position: fixed;
+    bottom: 0;
+    left: 0;*/
 }
 
 .footer_warp{
     margin:0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     overflow: hidden;
     position: relative;
-    min-width: 700px;
+    /*min-width: 700px;*/
+    padding: 0 20px;
 }
 
-.footer_warp > a > img{
+footer > p{
+    margin: 0;
+}
+
+footer > p > a > img{
     height: 30px;
+}
+
+footer > p > span{
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .footer-text{
@@ -266,4 +279,72 @@ footer{
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
+}
+@media screen and (min-width: 767px){
+    .seek{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .navbar-hide,.anchor{
+        display: none;
+    }
+    .navbar-header{
+        display: inline-block;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border: none;
+        height: 50px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .navbar-nav{
+        margin: 0;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .seek{
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        height: 30px;
+        width: 150px;
+        position: relative;
+        overflow:hidden;
+    }
+    .seek>.iconfont{
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        left:52%;
+        width:100%;
+        transform:translate(-50%,-50%);
+        text-align: left;
+    }
+    .seek input{
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 18%;
+        right: 0;
+        bottom: 0;
+    }
+    .navbar-header > .navbar-brand{
+        margin-right: 0;
+    }
+    .footer-text{
+        display: none;
+    }
+    .footer_warp img{
+        width: 40px;
+    }
+}
+@media screen and (max-width: 321px){
+    .seek{
+        width: 120px;
+    }
 }

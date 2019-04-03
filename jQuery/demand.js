@@ -85,6 +85,9 @@ $(document).ready(function(){
 	    	alert('请填写项目名称')	;		    		    	
 	    	return false;	    	
 	    }
+	    else{
+	    	demand_name.style.borderColor = '';
+	    }
 	    // 是否填写项目名称
 
     	//金额是否大于等于50000元
@@ -93,6 +96,9 @@ $(document).ready(function(){
     		demand_budget.style.borderColor = 'red';
     		alert('个人项目金额不能低于50000元');
     		return false;
+    	}
+    	else{
+    		demand_budget.style.borderColor = '';
     	}
     	//金额是否大于等于50000元
 
@@ -103,6 +109,9 @@ $(document).ready(function(){
 	    	alert('请填写期望周期')	;		    		    	
 	    	return false;	    	
 	    }
+	    else{
+	    	demand_day.style.borderColor = '';
+	    }
 	    // 是否填写期望周期
 
 	    //是否填写项目介绍
@@ -112,6 +121,9 @@ $(document).ready(function(){
 	    	alert('请填写项目介绍')	;		    		    	
 	    	return false;	    	
 	    }
+	    else{
+	    	demand_introduce.style.borderColor = '';
+	    }
 	    // 是否填写项目介绍
 
 	    // 是否填写招标要求
@@ -120,7 +132,10 @@ $(document).ready(function(){
 	    	demand_call_for.style.borderColor = 'red';
 	    	alert('请填写招标要求')	;		    		    	
 	    	return false;	    	
-	    }	    	    
+	    }	 
+	    else{
+	    	demand_call_for.style.borderColor = '';
+	    }   	    
 	    // 是否填写招标要求
 
 	    // 是否填写姓名
@@ -129,7 +144,10 @@ $(document).ready(function(){
 	    	demand_user_name.style.borderColor = 'red';
 	    	alert('请填写您的姓名')	;		    		    	
 	    	return false;	    	
-	    }	    	    
+	    }	
+	    else{
+	    	demand_user_name.style.borderColor = '';
+	    }    	    
 	    // 是否填写姓名    
 
 	    // 是否填写邮箱
@@ -138,6 +156,9 @@ $(document).ready(function(){
 	    	demand_user_email.style.borderColor = 'red';
 	    	alert('请填写您的邮箱')	;		    		    	
 	    	return false;	    	
+	    }
+	    else{
+	    	demand_user_email.style.borderColor = '';
 	    }	    	    
 	    // 是否填写邮箱	
 
@@ -147,6 +168,9 @@ $(document).ready(function(){
 	    	demand_user_tel.style.borderColor = 'red';
 	    	alert('请填写您的手机号码')	;		    		    	
 	    	return false;	    	
+	    }
+	    else{
+	    	demand_user_tel.style.borderColor = '';
 	    }	    	    
 	    // 是否填写手机号码
 	    
@@ -156,6 +180,9 @@ $(document).ready(function(){
 	    	security_code_input.style.borderColor = 'red';
 	    	alert('请填写验证码')	;		    		    	
 	    	return false;	    	
+	    }
+	    else{
+	    	security_code_input.style.borderColor = '';
 	    }	    	    
 	    // 是否填写验证码		        	    	    
 
@@ -166,6 +193,18 @@ $(document).ready(function(){
     	}
     	// 检测是否勾选了同意条款
 
+		// 检测是否为数字
+			if (isNaN(demand_budget.value)) {
+				alert('项目预算填写必须全部为数字');
+				return false;
+			}
+			
+			if (isNaN(demand_day.value)) {
+				alert('期望周期填写必须全部为数字');
+				return false;
+			}
+		// 检测是否为数字
+		
 	}
 		// 验证码
 	var maxtime = 60;
@@ -194,3 +233,41 @@ $(document).ready(function(){
 	    ,1000) 
 	}
 		// 验证码
+	
+		// 只能输入纯中文
+		demand_user_name.onkeyup = function(){
+			if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
+				this.value = '';
+			}
+		}
+
+		demand_user_name.onblur = function(){
+			if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
+				this.value = '';
+			}
+		}
+		// 只能输入纯中文
+		
+		// 只能输入数字
+		function only_num_keyup(obj){
+			if(!/^[0-9]*$/gi.test(obj.value)){
+				obj.value = '';
+			}
+		}
+
+		function only_num_blur(obj){
+			if(!/^[0-9]*$/gi.test(obj.value)){
+				obj.value = '';
+			}
+		}
+
+		// 只能输入数字
+		
+		//检测邮箱格式是否正确
+
+		demand_user_email.onblur = function(){
+			if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/gi.test(this.value)){
+				this.value = '';
+			}
+		}			
+		//检测邮箱格式是否正确

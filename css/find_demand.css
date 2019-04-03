@@ -2,17 +2,17 @@
 
 .find_demand_content_left{
 	width: 74%;
-	min-width: 700px;
+	/*min-width: 700px;*/
 }
 
 .find_demand_content_left_box{
 	width: 100%;
 	border-radius: 5px;
 	background-color: white;	
-	min-width: 700px;
+	min-width: 400px;
 	box-shadow: 1px 2px 8px rgba(0,0,0,0.2);	
 	padding: 20px 60px 60px 40px;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 
 .find_demand_content_left_item_type{
@@ -80,6 +80,14 @@
 	padding-bottom: 0px;
 }
 
+.find_demand_content_other_margin{
+	margin-bottom: 10px;
+}
+
+.find_demand_content_other_two{
+	margin-bottom: 10px;
+}
+
 .find_demand_content_left_form>label{
 	width: 230px;
 	height: 30px;
@@ -105,7 +113,6 @@
 /*开头的搜索*/
 
 .find_demand_content_left_box_item{
-	min-width: 600px;
 	width: 100%;
 	overflow: hidden;
 	padding-top: 20px;
@@ -138,7 +145,7 @@
 
 .find_demand_item_p{
 	/*width: 100%;*/
-	min-width: 600px;
+	/*min-width: 600px;*/
 	overflow: hidden;
 }
 
