@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./img/logo.ico" />	
-    <link rel="stylesheet" type="text/css" href="css/particles_style.css">
-    <!-- 粒子特效css样式 -->    
+    <link rel="shortcut icon" href="./img/logo.ico" />	   
 	<link rel="stylesheet" type="text/css" href="css/initialize.css">
 	<!-- 清除原始样式 -->
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<!-- 分页器样式 -->
 	<link rel="stylesheet" type="text/css" href="css/demand.css">
 	<!-- 项目需求的样式 -->
+	<link rel="stylesheet" type="text/css" href="css/demand_screen.css">
+	<!-- 项目需求的媒体查询设置 -->
 	<link rel="stylesheet" type="text/css" href="css/find_demand.css">
 	<!-- 寻找需求的css -->
+	<link rel="stylesheet" type="text/css" href="css/find_demand_screen.css">
+	<!-- 寻找需求的媒体查询设置 -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<!-- bootstrap框架 -->
 	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
@@ -20,8 +24,6 @@
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_ezv0y0x9w0a.css">
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_1tkg6rdi04.css">	
 	<!-- 头部 尾部 锚点样式 -->
-	<link rel="stylesheet" type="text/css" href="css/zxf_page.css">
-	<!-- 分页器样式 -->
 	<title>小白-专业的大学生外包服务平台</title>
 </head>
 <body>
@@ -29,8 +31,9 @@
 	<div id="header-top"></div>
 	<!-- top锚点 -->
 
-	<!--头部-->
+	<!-- 头部 -->
 	<header id="nav-white">
+<<<<<<< HEAD
 		    <nav class=" navbar navbar-default" role="navigation">
 		        <div class="container-fluid">
 		            <div class="navbar-header">
@@ -87,8 +90,72 @@
 		            </div>
 		        </div>
 		    </nav>
+=======
+	        <nav class=" navbar navbar-default mobile-none-767" role="navigation">
+	            <div class="container-fluid">
+	                <div class="navbar-header">
+	                    <a class="navbar-brand navbar-logo" href="developer.html">
+	                        <img src="./img/logo_blue.png" alt="logo">
+	                    </a>
+	                    <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+	                    <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+	                    <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+	                    <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
+	                </div>
+	                <div class="navbar-collapse pull-right">
+	                        <ul class="nav navbar-nav mobile">
+	                            <li class="dropdown nav-oneself">
+	                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                                    <i class="iconfont icon-huabanfuben1"></i>
+	                                    <b class="caret"></b>
+	                                </a>
+	                                <ul class="dropdown-menu">
+	                                    <li class="mobile-none-767"><a href="#">
+	                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+	                                        项目列表
+	                                    </a></li>
+	                                    <li class="divider mobile-none-767"></li>
+	                                    <li class="mobile-none-767"><a href="#">
+	                                            <i class="iconfont icon-fabu1"></i>
+	                                            项目发布
+	                                        </a></li>
+	                                    <li class="divider mobile-none-767"></li>
+	                                    <li><a href="userinfo.html">
+	                                        <i class="iconfont icon-geren"></i>
+	                                        个人中心
+	                                    </a></li>
+	                                    <li class="divider"></li>
+	                                    <li><a href="account.html">
+	                                        <i class="iconfont icon-huaban-"></i>
+	                                        我的开发宝
+	                                    </a></li>
+	                                    <li><a href="published-project.html">
+	                                        <i class="iconfont icon-xiangmu"></i>
+	                                        我发布的项目
+	                                    </a></li>
+	                                    <li><a href="businessscope.html">
+	                                        <i class="iconfont icon-lanzi"></i>
+	                                        广告位申请
+	                                    </a></li>
+	                                    <li class="divider"></li>
+	                                    <li class="mobile-none-767"><a href="help/help.html">
+	                                        <i class="iconfont icon-bangzhu"></i>
+	                                        帮助
+	                                    </a></li>
+	                                    <li class="divider mobile-none-767"></li>
+	                                    <li><a href="index.html">
+	                                        <i class="iconfont icon-tuichu"></i>
+	                                        退出登录
+	                                    </a></li>
+	                                </ul>
+	                            </li>
+	                        </ul>
+	                </div>
+	            </div>
+	        </nav>
+>>>>>>> wyj
 	</header>
-	<!-- 头部	 -->
+	<!-- 头部-->
 	
 	<!-- 空盒子 顶下中间内容用 -->
 	<div class="nothing_box"></div>
@@ -99,7 +166,7 @@
 		<!-- 左侧内容 -->
 		<div class="find_demand_content_left pull-left">
 			<!-- 筛选版块 -->
-			<div class="find_demand_content_left_box find_demand_content_other_padding">
+			<div class="find_demand_content_left_box find_demand_content_other_padding find_demand_content_other_margin">
 				<div class="find_demand_content_left_item_type item_other_border-bottom">
 					<div class="pull-left find_demand_content_left_item_type_left">项目类型 :</div>
 					<div class="pull-left find_demand_content_left_item_type_right" id="item_box">
@@ -134,9 +201,9 @@
 			<!-- 筛选版块 -->
 
 			<!-- 筛选内容 -->
-			<div class="find_demand_content_left_box find_demand_content_other_padding">
+			<div class="find_demand_content_left_box find_demand_content_other_padding find_demand_content_other_marign_two">
 				<div class="find_demand_content_left_box_item">
-					<div class="find_demand_content_left_box_item_img pull-left">
+					<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 						<img src="img/find_demand_person_test.png">
 					</div>
 
@@ -148,7 +215,6 @@
 							<span class="find_demand_item_price pull-right">
 								<span>¥</span><span>50000</span><span>元</span>
 							</span>
-							<span class="pull-right find_demand_neg">可议价</span>
 							
 						</p>
 						<p class="find_demand_item_p_two">
@@ -168,7 +234,7 @@
 					</div>
 				</div>
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -179,7 +245,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -198,7 +263,7 @@
 						</div>				
 				</div>	
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -209,7 +274,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -228,7 +292,7 @@
 						</div>				
 				</div>
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -239,7 +303,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -258,7 +321,7 @@
 						</div>				
 				</div>	
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -269,7 +332,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -288,7 +350,7 @@
 						</div>				
 				</div>
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -299,7 +361,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -318,7 +379,7 @@
 						</div>				
 				</div>	
 				<div class="find_demand_content_left_box_item">
-						<div class="find_demand_content_left_box_item_img pull-left">
+						<div class="find_demand_content_left_box_item_img pull-left hidden-xs">
 							<img src="img/find_demand_person_test.png">
 						</div>
 
@@ -329,7 +390,6 @@
 								<span class="find_demand_item_price pull-right">
 									<span>¥</span><span>50000</span><span>元</span>
 								</span>
-								<span class="pull-right find_demand_neg">可议价</span>
 							</p>
 							<p class="find_demand_item_p_two">
 								<span>
@@ -397,11 +457,11 @@
 	<footer>
 	    <div class="footer_warp">
 	        <a href="#" class="pull-left">
-	            <img src="./img/logo_white.png">
+	                <img src="./img/logo_white.png">
 	        </a>
-	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
+	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
 	    </div>
-	</footer>	
+	</footer>
 	<!-- 底部 -->
 
 	<!--侧边栏-->
@@ -426,23 +486,16 @@
 	    <span></span>
 	</div>
 	<!-- 侧边栏 -->
-	<div id="particles-js"></div>
 
 	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
 	<!-- jQuery框架 -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<!-- bootstrap框架的js -->
-	<script type="text/javascript" src="jQuery/demand.js"></script>
-	<!-- 项目需求的js -->
 	<script type="text/javascript" src="jQuery/find_demand.js"></script>
 	<!-- 寻找需求的css -->
 	<script type="text/javascript" src="jQuery/header-footer.js"></script>
 	<!-- 头部 锚点 尾部js -->
-	<script type="text/javascript" src="jQuery/zxf_page.js"></script>
+	<script type="text/javascript" src="jQuery/page.js"></script>
 	<!-- 分页器插件 -->
-	<script src="jQuery/particles.js"></script>
-	<!-- 粒子特效框架 -->
-	<script src="jQuery/particles_app.js"></script>
-	<!-- 粒子特效参数js文件 -->	
 </body>
 </html>

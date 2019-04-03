@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*头部导航栏*/
 =======
+=======
+>>>>>>> wyj
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
@@ -110,21 +113,31 @@
     border-radius: 0;
     width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*min-width: 700px;*/
 =======
     /* min-width: 700px; */
 >>>>>>> wcy
+=======
+    /*min-width: 700px;*/
+>>>>>>> wyj
     position: fixed;
     top: 0;
     z-index:2992;
     padding: 2px 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .container-fluid{
     position: relative;
 }
 >>>>>>> zztS
+=======
+.container-fluid{
+    position: relative;
+}
+>>>>>>> wyj
 .container-fluid>.navbar-header{
     margin-top: 10px;
     margin-left: 10px;
@@ -141,10 +154,14 @@
 }
 .navbar-default .navbar-nav>li>a:hover{
 <<<<<<< HEAD
+<<<<<<< HEAD
     color:#ccc;
 =======
 color:#ccc;
 >>>>>>> zztS
+=======
+color:#ccc;
+>>>>>>> wyj
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -250,6 +267,7 @@ color:#ccc;
 =======
 >>>>>>> zztS
 
+<<<<<<< HEAD
 .index-head .navbar-header > .navbar-brand:hover{
     color: #ccc;
 }
@@ -298,15 +316,17 @@ color:#ccc;
 =======
 
 >>>>>>> ykm
+=======
+>>>>>>> wyj
 /*底部*/
 footer{
     box-sizing: border-box;
     padding: 10px 0;
     text-align: center;
     background-color: #1f2d3d;;
-    position: relative;
     z-index: 999;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /*    position: fixed;
     bottom: 0;
@@ -316,6 +336,11 @@ footer{
         bottom: 0;
         left: 0;*/
 >>>>>>> ykm
+=======
+/*    position: fixed;
+    bottom: 0;
+    left: 0;*/
+>>>>>>> wyj
 }
 
 .footer_warp{
@@ -324,14 +349,20 @@ footer{
     overflow: hidden;
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> wyj
     /*min-width: 700px;*/
     padding: 0 20px;
 }
 
 footer > p{
     margin: 0;
+<<<<<<< HEAD
 =======
 >>>>>>> wcy
+=======
+>>>>>>> wyj
 }
 
 footer > p > a > img{
@@ -421,6 +452,7 @@ footer > p > span{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .container-fluid{
     position: relative;
@@ -474,6 +506,8 @@ footer > p > span{
 >>>>>>> ykm
 =======
 >>>>>>> zztS
+=======
+>>>>>>> wyj
 @media screen and (min-width: 767px){
     .seek{
         display: none;
@@ -507,6 +541,7 @@ footer > p > span{
         height: 30px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         width: 165px;
 =======
         width: 150px;
@@ -514,6 +549,9 @@ footer > p > span{
 =======
         width: 165px;
 >>>>>>> zztS
+=======
+        width: 150px;
+>>>>>>> wyj
         position: relative;
         overflow:hidden;
     }
