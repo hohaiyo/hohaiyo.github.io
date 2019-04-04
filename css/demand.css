@@ -239,6 +239,10 @@ textarea:-ms-input-placeholder {
 	margin-bottom: 20px;
 }
 
+.demand_issue{
+	width: 100%;
+}
+
 .demand_issue a{
 	display: inline-block;
 	width: 140px;
@@ -327,9 +331,4 @@ textarea:-ms-input-placeholder {
 	min-width: 700px;
 }
 
-/*.footer_logo_two{
-	position: absolute;
-	top: 30%;
-	left: 0%;
-}*/
 /*底部*/
