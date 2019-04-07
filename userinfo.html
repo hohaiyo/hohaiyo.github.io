@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>广告位申请</title>
+    <title>个人信息</title>
     <!-- bootstrap框架 -->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!-- 阿里小图标 -->
@@ -27,6 +27,10 @@
     <script src="jQuery/userinfo.js"></script>
     <!-- 头部 锚点 尾部js -->
     <script type="text/javascript" src="jQuery/header-footer.js"></script>
+    <!-- 地市区三级联动选择框 -->
+    <script src="./jQuery/js/sanjiliandong/js/distpicker.data.js"></script>
+    <script src="./jQuery/js/sanjiliandong/js/distpicker.js"></script>
+    <script src="./jQuery/js/sanjiliandong/js/main.js"></script>
 
 </head>
 
@@ -40,11 +44,12 @@
                     </a>
                     <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
                     <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                    <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
                     <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
-                    <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+                    <p class="seek pull-left clearfix"><i class="iconfont icon-search-1-copy"></i> <input type="text"
                             placeholder="搜索工作室"></p>
                 </div>
-                <div class="navbar-collapse pull-right">
+                <div class="navbar-collapse pull-right clearfix">
                     <ul class="nav navbar-nav mobile">
                         <li class="dropdown nav-oneself">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -108,13 +113,13 @@
                         </div>
                         <div class="panel-body cursor-P panel-body-title panel-body-bottomborder actived">
                             <i class="iconfont icon-user11 panel-body-i"></i>
-                            <a href="###">账户信息</a> 
-                            <i class="iconfont icon-gou pull-right"></i>
+                            <a href="userinfo.html">账户信息</a>
+                            <i class="iconfont icon-gou pull-right clearfix"></i>
                         </div>
                         <div class="panel-body cursor-P panel-body-title unactived">
                             <i class="iconfont icon-shezhi-tianchong panel-body-i"></i>
-                            <a href="###">实名认证</a> 
-                            <i class="iconfont icon-gou pull-right"></i>
+                            <a href="authentication.html">实名认证</a>
+                            <i class="iconfont icon-gou pull-right clearfix"></i>
                         </div>
                         <div class="panel-heading unactived" style="background-color: #e6ebf0; color: #000;">
                             <h3 class="panel-title">
@@ -123,8 +128,8 @@
                         </div>
                         <div class="panel-body cursor-P panel-body-title unactived">
                             <i class="iconfont icon-anli panel-body-i"></i>
-                            <a href="###">成功案例</a> 
-                            <i class="iconfont icon-gou pull-right"></i>
+                            <a href="Successfulcases.html">成功案例</a>
+                            <i class="iconfont icon-gou pull-right clearfix"></i>
                         </div>
                     </div>
                 </div>
@@ -132,58 +137,145 @@
                     <div class="panel panel-default">
                         <div class="panel-body panel-body-padding">
                             <div class="col-md-12 panel-body-border">
-                                <div class="pull-left col-md-3 panel-body-padding-border panel-body-img">
+                                <div class="pull-left clearfix col-md-3 panel-body-padding-border panel-body-img">
                                     <img src="img/headimg.png" alt="" id="panel-body-img">
                                     <input type="file" style="display: none;" id="panel-body-file-two">
                                 </div>
-                                <div class="pull-left col-md-9 panel-body-padding-border panel-body-border-title">
+                                <div class="pull-left clearfix col-md-9 panel-body-padding-border panel-body-border-title">
                                     <p>sinfate</p>
                                     <p><img src="img/vip.png" alt=""></p>
                                 </div>
                             </div>
-                            <div class="col-md-12 panel-userifon-content">
+                            <div class="col-md-12 panel-userifon-content clearfix">
                                 <p>账户信息</p>
                                 <hr />
                                 <p class="panel-userinfo-tips">标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
                                 <p class="panel-userinfo-tips">您的个人信息不会透露给任何第三方，请放心填写。</p>
-                                <div class="account-item account-item-bottom">
-                                        <div class="fl clearfloat item-head">
-                                            <span>工作邮箱</span>
-                                            <span>*</span>
-                                            <span class="validation">未验证</span>
-                                        </div>
-                                        <div class="fl clearfloat item-content" id="item-content-id">
-                                            <div class="input-wrapper">
-                                                <span>无</span>
-                                            </div>
-                                            <div class="operation">
-                                                <a href="###" class="xiugai">
-                                                    <i class="iconfont icon-xiugai"></i> 修改
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="form-content fr">
+                                <div class="col-md-12 panel-body-padding-border panel-body-bottom-15">
+                                    <div class="col-md-3 panel-body-padding-border pull-left clearfix">
+                                        <span>工作邮箱 * </span>
+                                        <span class="noyan">已验证</span>
+                                    </div>
+                                    <div class="col-md-7 col-xs-12 panel-body-padding-border pull-right clearfix" id="you">
+                                        <span>无</span>
+                                        <span class="pull-right clearfix panel-body-padding-border-span" id="xiugai"><i class="iconfont icon-xiugai"></i> 修改</span>
+                                    </div>
+                                    <div class="col-md-7 col-xs-12 none-w"  id="wu">
+                                        <div class="form-content pull-right clearfix">
                                             <form>
                                                 <div class="item-one">
-                                                    <div class="item-one-yi fl form-number">
+                                                    <div class="item-one-yi pull-left clearfix form-number col-md-9 col-xs-10 panel-body-padding-border">
                                                         <input type="text" placeholder="邮箱" id="email">
                                                     </div>
-                                                    <div class="item-one-er fl">
+                                                    <div class="item-one-er pull-right clearfix col-md-3 panel-body-padding-border">
                                                         <a href="##" id="quxiao">取消</a>
                                                     </div>
                                                 </div>
-                                                <div class="item-two">
-                                                    <div class="item-two-yi">
-                                                        <input type="text" maxlength="6" placeholder="验证码">
+                                                <div class=" item-one">
+                                                    <div class="item-two-yi pull-left clearfix col-md-9  col-xs-10 panel-body-padding-border">
+                                                        <input type="text" maxlength="6" placeholder="验证码" id="yanID">
                                                         <button type="button" class="send">发送验证码</button>
                                                     </div>
-                                                    <div class="item-one-er fl">
+                                                    <div class="item-one-er pull-right clearfix col-md-3 panel-body-padding-border">
                                                         <a href="###" id="queding">确定</a>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-md-12 panel-body-padding-border">
+                                    <div class="col-md-3 panel-body-padding-border pull-left clearfix">
+                                        <span>工作手机 * </span>
+                                        <span class="noyan">已验证</span>
+                                    </div>
+                                    <div class="col-md-7 col-xs-12 panel-body-padding-border pull-right clearfix" id="you2">
+                                        <span>无</span>
+                                        <span class="pull-right clearfix panel-body-padding-border-span" id="xiugai2"><i class="iconfont icon-xiugai"></i> 修改</span>
+                                    </div>
+                                    <div class="col-md-7 none-w"  id="wu2">
+                                        <div class="form-content pull-right clearfix">
+                                            <form>
+                                                <div class="item-one">
+                                                    <div class="item-one-yi pull-left clearfix form-number col-md-9 col-xs-10 panel-body-padding-border">
+                                                        <input type="text" placeholder="手机" id="email" class="phone">
+                                                    </div>
+                                                    <div class="item-one-er pull-right clearfix col-md-3 panel-body-padding-border">
+                                                        <a href="##" id="quxiao2">取消</a>
+                                                    </div>
+                                                </div>
+                                                <div class=" item-one">
+                                                    <div class="item-two-yi pull-left clearfix col-md-9 col-xs-10 panel-body-padding-border">
+                                                        <input type="text" maxlength="6" placeholder="验证码" id="yanID">
+                                                        <button type="button" class="send" id="send2">发送验证码</button>
+                                                    </div>
+                                                    <div class="item-one-er pull-right clearfix col-md-3 panel-body-padding-border">
+                                                        <a href="###" id="queding2">确定</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 panel-userifon-content clearfix">
+                                <p>个人资料</p>
+                                <hr />
+                                <div class="col-md-12 panel-body-padding-border " id="you3">
+                                    <div class="col-md-12 panel-body-padding-border">
+                                        <div class="col-md-12 panel-body-padding-border userinfo-body-margin-bottom">
+                                            <span class="col-md-3 col-xs-3 panel-body-padding-border">
+                                                团队名称 *
+                                            </span>
+                                            <span class="col-md-6 col-xs-6 panel-body-padding-border userinfo-word-textcenter">
+                                                sinfate123
+                                            </span>
+                                            <span class="col-md-3 col-xs-3 panel-body-padding-border text-right userinfo-word-a xiugai3">
+                                                <i class="iconfont icon-xiugai"></i> 修改
+                                            </span>
+                                        </div>
+                                        <div class="col-md-12 panel-body-padding-border userinfo-body-margin-bottom">
+                                            <span class="col-md-3 col-xs-3 panel-body-padding-border">
+                                                QQ
+                                            </span>
+                                            <span class="col-md-6 col-xs-9 panel-body-padding-border userinfo-word-textcenter">
+                                                12345678910
+                                            </span>
+                                        </div>
+                                        <div class="col-md-12 panel-body-padding-border userinfo-body-margin-bottom">
+                                            <span class="col-md-3 col-xs-3 panel-body-padding-border">
+                                                所在地 *
+                                            </span>
+                                            <span class="col-md-6 col-xs-9 panel-body-padding-border userinfo-word-textcenter">
+                                                浙江省 杭州市 下城区
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 panel-body-padding-border none-w" id="wu3">
+                                    <form>
+                                        <div class="form-body-border-height">
+                                            <label class="col-md-4 col-xs-12 panel-body-padding-border">团队名称 *</label>
+                                            <input type="text" placeholder="请输入名称" class="col-md-8 col-xs-12 panel-body-padding-border form-body-border-input">
+                                        </div>
+                                        <div class="form-body-border-height">
+                                            <label class="col-md-4 col-xs-12 panel-body-padding-border">QQ </label>
+                                            <input type="text" placeholder="请输入QQ" class="col-md-8 col-xs-12 panel-body-padding-border form-body-border-input">
+                                        </div>
+                                        <div class="form-body-border-height">
+                                            <label class="col-md-4 col-xs-12 panel-body-padding-border">所在地 *</label>
+                                            <div class="col-md-8 col-xs-12 panel-body-padding-border panel-body-select" data-toggle="distpicker">
+                                                <select class="col-xs-12 col-md-4" data-province="---- 选择省 ----"></select>
+                                                <select class="col-xs-12 col-md-4" data-city="---- 选择市 ----"></select>
+                                                <select class="col-xs-12 col-md-4" data-district="---- 选择区 ----"></select>
+                                            </div>
+                                        </div>
+                                        <div class="form-body-border-height panel-body-button panel-body-padding-border col-md-12 col-xs-12">
+                                            <button type="submit" class="team-set-btn">确定</button>
+                                            <button class="team-set-btn-quxiao">取消</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,10 +286,10 @@
     <!-- 底部 -->
     <footer class="footxwt">
         <div class="footer_warp">
-            <a href="#" class="pull-left">
-                <img src="../img/logo1.02.png">
+            <a href="#" class="pull-left clearfix">
+                <img src="img/logo1.02.png">
             </a>
-            <span href="index.html" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
+            <span href="index.html" class="pull-right clearfix footer-text">Copyright &copy; 2014-2020</span>
         </div>
     </footer>
     <!--侧边栏-->

@@ -1,3 +1,9 @@
+input,button{
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .panel-body-bottomborder{
     border-bottom: 1px solid #ddd;
 }
@@ -46,7 +52,7 @@
     text-indent: 1em;
 }
 .panel-userifon-content{
-    padding: 35px 0;
+    padding: 35px 0 0 0;
 }
 .panel-userifon-content p:first-child{
     font-size: 20px;
@@ -60,11 +66,125 @@
     margin-bottom: 10px;
     color: #8796a8;
 }
+.noyan{
+    display: inline-block;
+    padding: 4px 7px 4px 6px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #65c279;
+    background: rgba(100,194,120,.1);
+    border-radius: 5px;
+}
+.icon-xiugai{
+    font-size: 12px;
+}
+.panel-body-padding-border-span{
+    color: #08c;
+    cursor: pointer;
+}
+.item-one{
+    height: 30px;
+    margin-bottom: 10px;
+}
+#email{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    width: 100%;
+    padding: 5px;
+}
+.item-one-er{
+    line-height: 30px;
+    text-align: center;
+}
+.item-two-yi{
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+#yanID{
+    border: 0;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.send{
+    width: 45%;
+    background-color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-left: 1px solid #bbb;
+    height: 30px;
+}
+.send-disabled{
+    cursor: not-allowed !important;
+}
+.none-w{
+    display: none;
+}
+.block-y{
+    display: block;
+}
+.panel-body-bottom-15{
+    margin-bottom: 35px;
+}
+.userinfo-word-a{
+    color: #08c;
+    cursor: pointer;
+}
+.userinfo-body-margin-bottom{
+    margin-bottom: 15px;
+}
+.form-body-border-height{
+    height: 42px;
+    margin-bottom: 15px;
+}
+.form-body-border-height label{
+    padding: 10px 15px ;
+    display: inline-block;
+    margin: 0;
+}
+.form-body-border-input{
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    padding: 10px 15px ;
+}
+.panel-body-select select{
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+}
+.panel-body-button{
+    margin-top: 10px;
+}
+.panel-body-button button{
+    border: 1px solid #4289dc;
+    background-color: #4289db;
+    color: #fff;
+    padding:8px 14px ;
+    border-radius: 5px;
+}
 @media screen  and (max-width: 768px){
     .panel-body-padding{
         padding: 10px 10px;
     }
     .panel-body-border{
         height: 140px;
+    }
+    .userinfo-word-textcenter{
+        text-align: center;
+    }
+}
+@media screen  and (max-width: 328px){
+    .panel-body-border-title{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1280px){
+	.panel-body-border-title{
+        /* margin-left: 0; */
+        width: 230px;
     }
 }
