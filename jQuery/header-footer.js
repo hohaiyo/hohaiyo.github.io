@@ -19,4 +19,17 @@ $(function () {
 		});
 		$(this).removeClass("hover");
 	});
+	$(".navbar-nav").click(function(){
+        if($(window).width()<504){
+            if($(".seek").css("display") == "block"){
+                $(".seek").css("display","none")
+            }else{
+                $(".seek").css("display","block")
+            }
+            $(window).click(function(){
+                 $(".seek").css("display","block")
+            })
+        }
+        
+    })
 });

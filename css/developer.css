@@ -225,7 +225,7 @@ a:hover{
     font-style: italic;
     font-size: 32px;
     line-height: 80px;
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
 }
 .ranking-head{
     padding: 10px 20px 10px 10px;
@@ -244,7 +244,7 @@ a:hover{
     font-size: 15px;
 }
 .fulfill{
-    margin-left: 20px;
+    margin-left: 24px;
 }
 .ranking>li>.years{
     padding: 0 20px 0 10px;
@@ -346,7 +346,7 @@ a:hover{
         margin-right: 0;
     }
     .invite{
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
     .ranking-right{
         display: none;
@@ -372,25 +372,25 @@ a:hover{
  }
 @media (min-width: 1200px) { 
     .invite{
-        margin-top: 30px;
+        margin-top: 35px;
     }
  }
  @media(max-width: 768px) { 
     .carousel{
         display: none;
     }
-    .mobile-block-1023{
+    /* .mobile-block-1023{
         width: 100%;
         height: 500px;
         background: url(../img/banner-jiaru.jpg) center/cover no-repeat;
-    }
+    } */
  }
  @media (max-width: 414px) { 
-    .mobile-block-1023{
+    /* .mobile-block-1023{
         width: 100%;
         height: 200px;
         background: url(../img/banner-jiaru.jpg) center/cover no-repeat;
-    }
+    } */
     h1{
         font-size: 24px;
     }
@@ -403,4 +403,12 @@ a:hover{
  .row>.mobile-none-992{
     display: none;
 }
+}
+@media(max-width:1024px){
+    .studio-message{
+        font-size: 14px;
+    }
+    .studio-id{
+        font-size: 18px;
+    }
 }
