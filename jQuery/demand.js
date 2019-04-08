@@ -153,17 +153,17 @@
 	    }	    	    
 	    // 是否填写邮箱	
 
-	    // 是否填写手机号码
+	    // 是否填写手机号码或手机号码位数是否达到11位
 	    var demand_user_tel = document.getElementById('demand_user_tel');
-	    if(demand_user_tel.value == ''){
+	    if(demand_user_tel.value == ''||demand_user_tel.value.length!==11){
 	    	demand_user_tel.style.borderColor = 'red';
-	    	alert('请填写您的手机号码');		    		    	
+	    	alert('请正确填写您的手机号码');		    		    	
 	    	return false;	    	
 	    }
 	    else{
 	    	demand_user_tel.style.borderColor = '';
 	    }	    	    
-	    // 是否填写手机号码
+	    // 是否填写手机号码或手机号码位数是否达到11位
 	    
 	    // 是否填写验证码
 	    var security_code_input = document.getElementById('security_code_input');
