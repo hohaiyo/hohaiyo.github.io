@@ -175,6 +175,13 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+.dispaly-a{
+    display: block;
+    height: 52px;
+}
+.dispaly-a:hover{
+    color: #000;
+}
 @media screen  and (max-width: 768px){
     .panel-body-padding{
         padding: 10px 10px;
