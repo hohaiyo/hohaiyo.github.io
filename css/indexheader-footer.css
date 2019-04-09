@@ -204,7 +204,6 @@ footer{
     color: #8796a8;
     line-height: 33px;
 }
-
 /*侧边锚点*/
 .anchor{
     position: absolute;
@@ -348,7 +347,7 @@ footer{
     overflow:hidden;
     text-overflow:ellipsis;
 }
-@media (max-width: 767px){
+@media (max-width: 800px){
     
     .navbar-hide{
         display: none;
@@ -428,7 +427,7 @@ footer{
     
     }
 }
-@media (min-width: 767px){
+@media (min-width: 800px){
     .dropdown-menu>.mobile-none-767{
         display: none;
     }

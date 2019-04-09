@@ -1,6 +1,10 @@
 body{
 	background-color: #F0F2F5FF;
 }
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
 em{
 	font-style: normal;
 	color: #979FA8;
@@ -8,9 +12,7 @@ em{
 .mian_content{
 	margin-top: 70px;
 	margin-bottom: 20px;
-}
-.ad_poster{
-
+	height: 794px;
 }
 .ad_poster a{
 	display: block;
@@ -22,7 +24,7 @@ em{
 }
 .project_box{
 	background-color: #fff;
-	padding: 15px 20px;
+	padding: 45px 20px;
 	border: 1px solid #EDEDED;
 	background-color: #F7FAFC;
 }
@@ -36,22 +38,21 @@ em{
 }
 /*招标中*/
 .recruit{
-	color: #71e871;
+    color: #c0c0c0;
+    line-height: 10px;
 }
 /*开发中*/
 .develop{
-	color: #70b2ea;
+    color: #70b2ea;
+    display: none;
 }
 /*已结束*/
 .finish{
+    display: none;
 	color: #fa6868;
 }
 .project_tags{
-<<<<<<< HEAD
-	margin-top: 15px;
-=======
 	margin-top: 35px;
->>>>>>> yp
 }
 .project_tags>li{
 	float: left;
@@ -59,7 +60,7 @@ em{
 .project_tags>li:last-child{
 	float: right;
 }
-@media screen and (max-width: 767px){
+@media(max-width: 767px){
 	.project_tags>li{
 		float: none;
 		margin: 5px 0;
@@ -69,11 +70,7 @@ em{
 	}
 }
 .project_tags>li>em{
-<<<<<<< HEAD
-	margin-right: 5px;
-=======
 	margin:0 5px;
->>>>>>> yp
 }
 i{
 	font-style: normal;
@@ -91,7 +88,8 @@ i{
 	background: #4289DB;
 	color: #fff;
 	transition: 0.2s;
-	box-shadow: 0px 2px 3px #999;
+    box-shadow: 0px 2px 3px #999;
+    display: none;
 }
 .join_in:hover{
 	font-size: 15px;
@@ -103,9 +101,24 @@ i{
 	padding: 30px;
 }
 .project_descript{
-	width: 88%;
+    text-align: center;
 }
-@media screen and (max-width: 767px){
+.project_descript>h1{
+    font-size: 28px;
+    color:#ccc;
+    margin: 30px 0;
+}
+.project_descript>a{
+    max-width: 18%;
+    min-width: 200px;
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background: #4289DB;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+@media(max-width: 767px){
 	.projec_contain{
 		padding: 20px;
 	}
@@ -129,7 +142,7 @@ i{
 .project_descript_through>li{
 	margin: 10px 0;
 }
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
 	.project_descript_through{
 		padding-left:0;
 	}
@@ -143,14 +156,7 @@ i{
 	padding-bottom: 30px;
 }
 /*调整字体大小*/
-<<<<<<< HEAD
 @media (max-width: 1200px) and (min-width: 767px){
-=======
-/* @media (max-width: 1200px) and (min-width: 767px){
->>>>>>> yp
-	body,.navbar-header > .navbar-brand{
-		font-size: 20px;
-	}
 	h3{
 		font-size: 30px;
 	}
@@ -158,8 +164,9 @@ i{
 		width: 150px;
 		height: 50px;
 	}
-<<<<<<< HEAD
 }
-=======
-} */
->>>>>>> yp
+@media(min-width:1024){
+	.box{
+		height: 1080px;
+	}
+}
