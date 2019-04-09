@@ -50,7 +50,7 @@
 	                                    <b class="caret"></b>
 	                                </a>
 	                                <ul class="dropdown-menu">
-	                                    <li class="mobile-none-767"><a href="#">
+	                                    <li class="mobile-none-767"><a href="find_demand.html">
 	                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
 	                                        项目列表
 	                                    </a></li>
@@ -145,44 +145,57 @@
 			
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目名称</div>
-				<div class="pull-right demand_item_input">
+				<div class="pull-left demand_item_input">
 					<input type="text" name="" class="form-control" maxlength="30" placeholder="30字以内"  id="demand_name" >
-					<!-- <span class="demand_warm">请填写项目名称</span> -->
+<!-- 						<p id="remind_item_name" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p> -->
 				</div>
 			</div>
 
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目预算</div>
-				<div class="pull-right demand_item_input_two">
+				<div class="pull-left demand_item_input_two">
 					<input type="text" name="" class="form-control" placeholder="金额不低于50000元" id="demand_budget" onkeyup="only_num_keyup(this)" onblur="only_num_blur(this)">
 					<span>元</span>
+						<p id="remind_money" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>					
 				</div>
 			</div>
 			<div class="under_hint">
-				<div class="pull-left demand_item_name"></div>
-				<div class="pull-right demand_item_input_two">
+				<div class="pull-left demand_item_name">
+					<p class="align_nothing">用于对齐</p>
+				</div>
+				<div class="pull-left demand_item_input_two">
 					该项目金额不含税，如需发票，请查看<a href="#">操作文档</a>
 				</div>				
 				
 			</div>
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">期望周期</div>
-				<div class="pull-right demand_item_input_two">
+				<div class="pull-left demand_item_input_two">
 					<input type="text" name="" class="form-control" placeholder="请输入交付周期" id="demand_day"  onkeyup="only_num_keyup(this)" onblur="only_num_blur(this)">
 					<span>天</span>
+						<p id="remind_day" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>					
 				</div>
 			</div>
 
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目介绍</div>
-				<div class="pull-right demand_item_input">
+				<div class="pull-left demand_item_input">
 					<textarea type="textarea" rows="4" placeholder="请尽量详细描述您的项目，以吸引更多有相关开发经验的开发者报名（20 个字符以上）" id="demand_introduce"></textarea>
+<!-- 						<p id="remind_show" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>	 -->				
 				</div>
 			</div>
 
 			<div  class="demand_content_left_item">
 				<div class="pull-left demand_item_name">相关文档</div>
-				<div class="pull-right demand_item_input">
+				<div class="pull-left demand_item_input">
 					<input type="file" name="" class="demand_file" id="demand_file">
 					<button class="click_upload" id="click_upload">
 						<svg t="1553686971416" class="icon click_upload_svg" style="" id="click_upload_svg"
@@ -192,9 +205,11 @@
 			</div>
 
 			<div class="under_hint">
-				<div class="pull-left demand_item_name"></div>
-				<div class="pull-right demand_item_input_two">
-					<span class="colorRed">此项可选</span>
+				<div class="pull-left demand_item_name">
+					<p class="align_nothing">用于对齐</p>
+				</div>
+				<div class="pull-left demand_item_input_two">
+					<span class="colorblue">此项可选</span>
 					<p>如果要选择请上传您可以公开的的项目文档，例如产品的需求文档、设计稿、概念视频等，20 MB 以内</p>
 				</div>				
 				
@@ -202,29 +217,44 @@
 
 			<div  class="demand_content_left_item">
 				<div class="pull-left demand_item_name">招标要求</div>
-				<div class="pull-right demand_item_input">
+				<div class="pull-left demand_item_input">
 					<textarea type="textarea" rows="4" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" id="demand_call_for"></textarea>
+<!-- 						<p id="remind_hope" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p> -->					
 				</div>
 			</div>
 
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">联系方式</div>
-				<div class=" pull-right demand_item_input_three">
-					<div>
+				<div class=" pull-left demand_item_input_three">
+					<div class="demand_item_input_three_left_div">
 						<p>您的姓名</p>
 						<input type="text" name="" class="form-control" placeholder="姓名" id="demand_user_name">
+						<p id="remind_name" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>
 					</div>
 					<div>
 						<p>您的邮箱</p>
 						<input type="text" name="" class="form-control" placeholder="邮箱" id="demand_user_email">
+						<p id="remind_email" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>						
 					</div>
-					<div>
+					<div class="demand_item_input_three_left_div">
 						<p>您的手机号码</p>
-						<input type="text" name="" class="form-control" placeholder="手机号码" maxlength="11" id="demand_user_tel" onkeyup="only_num_keyup(this)" onblur="only_num_blur(this)">
+						<input type="text" name="" class="form-control" placeholder="手机号码" maxlength="11" id="demand_user_tel">
+						<p id="remind_tel" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>						
 					</div>
 					<div class="security_code" id="security_code">
 						<p>验证码</p>
 							<input type="text" name="" class="security_code_input" placeholder="验证码" maxlength="10" id="security_code_input"><input type="button" class="security_code_button_input" value="发送验证" id="security_code_btn" onclick="settime(this)">
+						<p id="remind_code" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>							
 					</div>												
 				</div>
 			</div>
@@ -237,7 +267,7 @@
 					<span>我同意遵守《小白外包用户权责条款》</span>				
 				</div>
 				<div class="demand_issue">
-					<a href="find_demand.html" id="demand_submit">立即发布</a>
+					<a href="published-project.html" id="demand_submit">立即发布</a>
 				</div>
 
 			</div>
@@ -254,16 +284,16 @@
 				<div class="demand_content_right_advice">
 					<p>越详细的需求描述能获得越多的开发者关注，您可参考以下建议：</p>
 
-					<p><a href="#">1. 如何注册成需求方？</a></p>
-					<p><a href="#">2. 发布项目后如何取消？</a></p>
-					<p><a href="#">3. 项目发布后如何查看报名者信息？</a></p>
-					<p><a href="#">4. 确定人选后如何启动项目？</a></p>
+					<p><a href="login-enterprise.html">1. 如何注册成需求方？</a></p>
+					<p><a href="cancel-condition.html">2. 发布项目后如何取消？</a></p>
+					<p><a href="room.html">3. 项目发布后如何查看报名者信息？</a></p>
+					<p><a href="registration-developing.html">4. 确定人选后如何启动项目？</a></p>
 				</div>
 					
 				<div class="demand_content_right_more">
-					<p>更多指引请查看<a href="#">帮助中心</a></p>
+					<p>更多指引请查看<a href="help/help.html">帮助中心</a></p>
 					<p>如有疑问请<a href="#">联系客服</a></p>
-					<p>或<a href="#">邮件反馈</a></p>
+					<p>或<a href="help/help.html">反馈中心</a></p>
 				</div>
 			</div>			
 		</div>	

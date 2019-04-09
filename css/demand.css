@@ -44,9 +44,15 @@ textarea:-ms-input-placeholder {
   font-size: 14px;
 }
 
-.colorRed{
-	color: dodgerblue;
+.colorblue{
+	color: #337ab7;
 	font-size: 14px;
+}
+
+.colorred{
+	color: red;
+	font-size: 12px;
+	opacity: 0;
 }
 
 .demand_content{
@@ -67,7 +73,6 @@ textarea:-ms-input-placeholder {
 	width: 74%;
 	border-radius: 5px;
 	background-color: white;	
-	min-width: 400px;
 	box-shadow: 1px 2px 8px rgba(0,0,0,0.2);	
 	padding: 20px 60px 60px 40px;
 }
@@ -107,6 +112,7 @@ textarea:-ms-input-placeholder {
 
 .list-inline_li_type{
 	margin-top: 10px;
+	font-size: 14px;
 }
 /*开发类型*/
 
@@ -116,7 +122,7 @@ textarea:-ms-input-placeholder {
 
 
 .demand_content_left_item{
-	margin-top: 40px;
+	margin-top: 20px;
 	overflow: hidden;
 }
 
@@ -127,7 +133,12 @@ textarea:-ms-input-placeholder {
 }
 
 .demand_item_input,.demand_item_input_two,.demand_item_input_three{
-	width: 70%;
+	width: 74%;
+	margin-left: 50px;
+}
+
+.align_nothing{
+	opacity: 0;
 }
 
 .demand_item_input input,.demand_item_input textarea{
@@ -141,9 +152,11 @@ textarea:-ms-input-placeholder {
 
 .demand_item_input_three div{
 	display: inline-block;
-	width: 40%;
-	margin-right: 10px;
-	margin-bottom: 20px;
+	width: 46%;
+}
+
+.demand_item_input_three_left_div{
+	margin-right: 40px;
 }
 
 .demand_item_input_three input{
@@ -168,10 +181,10 @@ textarea:-ms-input-placeholder {
 .click_upload{
 	display: block;
 	border-radius: 5px;
-	border:1px solid dodgerblue;
+	border:1px solid #337ab7;
 	width: 140px;
 	height: 50px;
-	color: dodgerblue;
+	color: #337ab7;
 	background-color: transparent;
 }
 
@@ -199,7 +212,7 @@ textarea:-ms-input-placeholder {
 	background-color: white;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	color: #4289dc;
+	color: #337ab7;
 	height: 34px;
 	vertical-align: bottom;
 	border:1px solid #ccc;
@@ -222,11 +235,7 @@ textarea:-ms-input-placeholder {
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-
-.security_code_input:focus{
-	border-color: #66afe9;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    outline: none;
 }
 
 .demand_agree{

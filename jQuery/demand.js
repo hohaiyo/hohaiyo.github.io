@@ -3,13 +3,19 @@
 			$('#demand_file').click()
 		});
 		//上传按钮
+		
 		$('#security_code_input').focus(function(){
 			$('#security_code_btn').css({
 				'border-color': '#66afe9',
-				'box-shadow': 'inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)'
-			});		
+				'box-shadow': '1px 1px 1px rgba(6,106,254,.075)'
+			});	
+			$(this).css({
+				'border-color':'#66afe9',
+				'box-shadow':'1px 1px 1px rgba(6,106,254,.075)'
+			});					
 		});
 		//验证码按钮
+		
 		$('#security_code_input').blur(function(){
 			$('#security_code_btn').css({
 				'border-color': '',
@@ -21,6 +27,7 @@
 			});	
 		});
 		//验证码input
+		
 		$('#list-inline-demand').children('li').click(function(){
 			$('#list-inline-demand').children('li').css({
 				'border-color':'',
@@ -38,7 +45,9 @@
 				'color':'white'
 			});
 		});
+		
 	});
+
 
     window.onscroll = window.onresize= function(){
     	var demand_right = document.getElementById('demand_content_right');
@@ -197,62 +206,81 @@
 	
 	}
 		// 验证码
-		var maxtime = 60;
-		if(window.name == '' || window.name == '-1' || isNaN(window.name)) {
-			maxtime = 1 * 60;
-		} 
-		else {
-			maxtime = window.name;
-			
-		}
-		var countdown=60; 
-		function settime(obj) { 
-		    if (countdown == 0) { 
-		        obj.removeAttribute("disabled");    
-		        obj.value="获取验证码"; 
-		        countdown = 60; 
-		        return;
-		    } else { 
-		        obj.setAttribute("disabled", true); 
-		        obj.value="重新发送(" + countdown + ")"; 
-		        countdown--; 
-		    } 
-		setTimeout(function() { 
-		    settime(obj) }
-		    ,1000) 
-		}
+			var maxtime = 60;
+			if(window.name == '' || window.name == '-1' || isNaN(window.name)) {
+				maxtime = 1 * 60;
+			} 
+			else {
+				maxtime = window.name;
+				
+			}
+			var countdown=60; 
+			function settime(obj) { 
+			    if (countdown == 0) { 
+			        obj.removeAttribute("disabled");    
+			        obj.value="获取验证码"; 
+			        countdown = 60; 
+			        return;
+			    } else { 
+			        obj.setAttribute("disabled", true); 
+			        obj.value="重新发送(" + countdown + ")"; 
+			        countdown--; 
+			    } 
+			setTimeout(function() { 
+			    settime(obj) }
+			    ,1000) 
+			}
 		// 验证码
 	
 		// 只能输入纯中文
-		demand_user_name.onkeyup = function(){
-			if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
-				this.value = '';
+			var remind_name = document.getElementById('remind_name');
+			demand_user_name.onblur = function(){
+				if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
+					this.value = '';
+					this.style.borderColor = 'red';
+					remind_name.style.opacity = '1';
+					remind_name.innerHTML = '姓名不能为空或者使用中文以外的字符符号';
+
+				}
+				else{
+					this.style.borderColor = '';
+					remind_name.style.opacity = '0';			
+				}
 			}
-		}
-		demand_user_name.onblur = function(){
-			if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
-				this.value = '';
-			}
-		}
 		// 只能输入纯中文
 		
-		// 只能输入数字
-		function only_num_keyup(obj){
-			if(!/^[0-9]*$/gi.test(obj.value)){
-				obj.value = '';
+		// 检测邮箱格式
+			var remind_email = document.getElementById('remind_email');
+			demand_user_email.onblur = function(){
+				if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/gi.test(this.value)){
+					this.value = '';
+					this.style.borderColor = 'red';
+					remind_email.style.opacity = '1';
+					remind_email.innerHTML = '邮箱不能为空或者邮箱格式错误';
+				}
+				else{
+					this.style.borderColor = '';
+					remind_email.style.opacity = '0';			
+				}				
 			}
-		}
-		function only_num_blur(obj){
-			if(!/^[0-9]*$/gi.test(obj.value)){
-				obj.value = '';
-			}
-		}
-		// 只能输入数字
+		// 检测邮箱格式
 		
-		//检测邮箱格式是否正确
-		demand_user_email.onblur = function(){
-			if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/gi.test(this.value)){
-				this.value = '';
+		// 检测手机输入
+			var remind_tel = document.getElementById('remind_tel');
+			demand_user_tel.onblur = function(){
+				if(!/^[0-9]*$/gi.test(this.value)||this.value == ''){
+					this.value = '';
+					this.style.borderColor = 'red';
+					remind_tel.style.opacity = '1';
+					remind_tel.innerHTML = '手机号码不能为空或者数字以外的字符';
+				}
+				else{
+					this.style.borderColor = '';
+					remind_tel.style.opacity = '0';			
+				}				
 			}
-		}			
-		//检测邮箱格式是否正确
+		// 检测手机输入
+		
+		// 检测验证码输入
+						
+		// 检测验证码输入
