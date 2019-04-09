@@ -1,0 +1,25 @@
+/* 星星 */
+.stars{
+    color: #FFD700;
+}
+.stars>i{
+    margin-left: -5px;
+}
+.cg-img img{
+    width: 100%;
+}
+.cg-content{
+    height: 100px;
+    padding-left: 40px;
+}
+.success-content-container{
+    margin-top: 10px;
+}
+.cg-bottommargin{
+    margin-bottom: 40px;
+}
+@media screen  and (max-width: 768px){
+    .success-content-container{
+        font-size: 18px;
+    }
+}
