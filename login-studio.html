@@ -107,11 +107,10 @@
         </div>
     </form>
     <!--底部-->
-    <footer>
+    <footer class="footxwt">
         <div class="footer_warp">
             <a href="#" class="pull-left">
-                <img src="./img/logo_white.png">
-                <p class="visible-xs font-xb">小白</p>
+                <img src="./img/logo1.02.png">
             </a>
             <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
         </div>
@@ -132,8 +131,10 @@
         });
 
         //验证码
-        $(window).mousemove(function () {
-            if($(".form-number > input").val().length > 11 && $(".send").text() == "发送验证码"){
+        $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
+        $(".form-verify input").attr("disabled","disabled");
+        $(".form-number > input").keypress(function () {
+            if($(this).val().length > 11 && $(".send").text() == "发送验证码"){
                 $(".send").removeAttr("disabled").removeClass("send-disabled")
             }else{
                 $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
@@ -142,6 +143,7 @@
 
         //验证码点击
         $(".send").click(function () {
+            $(".form-verify input").removeAttr("disabled");
             var num = 60;
             send(num);
         });
@@ -174,13 +176,13 @@
             if(username.val().length == 0 || number.val().length == 0 || password.val().length == 0 || verify.val().length == 0){
                 for( var i = 0; i < arr.length; i++){
                     if(arr[i].val().length != 0){
-                        arr[i].css("border","1px solid #49a9ee")
-                        arr[i].parent().find(".warn").css("display","none")
+                        arr[i].css("border","1px solid #49a9ee");
+                        arr[i].parent().find(".warn").css("display","none");
                     }else{
-                        arr[i].css("border","1px solid red")
-                        arr[i].parent().find(".warn").css("display","block")
-                    };
-                };
+                        arr[i].css("border","1px solid red");
+                        arr[i].parent().find(".warn").css("display","block");
+                    }
+                }
             }else{
                 for(var x = 0; x < arr.length; x++){
                     arr[x].css("border","1px solid #49a9ee")

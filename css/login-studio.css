@@ -15,17 +15,6 @@ a:hover{
     text-decoration: none;
 }
 
-@media screen and (max-width: 770px){
-    /*头部小字隐藏*/
-    .header-hide{
-        display: none;
-    }
-    .enter > a{
-        display: block;
-        transform: scale(1.2 );
-    }
-}
-
 /*大盒子*/
 .container{
     height: 100%;
@@ -274,4 +263,19 @@ footer > .footer-copyright{
     transform: scale(1.6);
     color: #49a9ee;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 770px){
+    /*头部小字隐藏*/
+    .header-hide{
+        display: none;
+    }
+    .enter > a{
+        display: block;
+        transform: scale(1.2 );
+    }
+
+    footer{
+        position: initial;
+    }
 }

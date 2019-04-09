@@ -1,0 +1,306 @@
+/*比赛项目*/
+.competition-bg{
+    margin-top: 65px;
+    padding: 35px 0 15px;
+    background-color: #fff;
+}
+
+.competition-item{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.competition-left > h3{
+    /*margin-bottom: 28px;*/
+}
+
+.competition-left > h3 > span{
+    margin-right: 15px;
+}
+
+.competition-left > div{
+    display: inline-block;
+}
+
+.competition-left > div > div{
+    /*height: 35px;*/
+}
+
+/*右边*/
+.competition-right{
+    padding: 12px 28px;
+    border: 1px solid #eff2f7;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.competition-right > span{
+    font-size: 21px;
+}
+
+.competition-right > span::before {
+    content: "\A5";
+}
+
+.competition-right > p {
+    margin: 0;
+    font-size: 12px;
+    transform: scale(0.9);
+    color: #727f8f;
+}
+
+
+
+
+/*步骤*/
+.step > .step-recruit > .line,
+.step > .step-develop > i{
+    background-color: #49a9ee;
+}
+
+.step > .step-develop > span{
+    color: #333;
+    font-weight: 1;
+}
+
+/*主要内容*/
+.main-bottom{
+    position: relative;
+}
+
+.bottom-right > .btn-rejuect,
+.bottom-right > .btn-agree{
+    background-color: #eff2f7;
+    color: #b3bbc5;
+    border: 1px solid #eff2f7;
+    cursor: not-allowed;
+}
+
+.main-bottom > .pass-logo{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*768以下*/
+@media screen and (max-width: 768px){
+    /*比赛项目*/
+    .competition-item{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .competition-item > .competition-left{
+        width: 65%;
+    }
+    .competition-left > h3{
+        margin-bottom: 28px;
+    }
+    .competition-left > div{
+        width: 49%;
+    }
+    .competition-left > div > div{
+        height: 35px;
+    }
+
+    /*步骤*/
+    .step-bg{
+        margin-top: 0;
+    }
+
+    /*查看资料部分*/
+    .lookbtn{
+        font-size: 20px;
+    }
+
+    .white_content{
+        width: 100%;
+        left: 0px;
+        font-size: 14px;
+    }
+
+    .the_close_btn{
+        right: 6px;
+    }
+
+    .material_title{
+        font-size: 30px;
+    }
+    .material_left{
+        width: 62%;
+    }
+
+    .material_right{
+        padding: 0 10px;
+        width: 38%;
+    }
+    .material_star{
+        font-size: 14px;
+    }
+    .textarea_box span{
+        cursor: pointer;
+        margin: 0 2px;
+        font-size: 13px;
+    }
+
+    /*查看联系方式部分*/
+    .contact_info_box{
+        top: 20%;
+        left: 8%;
+        width: 84%;
+    }
+    .contact_show{
+        margin-right: 10px;
+    }
+    #edit_save{
+        float: left;
+    }
+    #edit_cancel{
+        float: right;
+    }
+}
+
+/*375以下*/
+@media screen and (max-width: 375px){
+    /*比赛项目*/
+    .competition-item > .competition-left{
+        width: 62%;
+    }
+    .competition-left > h3{
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .competition-left > div{
+        width: 46%;
+    }
+    .competition-left > div > div{
+        height: 30px;
+    }
+    .white_content{
+        top: 20%;
+    }
+    .textarea_box{
+        padding: 12px;
+    }
+}
+
+/*768 -- 992*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*比赛项目*/
+    .competition-item{
+        width: 750px;
+        padding: 0 50px;
+    }
+    .competition-item > .competition-left{
+        width: 50%;
+    }
+    .competition-left > h3{
+        margin-bottom: 28px;
+    }
+    .competition-left > div{
+        width: 49%;
+    }
+    .competition-left > div > div{
+        height: 35px;
+    }
+
+    /*步骤*/
+    .step-bg{
+        margin-top: 0;
+        padding-top: 28px;
+    }
+
+    /*查看资料部分*/
+    .lookbtn{
+        font-size: 14px;
+    }
+
+    .white_content{
+        width: 98%;
+        left: 1%;
+    }
+
+    .the_close_btn{
+        right: 6px;
+    }
+
+    /*查看联系方式部分*/
+    .contact_info_box{
+        top: 20%;
+        left: 28%;
+        width: 44%;
+    }
+}
+
+/*992 - 1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /*比赛项目*/
+    .competition-item{
+        width: 970px;
+        padding: 0 50px;
+    }
+    .competition-item > .competition-left{
+        width: 50%;
+    }
+    .competition-left > h3{
+        margin-bottom: 28px;
+    }
+    .competition-left > div{
+        width: 49%;
+    }
+    .competition-left > div > div{
+        height: 35px;
+    }
+
+    /*步骤*/
+    .step-bg{
+        margin-top: 0;
+        padding-top: 28px;
+    }
+
+    /*查看资料部分*/
+    .white_content{
+        width: 98%;
+        left: 1%;
+    }
+
+    .the_close_btn{
+        right: 6px;
+    }
+
+    /*查看联系方式部分*/
+    .contact_info_box{
+        top: 20%;
+        left: 34%;
+        width: 30%;
+    }
+}
+
+/*1200以上*/
+@media screen and (min-width: 1200px){
+    /*比赛项目*/
+    .competition-item{
+        width: 1170px;
+        padding: 0 50px;
+    }
+    .competition-item > .competition-left{
+        width: 50%;
+    }
+    .competition-left > h3{
+        margin-bottom: 28px;
+    }
+    .competition-left > div{
+        width: 49%;
+    }
+    .competition-left > div > div{
+        height: 35px;
+    }
+
+    /*步骤*/
+    .step-bg{
+        margin-top: 0;
+        padding-top: 28px;
+    }
+}
