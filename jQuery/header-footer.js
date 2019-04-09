@@ -13,7 +13,12 @@ $(function () {
         }else if($(window).width() < 768 && $(".dropdown-menu").css("display") == "block"){
             $(".seek").css("display","block");
         }
-    })
+        $(document).on("click",function(){
+            $(".seek").css("display","block");
+        });
+
+    });
+
 
     
     // 滚动条

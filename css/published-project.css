@@ -6,6 +6,9 @@ body{
 /*768以下*/
 @media screen and (max-width: 767px){
     /*我发布的项目*/
+    .form-project{
+        padding: 0 12px;
+    }
     .form-project > p{
         display: inline-block;
     }
@@ -14,6 +17,9 @@ body{
     }
     .project-right > .btn-publish{
         padding: 6px 8px;
+    }
+    .project-right > .form-pulldown{
+        right: 106px;
     }
 
     /*项目列表头部*/
@@ -46,7 +52,7 @@ body{
         margin-bottom: 10px;
     }
     .bottom-info > .bottom-btn > button{
-        margin-right: 4px;
+        margin-right: 6px;
         display: inline-block;
         width: 30%;
         font-size: 12px;
@@ -63,10 +69,17 @@ body{
     }
 }
 
-/*400以下*/
+/*500以下*/
 @media screen and (max-width: 500px){
     .bottom-info > .bottom-btn{
         width: 100%;
+        margin-top: 8px;
+    }
+    .list-top > div{
+        margin-top: 8px;
+    }
+    .list-bottom > .bottom-info{
+        padding: 0;
     }
 }
 
@@ -102,6 +115,9 @@ body{
     }
     .project-right > .btn-publish{
         padding: 6px 20px;
+    }
+    .project-right > .form-pulldown{
+        right: 130px;
     }
 
     /*项目列表头部*/
@@ -159,6 +175,9 @@ body{
     .project-right > .btn-publish{
         padding: 6px 20px;
     }
+    .project-right > .form-pulldown{
+        right: 130px;
+    }
 
     /*项目列表头部*/
     .project-list{
@@ -213,6 +232,9 @@ body{
     }
     .project-right > .btn-publish{
         padding: 6px 20px;
+    }
+    .project-right > .form-pulldown{
+        right: 130px;
     }
 
     /*项目列表头部*/

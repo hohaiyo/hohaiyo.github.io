@@ -1,0 +1,367 @@
+/*768以下*/
+@media screen and (max-width: 768px){
+    .content{
+        width: 95%;
+    }
+    .content > .layer{
+        padding: 0 15px;
+    }
+
+    /*开发者信息*/
+    .bottom-info > .info2{
+        margin: 10px 0 0 0;
+    }
+    .bottom-info > .info2 > li{
+        display: block;
+    }
+    /*提醒*/
+    .content > .remind{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .content > .remind > p{
+        font-size: 15px;
+        text-align: left;
+    }
+    /*阶段*/
+    .stage-item{
+        margin: 0 15px 35px;
+    }
+    .stage-foot > div > button{
+        width: 90px;
+        height: 37px;
+    }
+}
+
+/*375以下*/
+@media screen and (max-width: 420px){
+    .content > .remind > p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .remind > p > i{
+        font-size: 12px;
+    }
+    .stage-main > li > .item-right{
+        text-indent: 1em;
+    }
+}
+
+/*768 -- 992*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .content{
+        width: 750px;
+    }
+    .content > .layer{
+        padding: 0 35px;
+    }
+
+    /*开发者信息*/
+    .bottom-info > .info2{
+        margin: 22px 0 0 0;
+    }
+    .bottom-info > .info2 > li{
+        display: inline-block;
+        margin-right: 12px;
+    }
+    /*提醒*/
+    .content > .remind{
+        padding: 35px;
+    }
+    .content > .remind > p{
+        font-size: 15px;
+        text-align: center;
+    }
+    /*阶段*/
+    .stage-item{
+        margin: 0 35px 35px;
+    }
+    .stage-foot > div > button{
+        width: 90px;
+        height: 37px;
+    }
+}
+
+/*992 - 1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .content{
+        width: 826px;
+    }
+    .content > .layer{
+        padding: 0 35px;
+    }
+
+    /*开发者信息*/
+    .bottom-info > .info2{
+        margin: 22px 0 0 0;
+    }
+    .bottom-info > .info2 > li{
+        display: inline-block;
+        margin-right: 12px;
+    }
+    /*提醒*/
+    .content > .remind{
+        padding: 35px;
+    }
+    .content > .remind > p{
+        font-size: 15px;
+        text-align: center;
+    }
+    /*阶段*/
+    .stage-item{
+        margin: 0 35px 35px;
+    }
+    .stage-foot > div > button{
+        width: 90px;
+        height: 37px;
+    }
+}
+
+/*1200以上*/
+@media screen and (min-width: 1200px){
+    .content{
+        width: 826px;
+    }
+    .content > .layer{
+        padding: 0 35px;
+    }
+
+    /*开发者信息*/
+    .bottom-info > .info2{
+        margin: 22px 0 0 0;
+    }
+    .bottom-info > .info2 > li{
+        display: inline-block;
+        margin-right: 12px;
+    }
+    /*提醒*/
+    .content > .remind{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .content > .remind > p{
+        font-size: 15px;
+        text-align: center;
+    }
+    /*阶段*/
+    .stage-item{
+        margin: 0 35px 35px;
+    }
+    .stage-foot > div > button{
+        width: 90px;
+        height: 37px;
+    }
+}
+
+
+button{
+    outline: none;
+}
+
+.content{
+    /*width: 826px;*/
+    padding-bottom: 10px;
+    margin: 12px auto 65px;
+    background-color: #fff;
+}
+
+/*阶段划分*/
+.content > .stage{
+    padding-top: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #dde3eb;
+}
+
+.stage > span{
+    font-size: 22px;
+}
+
+.stage > button{
+    font-size: 12px;
+    padding: 8px 14px;
+    border: 1px solid #49a9ee;
+    color: #49a9ee;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.stage > button:hover{
+    color: #fff;
+    background-color: #49a9ee;
+}
+
+/*开发者信息*/
+.content > .developer-info{
+    padding-top: 35px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dde3eb;
+}
+
+/*头部*/
+.developer-top{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eff2f7;
+}
+
+.developer-top > span{
+    font-size: 22px;
+}
+
+.developer-top > button{
+    color: #49a9ee;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    line-height: 30px;
+}
+
+/*底部*/
+.developer-bottom{
+    padding-top: 20px;
+}
+
+.developer-bottom > img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.developer-bottom > .bottom-info,
+.bottom-info > .info1 > h3{
+    display: inline-block;
+}
+
+.bottom-info > .info1 > i{
+    margin-left: 10px;
+    color: blue;
+}
+
+.bottom-info > .info2{
+    /*margin: 22px 0 0 0;*/
+}
+
+/*.bottom-info > .info2 > li{*/
+    /*display: inline-block;*/
+    /*margin-right: 12px;*/
+/*}*/
+
+.info2 > li > b{
+    font-weight: 400;
+}
+
+/*提醒*/
+.content > .remind{
+    /*padding: 35px;*/
+}
+
+.content > .remind > p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgba(255,203,97,.1);
+    /*text-align: center;*/
+    padding: 12px;
+    /*font-size: 15px;*/
+    margin: 0;
+}
+
+/*阶段1*/
+.stage-item{
+    /*margin: 0 35px 35px;*/
+    border: 1px solid #dde3eb;
+}
+
+/*头部*/
+.stage-item > .stage-title{
+    background-color: #f9fafc;
+    color: #727f8f;
+    padding: 17px 21px;
+}
+
+.stage-item > .stage-title > .title-left{
+    font-size: 16px;
+}
+
+.stage-title > .title-left > .stage-name{
+    padding-right: 10px;
+}
+
+.stage-title > .title-left > .stage-value{
+    color: #000;
+    padding-left: 10px;
+    border-left: 1px solid #dde3eb;
+}
+
+.stage-title > .title-right > .status-value{
+    color: #cad3de;
+}
+
+/*中间*/
+.stage-item > .stage-main{
+    padding: 21px 21px 0 21px;
+    margin: 0;
+    border-bottom: 1px solid #dde3eb;
+}
+
+.stage-item > .stage-main > li{
+    margin: 16px 0;
+}
+
+.stage-main > li > .item-left,
+.stage-main > li > .item-right{
+    width: 49%;
+    display: inline-block;
+}
+
+/*底部*/
+.stage-foot{
+    padding: 14px 21px;
+}
+
+.stage-foot > div > button{
+    text-align: center;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.stage-foot > div > .edit{
+    border: 1px solid #ccc;
+    margin-right: 12px;
+}
+
+.stage-foot > div > .trusteeship{
+    border: 1px solid #49a9ee;
+    color: #49a9ee;
+}
+
+/*新增阶段划分*/
+.stage-add{
+    padding-top: 0;
+    padding-bottom: 21px;
+    text-align: center;
+}
+
+.stage-add > button{
+    padding: 8px 47px;
+    background-color: transparent;
+    border: 1px solid #cad3de;
+    color: #49a9ee;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.stage-add > button:hover{
+    background-color: #eff2f7;
+}
+
+.stage-add > button > i{
+    font-size: 18px;
+}
+
+
+/*底部*/
+footer{
+    position: initial;
+}

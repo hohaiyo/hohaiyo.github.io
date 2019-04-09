@@ -12,19 +12,19 @@
     <!--清除默认样式-->
     <link rel="stylesheet" href="./css/initialize.css">
     <!--阿里图库-->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_8cox83o18hs.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_roxpft7ak7o.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--头部，尾部，锚点-->
     <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/application material.css">
     <link rel="stylesheet" href="./css/registration-list.css">
+    <link rel="stylesheet" href="css/application material.css">
+    <link rel="stylesheet" href="./css/registration-developing.css">
 
     <script src="jQuery/rem.js"></script>
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./jQuery/header-footer.js"></script>
-    <link rel="stylesheet" href="../../../Documents/Tencent Files/1621970846/FileRecv/header-footer.css">
 </head>
 <body>
 <!--头部-->
@@ -37,7 +37,6 @@
                 </a>
                 <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
                 <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
-                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
                 <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
                 <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p>
             </div>
@@ -93,6 +92,40 @@
         </div>
     </nav>
 </header>
+<!--比赛项目-->
+<div class="competition-bg">
+    <div class="competition-item clearfix">
+        <!--左边-->
+        <div class="competition-left pull-left">
+            <h3>NO.<span>111</span>比赛项目</h3>
+            <div class="item1">
+                <div class="recruit">
+                    <b>招募:</b>
+                    <span>开发</span>
+                </div>
+                <div class="type">
+                    <b>类型:</b>
+                    <span>开发</span>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="service">
+                    <b>服务:</b>
+                    <span>开发</span>
+                </div>
+                <div class="cycle">
+                    <b>周期:</b>
+                    <span>开发</span>
+                </div>
+            </div>
+        </div>
+        <!--右边-->
+        <div class="competition-right pull-right">
+            <span>218</span>
+            <p>项目金额</p>
+        </div>
+    </div>
+</div>
 <!--步骤-->
 <div class="step-bg">
     <div class="step">
@@ -176,9 +209,10 @@
             <!--底部右侧-->
             <div class="bottom-right pull-left">
                 <i class="iconfont icon-qizi"></i>
-                <button class="btn-rejuect" type="button">不合适</button>
-                <button class="btn-agree" type="button">确认合作</button>
+                <button class="btn-rejuect developing-rejuect" type="button">不合适</button>
+                <button class="btn-agree developing-agree" type="button">确认合作</button>
             </div>
+            <img class="pass-logo" src="./img/pass-logo.png">
         </div>
 
 
@@ -349,5 +383,11 @@
 
 
 <script type="text/javascript" src="./jQuery/application material.js"></script>
+<script>
+    $(function () {
+        $(".developing-rejuect").attr("disabled", "disabled");
+        $(".developing-agree").attr("disabled", "disabled");
+    });
+</script>
 </body>
 </html>
