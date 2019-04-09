@@ -1,0 +1,357 @@
+body{
+	background-color: #F0F1F5;
+}
+.mian_content{
+	margin-top: 70px;
+}
+.demand_topbg{
+	background-color: #fff;
+	padding-top: 10px;
+}
+.tag>li{
+	float: left;
+	width: 40%;
+	margin: 5px 0;
+}
+.tag>li>span{
+	font-weight: 700;
+}
+.money{
+	border: 1px solid #ddd;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.money~div{
+	text-align: right;
+}
+.demand_phase{
+	height: 70px;
+	background-color: #F9FAFC;
+}
+.main-contain{
+	background-color: #fff;
+	margin-top: 15px;
+	box-shadow: 0 0 2px 4px #eee;
+}
+.lineb{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+.linet{
+	border-top: 1px solid #eee;
+}
+.headpic{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #eee;
+	overflow: hidden;
+}
+.headpic img{
+	width: 100px;
+}
+.user{
+	padding: 10px 30px;
+}
+.infomation li{
+	float: left;
+	margin: 20px 10px;
+}
+.infomation>ul{
+	margin-top: 20px;
+}
+.pash_divid{
+	padding: 40px 30px 60px;
+}
+/*错误提示*/
+.wrong{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	background-color: #FFFAEF;
+	color: #DA243D;
+	display: none;
+}
+.pash_con{
+	margin: 20px 0;
+	border: 1px solid #eee;
+	padding: 25px 0px;
+}
+.num{
+	height: 40px;
+	width: 40%;
+	outline: none;
+	border:1px solid #ddd;
+	margin-left: 10px;
+	text-indent: 1em;
+}
+.changenum{
+	height: 35px;
+	width: 100px;
+	text-align: center;
+	background-color: #4289DB;
+	color: #fff;
+	border: none;
+}
+.pash_box{
+	padding:20px 30px;
+}
+.tag{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.tag_box{
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	border: 1px solid #4289DB;
+	border-radius: 5px;
+	color: #4289DB;
+	margin-bottom: 10px;
+}
+.list>li li{
+	margin-bottom: 10px;
+}
+.list input{
+	height: 40px;
+	border: 1px solid #ddd;
+	outline:none;
+	text-indent: 1em;
+}
+.list textarea{
+	outline: none;
+}
+.demand_name{
+	width: 80%;
+}
+.data>li{
+	float: left;
+}
+.plan_data,.plan_money{
+	width:80%;
+	margin-right: 10px;
+}
+.data>li:first-child{
+	margin-right: 100px;
+}
+.instruct{
+	width: 100%;
+	height: 200px;
+	resize: none;
+	border: 1px solid #ddd;
+}
+.submit_btn{
+	display: none;
+}
+.submit_btn input{
+	width: 80px;
+	height: 40px;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+.cancel{
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+.confirm{
+	background-color: #4289DB;
+	border: 1px solid #4289DB;
+	color: #fff;
+}
+.footer{
+	margin-top: 50px;
+}
+.top_tag{
+	margin: 15px 0 40px;
+}
+.statename{
+	margin: 10px 0
+}
+.statename span{
+	display: inline-block;
+	margin-top: 15px;
+	color: #999;
+}
+.state{
+	color: #999;
+}
+.state_P{
+	color: #666;
+}
+.state_detail_box{
+	border: 1px solid #999;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+/*步骤*/
+.step-bg{
+    background-color: #F9F9FB;
+}
+
+.step-bg > .step{
+    margin: 0 auto;
+}
+
+.step > div{
+    display: inline-block;
+    font-size: 14px;
+}
+
+/*步骤里的所有 i标签*/
+.step > div > i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #49a9ee;
+    color: white;
+}
+
+/*所有线*/
+.step > div > .line{
+    display: inline-block;
+    height: 2px;
+    background-color: #49a9ee;
+    vertical-align: middle;
+    transform: translate(0,-50%);
+    position: relative;
+}
+
+.step > div > .line::before,
+.step > div > .line::after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: -2px;
+}
+
+.step > div > .line::after{
+    right: 0;
+}
+
+/*灰色的线*/
+/*注意权重关系*/
+
+.step > .step-develop > .line{
+    background-color: #E1E7EF;
+}
+
+/*灰色的图标*/
+
+.step > .step-finish > i{
+    background-color: #ccc;
+}
+
+/*灰色的字*/
+.step > .step-finish > span{
+    color: #ccc;
+    font-weight: bold;
+}
+/*768以下*/
+@media screen and (max-width: 768px){
+    /*步骤*/
+    .step-bg{
+        margin-top: 75px;
+    }
+    .step-bg > .step{
+        width: 100%;
+        height: 40px;
+        padding: 0 15px;
+    }
+    .step > div{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .step > div > span{
+        display: none;
+    }
+    /*所有线*/
+    .step > div > .line{
+        width: .38rem;
+        /*margin: 0;*/
+    }
+}
+
+/*768 -- 992*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+       /*步骤*/
+    .step-bg{
+        margin-top: 65px;
+    }
+    .step-bg > .step{
+        width: 750px;
+        height: 50px;
+    }
+    .step > div{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    /*步骤里的所有 i标签*/
+    .step > div > i{
+        margin-right: 8px;
+    }
+    /*所有线*/
+    .step > div > .line{
+        width: .38rem;
+        margin-left: 8px;
+    }
+
+}
+
+/*992 - 1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+       /*步骤*/
+    .step-bg{
+        margin-top: 65px;
+    }
+    .step-bg > .step{
+        width: 970px;
+        height: 60px;
+    }
+    .step > div{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    /*步骤里的所有 i标签*/
+    .step > div > i{
+        margin-right: 8px;
+    }
+    /*所有线*/
+    .step > div > .line{
+        width: .5rem;
+        margin-left: 8px;
+    }
+}
+
+/*1200以上*/
+@media screen and (min-width: 1200px){
+        /*步骤*/
+    .step-bg{
+        margin-top: 20px;
+    }
+    .step-bg > .step{
+        width: 1170px;
+    }
+    .step > div{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    /*步骤里的所有 i标签*/
+    .step > div > i{
+        margin-right: 8px;
+    }
+    /*所有线*/
+    .step > div > .line{
+        width: 250px;
+        margin-left: 8px;
+    }
+}
