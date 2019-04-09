@@ -166,6 +166,15 @@ a:hover{
     padding:8px 14px ;
     border-radius: 5px;
 }
+.levelup{
+    height: 30px;
+    background-color: lightseagreen;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
 @media screen  and (max-width: 768px){
     .panel-body-padding{
         padding: 10px 10px;
@@ -175,6 +184,9 @@ a:hover{
     }
     .userinfo-word-textcenter{
         text-align: center;
+    }
+    .levelup{
+        display: none;
     }
 }
 @media screen  and (max-width: 328px){
@@ -186,5 +198,8 @@ a:hover{
 	.panel-body-border-title{
         /* margin-left: 0; */
         width: 230px;
+    }
+    .levelup{
+        display: none;
     }
 }
