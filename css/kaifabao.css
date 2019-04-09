@@ -1,0 +1,73 @@
+html,body,div,p,a,span,ul,ol,li,h1,h2,h3,h4,h5,h6,b,i{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-size: 14px;
+    background-color: #f1f2f6;
+}
+h2{
+    margin:20px 0 100px 20px;
+    /* margin-top: 20px; */
+}
+.row{
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #ccd4d3;
+}
+.kfb-deal p:nth-child(2){
+    margin: 25px 0 10px 0;
+}
+.kfb-deal,.kfb-details,.form-group{
+    border-bottom: 1px solid #ebedef;
+}
+.kfb-details{
+    /* border-bottom: 1px solid #ebedef; */
+    padding: 14px 0;
+    /* height: 300px; */
+}
+.kfb-deal p,.kfb-details p{
+    line-height: 28px;
+}
+.kfb-details p span{
+    color: #979ea7;
+    margin-right: 20px;
+}
+.kfb-deal p:first-child{
+    font-size: 24px;
+    color:#4b92de;
+}
+.kfb-affirm{
+    background-color: #7bafe7;
+    width: 12%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* line-height: 10%; */
+}
+.form-group{
+    padding: 30px 0;
+}
+.radio-inline{
+    margin-left: 60px;
+    margin-right: 30px;
+}
+.kfb-relation{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #0068c5;
+    text-align: center;
+    border-radius: 20px;
+}

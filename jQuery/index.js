@@ -25,6 +25,7 @@ $(document).ready(function(){
         }
         if($(document).scrollTop()>2000){
             $("#jingbiao").fadeIn(1000);
+            $("#jingbiao1").fadeIn(1000);
             $("#jingbiao-img").fadeIn(3000);
         }
         if($(document).scrollTop()>2400){
@@ -33,6 +34,7 @@ $(document).ready(function(){
         }
         if($(document).scrollTop()>2800){
             $("#zhifu").fadeIn(1000);
+            $("#zhifu1").fadeIn(1000);
             $("#zhifu-img").fadeIn(3000);
         }
         if($(document).scrollTop()>3200){

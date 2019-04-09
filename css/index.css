@@ -420,13 +420,13 @@ a{
     margin-top: 50px;
 }
 /* 交易与服务流程 */
-#xuqiu,#jingbiao,#hezuo,#zhifu,#pingjia{
+#xuqiu,#jingbiao,#jingbiao1,#hezuo,#zhifu,#zhifu1,#pingjia{
     height: 100%;
 }
 #xuqiu,#xuqiu-img,
-#jingbiao,#jingbiao-img,
+#jingbiao,#jingbiao-img,#jingbiao1,
 #hezuo,#hezuo-img,
-#zhifu,#zhifu-img,
+#zhifu,#zhifu-img,#zhifu1,
 #pingjia,#pingjia-img{
     display: none;
 }
@@ -612,16 +612,16 @@ a{
 /* 底部1 */
 .bottom{
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     background-color: #273444;
+}
+.bottom .col-md-2{
+    margin-bottom: 20px;
 }
 .bottom .row{
     /* width: 1200px; */
     margin: 0 auto;
     padding: 50px 20px 0;
-}
-.bottom .row ul{
-    margin-right: 50px;
 }
 .bottom-li{
     text-align: center;
@@ -659,6 +659,35 @@ a{
     }
     .list-contant-character{
         width: 100% !important;
+    }
+    .bottom .col-xs-6{
+        padding-left: 14% !important;
+    }
+    .bottom1-1 a {
+        padding: 15px 70px;
+    }
+}
+@media (max-width: 500px){
+    .deal .row .col-md-5 p:nth-child(1) {
+        font-size: 22px;
+    }
+    .deal .row .col-md-5 p:nth-child(2) {
+        font-size: 26px;
+    }
+    .deal .row .col-md-5 p:nth-child(3) {
+        font-size: 12px;
+    }
+    .deal-center a{
+        font-size: 12px;
+    }
+    .deal-h1 {
+        font-size:26px;
+    }
+    .deal .row .col-md-5, .deal .row .col-md-7 {
+        height: 180px;
+    }
+    .bottom .col-xs-6{
+        padding-left: 15%;
     }
 }
 @media (max-width: 767px) {
@@ -724,6 +753,19 @@ a{
     /* .demand p {
         line-height: 28px;
     } */
+    .deal-center {
+        padding: 0 15%;
+    }
+    .deal .row .col-md-5,.deal .row .col-md-7{
+        height: 219px;
+    }
+    .deal{
+        padding: 0;
+        width: 90%;
+    }
+    .bottom .col-sm-4{
+        padding-left: 15%;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .anchor{
@@ -741,6 +783,19 @@ a{
     }
     .p-none,.zhouqi{
         display: none;
+    }
+    .deal-center {
+        padding: 0 15%;
+    }
+    .deal .row .col-md-5,.deal .row .col-md-7{
+        height: 219px;
+    }
+    .deal{
+        padding: 0;
+        width: 80%;
+    }
+    .bottom .col-md-2{
+        padding-left: 15%;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
