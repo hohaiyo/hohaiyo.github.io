@@ -24,10 +24,11 @@ $(function(){
 	// 选项卡
 	
 	$('.left-ul li ').click(function(){
-		$(".left-ul li ").eq($(this).index()).addClass(".left-a").siblings().removeClass('.left-a');
+		// $(".left-ul li ").eq($(this).index()).addClass(".left-a").siblings().removeClass('.left-a');
          $(".Account-right ").hide().eq($(this).index()).show();
 		 
-		$('.left-ul a').css('background','#f0f2f5').eq($(this).index()).css('background','#fff');	
+		$('.left-ul a').css('background','#f0f2f5').eq($(this).index()).css('background','#fff');
+		
 		if($(this).index() == 2){
 			$("footer").css("position","initial")
 		}else{
