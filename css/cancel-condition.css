@@ -12,9 +12,7 @@ em{
 .mian_content{
 	margin-top: 70px;
 	margin-bottom: 20px;
-}
-.ad_poster{
-
+	height: 794px;
 }
 .ad_poster a{
 	display: block;
@@ -62,7 +60,7 @@ em{
 .project_tags>li:last-child{
 	float: right;
 }
-@media screen and (max-width: 767px){
+@media(max-width: 767px){
 	.project_tags>li{
 		float: none;
 		margin: 5px 0;
@@ -120,7 +118,7 @@ i{
     border-radius: 3px;
     margin: 0 auto;
 }
-@media screen and (max-width: 767px){
+@media(max-width: 767px){
 	.projec_contain{
 		padding: 20px;
 	}
@@ -144,7 +142,7 @@ i{
 .project_descript_through>li{
 	margin: 10px 0;
 }
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
 	.project_descript_through{
 		padding-left:0;
 	}
@@ -165,5 +163,10 @@ i{
 	.join_in{
 		width: 150px;
 		height: 50px;
+	}
+}
+@media(min-width:1024){
+	.box{
+		height: 1080px;
 	}
 }

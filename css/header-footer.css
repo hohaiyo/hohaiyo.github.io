@@ -104,10 +104,10 @@ footer{
 
 .footer_warp{
     margin:0 auto;
-    /*max-width: 1200px;*/
+    max-width: 1200px;
     overflow: hidden;
     position: relative;
-    /*min-width: 700px;*/
+    /* min-width: 700px; */
     padding: 0 20px;
 }
 
@@ -251,7 +251,7 @@ footer > p > span{
     overflow:hidden;
     text-overflow:ellipsis;
 }
-@media screen and (max-width: 767px){
+@media(max-width: 768px){
     .navbar-hide,.anchor{
         display: none;
     }
@@ -309,8 +309,13 @@ footer > p > span{
         width: 40px;
     }
 }
-@media screen and (max-width: 321px){
+@media(max-width: 321px){
     .seek{
         width: 120px;
+    }
+}
+@media(min-width:769px){
+    .dropdown-menu>.mobile-none-767{
+        display: none;
     }
 }

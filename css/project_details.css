@@ -135,7 +135,7 @@ i{
 	padding-bottom: 30px;
 }
 /*调整字体大小*/
-@media (max-width: 1200px) and (min-width: 767px){
+/* @media (max-width: 1200px) and (min-width: 767px){
 	body,.navbar-header > .navbar-brand{
 		font-size: 20px;
 	}
@@ -146,4 +146,4 @@ i{
 		width: 150px;
 		height: 50px;
 	}
-}
+} */
