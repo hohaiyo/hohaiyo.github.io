@@ -51,11 +51,6 @@ body{
 .main_content_box{
 	margin-bottom: 30px;
 }
-@media screen and (max-width: 767px){
-	.main_content_box{
-		margin-bottom: 0;
-	}
-}
 .title{
 	margin:30px 0;
 }
@@ -104,14 +99,6 @@ body{
 	margin: 0 48px 30px;
 	overflow: hidden;
 }
-@media screen and (max-width: 767px) {
-	.content_wrap{
-		margin: 0 15px 20px;
-	}
-	.problem_list{
-		padding: 0;
-	}
-}
 .problem_lists_box{
 	overflow:hidden;
 	border-top: 1px solid #ddd;
@@ -126,19 +113,10 @@ body{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-@media screen and (max-width: 767px){
-	.problem_list>ul>li{
-	width: 100%;
-	}
-	.problem_list_li{
-		padding: 10px 0;
-	}
-}
 @media screen and (max-width: 992px){
 	.right_part{
 	margin-top: 30px;
 	}
-
 }
 .online{
 	text-align: center;
@@ -146,21 +124,19 @@ body{
 }
 .ap{
 	font-size: 18px;
+	padding-bottom: 15px;
 }
 .online_btn{
 	width: 230px;
 	height: 60px;
-	margin-top: 35px;
+	margin-top: 20px;
 	margin-bottom: 50px;
 	background-color: #488DD7;
 	border-radius: 5px;
 	border: 1px solid #488DD7;
 	color: #fff;
-}
-@media screen and (max-width: 767px){
-	.online_btn{
-		margin-bottom: 40px;
-	}
+	font-size: 18px;
+	outline: none;
 }
 .imgs img{
 	max-width: 100%;
@@ -171,14 +147,6 @@ body{
 }
 .content_li{
 	margin:0 15px;
-}
-@media screen and (max-width: 767px){
-	.tip_content{
-		padding-right:0;
-	}
-	.content_li{
-		margin-left: -15px;
-	}
 }
 /*问题详情*/
 .details{
@@ -196,6 +164,29 @@ body{
 }
 .details ol li{
 	color: #337AB7;
+}
+/*问题反馈*/
+.problem_modalbox{
+	margin-top: 120px;
+}
+.usersproblem{
+	width: 100%;
+	height: 100%;	
+	height: 300px;
+	resize: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+}
+.modal-body{
+	padding-right: 50px;
+}
+#useremail{
+	width: 100%;
+}
+.alert{
+	display: none;
 }
 /*调整字体大小*/
 @media (max-width: 1200px) and (min-width: 767px){
@@ -217,5 +208,43 @@ body{
 	}
 	.details h2{
 		padding: 30px 0;
+	}
+	.problem_modalbox{
+		margin-top: 180px;
+	}
+}
+@media screen and (max-width: 767px){
+	.main_content_box{
+		margin-bottom: 0;
+	}
+	.content_wrap{
+		margin: 0 15px 20px;
+	}
+	.problem_list{
+		padding: 0;
+	}
+	.problem_list>ul>li{
+	width: 100%;
+	}
+	.problem_list_li{
+		padding: 10px 0;
+	}
+	.tip_content{
+		padding-right:0;
+	}
+	.content_li{
+		margin-left: -15px;
+	}
+	.modal-body{
+		padding-right: 15px;
+	}
+	.online_btn{
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.problem_modalbox{
+		margin-top: 90px;
 	}
 }
