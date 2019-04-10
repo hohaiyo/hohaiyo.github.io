@@ -153,7 +153,6 @@
                 </p>
                 <div class="bottom-btn form-inline pull-right">
                     <button class="btn-cancel form-control">取消发布</button>
-                    <button class="btn-edit form-control">编辑项目</button>
                     <button class="btn-examine form-control">项目状态</button>
                 </div>
             </div>
@@ -195,7 +194,6 @@
                 </p>
                 <div class="bottom-btn form-inline pull-right">
                     <button class="btn-cancel form-control">取消发布</button>
-                    <button class="btn-edit form-control">编辑项目</button>
                     <button class="btn-examine form-control">项目状态</button>
                 </div>
             </div>
@@ -237,7 +235,6 @@
                 </p>
                 <div class="bottom-btn form-inline pull-right">
                     <button class="btn-cancel form-control">取消发布</button>
-                    <button class="btn-edit form-control">编辑项目</button>
                     <button class="btn-examine form-control">项目状态</button>
                 </div>
             </div>
@@ -279,7 +276,6 @@
                 </p>
                 <div class="bottom-btn form-inline pull-right">
                     <button class="btn-cancel form-control">取消发布</button>
-                    <button class="btn-edit form-control">编辑项目</button>
                     <button class="btn-examine form-control">项目状态</button>
                 </div>
             </div>
@@ -329,5 +325,21 @@
     </ul>
     <span></span>
 </div>
+
+
+
+<script>
+    $(function(){
+        $(".btn-examine").on("click",function(){
+            location.href = "registration-list.html";
+        })
+        $(".list-bottom > img").on("click",function(){
+            location.href = "project_details.html";
+        })
+        // $(".btn-edit").on("click",function(){
+        //     location.href = "registration-list.html";
+        // })
+    })
+</script>
 </body>
 </html>

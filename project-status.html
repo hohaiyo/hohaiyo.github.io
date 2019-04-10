@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--头部，尾部，锚点-->
     <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="css/application material.css">
     <link rel="stylesheet" href="./css/registration-list.css">
     <link rel="stylesheet" href="./css/registration-developing.css">
     <link rel="stylesheet" href="./css/project-status.css">
-
     <script src="jQuery/rem.js"></script>
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./jQuery/header-footer.js"></script>
-    <link rel="stylesheet" href="../../../Documents/Tencent Files/1621970846/FileRecv/header-footer.css">
+    <script src="jQuery/project-status.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -33,11 +33,12 @@
     <nav class=" navbar navbar-default mobile-none-767" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand navbar-logo" href="developer.html">
+                <a class="navbar-brand navbar-logo" href="index.html">
                     <img src="./img/logo_blue.png" alt="logo">
                 </a>
                 <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
                 <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
                 <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
                 <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p>
             </div>
@@ -162,7 +163,7 @@
     <div class="layer developer-info">
         <div class="developer-top">
             <span>开发者信息</span>
-            <button type="button" class="pull-right">查看报名列表 >></button>
+            <button type="button" class="pull-right look-list">查看报名列表 >></button>
         </div>
         <div class="developer-bottom clearfix">
             <img class="pull-left" src="./img/studio.png">
@@ -229,7 +230,7 @@
         <div class="stage-foot clearfix">
             <div class="pull-right">
                 <button class="edit" type="button">编辑阶段</button>
-                <button class="trusteeship" type="button">托管阶段款</button>
+                <button class="trusteeship lookbtn" type="button" onclick="ShowDiv('contact_info','fade')">托管阶段款</button>
             </div>
         </div>
     </div>
@@ -267,7 +268,7 @@
         <div class="stage-foot clearfix">
             <div class="pull-right">
                 <button class="edit" type="button">编辑阶段</button>
-                <button class="trusteeship" type="button">托管阶段款</button>
+                <button class="trusteeship lookbtn" type="button" onclick="ShowDiv('contact_info','fade')">托管阶段款</button>
             </div>
         </div>
     </div>
@@ -277,6 +278,26 @@
             <i class="iconfont icon-jiahao"></i>
             新增阶段划分
         </button>
+    </div>
+
+
+
+    <!-- 点击查看 -->
+    <div id="fade" class="black_overlay"></div>
+    <div id='contact_info' class="contact_info_box">
+        <div class="contact_info_title">支付查看联系方式</div>
+        <div class="contact_info_content">
+            <p>
+                请注意: 您可以免费查看 5 位报名者联系方式。 如果您需要查看更多开发者，需要支付 10 元/人的服务费。
+            </p>
+            <p>
+                您当前还可以免费查看 5 人联系方式
+            </p>
+        </div>
+        <div class="contact_info_btn">
+            <button class="contact_show">立即查看</button>
+            <button class="contact_cancel" onclick="CloseDiv('contact_info','fade')">取消</button>
+        </div>
     </div>
 </div>
 <!-- 底部 -->
@@ -288,8 +309,30 @@
         <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
     </div>
 </footer>
+<!--侧边栏-->
+<div class="anchor">
+    <ul>
+        <li class="anchor-consult">
+            <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+            帮助
+            <a href="help/help.html"></a>
+        </li>
+        <li class="anchor-about">
+            <i class="iconfont icon-guanyu"></i>
+            关于我们
+            <a href="about.html"></a>
+        </li>
+        <li class="anchor-top">
+            <i class="iconfont icon-top"></i>
+            TOP
+            <a href="#header-top"></a>
+        </li>
+    </ul>
+    <span></span>
+</div>
 
 
+<script type="text/javascript" src="./jQuery/application material.js"></script>
 <script>
     $(function () {
         $(".remind > p").on("touchstart", function () {

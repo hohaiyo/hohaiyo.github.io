@@ -131,6 +131,7 @@ footer > p > span{
 
 /*侧边锚点*/
 .anchor{
+    display: none;
     position: absolute;
     right: 10px;
     transition: 500ms;

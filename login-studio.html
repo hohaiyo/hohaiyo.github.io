@@ -12,7 +12,7 @@
     <!--清除默认样式-->
     <link rel="stylesheet" href="./css/initialize.css">
     <!--阿里图库-->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_y5065in2o8p.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_bmzas3pw0se.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--头部，尾部，锚点-->
@@ -36,7 +36,7 @@
         <ul class="header-right col-md-4 pull-right text-right">
             <li class="header-hide">什么，已经有账号了?</li>
             <li class="enter">
-                <a href="#">登录</a>
+                <a href="enter.html">登录</a>
             </li>
             <!--<li class="login">-->
             <!--<a href="#">注册</a>-->
@@ -46,7 +46,7 @@
     <!--内容-->
     <!--表单-->
     <form class="form" rale="form">
-        <div class="form-group form-title">企业方注册</div>
+        <div class="form-group form-title">工作室注册</div>
         <div class="form-group form-username form-img">
             <i class="iconfont icon-yonghuming"></i>
             <input class="form-control" type="text" maxlength="7" placeholder="请设置用户名，用户名不可修改">
@@ -65,7 +65,7 @@
                 <span>请输入邮箱</span>
             </div>
         </div>
-        <div class="form-group form-password form-img form-password1">
+        <div class="form-group form-password form-password1 form-img">
             <i class="iconfont icon-mima"></i>
             <input class="form-control" type="password" maxlength="18" placeholder="请输入您的密码">
             <!--警告-->
@@ -74,7 +74,7 @@
                 <span>请输入密码</span>
             </div>
         </div>
-        <div class="form-group form-password">
+        <div class="form-group form-password form-password2">
             <input class="form-control" type="password" maxlength="18" placeholder="请确认您的密码">
             <!--警告-->
             <div class="warn">
@@ -133,15 +133,16 @@
         //验证码
         $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
         $(".form-verify input").attr("disabled","disabled");
-        $(".form-number > input").keypress(function () {
-            if($(this).val().length > 11 && $(".send").text() == "发送验证码"){
-                $(".send").removeAttr("disabled").removeClass("send-disabled")
-                $(".form-verify > input").removeAttr("disabled").removeClass("input-disabled");
-            }else{
-                $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
-                $(".form-verify > input").attr( "disabled","disabled" ).addClass( "input-disabled" );
-            }
-        });
+        $(".form-number > input").click(function(){
+            $(this).keypress(function () {
+                if($(this).val().length > 11 && $(".send").text() == "发送验证码"){
+                    $(".send").removeAttr("disabled").removeClass("send-disabled")
+                }else{
+                    $(".send").attr( "disabled","disabled" ).addClass( "send-disabled" );
+                }
+            });
+        })
+        
 
         //验证码点击
         $(".send").click(function () {
@@ -175,8 +176,8 @@
             var password2 = $(".form-password2 > input");
             var verify = $(".form-verify > input");
             var check = $(".sure-check > i").css("display");
-            var arr = [username, number, password, verify];
-            if(username.val().length == 0 || number.val().length == 0 || password.val().length == 0 || verify.val().length == 0){
+            var arr = [username, number, password1, password2, verify];
+            if(username.val().length == 0 || number.val().length == 0 || password1.val().length == 0 || password2.val().length == 0 || verify.val().length == 0){
                 for( var i = 0; i < arr.length; i++){
                     if(arr[i].val().length != 0){
                         arr[i].css("border","1px solid #49a9ee");
@@ -190,7 +191,9 @@
                 for(var x = 0; x < arr.length; x++){
                     arr[x].css("border","1px solid #49a9ee")
                 }
-                location.href = "enter.html";
+                setTimeout(function(){
+                    location.href = "enter.html";
+                },500)
             };
         });
 
@@ -198,6 +201,9 @@
         $(".form-return").click(function () {
             location.href = "login.html"
         });
+        $(".header-name").click(function () {
+            location.href = "logout-index.html"
+        }); 
     });
 </script>
 </body>

@@ -4,7 +4,9 @@ $(function(){
     $(".form-pulldown li").click(function () {
         $(".form-status span").text($(this).text())
     });
-
+    $('.btn-default').click(function(){
+        location.href = "demand.html"
+    })
 var _this;
 var recruit;
     // 点击取消弹出窗口

@@ -23,10 +23,7 @@ var edit_cancel = document.getElementById('edit_cancel');
 
 edit_btn.onclick = function(){
 	edit.disabled = "";
-<<<<<<< HEAD
 	edit_two.value = edit.value;
-=======
->>>>>>> wyj
 	edit_btn.style.display = 'none';
 	edit_group_btn.style.display = 'block';
 }

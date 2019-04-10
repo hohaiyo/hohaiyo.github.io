@@ -62,7 +62,7 @@ h2{
 .kfb-relation{
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 70px;
     width: 100px;
     height: 40px;
     line-height: 40px;
@@ -70,4 +70,40 @@ h2{
     background-color: #0068c5;
     text-align: center;
     border-radius: 20px;
+}
+a:hover{
+    text-decoration: none;
+}
+/*底部*/
+footer{
+    box-sizing: border-box;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1f2d3d;;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer_warp{
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer_warp > a > img{
+    height: 30px;
+}
+
+.footer_warp > span{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer-text{
+    color: #8796a8;
+    line-height: 33px;
 }
