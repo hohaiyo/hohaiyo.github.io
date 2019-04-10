@@ -196,7 +196,7 @@ a:hover{
 }
 /*调整字体大小*/
 @media (max-width: 1200px) and (min-width: 767px){
-	.left_part,.right_part,a{
+	/* .left_part,.right_part,a{
 		font-size: 20px;
 		line-height: 36px;
 	}
@@ -211,7 +211,7 @@ a:hover{
 	}
 	.banner_txt{
 		font-size: 50px;
-	}
+	} */
 	.details h2{
 		padding: 30px 0;
 	}
