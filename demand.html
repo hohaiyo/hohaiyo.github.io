@@ -147,20 +147,17 @@
 				<div class="pull-left demand_item_name">项目名称</div>
 				<div class="pull-left demand_item_input">
 					<input type="text" name="" class="form-control" maxlength="30" placeholder="30字以内"  id="demand_name" >
-<!-- 						<p id="remind_item_name" class="colorred">
+						<p id="remind_item_name" class="colorred">
 							姓名不能包含输入英文字母,数字,标点等符号
-						</p> -->
+						</p>
 				</div>
 			</div>
 
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目预算</div>
 				<div class="pull-left demand_item_input_two">
-					<input type="text" name="" class="form-control" placeholder="金额不低于50000元" id="demand_budget" onkeyup="only_num_keyup(this)" onblur="only_num_blur(this)">
-					<span>元</span>
-						<p id="remind_money" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
-						</p>					
+					<input type="text" name="" class="form-control" placeholder="金额不低于50000元" id="demand_budget">
+					<span>元</span>				
 				</div>
 			</div>
 			<div class="under_hint">
@@ -169,13 +166,16 @@
 				</div>
 				<div class="pull-left demand_item_input_two">
 					该项目金额不含税，如需发票，请查看<a href="#">操作文档</a>
+						<p id="remind_money" class="colorred">
+							姓名不能包含输入英文字母,数字,标点等符号
+						</p>	
 				</div>				
 				
 			</div>
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">期望周期</div>
 				<div class="pull-left demand_item_input_two">
-					<input type="text" name="" class="form-control" placeholder="请输入交付周期" id="demand_day"  onkeyup="only_num_keyup(this)" onblur="only_num_blur(this)">
+					<input type="text" name="" class="form-control" placeholder="请输入交付周期" id="demand_day">
 					<span>天</span>
 						<p id="remind_day" class="colorred">
 							姓名不能包含输入英文字母,数字,标点等符号
@@ -187,9 +187,9 @@
 				<div class="pull-left demand_item_name">项目介绍</div>
 				<div class="pull-left demand_item_input">
 					<textarea type="textarea" rows="4" placeholder="请尽量详细描述您的项目，以吸引更多有相关开发经验的开发者报名（20 个字符以上）" id="demand_introduce"></textarea>
-<!-- 						<p id="remind_show" class="colorred">
+						<p id="remind_introduce" class="colorred">
 							姓名不能包含输入英文字母,数字,标点等符号
-						</p>	 -->				
+						</p>					
 				</div>
 			</div>
 
@@ -219,9 +219,9 @@
 				<div class="pull-left demand_item_name">招标要求</div>
 				<div class="pull-left demand_item_input">
 					<textarea type="textarea" rows="4" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" id="demand_call_for"></textarea>
-<!-- 						<p id="remind_hope" class="colorred">
+						<p id="remind_hope" class="colorred">
 							姓名不能包含输入英文字母,数字,标点等符号
-						</p> -->					
+						</p>					
 				</div>
 			</div>
 
@@ -232,28 +232,28 @@
 						<p>您的姓名</p>
 						<input type="text" name="" class="form-control" placeholder="姓名" id="demand_user_name">
 						<p id="remind_name" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
+							姓名不能包含输入英文字母
 						</p>
 					</div>
 					<div>
 						<p>您的邮箱</p>
 						<input type="text" name="" class="form-control" placeholder="邮箱" id="demand_user_email">
 						<p id="remind_email" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
+							姓名不能包含输入英文字母
 						</p>						
 					</div>
 					<div class="demand_item_input_three_left_div">
 						<p>您的手机号码</p>
 						<input type="text" name="" class="form-control" placeholder="手机号码" maxlength="11" id="demand_user_tel">
 						<p id="remind_tel" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
+							姓名不能包含输入英文字母
 						</p>						
 					</div>
 					<div class="security_code" id="security_code">
 						<p>验证码</p>
 							<input type="text" name="" class="security_code_input" placeholder="验证码" maxlength="10" id="security_code_input"><input type="button" class="security_code_button_input" value="发送验证" id="security_code_btn" onclick="settime(this)">
 						<p id="remind_code" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
+							姓名不能包含输入英文字母
 						</p>							
 					</div>												
 				</div>
