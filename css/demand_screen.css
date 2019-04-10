@@ -26,9 +26,6 @@
     }
 
     /*下面填写表单左边的文字介绍*/
-    .demand_item_name{
-        font-size: 24px;
-    }
     
     /*文本域高度和字体大小*/
     textarea::-webkit-input-placeholder {
@@ -51,7 +48,7 @@
 
     /*项目类型*/
     .list-inline_li_type{
-        font-size: 20px;
+        font-size: 14px;
     } 
 
     .list-inline>li{
@@ -71,49 +68,21 @@
     /*相关文档旁边的选填*/
     .demand_small{
         font-size: 14px;
-    }
-    
-    .click_upload{
-        width: 160px;
-        height: 50px;
-        font-size: 20px;
-        line-height: 50px;
-    }  
-    .click_upload_svg{
-        width: 24px;
-        height: 24px;
-        vertical-align: sub;
-    }      
+    }    
 
     /*联系方式*/
     .demand_item_input_three p{
-        font-size: 20px;
+        font-size: 14px;
     }
 
     /*同意条款*/
-    .demand_clause{
-        font-size: 20px;
-    }
-
-    .usually_checkbox{
-        width: 24px;
-        height: 24px;
-        vertical-align: middle;
-    }
 
     .yes_img{
         width: 24px;
         height: 24px;
     }
 
-    /*立即发布*/
-    .demand_issue a{
-        width: 160px;
-        height: 50px;
-        font-size: 20px;
-        line-height: 50px;
-
-    }    
+    /*立即发布*/   
 }
 
 /*PAD屏幕下的专用样式*/
@@ -173,7 +142,7 @@
 
     /*项目类型*/
     .list-inline_li_type{
-        font-size: 18px;
+        font-size: 16px;
     } 
 
     /*项目类型选项大小*/
@@ -208,6 +177,10 @@
         vertical-align: sub;
     }      
 
+    .demand_item_input_three div{
+        width: 44%;
+    }
+
     /*联系方式*/
     .demand_item_input_three p{
         font-size: 16px;
@@ -221,7 +194,7 @@
     .usually_checkbox{
         width: 20px;
         height: 20px;
-        vertical-align: middle;
+        vertical-align: sub;
     }
 
     .yes_img{
@@ -248,6 +221,7 @@
     .demand_content_left{
         width: 100%;
         padding-left: 20px;
+        padding-right: 20px;
         border-radius: 0px;
     }
     /*项目类型字体*/
@@ -265,6 +239,10 @@
         font-size: 20px;
     } 
     
+    .demand_item_input, .demand_item_input_two, .demand_item_input_three {
+        width: 70%;
+        margin-left: 20px;    
+    }
     /*input高度和里面的字体大小*/
     .form-control,.security_code_input,.security_code_button_input{
         height: 40px !important;
@@ -344,12 +322,11 @@
 
     /*联系方式*/
     .demand_item_input_three p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .demand_item_input_three div{
         width: 100%;
-        margin-bottom: 20px;
     }
     /*同意条款*/
     .demand_clause{
