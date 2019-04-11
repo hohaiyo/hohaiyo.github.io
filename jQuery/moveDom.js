@@ -14,9 +14,9 @@ $(function(){
 				let pNum=$(".num").val()
 				for(let i=1;i<=parseInt($('.num').val());i++){
 					let stateBox=`<div class="col-md-12 pash_box">
-						<div class="col-md-1">
+						<div class="col-md-1 clearfix">
 							<span class="tag tag_box">P<span class="demand_num">${parseInt(i)}</span></span>
-							<p class="tag center-block">阶段</p>
+							<p class="tag center-block hidetag">阶段</p>
 						</div>
 						<div class="col-md-11">
 							<ul class="list">
@@ -58,9 +58,9 @@ $(function(){
 			}else if(parseInt($(".num").val())<=20){
 				for(let i=$(".pash_box").length+1;i<parseInt($('.num').val())+1;i++){
 					let stateBox=`<div class="col-md-12 pash_box">
-						<div class="col-md-1">
+						<div class="col-md-1 clearfix">
 							<span class="tag tag_box">P<span class="demand_num">${parseInt(i)}</span></span>
-							<p class="tag center-block">阶段</p>
+							<p class="tag center-block hidetag">阶段</p>
 						</div>
 						<div class="col-md-11">
 							<ul class="list">
@@ -107,13 +107,25 @@ $(function(){
 	// 提交
 	
 	$(".confirm").click(function(){
+		// 验证日期格式
+		
+	    function checkDate(date) {
+            var result = date.match(/^(\d{1,4})(-|\/)(\d{1,2})\2(\d{1,2})$/);
 
-		for(let i=0;i<$(".pash_box").length;i++){
-			let name=$(".demand_name").eq(i).val();
-			let date=$(".plan_data").eq(i).val();	
+            if (result == null)
+                return false;
+            var d = new Date(result[1], result[3] - 1, result[4]);
+            return (d.getFullYear() == result[1] && (d.getMonth() + 1) == result[3] && d.getDate() == result[4]);
+        }
+
+
+		// console.log(checkDate($(".plan_data").val()))
+		$(".plan_data").each(function(i){
+			let name=$(".demand_name").eq(i).val();	
 			let money=$(".plan_money").eq(i).val();
 			let instruct=$(".instruct").eq(i).val();
-
+			let date = $(this).val();
+			console.log()
 			let statedetail=`<div class="col-md-12 state_detail_box">
 				<div class="col-md-12 top_tag">
 				<div class="pull-left">
@@ -136,10 +148,53 @@ $(function(){
 					<span class="stateinfomation">${instruct}</span>
 				</div>
 			</div>`;
-			$(".pash_divid").append(statedetail);
-		}
-		$(".pash_con").css("display","none")
-		$(".submit_btn").css("display","none");
+			if(checkDate($(this).val())){
+				$(".pash_divid").append(statedetail);
+				$(".pash_con").css("display","none")
+				$(".submit_btn").css("display","none");
+			}else{
+				$(this).css("borderColor","red")
+			}
+		})
+		// if(checkDate($(".plan_data").val())){
+		// 	for(let i=0;i<$(".pash_box").length;i++){
+		// 		let name=$(".demand_name").eq(i).val();
+		// 		let date=$(".plan_data").eq(i).val();	
+		// 		let money=$(".plan_money").eq(i).val();
+		// 		let instruct=$(".instruct").eq(i).val();
+
+		// 		let statedetail=`<div class="col-md-12 state_detail_box">
+		// 			<div class="col-md-12 top_tag">
+		// 			<div class="pull-left">
+		// 				<p><span class="state_P">P${i+1}阶段</span> | <span class="statename">${name}</span></p>
+		// 			</div>
+		// 			<div class="pull-right">
+		// 				<p>状态 <span class="state">阶段划分</span></p>
+		// 			</div>
+		// 			</div>
+		// 			<div class="col-md-5 statename">
+		// 				<p>计划交付日期</p>
+		// 				<span class="statedate">${date}</span>
+		// 			</div>
+		// 			<div class="col-md-6 statename">
+		// 				<p>计划金额</p>
+		// 				<span>￥${money}</span>
+		// 			</div>
+		// 			<div class="col-md-2 statename">
+		// 				<p>交付说明</p>
+		// 				<span class="stateinfomation">${instruct}</span>
+		// 			</div>
+		// 		</div>`;
+		// 		$(".pash_divid").append(statedetail);
+		// 	}
+		// 	$(".pash_con").css("display","none")
+		// 	$(".submit_btn").css("display","none");
+
+		// }else{
+		// 	$(".plan_data").css("borderColor","red")
+		// }
+
 	});
 
+        
 })
