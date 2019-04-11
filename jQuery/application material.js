@@ -13,6 +13,13 @@ function CloseDiv(show_div,bg_div)
 	document.getElementById(bg_div).style.display='none';
 };
 
+$(".trusteeship").on("click", function () {
+	ShowDiv('contact_info','fade');
+	var a = $(this).parent().parent().parent().find(".item2 .item-right").text();
+	$(".fade-money").text(a);
+	$(".fade-small").text(a.split("").slice(1).join(""));
+});
+
 // 编辑个人签名
 var edit = document.getElementById('edit_textarea');
 var edit_two = document.getElementById('edit_textarea_two');

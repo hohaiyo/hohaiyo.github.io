@@ -19,7 +19,6 @@ $(function () {
     });
 
 
-    
     // 滚动条
     $(window).scroll(function(){
         if($(document).width() > 1024){
@@ -49,12 +48,6 @@ $(function () {
             $(this).removeClass("hover");
         });
     }
-    // $(".anchor li").mouseover(function () {
-        
-    // });
-    // $(".anchor li").mouseout(function(){
-        
-    // });
 
     // 使底部logo居中
     if($(window).width()<767){

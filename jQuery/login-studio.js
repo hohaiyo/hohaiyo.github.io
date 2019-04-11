@@ -88,7 +88,7 @@ $(".form-login").on("click", function () {
 
 // 用户名验证
 function userName() {
-    var reg=/^[-_a-zA-Z0-9]{4,16}$/;
+    var reg= /^[\u4E00-\u9FA5A-Za-z0-9_]+$/;
     var username = $(".form-username > input");
     if(reg.test(username.val())){
         username.css("border","1px solid #49a9ee");
@@ -102,7 +102,7 @@ function userName() {
 
 // 邮箱验证
 function eMail() {
-    var reg=/^[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}$/;
+    var reg= /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     var email = $(".form-number > input");
     if(reg.test(email.val())){
         email.css("border","1px solid #49a9ee");
@@ -141,6 +141,3 @@ function passWord2() {
         password2.parent().find(".warn").css("display","block");
     }
 }
-// $('.form-login').click(function(){
-//     $.ajax(,data,)
-// })

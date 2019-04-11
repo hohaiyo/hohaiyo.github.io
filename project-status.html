@@ -25,7 +25,6 @@
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./jQuery/header-footer.js"></script>
-    <script src="jQuery/project-status.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -94,6 +93,7 @@
         </div>
     </nav>
 </header>
+<div id="header-top" style="height:1px"></div>
 <!--比赛项目-->
 <div class="competition-bg">
     <div class="competition-item clearfix">
@@ -138,7 +138,7 @@
         </div>
         <div class="step-recruit">
             <i class="iconfont icon-xiangbaoleimu"></i>
-            <span class="step-black">招募中</span>
+            <span class="step-black">招标中</span>
             <b class="line"></b>
         </div>
         <div class="step-develop">
@@ -230,7 +230,7 @@
         <div class="stage-foot clearfix">
             <div class="pull-right">
                 <button class="edit" type="button">编辑阶段</button>
-                <button class="trusteeship lookbtn" type="button" onclick="ShowDiv('contact_info','fade')">托管阶段款</button>
+                <button class="trusteeship lookbtn" type="button">托管阶段款</button>
             </div>
         </div>
     </div>
@@ -255,7 +255,7 @@
             </li>
             <li class="item2">
                 <span class="item-left">2019-04-12</span>
-                <span class="item-right">￥111</span>
+                <span class="item-right">￥222</span>
             </li>
             <li class="item1">
                 <span class="item-left">交付说明</span>
@@ -285,17 +285,21 @@
     <!-- 点击查看 -->
     <div id="fade" class="black_overlay"></div>
     <div id='contact_info' class="contact_info_box">
-        <div class="contact_info_title">支付查看联系方式</div>
+        <div class="contact_info_title">托管阶段款</div>
         <div class="contact_info_content">
             <p>
-                请注意: 您可以免费查看 5 位报名者联系方式。 如果您需要查看更多开发者，需要支付 10 元/人的服务费。
+                资金托管后才能启动阶段。
             </p>
             <p>
-                您当前还可以免费查看 5 人联系方式
+                托管阶段总金额<span class="fade-money" style="font-size: 26px;color:#000"></span> 元
+            </p>
+            <p style="font-size: 12px">
+                <i class="iconfont icon-guanyu" style="font-size: 12px"></i>
+                阶段金额包括 <span class="fade-small"></span> 元阶段款 + 0 平台服务费
             </p>
         </div>
         <div class="contact_info_btn">
-            <button class="contact_show">立即查看</button>
+            <button class="contact_show">去开发包支付</button>
             <button class="contact_cancel" onclick="CloseDiv('contact_info','fade')">取消</button>
         </div>
     </div>
@@ -348,6 +352,11 @@
                 textOverflow: "ellipsis",
                 overflow: "hidden"
             })
+        });
+
+        //报名列表
+        $(".developer-top > button").on("click", function () {
+            location.href = "registration-developing.html";
         });
     });
 </script>
