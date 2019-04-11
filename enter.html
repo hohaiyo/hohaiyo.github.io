@@ -38,7 +38,7 @@
                 <li class="header-span ">还没注册账号？</li>
                 
                 <li class="top-enter">
-                    <a href="#">注册</a>
+                    <a href="login.html">注册</a>
                 </li>
             </ul>
         </header>
@@ -46,55 +46,61 @@
 	<!-- 登陆内容 -->
 		<div class="enter">
 			
-				<form class="enter_nav">
+				<div class="enter_nav">
 					<ul class='enter_nav-ul'>
 						<li class='demand'>需求方</li>
 						<li class='developer'>开发方</li>
 					</ul>
-					<div class="enter-content main"style='display:block'>
-						<h3>需求方登陆</h3>
-						<div class="warn"><i class=" iconfont icon-cuowu"></i><span>请输入账号或密码</span></div>
+					<form id="need-login">
+						<div class="enter-content main"style='display:block'>
+							<h3>需求方登陆</h3>
+							<div class="warn"><i class=" iconfont icon-cuowu"></i><span>请输入账号或密码</span></div>
+							
+							<input type="text" class="enter-user" placeholder="用户名/手机号/电子邮箱">
+							
+							<input type="password" class="enter-pwd" placeholder="请输入密码">
 						
-						<input type="text" class="enter-user" placeholder="用户名/手机号/电子邮箱">
-						
-						<input type="password" class="enter-pwd" placeholder="请输入密码">
+							<ul class="enter-ul">
+								<li>
+									<span class="sure-check">
+										<i class="iconfont icon-dui1"></i>
+									</span>
+								记住密码
+								</li>
+								<li><a href="findpassword.html">找回密码</a></li>
+							</ul>
+							<input type="button" class="enter-login need-login" value="登陆 ">			
+						</div>	
+					</form>
 					
-						<ul class="enter-ul">
-							<li>
-								<span class="sure-check">
-									<i class="iconfont icon-dui1"></i>
-								</span>
-							记住密码
-							</li>
-							<li><a href="#">找回密码</a></li>
-						</ul>
-						<input type="button" class="enter-login" value="登陆 ">
-						
-					</div>
-					
-					<div class="enter-content main"style='display: none;'>
-						<h3>开发方登陆</h3>
-												
-						<div class="warn"><i class=" iconfont icon-cuowu"></i>请输入账号或密码</div>
-						
-			
-						<input type="text" class="enter-user" placeholder="用户名/手机号/电子邮箱">
-						
-						<input type="password" class="enter-pwd" placeholder="请输入密码">
-						
-						<ul class="enter-ul">
-							<li>
-								<span class="sure-check">
-									<i class="iconfont icon-dui1"></i>
-								</span>
-							记住密码
-							</li>
-							<li><a href="#">找回密码</a></li>
-						</ul>
-						<input type="button" class="enter-login" value="登陆 ">
-						
-					</div>
-				</form>	
+					<form id="exploit-login">	
+						<div class="enter-content main"style='display: none;'>
+							<h3>开发方登陆</h3>
+													
+							<div class="warn"><i class=" iconfont icon-cuowu"></i>请输入账号或密码</div>
+							
+				
+							<input type="text" class="enter-user" placeholder="用户名/手机号/电子邮箱">
+							
+							<input type="password" class="enter-pwd" placeholder="请输入密码">
+							
+							<ul class="enter-ul">
+								<li>
+									<span class="sure-check">
+										<i class="iconfont icon-dui1"></i>
+									</span>
+								记住密码
+								</li>
+								<li><a href="findpassword.html">找回密码</a></li>
+							</ul>
+							<input type="button" class="enter-login exploit-login" value="登陆 ">
+							
+						</div>
+					</form>
+				</div>
+				<div class="error">
+					<p>用户名或密码错误</p>
+				</div>
 		</div>
 	
 	
@@ -104,27 +110,11 @@
             <!-- <i class="iconfont icon-banquan footer-copyright"></i> -->
             <p>
                 <a href="#"><img src="./img/logo_blue.png"></a>
-                <span href="#">XXXXXX&copy;2014-2020</span>
+                <span class="footer-bt" href="#">XXXXXX&copy;2014-2020</span>
             </p>
 	</footer>
 	
 	
-	<script>
-		$(function(){
-			$(".top-enter").on("click",function(){
-				location.href = "login.html";
-			});
-
-			$(".enter-login").on("click",function(){
-				if($(".enter-user").val().length == 0 && $(".enter-pwd").val().length == 0){
-					$(".enter-user").css("border","2px solid red")
-					$(".enter-pwd").css("border","2px solid red")
-				}else{
-					location.href = "index.html";
-				}
-			})
-		})
-	</script>
 </body>
 </html>
 	

@@ -1,251 +1,68 @@
-/*头部导航栏*/
-header{
-    box-shadow: 0 1px 2px 1px #ccc;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+.login-content{
+    margin-top: 80px;
+    padding: 100px 300px;
 }
-
-header > ul{
-    box-sizing: border-box;
-    /*display: flex;*/
-    align-items: center;
-    padding: 10px 0;
-    margin: 0 15px;
+.paddingnone{
+    padding: 0;
 }
-
-header > ul > li{
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 16px;
-    white-space: nowrap;
+.marginbottom{
+    margin-bottom: 20px;
 }
-
-header > ul > .header-name{
-    animation: name 1s;
-    cursor: pointer;
-}
-
-@keyframes name{
-    50%{ transform: scale(1.4) }
-}
-
-header ul .header-name > img{
-    height: 30px;
-}
-
-.header-right > .enter,
-.header-right > .login{
-    font-size: 12px;
-    padding: 5px 25px;
-    border: 1px solid #49a9ee;
+.login-box{
     border-radius: 5px;
-    color: #49a9ee;
-    cursor: pointer;
+    border: 1px solid #eee;
+    background-color: #bbb;
+    padding: 10px;
 }
-
-.header-right > .enter > a,
-.header-right > .login > a{
-    color: #49a9ee;
+.login-box a{
+    color: #000;
 }
-
-.header-right > .enter:hover,
-.header-right > .login:hover{
-    background-color: #49a9ee;
+.login-box a:hover{
+    color: #08c;
 }
-
-.header-right > .enter:hover > a,
-.header-right > .login:hover > a{
-    color: #fff;
+.login-box2{
+    height: 100px;
+    line-height: 50px;
 }
-
-
-/*登陆界面身份选择*/
-.Identitychoice{
-    width: 100%;
-    /*max-width: 1220px;*/
-    height: 550px;
+.login-box2 p:first-child{
+    font-size: 20px;
 }
-.choicebox{
-    width: 100%;
-    margin: 0 auto;
-    height: 550px;
+.kff{
+    height: 100px;
 }
-.xuanzehezi{
-    width: 100%;
-    height: 550px;
-    padding-top: 150px;
+.kff img{
+    height: 100%;
 }
-.loginchoice{
-    margin: 50px auto 0 auto;
-    max-width: 700px;
-    height: 150px;
-}
-.xuanzehezi h2{
-    text-align: center;
-}
-.gzs{
-    width: 300px;
-    height: 140px;
-    background-color: lightgray;
-    border-radius: 10px;
-    transition: 1s;
-}
-.gzs img{
-    width: 100px;
-    height: 70px;
-}
-.gzs a{
-    color: #333;
-    text-decoration: none;
-}
-.gzs:hover{
-    cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-10%);
-    transition: 1s;
-}
-.userimg{
-    margin-top: 35px;
-}
-.userword{
-    width: 110px;
-    height: 70px;
-    margin-top: 45px;
-}
-.userword p{
-    margin-top: 10px;
-}
-.enterprise{
-    margin-left: 100px;
-}
-
-
-/*小于766*/
-@media screen and (max-width: 766px){
-    /*头部小字隐藏*/
-    .header-hide{
-        display: none;
-    }
-    .enter > a{
-        display: block;
-        transform: scale(1.2 );
-    }
-
-    .loginchoice{
-        padding: 0 20px;
-    }
-    .gzs{
-        width: 230px;
-        height: 120px;
-    }
-    .enterprise{
-        float: right!important
-    }
-    .enterprise{
-        margin-left:20px;
-    }
-    .userimg{
-        margin-top: 20px;
-    }
-    .userword{
-        margin-top: 20px;
+/* @media screen and (min-width:1024px) and (max-width:1280px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px;
     }
 }
-
-/*小于420*/
-@media screen and (max-width: 420px){
-    .xuanzehezi{
-        padding-top: 120px;
+@media screen and (min-width:331px) and (max-width: 767px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px;
     }
-    .xuanzehezi h2{
-        font-size: 24px;
-    }
-    .loginchoice{
-        margin-top: 40px;
-    }
-    .gzs{
-        width: 150px;
-    }
-    /*.enterprise{*/
-        /*float: right!important*/
-    /*}*/
-    .userimg{
-        margin-top: 4px;
-    }
-    .gzs img{
-        width: 55px;
-        height: 55px;
-        margin-left: 50px;
-    }
-    .userword{
-        margin: -12px 0 0 20px;
-        text-align: center;
-    }
-    .userword h3{
-        font-size: 20px;
-        margin-bottom: 6px;
-    }
-    .userword p{
-        margin-top: 8px;
+    .login-box{
+        margin-bottom: 20px;
     }
 }
-
-/*小于320*/
-@media screen and (max-width: 320px){
-    /*.xuanzehezi{*/
-        /*padding-top: 120px;*/
-    /*}*/
-    /*.xuanzehezi h2{*/
-        /*font-size: 24px;*/
-    /*}*/
-    /*.loginchoice{*/
-        /*margin-top: 40px;*/
-    /*}*/
-    .gzs{
-        width: 130px;
+@media screen and (min-width:320px) and (max-width:330px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px;
     }
-    /*.enterprise{*/
-        /*float: right!important*/
-    /*}*/
-    /*.userimg{*/
-        /*margin-top: 4px;*/
-    /*}*/
-    .gzs img{
-        margin-left: 36px;
+    .kff img{
+        width: 100%;
     }
-    .userword{
-        margin: -12px 0 0 7px;
+}
+@media screen and (min-width:768px) and (max-width:1020px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px 200px;
     }
-    /*.userword h3{*/
-        /*font-size: 20px;*/
-        /*margin-bottom: 6px;*/
-    /*}*/
-    /*.userword p{*/
-        /*margin-top: 8px;*/
-    /*}*/
-}
-
-/*768——992*/
-@media screen and (min-width: 768px) and (max-width: 992px){
-}
-
-/*992——1200*/
-@media screen and (min-width: 992px) and (max-width: 1200px){
-
-}
-
-/*大于1200px*/
-@media screen and (min-width: 1200px){
-
-}
-
-
-
-
-
-
-
+    .login-box{
+        margin-bottom: 50px;
+    }
+} */
