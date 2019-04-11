@@ -1,5 +1,16 @@
+html{
+    height: 100%;
+}
 body{
+    min-height: 100%;
+    position: relative;
 	background-color: #F0F1F5;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .mian_content{
 	margin-top: 70px;
@@ -61,7 +72,7 @@ body{
 	margin-top: 20px;
 }
 .pash_divid{
-	padding: 40px 30px 60px;
+	padding: 40px 30px 90px;
 }
 /*错误提示*/
 .wrong{
@@ -186,15 +197,32 @@ body{
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
+/*媒体查询*/
+@media screen and (max-width: 768px){
+    .mian_content h2{
+        text-align: center;
+    }
+    .num{
+        width: 100%;
+        margin-left: 0;
+    }
+    .changenum{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .hidetag{
+        display: none;
+    }
+    .pash_con{
+        padding-bottom: 0;
+    }
+}
 /*步骤*/
-.step-bg{
-    background-color: #F9F9FB;
+.step{
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
 }
-
-.step-bg > .step{
-    margin: 0 auto;
-}
-
 .step > div{
     display: inline-block;
     font-size: 14px;
@@ -258,15 +286,6 @@ body{
 }
 /*768以下*/
 @media screen and (max-width: 768px){
-    /*步骤*/
-    .step-bg{
-        margin-top: 75px;
-    }
-    .step-bg > .step{
-        width: 100%;
-        height: 40px;
-        padding: 0 15px;
-    }
     .step > div{
         margin-right: 5px;
         font-size: 14px;
@@ -351,7 +370,7 @@ body{
     }
     /*所有线*/
     .step > div > .line{
-        width: 250px;
+        width: 242px;
         margin-left: 8px;
     }
 }
