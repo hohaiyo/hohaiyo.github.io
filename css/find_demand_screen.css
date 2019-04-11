@@ -45,6 +45,11 @@
 
 /*PHONE屏幕下的专用样式*/
 @media screen and (max-width:767px) {
+    
+    .min-height{
+        min-height: 500px;
+    }
+
     /*左侧大盒子*/
     .find_demand_content_left{
         width: 100%;
@@ -53,6 +58,7 @@
     /*外面大盒子*/
     .find_demand_content_left_box{
         border-radius: 0px;
+        padding: 20px 30px 60px 30px;
     } 
 
     .find_demand_content_other_two{
@@ -100,5 +106,39 @@
     .zxfokbtn{
         line-height: 30px;
         height: 30px;
+    }  
+}
+
+@media screen and (max-width:414px){
+
+    .find_demand_content_left_item_type_right a{
+        margin-right: 16px;
+    }
+
+}
+
+@media screen and (max-width:390px){
+
+    .find_demand_content_left_item_type_right a{
+        margin-right: 0px;
+    }
+
+}
+
+
+@media screen and (max-width:320px){
+
+    .find_demand_content_left_box{
+        padding: 20px 20px 60px 20px;
+    } 
+
+     /*分页器*/
+    .nextbtn, .prebtn, span.disabled {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .zxfinput {
+        width: 30px;
     }  
 }

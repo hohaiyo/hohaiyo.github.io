@@ -46,3 +46,18 @@ $(document).ready(function(){
 	});	
 
 });
+
+	$(document).ready(function(){
+		var price = $('.get_price').val();
+		$.ajax({
+			type:'GET',
+			url:'http://47.106.220.143:8080/xiaobai/project/getPage',
+			data:{
+				price:price
+			},
+
+			success:function(data){
+				console.log(data);
+			}
+		});
+	});
