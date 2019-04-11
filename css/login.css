@@ -66,22 +66,22 @@ header ul .header-name > img{
 /*登陆界面身份选择*/
 .Identitychoice{
     width: 100%;
-    min-width: 1220px;
+    /*max-width: 1220px;*/
     height: 550px;
 }
 .choicebox{
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
     height: 550px;
 }
 .xuanzehezi{
-    width: 1220px;
+    width: 100%;
     height: 550px;
     padding-top: 150px;
 }
 .loginchoice{
     margin: 50px auto 0 auto;
-    width: 700px;
+    max-width: 700px;
     height: 150px;
 }
 .xuanzehezi h2{
@@ -122,6 +122,130 @@ header ul .header-name > img{
 .enterprise{
     margin-left: 100px;
 }
+
+
+/*小于766*/
+@media screen and (max-width: 766px){
+    /*头部小字隐藏*/
+    .header-hide{
+        display: none;
+    }
+    .enter > a{
+        display: block;
+        transform: scale(1.2 );
+    }
+
+    .loginchoice{
+        padding: 0 20px;
+    }
+    .gzs{
+        width: 230px;
+        height: 120px;
+    }
+    .enterprise{
+        float: right!important
+    }
+    .enterprise{
+        margin-left:20px;
+    }
+    .userimg{
+        margin-top: 20px;
+    }
+    .userword{
+        margin-top: 20px;
+    }
+}
+
+/*小于420*/
+@media screen and (max-width: 420px){
+    .xuanzehezi{
+        padding-top: 120px;
+    }
+    .xuanzehezi h2{
+        font-size: 24px;
+    }
+    .loginchoice{
+        margin-top: 40px;
+    }
+    .gzs{
+        width: 150px;
+    }
+    /*.enterprise{*/
+        /*float: right!important*/
+    /*}*/
+    .userimg{
+        margin-top: 4px;
+    }
+    .gzs img{
+        width: 55px;
+        height: 55px;
+        margin-left: 50px;
+    }
+    .userword{
+        margin: -12px 0 0 20px;
+        text-align: center;
+    }
+    .userword h3{
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    .userword p{
+        margin-top: 8px;
+    }
+}
+
+/*小于320*/
+@media screen and (max-width: 320px){
+    /*.xuanzehezi{*/
+        /*padding-top: 120px;*/
+    /*}*/
+    /*.xuanzehezi h2{*/
+        /*font-size: 24px;*/
+    /*}*/
+    /*.loginchoice{*/
+        /*margin-top: 40px;*/
+    /*}*/
+    .gzs{
+        width: 130px;
+    }
+    /*.enterprise{*/
+        /*float: right!important*/
+    /*}*/
+    /*.userimg{*/
+        /*margin-top: 4px;*/
+    /*}*/
+    .gzs img{
+        margin-left: 36px;
+    }
+    .userword{
+        margin: -12px 0 0 7px;
+    }
+    /*.userword h3{*/
+        /*font-size: 20px;*/
+        /*margin-bottom: 6px;*/
+    /*}*/
+    /*.userword p{*/
+        /*margin-top: 8px;*/
+    /*}*/
+}
+
+/*768——992*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+}
+
+/*992——1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/*大于1200px*/
+@media screen and (min-width: 1200px){
+
+}
+
+
+
+
 
 
 

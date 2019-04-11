@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小白外包-专业的大学生外包服务平台</title>
+    <!--ico头像-->
+    <link rel="shortcut icon" href="./img/logo.ico">
+    <!-- 公共样式封装 -->
+    <link rel="stylesheet" href="css/initialize.css">
+    <!-- 阿里云图标CDN -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_x5zkc8ffr39.css">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./jQuery/header-footer.js"></script>
+</head>
+
+<body>
+    <div>
+        <!--头部-->
+        <header id="header-top">
+            <ul class="header-left col-md-4 col-sm-6  col-xs-4">
+                <li class="header-name">
+                    <img src="./img/logo_blue.png">
+                </li>
+                <li class="header-hide">小白外包服务平台</li>
+            </ul>
+            <ul class="header-right col-md-4 pull-right text-right">
+                <li class="header-hide">什么，已经有账号了?</li>
+                <li class="enter">
+                    <a href="#">登录</a>
+                </li>
+                <!--<li class="login">-->
+                <!--<a href="#">注册</a>-->
+                <!--</li>-->
+            </ul>
+        </header>
+        <!-- 登陆界面身份选择 -->
+        <div class="Identitychoice">
+            <div class="choicebox">
+                <div class="xuanzehezi">
+                    <h2>请选择身份</h2>
+                    <div class="loginchoice">
+                        <div class="gzs pull-left studio">
+                            <div class="pull-left userimg"><img src="img/user.svg" alt=""></div>
+                            <div class="pull-left userword">
+                                <a><h3>工作室</h3></a>
+                                <p>马上就行投标吧~</p>
+                            </div>
+                        </div>
+                        <div class="gzs pull-left enterprise">
+                            <div class="pull-left userimg"><img src="img/user.svg" alt=""></div>
+                            <div class="pull-left userword">
+                                <a><h3>企业</h3></a>
+                                <p>可以进行招标了~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            //点击跳转注册方
+            $(".studio").click(function () {
+                location.href = "login-studio.html"
+            });
+            $(".enterprise").click(function () {
+                location.href = "login-enterprise.html"
+            });
+            $(".header-name").click(function () {
+                location.href = "logout-index.html"
+            });
+            $(".enter").click(function () {
+                location.href = "enter.html"
+            });
+        });
+    </script>
+</body>
+
+</html>

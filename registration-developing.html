@@ -136,7 +136,7 @@
         </div>
         <div class="step-recruit">
             <i class="iconfont icon-xiangbaoleimu"></i>
-            <span class="step-black">招募中</span>
+            <span class="step-black">招标中</span>
             <b class="line"></b>
         </div>
         <div class="step-develop">
@@ -164,8 +164,7 @@
             </div>
             <ul class="developer-pulldown">
                 <li>所有开发者</li>
-                <li>好评优先</li>
-                <li>报名时间</li>
+                <li>只看候选人</li>
             </ul>
         </div>
         <div class="main-bottom clearfix">
@@ -387,6 +386,10 @@
     $(function () {
         $(".developing-rejuect").attr("disabled", "disabled");
         $(".developing-agree").attr("disabled", "disabled");
+
+        $(".developer-pulldown > li").on("click", function () {
+            $(".developer > span").text($(this).text());
+        });
     });
 </script>
 </body>

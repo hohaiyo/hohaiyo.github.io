@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--头部，尾部，锚点-->
     <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="css/application material.css">
     <link rel="stylesheet" href="./css/registration-list.css">
     <link rel="stylesheet" href="./css/registration-developing.css">
     <link rel="stylesheet" href="./css/project-status.css">
@@ -25,7 +26,6 @@
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./jQuery/header-footer.js"></script>
-    <link rel="stylesheet" href="../../../Documents/Tencent Files/1621970846/FileRecv/header-footer.css">
 </head>
 <body>
 <!--头部-->
@@ -93,6 +93,7 @@
         </div>
     </nav>
 </header>
+<div id="header-top" style="height:1px"></div>
 <!--比赛项目-->
 <div class="competition-bg">
     <div class="competition-item clearfix">
@@ -137,7 +138,7 @@
         </div>
         <div class="step-recruit">
             <i class="iconfont icon-xiangbaoleimu"></i>
-            <span class="step-black">招募中</span>
+            <span class="step-black">招标中</span>
             <b class="line"></b>
         </div>
         <div class="step-develop">
@@ -229,7 +230,7 @@
         <div class="stage-foot clearfix">
             <div class="pull-right">
                 <button class="edit" type="button">编辑阶段</button>
-                <button class="trusteeship" type="button">托管阶段款</button>
+                <button class="trusteeship lookbtn" type="button">托管阶段款</button>
             </div>
         </div>
     </div>
@@ -254,7 +255,7 @@
             </li>
             <li class="item2">
                 <span class="item-left">2019-04-12</span>
-                <span class="item-right">￥111</span>
+                <span class="item-right">￥222</span>
             </li>
             <li class="item1">
                 <span class="item-left">交付说明</span>
@@ -267,7 +268,7 @@
         <div class="stage-foot clearfix">
             <div class="pull-right">
                 <button class="edit" type="button">编辑阶段</button>
-                <button class="trusteeship" type="button">托管阶段款</button>
+                <button class="trusteeship lookbtn" type="button" onclick="ShowDiv('contact_info','fade')">托管阶段款</button>
             </div>
         </div>
     </div>
@@ -277,6 +278,30 @@
             <i class="iconfont icon-jiahao"></i>
             新增阶段划分
         </button>
+    </div>
+
+
+
+    <!-- 点击查看 -->
+    <div id="fade" class="black_overlay"></div>
+    <div id='contact_info' class="contact_info_box">
+        <div class="contact_info_title">托管阶段款</div>
+        <div class="contact_info_content">
+            <p>
+                资金托管后才能启动阶段。
+            </p>
+            <p>
+                托管阶段总金额<span class="fade-money" style="font-size: 26px;color:#000"></span> 元
+            </p>
+            <p style="font-size: 12px">
+                <i class="iconfont icon-guanyu" style="font-size: 12px"></i>
+                阶段金额包括 <span class="fade-small"></span> 元阶段款 + 0 平台服务费
+            </p>
+        </div>
+        <div class="contact_info_btn">
+            <button class="contact_show">去开发包支付</button>
+            <button class="contact_cancel" onclick="CloseDiv('contact_info','fade')">取消</button>
+        </div>
     </div>
 </div>
 <!-- 底部 -->
@@ -288,8 +313,30 @@
         <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
     </div>
 </footer>
+<!--侧边栏-->
+<div class="anchor">
+    <ul>
+        <li class="anchor-consult">
+            <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+            帮助
+            <a href="help/help.html"></a>
+        </li>
+        <li class="anchor-about">
+            <i class="iconfont icon-guanyu"></i>
+            关于我们
+            <a href="about.html"></a>
+        </li>
+        <li class="anchor-top">
+            <i class="iconfont icon-top"></i>
+            TOP
+            <a href="#header-top"></a>
+        </li>
+    </ul>
+    <span></span>
+</div>
 
 
+<script type="text/javascript" src="./jQuery/application material.js"></script>
 <script>
     $(function () {
         $(".remind > p").on("touchstart", function () {
@@ -305,6 +352,11 @@
                 textOverflow: "ellipsis",
                 overflow: "hidden"
             })
+        });
+
+        //报名列表
+        $(".developer-top > button").on("click", function () {
+            location.href = "registration-developing.html";
         });
     });
 </script>
