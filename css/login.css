@@ -1,0 +1,168 @@
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 15px;
+}
+
+header ul li{
+    /*margin-right: 20px;*/
+    font-size: 14px;
+    white-space: nowrap;
+	color:#757f8f;
+}
+
+header ul .header-name{
+    font-weight: bold;
+    color: #49a9ee;
+    transform: scale(1.0);
+    animation: name 2s;
+    cursor: pointer;
+	margin-right:20px;
+}
+
+/* @keyframes name{
+    0%{ transform: scale(1.4) }
+    50%{ transform: scale(1.8) }
+    100%{ transform: scale(1.4) }
+} */
+
+header .header-return{
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+header .top-enter>a{
+    display: block;
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: #49a9ee;
+    cursor: pointer;
+	margin: 0 20px 0 10px;
+}
+
+header .top-enter>a:hover{
+    text-decoration: none;
+    background-color: #49a9ee;
+}
+
+header .top-enter:hover a{
+    color: #fff;
+}
+
+.login-content{
+    margin-top: 80px;
+    /* padding: 100px 300px; */
+    width: 100%;
+    min-width: 1220px;
+}
+.paddingnone{
+    padding: 0;
+}
+.marginbottom{
+    margin-bottom: 20px;
+}
+.login-box{
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: #bbb;
+    padding: 10px;
+}
+.login-box a{
+    color: #000;
+}
+.login-box a:hover{
+    color: #08c;
+}
+.login-box2{
+    height: 100px;
+    line-height: 50px;
+}
+.login-box2 p:first-child{
+    font-size: 20px;
+}
+.kff{
+    height: 100px;
+}
+.kff img{
+    height: 100%;
+}
+@media screen and (min-width:1024px) and (max-width:1280px){
+    .login-content{
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
+    }
+}
+@media screen and (min-width:331px) and (max-width: 767px){
+    .login-content{
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
+    }
+    .login-box{
+        margin-bottom: 20px;
+    }
+    .header-span{
+        display: none;
+    }
+}
+@media screen and (min-width:320px) and (max-width:330px){
+    .login-content{
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
+    }
+    .kff img{
+        width: 100%;
+    }
+    .login-box{
+        margin-bottom: 20px;
+    }
+    .header-span{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1020px){
+    .login-content{
+        margin-top: 0px;
+        padding: 100px 200px;
+        min-width: 100%;
+    }
+    .login-box{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width:1290px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px;
+    }
+    .login-box{
+        width: 360px;
+        height: 120px;
+    }
+    .flex-center{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
