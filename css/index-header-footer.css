@@ -1,13 +1,11 @@
-
 /* 透明背景头部 */
 .index-head .navbar-default{
     background-color:transparent;
-    box-shadow:none;
     border: none;
     border-radius: 0;
     width: 100%;
-    /* min-width: 700px; */
-    position: absolute;
+    min-width: 700px;
+    position: fixed;
     top: 0;
     z-index:2992;
     padding: 2px 0;
@@ -93,11 +91,14 @@
     border: none;
     border-radius: 0;
     width: 100%;
-    /* min-width: 700px; */
+    /*min-width: 700px;*/
     position: fixed;
     top: 0;
     z-index:2992;
     padding: 2px 0;
+}
+.container-fluid{
+    position: relative;
 }
 .container-fluid>.navbar-header{
     margin-top: 10px;
@@ -114,7 +115,7 @@
     color:#ccc;
 }
 .navbar-default .navbar-nav>li>a:hover{
-color:#ccc;
+    color:#ccc;
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -167,6 +168,7 @@ color:#ccc;
     color: #424242;
     background-color: transparent;
 }
+
 /*底部*/
 footer{
     box-sizing: border-box;
@@ -174,20 +176,30 @@ footer{
     text-align: center;
     background-color: #1f2d3d;;
     z-index: 999;
+
+    /*    position: fixed;
+        bottom: 0;
+        left: 0;*/
 }
 
 .footer_warp{
     margin:0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     overflow: hidden;
     position: relative;
+    /*min-width: 700px;*/
+    padding: 0 20px;
 }
 
-.footer_warp > a > img{
+footer > p{
+    margin: 0;
+}
+
+footer > p > a > img{
     height: 30px;
 }
 
-.footer_warp > span{
+footer > p > span{
     font-size: 14px;
     line-height: 30px;
 }
@@ -267,4 +279,121 @@ footer{
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
+}
+.container-fluid{
+    position: relative;
+}
+.navbar-collapse{
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.navbar-logo>.mobile-none-767{
+    display: block;
+}
+.navbar-logo>.mobile-block{
+    display: none;
+}
+.seek{
+    margin-top: 7px;
+    height: 35px;
+    max-width: 200px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.seek>i{
+    padding: 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ccc;
+}
+.seek>input{
+    max-width: 160px;
+    border:none;
+    outline: none;
+    color: #ccc;
+    font-size: 15px;
+    vertical-align: 3px;
+    background: transparent;
+    text-indent: 5px;
+
+}
+.seek>input::placeholder{
+    font-size: 14px;
+    color: #c0c0c0;
+}
+.hide-dot>li{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+@media screen and (min-width: 767px){
+    .seek{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .navbar-hide,.anchor{
+        display: none;
+    }
+    .navbar-header{
+        display: inline-block;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border: none;
+        height: 50px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .navbar-nav{
+        margin: 0;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .seek{
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        height: 30px;
+        width: 165px;
+        position: relative;
+        overflow:hidden;
+    }
+    .seek>.iconfont{
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        left:52%;
+        width:100%;
+        transform:translate(-50%,-50%);
+        text-align: left;
+    }
+    .seek input{
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 18%;
+        right: 0;
+        bottom: 0;
+    }
+    .navbar-header > .navbar-brand{
+        margin-right: 0;
+    }
+    .footer-text{
+        display: none;
+    }
+    .footer_warp img{
+        width: 40px;
+    }
+}
+@media screen and (max-width: 321px){
+    .seek{
+        width: 120px;
+    }
 }
