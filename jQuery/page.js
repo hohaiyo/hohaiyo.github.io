@@ -94,6 +94,8 @@
 			}());
 		}
 	}
+
+
 	$.fn.createPage = function(options){
 		var pageinit = $.extend({
 			pageNum : 15,
@@ -103,6 +105,10 @@
 		zp.init(this,pageinit);
 	}
 }(jQuery));
+
+		var Total = function(){
+			Math.cell(find_demand_item_div.length/20)
+		}
 
     		//翻页
 		$(".zxf_pagediv").createPage({

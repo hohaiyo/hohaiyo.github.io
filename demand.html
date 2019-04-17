@@ -7,8 +7,6 @@
     <link rel="shortcut icon" href="./img/logo.ico" />		
 	<link rel="stylesheet" type="text/css" href="css/initialize.css">
 	<!-- 清除原始样式 -->
-	<link rel="stylesheet" type="text/css" href="assets/waifu.css">
-	<!-- live2d样式 -->
 	<link rel="stylesheet" type="text/css" href="css/demand.css">
 	<!-- 本网站css -->	
 	<link rel="stylesheet" type="text/css" href="css/usually.css">
@@ -113,7 +111,7 @@
 					<li class="list-inline_li">
 						<ul>
 							<li><svg t="1553747636500" class="icon demand_content_left_type_svg" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1723" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60"><defs><style type="text/css"></style></defs><path d="M853.333333 768c46.933333 0 84.906667-38.4 84.906667-85.333333L938.666667 256c0-46.933333-38.4-85.333333-85.333333-85.333333L170.666667 170.666667C123.733333 170.666667 85.333333 209.066667 85.333333 256l0 426.666667c0 46.933333 38.4 85.333333 85.333333 85.333333L0 768l0 85.333333 1024 0 0-85.333333L853.333333 768zM170.666667 256l682.666667 0 0 426.666667L170.666667 682.666667 170.666667 256z" p-id="1724" fill="#1e90ff"></path></svg></li>
-							<li class="list-inline_li_type">IT软件开发</li>
+							<li class="list-inline_li_type">IT/软件开发</li>
 						</ul>
 					</li>
 					<li class="list-inline_li">
@@ -141,6 +139,8 @@
 						</ul>
 					</li>
 				</ul>
+				<input type="text" id="item_count_num" class="count_none">
+				<input type="text" id="item_count_name" class="count_none">
 			</div>
 			
 			<div class="demand_content_left_item">
@@ -156,7 +156,7 @@
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">项目预算</div>
 				<div class="pull-left demand_item_input_two">
-					<input type="text" name="" class="form-control" placeholder="金额不低于50000元" id="demand_budget">
+					<input type="text" name="" class="form-control" maxlength="10" placeholder="金额不低于50000元" id="demand_budget">
 					<span>元</span>				
 				</div>
 			</div>
@@ -165,7 +165,7 @@
 					<p class="align_nothing">用于对齐</p>
 				</div>
 				<div class="pull-left demand_item_input_two">
-					该项目金额不含税，如需发票，请查看<a href="#">操作文档</a>
+					定金:<span id="deposit"></span>元 (定金为项目预算的30%)
 						<p id="remind_money" class="colorred">
 							姓名不能包含输入英文字母,数字,标点等符号
 						</p>	
@@ -215,37 +215,13 @@
 				
 			</div>			
 
-			<div  class="demand_content_left_item">
-				<div class="pull-left demand_item_name">招标要求</div>
-				<div class="pull-left demand_item_input">
-					<textarea type="textarea" rows="4" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" id="demand_call_for"></textarea>
-						<p id="remind_hope" class="colorred">
-							姓名不能包含输入英文字母,数字,标点等符号
-						</p>					
-				</div>
-			</div>
-
 			<div class="demand_content_left_item">
 				<div class="pull-left demand_item_name">联系方式</div>
 				<div class=" pull-left demand_item_input_three">
 					<div class="demand_item_input_three_left_div">
-						<p>您的姓名</p>
-						<input type="text" name="" class="form-control" placeholder="姓名" id="demand_user_name">
-						<p id="remind_name" class="colorred">
-							姓名不能包含输入英文字母
-						</p>
-					</div>
-					<div>
 						<p>您的邮箱</p>
 						<input type="text" name="" class="form-control" placeholder="邮箱" id="demand_user_email">
 						<p id="remind_email" class="colorred">
-							姓名不能包含输入英文字母
-						</p>						
-					</div>
-					<div class="demand_item_input_three_left_div">
-						<p>您的手机号码</p>
-						<input type="text" name="" class="form-control" placeholder="手机号码" maxlength="11" id="demand_user_tel">
-						<p id="remind_tel" class="colorred">
 							姓名不能包含输入英文字母
 						</p>						
 					</div>
@@ -267,8 +243,12 @@
 					<span>我同意遵守《小白外包用户权责条款》</span>				
 				</div>
 				<div class="demand_issue">
-					<a href="published-project.html" id="demand_submit">立即发布</a>
+					<a href="#" id="demand_submit">立即发布</a>
 				</div>
+
+<!-- 				<div class="demand_issue">
+					<a href="published-project.html" id="demand_submit">立即发布</a>
+				</div> -->
 
 			</div>
 
@@ -301,19 +281,7 @@
 		<!-- 右侧内容 -->
 	</div>	
 	<!-- 主要内容 -->
-	<!-- live2d -->
-    <div class="waifu visible-lg">
-        <div class="waifu-tips"></div>
-        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-<!--         <div class="waifu-tool">
-            <span class="fui-chat"></span>
-            <span class="fui-eye"></span>
-            <span class="fui-user"></span>
-            <span class="fui-photo"></span>
-            <span class="fui-cross"></span>
-        </div> -->
-    </div>	
-	<!-- live2d -->
+
 	<!-- 底部 -->
 	<footer>
 	    <div class="footer_warp">
@@ -359,9 +327,5 @@
 	<!-- 头部 锚点 尾部js -->
 	<script type="text/javascript" src="jQuery/usually.js"></script>
 	<!-- 勾选框 -->
-	<!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
-	<script src="assets/waifu-tips.js"></script>
-    <script src="assets/live2d.js"></script>
-    <script type="text/javascript">initModel("assets/")</script>
 </body>
 </html>
