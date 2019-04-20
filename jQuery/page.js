@@ -17,19 +17,23 @@
 					obj.append('<span class="disabled"><i class="iconfont icon-fanhui-left"></i></span>');
 				}
 				/*中间页*/
+				// 当当前页为4且总页数为5时
 				if (pageinit.current==4&& pageinit.pageNum ==5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 				}
 
+				// 当前页为4且总页数大于5时
 				if (pageinit.current==4&& pageinit.pageNum >5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 					obj.append('<span>...</span>');
 				}
 
+				// 当前页为5且总页数为5时
 				if(pageinit.current ==5&& pageinit.pageNum ==5){
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 				}
 
+				// 当前页大于等于5时且总页数大于5时
 				if (pageinit.current >=5 && pageinit.pageNum >5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 					// obj.append('<a href="javascript:;" class="zxfPagenum">'+2+'</a>');
@@ -41,7 +45,7 @@
 					var start  = pageinit.pageNum - 3,end = pageinit.pageNum;
 				}
 				else{
-					var start = 1,end = 5;
+					var start = 1,end = 4;
 				}
 				for (;start <= end;start++) {
 					if (start <= pageinit.pageNum && start >=1) {
@@ -55,14 +59,17 @@
 					}
 				}
 
+				// 当end小于总页数且总页数为5时
 				if (end < pageinit.pageNum && pageinit.pageNum==5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
 
+				// 当end小于总页数且总页数为6时
 				if (end < pageinit.pageNum && pageinit.pageNum==6) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
 
+				// 当end小于总页数且总页数大于6时
 				if (end < pageinit.pageNum && pageinit.pageNum>6) {
 					obj.append('<span>...</span>');
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					

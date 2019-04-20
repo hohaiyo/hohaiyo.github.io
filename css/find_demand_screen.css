@@ -19,7 +19,7 @@
     }
 
     .min-height{
-        min-height: 888px;
+        min-height: 920px;
     }
 }
 
@@ -128,6 +128,16 @@
 
 }
 
+@media screen and (max-width:360px){
+
+     /*分页器*/
+    .nextbtn, .prebtn, span.disabled {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
 
 @media screen and (max-width:320px){
 
@@ -137,11 +147,8 @@
 
      /*分页器*/
     .nextbtn, .prebtn, span.disabled {
-        width: 30px;
+        width: 26px;
         height: 30px;
         line-height: 30px;
-    }
-    .zxfinput {
-        width: 30px;
-    }  
+    } 
 }
