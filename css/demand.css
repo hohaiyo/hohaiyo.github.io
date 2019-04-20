@@ -45,7 +45,7 @@ textarea:-ms-input-placeholder {
 }
 
 .count_none{
-	display: none;
+	display: none !important;
 }
 
 .colorblue{

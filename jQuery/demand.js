@@ -176,12 +176,12 @@
 				count_name.value = text;		 
 			}
 		 }
-
-		 count(0,"IT/软件开发");
-		 count(1,"UI设计");
-		 count(2,"营销策划");
-		 count(3,"APP/小程序");
-		 count(4,"其他类型");
+		 count(0,"什么都没");
+		 count(1,"IT/软件开发");
+		 count(2,"UI设计");
+		 count(3,"营销策划");
+		 count(4,"APP/小程序");
+		 count(5,"其他类型");
 
 	// 项目类型选择
 
@@ -206,7 +206,7 @@
 
 			demand_budget.onkeyup = function(){
 				if(!isNaN(demand_budget.value)&&demand_budget.value>=50000){
-					deposit.innerHTML = Math.floor(demand_budget.value*0.3).toLocaleString();
+					deposit.innerHTML = Math.floor(demand_budget.value*0.3);
 					deposit.style.color = 'red';
 				}
 			}
@@ -279,7 +279,7 @@
 			    console.log(email)
 			    $.ajax({
 			        type:"POST",
-			        url:"http://47.106.220.143:8080/company/getMail",
+			        url:"http://47.106.220.143:8080/project/getMail",
 			        data:{
 			            email:email
 			        },
@@ -312,18 +312,18 @@
 		// 检测邮箱格式
 		
 		$("#demand_submit").click(function(){
-			var typeId = $("item_count_num").val();
+			var typeId = $("#item_count_num").val();
 			var typeName = $("#item_count_name").val();//项目选择类型名字			
 			var title = $("#demand_name").val();//项目名称
 			var price = $("#demand_budget").val();//项目预算
-			var deposit = $('#deposit').html();//定金
+			var deposit = $("#deposit").html();//定金
 			var cycle = $("#demand_day").val();//期望周期
 			var desc = $("#demand_introduce").val();//项目介绍
 			var file = $("#demand_file").val();//相关文档
 			var email = $("#demand_user_email").val();//你的邮箱
 			var code = $("#security_code_input").val();//验证码
-
-			console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code);
+			var companyId = 1;
+			console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code,companyId);
 			$.ajax({
 				type:"POST",//方式
 				url:"http://47.106.220.143:8080/project",//地址
@@ -337,7 +337,8 @@
 					desc:desc,
 					file:file,
 					email:email,
-					code:code
+					code:code,
+					companyId:companyId
 				},
 				success:function(data){//回调函数
 					console.log(data);

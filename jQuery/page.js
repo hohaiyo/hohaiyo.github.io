@@ -17,7 +17,20 @@
 					obj.append('<span class="disabled"><i class="iconfont icon-fanhui-left"></i></span>');
 				}
 				/*中间页*/
-				if (pageinit.current >3 && pageinit.pageNum > 3) {
+				if (pageinit.current==4&& pageinit.pageNum ==5) {
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
+				}
+
+				if (pageinit.current==4&& pageinit.pageNum >5) {
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
+					obj.append('<span>...</span>');
+				}
+
+				if(pageinit.current ==5&& pageinit.pageNum ==5){
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
+				}
+
+				if (pageinit.current >=5 && pageinit.pageNum >5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 					// obj.append('<a href="javascript:;" class="zxfPagenum">'+2+'</a>');
 					obj.append('<span>...</span>');
@@ -28,7 +41,7 @@
 					var start  = pageinit.pageNum - 3,end = pageinit.pageNum;
 				}
 				else{
-					var start = 1,end = 4;
+					var start = 1,end = 5;
 				}
 				for (;start <= end;start++) {
 					if (start <= pageinit.pageNum && start >=1) {
@@ -41,7 +54,16 @@
 						}
 					}
 				}
-				if (end < pageinit.pageNum) {
+
+				if (end < pageinit.pageNum && pageinit.pageNum==5) {
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
+				}
+
+				if (end < pageinit.pageNum && pageinit.pageNum==6) {
+					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
+				}
+
+				if (end < pageinit.pageNum && pageinit.pageNum>6) {
 					obj.append('<span>...</span>');
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
@@ -106,13 +128,15 @@
 	}
 }(jQuery));
 
+
+
 		var Total = function(){
 			Math.cell(find_demand_item_div.length/20)
 		}
 
     		//翻页
 		$(".zxf_pagediv").createPage({
-			pageNum: 20,
+			pageNum: 1999,
 			current: 1,
 			backfun: function(e) {
 				//console.log(e);//回调

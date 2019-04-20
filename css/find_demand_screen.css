@@ -18,6 +18,9 @@
         margin-bottom: 0px;
     }
 
+    .min-height{
+        min-height: 888px;
+    }
 }
 
 /*PAD屏幕下的专用样式*/
