@@ -136,16 +136,15 @@
 }(jQuery));
 
 
+		// var Total = function(){
+		// 	Math.cell(find_demand_item_div.length/20)
+		// }
 
-		var Total = function(){
-			Math.cell(find_demand_item_div.length/20)
-		}
-
-    		//翻页
 		$(".zxf_pagediv").createPage({
 			pageNum: 1999,
 			current: 1,
-			backfun: function(e) {
-				//console.log(e);//回调
-			}
+
 		});
+    		//翻页
+
+

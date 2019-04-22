@@ -47,14 +47,75 @@ $(document).ready(function(){
 
 });
 
+		// 项目筛选
+		var item_count_status = document.getElementById("item_count_status");		
+		var count_name_two = document.getElementById("item_count_name_two");
+		var count_li_two  = document.getElementById("item_box").children;
+		var count_li_three  = document.getElementById("item_box_two").children;
+		count_name_two.value = "";
+		function count_two(x,obj){
+			count_li_two[x].onclick = function(){
+				// count_name_two.value = "";
+				count_name_two.value = obj;
+			};
+		};
+
+		count_two(0,"");
+		count_two(1,"IT/软件开发");
+		count_two(2,"UI设计");
+		count_two(3,"营销策划");
+		count_two(4,"APP/小程序");
+		count_two(5,"其他类型");	
+
+		item_count_status.value = "";
+		function count_status (y,obj){
+			count_li_three[y].onclick = function(){
+				// count_name_two.value = "";
+				item_count_status.value = obj;
+			};
+		};							
+		count_status(0,"");
+		count_status(1,"招标中");
+		count_status(2,"开发中");
+		count_status(3,"已结束");
+		// 项目筛选
+        
 	// 页面筛选
-		$.getJSON("http://47.106.220.143:8080/project/getPage",function(data){
-			console.log(data);
-        });	
-	// 页面筛选
+	
+		let typeId = $('#item_count_name_two').val();
+		let size = 10;
+		let title = $('#title_search').val();
+		let project = '';
+		let page = 1;
+		let status = $('#item_count_status').val();
+
+		$('#item_box').children('a').click(function(){
+
+		});		
+		$.ajax({
+			type:"GET",
+			url:"http://47.106.220.143:8080/project/getPage",
+			data:{
+				page:page,
+				size:size,
+				typeId:typeId,
+				title:title,
+				status:status,
+				project:project
+			},
+			success:function(data){//回调函数
+				console.log(data.data);
+				console.log('传输成功');
+			},
+			error:function(){ //请求发生异常后的回调
+				console.log('传输失败')
+			}
+		});
 
 
-	// 获取中间的数据
+	// 页面筛选
+	
+		// 获取中间的数据
 		$.getJSON("http://47.106.220.143:8080/project/getByTime",function(data){
         var result = data.data;
         for(var i=0;i<4;i++){
@@ -112,7 +173,7 @@ $(document).ready(function(){
 							</span>\
 							<span>\
 								<span class="color_gray">项目周期:</span>\
-								<span>'+result[i].cycle+'</span><span>天</span>\
+								<span>'+'10'+'</span><span>天</span>\
 							</span>\
 						</p>\
 						<p>\
@@ -124,4 +185,3 @@ $(document).ready(function(){
         	};
         });	
         // 获取中间的数据
-        

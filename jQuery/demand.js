@@ -323,7 +323,7 @@
 			var email = $("#demand_user_email").val();//你的邮箱
 			var code = $("#security_code_input").val();//验证码
 			var companyId = 1;
-			console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code,companyId);
+			// console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code,companyId);
 			$.ajax({
 				type:"POST",//方式
 				url:"http://47.106.220.143:8080/project",//地址
