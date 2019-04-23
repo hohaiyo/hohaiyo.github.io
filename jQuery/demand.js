@@ -284,13 +284,14 @@
 			            email:email
 			        },
 			        success:function(data){
-			            console.log(data)
+			        	console.log(email);
+			            console.log(data);
+
 			        },
 			        error:function(a){
 			            console.log(a)
 			        }
 			    })
-
 			})
 
 		// 验证码
