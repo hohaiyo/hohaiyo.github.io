@@ -49,7 +49,28 @@
 	/*padding-right:200px;*/
 }
 
-.find_demand_content_left_item_type_right a{
+.find_demand_content_left_item_type_right button{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: #333;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	background-color: transparent;
+	border: transparent;
+	outline: none;
+}
+
+.find_demand_content_left_item_type_right button:hover{
+	background-color: dodgerblue;
+	text-decoration: none;
+	color: white;
+}
+
+/*.find_demand_content_left_item_type_right a{
 	display: inline-block;
 	width: 100px;
 	height: 30px;
@@ -65,10 +86,10 @@
 	background-color: dodgerblue;
 	text-decoration: none;
 	color: white;
-}
+}*/
 
 .item_active{
-	background-color: dodgerblue;
+	background-color: dodgerblue !important;
 	text-decoration: none;
 	color: white !important;
 }
@@ -108,11 +129,13 @@
 	color: #333;
 }
 
-.find_demand_content_left_form>label span{	
+.find_demand_content_left_form>label button{	
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	cursor: pointer;
+	background-color: transparent;
+	outline: none;
+	border: transparent;
 }
 /*开头的搜索*/
 

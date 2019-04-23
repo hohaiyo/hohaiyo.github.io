@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
-	$('#item_box').children('a').click(function(){
-		$('#item_box').children('a').css({
+	$('#item_box').children('button').click(function(){
+		$('#item_box').children('button').css({
 			'background-color':'',
 			'color':''
 		});
+
+		//点击后禁用
+		$('#item_box').children('button').attr("disabled","true");
 
 		$('#item_all').removeClass('item_active')
 
@@ -15,11 +18,13 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#item_box_two').children('a').click(function(){
-		$('#item_box_two').children('a').css({
+	$('#item_box_two').children('button').click(function(){
+		$('#item_box_two').children('button').css({
 			'background-color':'',
 			'color':''
 		});
+		//点击后禁用
+		$('#item_box_two').children('button').attr("disabled","true");
 
 		$('#item_all_two').removeClass('item_active')
 
@@ -30,22 +35,8 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#item_box_three').children('a').click(function(){
-		$('#item_box_three').children('a').css({
-			'background-color':'',
-			'color':''
-		});
-
-		$('#item_all_three').removeClass('item_active')
-
-		$(this).css({
-			'background-color':'dodgerblue',
-			'color':'white',
-			'text-decoration':'none'			
-		});
-	});	
-
 });
+
 
 		// 项目筛选
 		var item_count_status = document.getElementById("item_count_status");		
@@ -159,8 +150,8 @@ $(document).ready(function(){
 			var project = '';
 			var page = 1;
 			var status = $('#item_count_status').val();
-			console.log(typeId,size,title,project,page,status)
-		
+			console.log(typeId,size,title,project,page,status);
+
 			$.ajax({
 				type:"GET",
 				url:"http://47.106.220.143:8080/project/getPage",
@@ -172,27 +163,34 @@ $(document).ready(function(){
 					status:status,
 					project:project
 				},
+
 				success:function(data){//回调函数
 					console.log(data.data);
 					console.log('传输成功');
+					$('#item_box').children('button').removeAttr("disabled");
+					$('#item_box_two').children('button').removeAttr("disabled","true");
+					$('#active_title_search').removeAttr("disabled");
 				},
+
 				error:function(){ //请求发生异常后的回调
-					console.log('传输失败')
+					console.log('传输失败');
+
 				}
 			});			
 		}
 
 		sendAjax();
 
-	$('#item_box').children('a').click(function(){
-		sendAjax();
+	$('#item_box').children('button').click(function(){	
+		setTimeout("sendAjax()", 1000);
 	});
 
-	$('#item_box_two').children('a').click(function(){
-		sendAjax();
+	$('#item_box_two').children('button').click(function(){
+		setTimeout("sendAjax()", 1000);
 	});
 
 	$('#active_title_search').click(function(){
-		sendAjax();
+		$('#active_title_search').attr("disabled","true");
+		setTimeout("sendAjax()", 1000);
 	});
 	// 页面筛选

@@ -284,7 +284,6 @@
 			            email:email
 			        },
 			        success:function(data){
-			        	console.log(email);
 			            console.log(data);
 
 			        },
