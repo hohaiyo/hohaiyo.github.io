@@ -17,7 +17,7 @@
 					obj.append('<span class="disabled"><i class="iconfont icon-fanhui-left"></i></span>');
 				}
 				/*中间页*/
-				// 当当前页为4且总页数为5时
+				// 当前页为4且总页数为5时
 				if (pageinit.current==4&& pageinit.pageNum ==5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
 				}
@@ -36,7 +36,6 @@
 				// 当前页大于等于5时且总页数大于5时
 				if (pageinit.current >=5 && pageinit.pageNum >5) {
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+1+'</a>');
-					// obj.append('<a href="javascript:;" class="zxfPagenum">'+2+'</a>');
 					obj.append('<span>...</span>');
 				}
 				if (pageinit.current >3 && pageinit.current <= pageinit.pageNum-3) {
@@ -141,7 +140,7 @@
 		// }
 
 		$(".zxf_pagediv").createPage({
-			pageNum: 1999,
+			pageNum: 4,
 			current: 1,
 
 		});
