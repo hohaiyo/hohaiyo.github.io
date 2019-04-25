@@ -1,3 +1,4 @@
+
 (function($){
 	var zp = {
 		init:function(obj,pageinit){
@@ -91,44 +92,56 @@
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur-1});
 					zp.addhtml(obj,current);
-					if (typeof(pageinit.backfun)=="function") {
-						pageinit.backfun(current);
-					}
+					//当上一页点击时input内数字-1
+					$('#count_page').val($('#count_page').val()-1);
+					sendAjax();
+					// if (typeof(pageinit.backfun)=="function") {
+					// 	pageinit.backfun(current);
+
+					// }
 				});
 				obj.on("click","a.zxfPagenum",function(){
 					var cur = parseInt($(this).text());
 					var current = $.extend(pageinit, {"current":cur});
 					zp.addhtml(obj,current);
-					if (typeof(pageinit.backfun)=="function") {
-						pageinit.backfun(current);
-					}
+					//当点击时input内数字为当前点击页数
+					$('#count_page').val(cur);
+					sendAjax();
+					// if (typeof(pageinit.backfun)=="function") {
+					// 	pageinit.backfun(current);
+					// };
 				});
 				obj.on("click","a.nextbtn",function(){
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur+1});
 					zp.addhtml(obj,current);
-					if (typeof(pageinit.backfun)=="function") {
-						pageinit.backfun(current);
-					}
+					//当下一页点击时input内数字+1
+					$('#count_page').val(Number($('#count_page').val())+Number(1));
+					sendAjax();
+					// if (typeof(pageinit.backfun)=="function") {
+					// 	pageinit.backfun(current);
+					// }
 				});
 				obj.on("click","span.zxfokbtn",function(){
 					var cur = parseInt($("input.zxfinput").val());
 					var current = $.extend(pageinit, {"current":cur});
 					zp.addhtml(obj,{"current":cur,"pageNum":pageinit.pageNum});
-					if (typeof(pageinit.backfun)=="function") {
-						pageinit.backfun(current);
-					}
+					//当使用跳转时input内数字为跳转页数
+					$('#count_page').val(cur);
+					sendAjax();
+					// if (typeof(pageinit.backfun)=="function") {
+					// 	pageinit.backfun(current);
+					// }
 				});
 			}());
 		}
 	}
 
-
 	$.fn.createPage = function(options){
 		var pageinit = $.extend({
 			pageNum : 15,
 			current : 1,
-			backfun : function(){}
+			// backfun : function(){}
 		},options);
 		zp.init(this,pageinit);
 	}
@@ -140,9 +153,8 @@
 		// }
 
 		$(".zxf_pagediv").createPage({
-			pageNum: 4,
-			current: 1,
-
+			pageNum: Number($('#count_page_two').val()),
+			current: 1
 		});
     		//翻页
 

@@ -112,7 +112,7 @@
 					<div class="pull-left find_demand_content_left_item_type_left">项目类型 :</div>
 					<div class="pull-left find_demand_content_left_item_type_right" id="item_box">
 							<button type="button" class="item_active" id="item_all">全部</button>
-							<button type="button">IT软件开发</button>
+							<button type="button">IT/软件开发</button>
 							<button type="button">UI设计</button>
 							<button type="button">营销策划</button>
 							<button type="button">APP/小程序</button>
@@ -147,7 +147,9 @@
 			<!-- 筛选内容 -->
 			<div class="find_demand_content_left_box find_demand_content_other_padding find_demand_content_other_marign_two min-height" id="screen_interface">						
 				
-				<!-- 分页器 --><div class="zxf_pagediv"></div><!-- 分页器 -->
+				<!-- 分页器 --><div class="zxf_pagediv" id="pagediv"></div><!-- 分页器 -->
+				<input type="text" id="count_page" class="count_none" value="1">
+				<input type="text" id="count_page_two" class="">
 				
 			</div>
 			<!-- 筛选内容 -->
@@ -232,9 +234,9 @@
 	<!-- bootstrap框架的js -->
 	<script type="text/javascript" src="jQuery/header-footer.js"></script>
 	<!-- 头部 锚点 尾部js -->
-	<script type="text/javascript" src="jQuery/page.js"></script>
-	<!-- 分页器插件 -->	
 	<script type="text/javascript" src="jQuery/find_demand.js"></script>
 	<!-- 寻找需求的js -->
+	<script type="text/javascript" src="jQuery/page.js"></script>
+	<!-- 分页器插件 -->		
 </body>
 </html>
