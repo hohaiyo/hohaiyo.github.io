@@ -148,8 +148,15 @@
 			<div class="find_demand_content_left_box find_demand_content_other_padding find_demand_content_other_marign_two min-height" id="screen_interface">						
 				
 				<!-- 分页器 --><div class="zxf_pagediv" id="pagediv"></div><!-- 分页器 -->
-				<input type="text" id="count_page" class="count_none" value="1">
-				<input type="text" id="count_page_two" class="">
+				<!-- 查询为空时警告 -->
+				<div class="count_none" id="find_nothing">
+					对不起,没有找到符合您要求的内容!请查看筛选条件是否正确!
+				</div>
+				<!-- 查询为空时警告 -->
+				<!-- 当前分页数 -->
+				<input type="text" id="count_page" value="1" class="count_none">
+				<!-- 当前总页数 -->
+				<input type="text" id="count_page_two" class="count_none">
 				
 			</div>
 			<!-- 筛选内容 -->
@@ -198,7 +205,7 @@
 	<footer>
 	    <div class="footer_warp">
 	        <a href="#" class="pull-left">
-	                <img src="./img/logo_white.png">
+	            <img src="./img/logo_white.png">
 	        </a>
 	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
 	    </div>
@@ -234,9 +241,10 @@
 	<!-- bootstrap框架的js -->
 	<script type="text/javascript" src="jQuery/header-footer.js"></script>
 	<!-- 头部 锚点 尾部js -->
-	<script type="text/javascript" src="jQuery/find_demand.js"></script>
-	<!-- 寻找需求的js -->
 	<script type="text/javascript" src="jQuery/page.js"></script>
 	<!-- 分页器插件 -->		
+	<script type="text/javascript" src="jQuery/find_demand.js"></script>
+	<!-- 寻找需求的js -->
+	
 </body>
 </html>

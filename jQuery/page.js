@@ -64,13 +64,8 @@
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
 
-				// 当end小于总页数且总页数为6时
-				if (end < pageinit.pageNum && pageinit.pageNum==6) {
-					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
-				}
-
 				// 当end小于总页数且总页数大于6时
-				if (end < pageinit.pageNum && pageinit.pageNum>6) {
+				if (end < pageinit.pageNum && pageinit.pageNum>=6) {
 					obj.append('<span>...</span>');
 					obj.append('<a href="javascript:;" class="zxfPagenum">'+pageinit.pageNum+'</a>');					
 				}
@@ -88,50 +83,48 @@
 		},
 		bindEvent:function(obj,pageinit){
 			return (function(){
-				obj.on("click","a.prebtn",function(){
+				//由于把封装的ajax请求放入了点击事件中 需要提前用off("XX")来清理相关事件 如果是针对某一特征元素的
+				//必须再加上对应特征,比如下面
+				obj.off("click","a.prebtn").on("click","a.prebtn",function(){
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur-1});
 					zp.addhtml(obj,current);
 					//当上一页点击时input内数字-1
-					$('#count_page').val($('#count_page').val()-1);
-					sendAjax();
-					// if (typeof(pageinit.backfun)=="function") {
-					// 	pageinit.backfun(current);
-
-					// }
+					$('#count_page').val(cur-1);
+					sendAjax_two();
+					console.log(cur-1);
+					console.log('上一页');
 				});
-				obj.on("click","a.zxfPagenum",function(){
+
+				obj.off("click","a.zxfPagenum").on("click","a.zxfPagenum",function(){
 					var cur = parseInt($(this).text());
 					var current = $.extend(pageinit, {"current":cur});
 					zp.addhtml(obj,current);
 					//当点击时input内数字为当前点击页数
 					$('#count_page').val(cur);
-					sendAjax();
-					// if (typeof(pageinit.backfun)=="function") {
-					// 	pageinit.backfun(current);
-					// };
+					sendAjax_two();
 				});
-				obj.on("click","a.nextbtn",function(){
+
+				obj.off("click","a.nextbtn").on("click","a.nextbtn",function(){
 					var cur = parseInt(obj.children("span.current").text());
 					var current = $.extend(pageinit, {"current":cur+1});
 					zp.addhtml(obj,current);
 					//当下一页点击时input内数字+1
-					$('#count_page').val(Number($('#count_page').val())+Number(1));
-					sendAjax();
-					// if (typeof(pageinit.backfun)=="function") {
-					// 	pageinit.backfun(current);
-					// }
+					$('#count_page').val(cur+1);
+					sendAjax_two();
+					console.log(cur+1);
+					console.log('下一页');
 				});
-				obj.on("click","span.zxfokbtn",function(){
+
+				obj.off("click","span.zxfokbtn").on("click","span.zxfokbtn",function(){
 					var cur = parseInt($("input.zxfinput").val());
 					var current = $.extend(pageinit, {"current":cur});
 					zp.addhtml(obj,{"current":cur,"pageNum":pageinit.pageNum});
 					//当使用跳转时input内数字为跳转页数
 					$('#count_page').val(cur);
-					sendAjax();
-					// if (typeof(pageinit.backfun)=="function") {
-					// 	pageinit.backfun(current);
-					// }
+					sendAjax_two();
+					console.log(cur);
+					console.log('跳转');
 				});
 			}());
 		}
@@ -141,21 +134,19 @@
 		var pageinit = $.extend({
 			pageNum : 15,
 			current : 1,
-			// backfun : function(){}
 		},options);
 		zp.init(this,pageinit);
 	}
 }(jQuery));
 
+	// if($('find_demand_content_left_box_item').length==0){
+	// 	$('#find_nothing').removeClass('count_none');
+	// 	$('#pagediv').addClass('count_none');
+	// }
 
-		// var Total = function(){
-		// 	Math.cell(find_demand_item_div.length/20)
-		// }
+	// if($('find_demand_content_left_box_item').length!==0){
+	// 	$('#find_nothing').addClass('count_none');
+	// 	$('#pagediv').removeClass('count_none');
+	// }	
 
-		$(".zxf_pagediv").createPage({
-			pageNum: Number($('#count_page_two').val()),
-			current: 1
-		});
     		//翻页
-
-
