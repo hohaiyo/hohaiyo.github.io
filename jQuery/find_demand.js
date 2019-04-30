@@ -71,6 +71,7 @@ $(document).ready(function(){
 		// 项目筛选
 
 		function sendAjax_two(){
+
 			var typeId = $('#item_count_name_two').val();
 			var size = 7;
 			var title = $('#title_search').val();
@@ -83,8 +84,8 @@ $(document).ready(function(){
 			$.ajax({
 				type:"GET",
 				url:urlStr,
-				dataType: 'json',
-				async:true,				
+				// dataType: 'json',
+				// async:true,				
 				data:{
 					'page':page,
 					'size':size,
@@ -92,10 +93,19 @@ $(document).ready(function(){
 					'title':title,
 					'status':status,
 					'project':project,
-					'timeStamp':new Date().getTime()
+					// 'timeStamp':new Date().getTime()
+				},
+
+				beforeSend:function(){
+					//每次按下按钮进行筛选前先删除先前的内容
+					$(".zxf_pagediv").siblings(".find_demand_content_left_box_item").remove()					
+					// 添加loading
+					$('#loading').html("<img src='img/loading.gif'>");
 				},
 
 				success:function(data){
+					// 加载成功删除loading
+					$('#loading').empty();					
 					// 删除设置在按钮上面的disabled
 					console.log(data.data);
 					$('#item_box').children('button').removeAttr("disabled");
@@ -106,7 +116,6 @@ $(document).ready(function(){
 					$(".zxf_pagediv").siblings(".find_demand_content_left_box_item").remove();
 
 					var result_two = data.data.list;
-					// console.log(data.data.list.id);
 					// 当内容为空时提示警告
 			        if (result_two.length==0){
 			        	$('#find_nothing').removeClass('count_none');
@@ -163,16 +172,15 @@ $(document).ready(function(){
 						the_data = the_year + "/" + the_month + "/" + the_day; //把时间按照20xx/x/x的形式拼起来
 						
 						// 获取投标人数
-						var pid = result_two[i].id;
 						$.ajax({
 							type:"GET",
 							url:"http://47.106.220.143:8080/project/getCountByPid",
 							data:{
-								pid:pid
+								pid:result_two[i].id
 							},
-							success:function(){
-								// console.log("获取投标人数成功");
-								console.log(pid);
+							success:function(data){
+								console.log("获取投标人数成功");
+								console.log(data);
 								
 							},
 
@@ -207,7 +215,7 @@ $(document).ready(function(){
 									</span>\
 								</p>\
 								<p>\
-									<span class="color_gray creationTime">'+the_data+'</span><span class="color_gray">丨</span><span class="color_gray">已有'+pid+'人投标</span>\
+									<span class="color_gray creationTime">'+the_data+'</span><span class="color_gray">丨</span><span class="color_gray">已有'+'10'+'人投标</span>\
 								</p>\
 							</div>\
 						</div>';
@@ -217,6 +225,8 @@ $(document).ready(function(){
 
 				error:function(){ //请求发生异常后的回调
 					console.log('传输失败');
+					// 加载成功删除loading
+					$('#loading').empty();	
 				}
 			});		
 		};
@@ -234,8 +244,8 @@ $(document).ready(function(){
 			$.ajax({
 				type:"GET",
 				url:urlStr,
-				dataType: 'json',
-				async:true,				
+				// dataType: 'json',
+				// async:true,				
 				data:{
 					'page':page,
 					'size':size,
@@ -243,21 +253,29 @@ $(document).ready(function(){
 					'title':title,
 					'status':status,
 					'project':project,
-					'timeStamp':new Date().getTime()
+					// 'timeStamp':new Date().getTime()
+				},
+
+				beforeSend:function(){
+					//每次按下按钮进行筛选前先删除先前的内容
+					$(".zxf_pagediv").siblings(".find_demand_content_left_box_item").remove();					
+					// 添加loading
+					$('#loading').html("<img src='img/loading.gif'>");
 				},
 
 				success:function(data){
+					// 加载成功删除loading
+					$('#loading').empty();
 					// 删除设置在按钮上面的disabled
 					console.log(data.data);
 					$('#item_box').children('button').removeAttr("disabled");
 					$('#item_box_two').children('button').removeAttr("disabled","true");
 					$('#active_title_search').removeAttr("disabled");
 
-					//每次按下按钮进行筛选前先删除先前的内容
-					$(".zxf_pagediv").siblings(".find_demand_content_left_box_item").remove();
+					// //每次按下按钮进行筛选前先删除先前的内容
+					// $(".zxf_pagediv").siblings(".find_demand_content_left_box_item").remove();
 					// // 获取总页数
 					$('#count_page_two').val(Math.ceil(data.data.count/size));
-					// console.log($('#count_page_two').val());
 			        $(".zxf_pagediv").createPage({
 						pageNum: $('#count_page_two').val(),
 						current: $('#count_page').val()
@@ -320,16 +338,16 @@ $(document).ready(function(){
 						the_data = the_year + "/" + the_month + "/" + the_day; //把时间按照20xx/x/x的形式拼起来
 
 						// 获取投标人数
-						var pid = result_two[i].id;
 						$.ajax({
 							type:"GET",
 							url:"http://47.106.220.143:8080/project/getCountByPid",
 							data:{
-								pid:pid
+								pid:result_two[i].id
 							},
-							success:function(){
-								// console.log("获取投标人数成功");
-								console.log(pid);
+
+							success:function(data){
+								console.log("获取投标人数成功");
+								console.log(data);
 								
 							},
 
@@ -337,69 +355,60 @@ $(document).ready(function(){
 					            console.log("投标人数获取失败");
 					        }							
 						});
-						console.log(pid);
-
 						// 往html中添加内容
-				        var the_obj = '<div class="find_demand_content_left_box_item">'+
-							'<div class="find_demand_content_left_box_item_img pull-left hidden-xs">'+
-								'<a href="project_details.html">'+
-									'<img src="img/find_demand_person_test.png">'+
-								'</a>'+
-							'</div>'+
-							'<div class="pull-left find_demand_item_div">'+
-								'<p class="find_demand_item_p">'+
-									'<span class="find_demand_content_left_box_item_num pull-left">'+result_two[i].title+'</span>'+
-									'<a href="project_details.html" class="find_demand_item_status_green pull-left">'+result_two[i].status+'</a>'+
-									'<span class="find_demand_item_price pull-right">'+
-										'<span>¥</span><span class="get_price">'+result_two[i].price.toLocaleString()+'</span><span>元</span>'+
-									'</span>'+
-								'</p>'+
-								'<p class="find_demand_item_p_two">'+
-									'<span>'+
-										'<span class="color_gray">项目类型:</span>'+
-										'<span>'+result_two[i].typeName+'</span>'+
-									'</span>'+
-									'<span>'+
-										'<span class="color_gray">项目周期:</span>'+
-										'<span>'+differTime+'</span><span>天</span>'+
-									'</span'+
-								'</p>'+
-								'<p>'+
-									'<span class="color_gray creationTime">'+the_data+'</span><span class="color_gray">丨</span><span class="color_gray">已有'+pid+'人投标</span>'+
-								'</p>'+
-							'</div>'+
-						'</div>';
-						console.log(1)
-						$('.zxf_pagediv').before(the_obj);
-				        // $('.zxf_pagediv').before(the_obj);//在分页器前面添加 
-
+				        var the_obj = '<div class="find_demand_content_left_box_item">\
+							<div class="find_demand_content_left_box_item_img pull-left hidden-xs">\
+								<a href="project_details.html">\
+									<img src="img/find_demand_person_test.png">\
+								</a>\
+							</div>\
+							<div class="pull-left find_demand_item_div">\
+								<p class="find_demand_item_p">\
+									<span class="find_demand_content_left_box_item_num pull-left">'+result_two[i].title+'</span>\
+									<a href="project_details.html" class="find_demand_item_status_green pull-left">'+result_two[i].status+'</a>\
+									<span class="find_demand_item_price pull-right">\
+										<span>¥</span><span class="get_price">'+result_two[i].price.toLocaleString()+'</span><span>元</span>\
+									</span>\
+								</p>\
+								<p class="find_demand_item_p_two">\
+									<span>\
+										<span class="color_gray">项目类型:</span>\
+										<span>'+result_two[i].typeName+'</span>\
+									</span>\
+									<span>\
+										<span class="color_gray">项目周期:</span>\
+										<span>'+differTime+'</span><span>天</span>\
+									</span>\
+								</p>\
+								<p>\
+									<span class="color_gray creationTime">'+the_data+'</span><span class="color_gray">丨</span><span class="color_gray">已有'+'10'+'人投标</span>\
+								</p>\
+							</div>\
+						</div>';
+						$('.zxf_pagediv').before(the_obj);//在分页器前面添加 
 			        };
 				},
 
 				error:function(err){ //请求发生异常后的回调
-					console.log(err);
+					console.log(传输失败);
+					// 加载成功删除loading
+					$('#loading').empty();	
+
 				}
 			});		
 		};
 		// 刚刚进入页面时的数据
 		sendAjax();		
-		// sendAjax_two();
 
 	// 页面筛选
 	$('#item_box').children('button').click(function(){	
 		setTimeout("sendAjax()", 1000);
-				// sendAjax();
-		// sendAjax_two();
-		console.log('项目类型');
 		console.log($('#count_page_two').val());
 
 	});
 
 	$('#item_box_two').children('button').click(function(){
 		setTimeout("sendAjax()", 1000);
-				// sendAjax();
-		// sendAjax_two();
-		console.log('项目进度');
 		console.log($('#count_page_two').val());
 	});
 
@@ -407,9 +416,6 @@ $(document).ready(function(){
 		$('#active_title_search').attr("disabled","true");
 		$('#count_page').val(1);
 		setTimeout("sendAjax()", 1000);
-				// sendAjax();
-		// sendAjax_two();
-		console.log('项目搜索');
 	});
 
 	// 页面筛选

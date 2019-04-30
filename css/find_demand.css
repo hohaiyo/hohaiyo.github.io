@@ -70,24 +70,6 @@
 	color: white;
 }
 
-/*.find_demand_content_left_item_type_right a{
-	display: inline-block;
-	width: 100px;
-	height: 30px;
-	margin-bottom: 10px;
-	border-radius: 5px;
-	color: #333;
-	text-align: center;
-	line-height: 30px;
-	font-size: 14px;
-}
-
-.find_demand_content_left_item_type_right a:hover{
-	background-color: dodgerblue;
-	text-decoration: none;
-	color: white;
-}*/
-
 .item_active{
 	background-color: dodgerblue !important;
 	text-decoration: none;
@@ -323,4 +305,16 @@
 	text-decoration: none;
 }
 
-/*右侧
+/*右侧*/
+
+/*加载*/
+#loading{
+	width: 100%;
+	text-align: center;
+}
+
+#loading img{
+	width: 100px;
+	height: 100px;
+}
+

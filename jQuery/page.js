@@ -92,8 +92,6 @@
 					//当上一页点击时input内数字-1
 					$('#count_page').val(cur-1);
 					sendAjax_two();
-					console.log(cur-1);
-					console.log('上一页');
 				});
 
 				obj.off("click","a.zxfPagenum").on("click","a.zxfPagenum",function(){
@@ -112,19 +110,19 @@
 					//当下一页点击时input内数字+1
 					$('#count_page').val(cur+1);
 					sendAjax_two();
-					console.log(cur+1);
-					console.log('下一页');
 				});
 
 				obj.off("click","span.zxfokbtn").on("click","span.zxfokbtn",function(){
-					var cur = parseInt($("input.zxfinput").val());
-					var current = $.extend(pageinit, {"current":cur});
-					zp.addhtml(obj,{"current":cur,"pageNum":pageinit.pageNum});
+					var cur = parseInt($("input.zxfinput").val());				
 					//当使用跳转时input内数字为跳转页数
+					// 当跳转input为空时
+					if($('#count_page').val('')){
+						cur=1;
+					}
 					$('#count_page').val(cur);
+					var current = $.extend(pageinit, {"current":cur});
+					zp.addhtml(obj,{"current":cur,"pageNum":pageinit.pageNum});						
 					sendAjax_two();
-					console.log(cur);
-					console.log('跳转');
 				});
 			}());
 		}
