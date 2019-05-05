@@ -1,0 +1,193 @@
+input,button{
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+}
+.padding-none-bootstrap{
+    padding: 0;
+}
+.margin-none-bootstrap{
+    margin: 0;
+}
+.panel-body-bottomborder{
+    border-bottom: 1px solid #ddd;
+}
+.unactived{
+    background-color: #f0f2f5;
+}
+.actived{
+    background-color: #fff;
+}
+.panel-body-padding{
+    padding: 45px 80px;
+}
+.panel-heading{
+    border-top: 1px solid #ddd;
+}
+.panel-body-title a{
+    color: #979fa8;
+    text-decoration: none;
+}
+.panel-body-border{
+    padding: 21px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.panel-body-padding-border{
+    padding: 0;
+}
+.panel-body-img{
+    width: 98px;
+    height: 98px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.panel-body-img img{
+    width: 100%;
+    height: 100%;
+}
+.panel-body-border-title{
+    height: 98px;
+    padding: 13px 0;
+    margin-left: 15px;
+}
+.panel-body-border-title p{
+    font-size: 20px;
+    text-indent: 1em;
+}
+.panel-userifon-content{
+    padding: 35px 0 0 0;
+}
+.panel-userifon-content p:first-child{
+    font-size: 20px;
+}
+.panel-userifon-content hr{
+    border: none;
+    border-top: 1px solid hsla(212,9%,63%,.2);
+    margin: 13px 0;
+}
+.panel-userinfo-tips{
+    margin-bottom: 10px;
+    color: #8796a8;
+}
+.panel-body-button{
+    margin-top: 10px;
+}
+.panel-body-button button{
+    border: 1px solid #4289dc;
+    background-color: #4289db;
+    color: #fff;
+    padding:8px 14px ;
+    border-radius: 5px;
+}
+.levelup{
+    height: 30px;
+    background-color: lightseagreen;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dispaly-a{
+    display: block;
+    height: 52px;
+}
+.dispaly-a:hover{
+    color: #000;
+} 
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.dispaly-yes{
+    display: none;
+}
+.dispaly-no{
+    display: block;
+}
+.xiugaiinfo{
+    margin-bottom: 10px;
+}
+.xiugaiinfo label{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.xiugaiinfo input{
+    height: 30px;
+    padding: 10px;
+    border-radius:5px; 
+    border: 1px solid #bbb;
+}
+.error-tips{
+    text-align: center;
+    font-size: 14px;
+    color: lightcoral;
+    background: pink;
+    border-radius: 5px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+@media screen  and (max-width: 768px){
+    .panel-body-padding{
+        padding: 10px 10px;
+    }
+    .panel-body-border{
+        height: 140px;
+    }
+    .userinfo-word-textcenter{
+        text-align: center;
+    }
+    .levelup{
+        display: none;
+    }
+    .xiugaiinfo{
+        margin-bottom: 10px;
+    }
+}
+@media screen  and (max-width: 328px){
+    .panel-body-border-title{
+        margin-left: 0;
+    }
+    .xiugaiinfo{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1280px){
+	.panel-body-border-title{
+        /* margin-left: 0; */
+        width: 230px;
+    }
+    .levelup{
+        display: none;
+    }
+    .xiugaiinfo{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:991px){
+	.panel-body-border-title{
+        margin-left: 0;
+        width: 230px;
+    }
+    .levelup{
+        display: none;
+    }
+    .fixbugone{
+        height: 140px;
+    }
+    .xiugaiinfo{
+        margin-bottom: 10px;
+    }
+}

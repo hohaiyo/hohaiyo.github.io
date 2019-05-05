@@ -21,70 +21,92 @@ a:hover{
     position: relative;
 }
 
-/*头部导航栏*/
+.check{
+    display: block;
+    max-width: 150px;
+    line-height: 40px;
+    max-height: 0;
+    font-size: 16px;
+    padding: 0 15px;
+    background: pink;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 111;
+}/*头部导航栏*/
 header{
     box-shadow: 0 1px 2px 1px #ccc;
     background-color: #fff;
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
 }
 
-header > ul{
+header ul{
+    height: 65px;
     box-sizing: border-box;
-    /*display: flex;*/
+    display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 25px 0;
     margin: 0 15px;
 }
 
-header > ul > li{
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 16px;
+header ul li{
+    /*margin-right: 20px;*/
+    font-size: 14px;
     white-space: nowrap;
+	color:#757f8f;
 }
 
-header > ul > .header-name{
-    animation: name 1s;
+header ul .header-name{
+    font-weight: bold;
+    color: #49a9ee;
+    transform: scale(1.0);
+    animation: name 2s;
+    cursor: pointer;
+	margin-right:20px;
+}
+
+/* @keyframes name{
+    0%{ transform: scale(1.4) }
+    50%{ transform: scale(1.8) }
+    100%{ transform: scale(1.4) }
+} */
+
+header .header-return{
+    font-size: 14px;
+    color: #000;
     cursor: pointer;
 }
 
-@keyframes name{
-    50%{ transform: scale(1.4) }
-}
-
-header ul .header-name > img{
-    height: 30px;
-}
-
-.header-right > .enter,
-.header-right > .login{
+header .top-enter>a{
+    display: block;
     font-size: 12px;
     padding: 5px 25px;
     border: 1px solid #49a9ee;
     border-radius: 5px;
     color: #49a9ee;
     cursor: pointer;
+	margin: 0 20px 0 10px;
 }
 
-.header-right > .enter > a,
-.header-right > .login > a{
-    color: #49a9ee;
-}
-
-.header-right > .enter:hover,
-.header-right > .login:hover{
+header .top-enter>a:hover{
+    text-decoration: none;
     background-color: #49a9ee;
 }
 
-.header-right > .enter:hover > a,
-.header-right > .login:hover > a{
+header .top-enter:hover a{
     color: #fff;
 }
-
 
 /*内容*/
 /*表格*/

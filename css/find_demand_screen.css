@@ -1,0 +1,144 @@
+/*大型PC屏幕下专用样式*/
+@media screen and (min-width:1200px) {
+
+}
+
+/*中等PC屏幕下的专用样式*/
+@media screen and (min-width:992px) and (max-width: 1199px){
+    .find_demand_content_left{
+        width: 100%;
+    }
+
+    /*外面大盒子*/
+    .find_demand_content_left_box{
+        border-radius: 0px;
+    }
+
+    .find_demand_content_other_two{
+        margin-bottom: 0px;
+    }
+
+}
+
+/*PAD屏幕下的专用样式*/
+@media screen and (min-width: 768px) and (max-width:991px ){
+    /*左侧大盒子*/
+    .find_demand_content_left{
+        width: 100%;
+    }
+
+    /*外面大盒子*/
+    .find_demand_content_left_box{
+        border-radius: 0px;
+    }
+
+    .find_demand_content_other_two{
+        margin-bottom: 0px;
+    }    
+    /*搜索展示版块右侧宽度*/
+    .find_demand_item_div{
+        width: 72%;
+    }   
+
+
+}
+
+/*PHONE屏幕下的专用样式*/
+@media screen and (max-width:767px) {
+    
+    .min-height{
+        min-height: 500px;
+    }
+
+    /*左侧大盒子*/
+    .find_demand_content_left{
+        width: 100%;
+    }
+
+    /*外面大盒子*/
+    .find_demand_content_left_box{
+        border-radius: 0px;
+        padding: 20px 30px 60px 30px;
+    } 
+
+    .find_demand_content_other_two{
+        margin-bottom: 0px;
+    } 
+    
+    /*搜索展示版块右侧宽度*/
+    .find_demand_item_div{
+        width: 100%;
+    }   
+
+    .find_demand_content_left_box_item{
+    }
+    /*项目类型*/
+    .find_demand_content_left_item_type_left{
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .find_demand_content_left_item_type_right{
+        width: 100%;
+    }
+
+    .find_demand_content_left_item_type_right a{
+        width: 90px;
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        color: #333;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    /*分页器*/
+    .nextbtn, .prebtn, span.disabled {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .zxfinput {
+        width: 40px;
+        height: 30px;
+    }  
+    .zxfokbtn{
+        line-height: 30px;
+        height: 30px;
+    }  
+}
+
+@media screen and (max-width:414px){
+
+    .find_demand_content_left_item_type_right a{
+        margin-right: 16px;
+    }
+
+}
+
+@media screen and (max-width:390px){
+
+    .find_demand_content_left_item_type_right a{
+        margin-right: 0px;
+    }
+
+}
+
+
+@media screen and (max-width:320px){
+
+    .find_demand_content_left_box{
+        padding: 20px 20px 60px 20px;
+    } 
+
+     /*分页器*/
+    .nextbtn, .prebtn, span.disabled {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .zxfinput {
+        width: 30px;
+    }  
+}

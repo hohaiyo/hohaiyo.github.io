@@ -12,8 +12,9 @@
     z-index:2992;   
 }
 .container-fluid>.navbar-header{
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    padding-top: 10px;
 }
 .navbar-header > .navbar-logo > img{
     height: 30px;
@@ -93,8 +94,9 @@
     box-shadow: none;
 }
 .index-head .navbar-header{
-    margin-left: 10px;
-    margin-top: 10px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    padding-top: 10px;
 }
 .index-head .navbar-header > .navbar-logo > img{
     height: 30px;
@@ -193,9 +195,12 @@ footer{
     margin:0 auto;
     max-width: 1200px;
     overflow: hidden;
+
     position: relative;
 }
-
+.footer-a{
+    float: left;
+}
 .footer_warp > a > img{
     height: 30px;
 }
@@ -267,14 +272,14 @@ footer{
     border-radius: 8px 0 0 8px;
 }
 
-.anchor > span{
+/* .anchor > span{
     width: 80px;
     height: 70px;
     position: absolute;
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
-}
+} */
 .container-fluid{
     position: relative;
 }
@@ -459,3 +464,20 @@ footer{
        display: none;
    }
    }
+   @media (max-width:412px){
+        .footer-text{
+            display: none;
+        }
+        .footer_warp a{
+            margin:  0 auto;
+            float: none;
+        }
+   }
+   .yenter,.enter{
+       display: none;
+   }
+   @media (min-width:768px){
+    .phone-login{
+        display: none !important;
+    }
+}

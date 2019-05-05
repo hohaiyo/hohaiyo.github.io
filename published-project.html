@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小白外包-专业的大学生外包服务平台</title>
+    <!--ico头像-->
+    <link rel="shortcut icon" href="./img/logo.ico" />
+    <!--清除默认样式-->
+    <link rel="stylesheet" href="./css/initialize.css">
+    <!--阿里图库-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_7xpg8yxg6s2.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--头部，尾部，锚点-->
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/published-project.css">
+
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./jQuery/header-footer.js"></script>
+    <script src="./jQuery/published-project.js"></script>
+</head>
+<body>
+<!--头部-->
+<header id="nav-white">
+    <nav class="navbar navbar-default mobile-none-767" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="./img/logo_blue.png" alt="logo">
+                </a>
+                <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+                <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
+                <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                <p class="worker-seek seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+                        placeholder="搜索工作室"></p>
+            </div>
+            <!-- 登陆后 -->
+            <div class="navbar-collapse pull-right yenter">
+                <ul class="nav navbar-nav mobile">
+                    <li class="dropdown nav-oneself">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="iconfont icon-huabanfuben1"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="mobile-none-767"><a href="#">
+                                    <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                    项目列表
+                                </a></li>
+                            <li class="divider mobile-none-767"></li>
+                            <li class="mobile-none-767"><a href="#">
+                                    <i class="iconfont icon-fabu1"></i>
+                                    项目发布
+                                </a></li>
+                            <li class="divider mobile-none-767"></li>
+                            <li class="seul"><a href="userinfo.html">
+                                    <i class="iconfont icon-geren"></i>
+                                    个人中心
+                                </a></li>
+                            <li class="divider"></li>
+                            <li class="mobile-none-767"><a href="userinfo.html">
+                                    <i class="iconfont icon-kaifa"></i>
+                                    开发方
+                                </a></li>
+                            <li><a href="account.html">
+                                    <i class="iconfont icon-huaban-"></i>
+                                    我的开发宝
+                                </a></li>
+                            <li><a href="published-project.html">
+                                    <i class="iconfont icon-xiangmu"></i>
+                                    我发布的项目
+                                </a></li>
+                            <li><a href="businessscope.html">
+                                    <i class="iconfont icon-lanzi"></i>
+                                    广告位申请
+                                </a></li>
+                            <li class="divider"></li>
+                            <li class="mobile-none-767"><a href="help/help.html">
+                                    <i class="iconfont icon-bangzhu"></i>
+                                    帮助
+                                </a></li>
+                            <li class="divider mobile-none-767"></li>
+                            <li class="sortir"><a href="index.html">
+                                    <i class="iconfont icon-tuichu"></i>
+                                    退出登录
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 登陆前 -->
+            <div class="navbar-collapse pull-right visible-xs nenter">
+                <ul class="nav navbar-nav mobile">
+                    <li class="dropdown nav-oneself">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="iconfont icon-huabanfuben1"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="index-phone-nav">
+                                <a href="enter.html">登录</a>
+                            </li>
+                            <hr>
+                            <li class="index-phone-nav">
+                                <a href="login.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse pull-right hidden-xs nenter">
+                <ul class="nav navbar-nav mobile">
+                    <li class="dropdown nav-oneself">
+                        <a href="enter.html" class="asd">登录</a>
+                    </li>
+                    <li class="dropdown nav-oneself">
+                        <a href="login.html" class="asd">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--内容-->
+<div class="container"  id="header-top">
+    <!-- <div class="row container-title">
+        请问空腹可以吃饭吗？
+    </div> -->
+    <form class="row">
+        <div class="form-inline form-project clearfix">
+            <p class="form-group">我发布的项目</p>
+            <div class="form-group pull-right project-right form-inline clearfix">
+                <div class="form-control form-status">
+                    <span>所有状态</span>
+                    <b class="caret"></b>
+                </div>
+                <ul class="form-pulldown">
+                    <li>所有状态</li>
+                    <li>待支付</li>
+                    <li>招标中</li>
+                    <li>开发中</li>
+                    <li>已结束</li>
+                    <li>已取消</li>
+                </ul>
+                <button class="btn btn-default btn-publish pull-right" type="button">发布新的项目</button>
+            </div>
+        </div>
+    </form>
+    <!--项目-->
+    <!--点击取消发布弹出窗口-->
+    <div class="cancel-alert">
+        <p>确定取消该项目吗？
+            <i class="iconfont icon-quxiao pull-right alert-close"></i>
+        </p>
+        <div class="form-inline">
+            <button class="form-control btn-danger alert-yes">确定取消</button>
+            <button class="form-control btn-success pull-right alert-no">我再想想</button>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<!-- 底部 -->
+<footer class="footxwt pufoot">
+    <div class="footer_warp">
+        <a href="#" class="pull-left">
+            <img src="./img/logo1.02.png">
+        </a>
+        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
+    </div>
+</footer>
+<!--侧边栏-->
+<div class="anchor">
+    <ul>
+        <li class="anchor-consult">
+            <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+            帮助
+            <a href="help/help.html"></a>
+        </li>
+        <li class="anchor-about">
+            <i class="iconfont icon-guanyu"></i>
+            关于我们
+            <a href="about.html"></a>
+        </li>
+        <li class="anchor-top">
+            <i class="iconfont icon-top"></i>
+            TOP
+            <a href="#header-top"></a>
+        </li>
+    </ul>
+    <span></span>
+</div>
+
+<script src="jQuery/cookie.js"></script>
+    <script src="jQuery/indexheader-footer.js"></script>
+
+<script>
+    $(function(){
+        $(".btn-examine").on("click",function(){
+            location.href = "registration-list.html";
+        })
+        $(".list-bottom > img").on("click",function(){
+            location.href = "project_details.html";
+        })
+        // $(".btn-edit").on("click",function(){
+        //     location.href = "registration-list.html";
+        // })
+    })
+</script>
+</body>
+</html>

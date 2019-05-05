@@ -9,8 +9,8 @@ em{
 	margin-top: 70px;
 	margin-bottom: 20px;
 }
-.ad_poster{
-
+.desc{
+	max-width: 600px;
 }
 .ad_poster a{
 	display: block;
@@ -47,7 +47,11 @@ em{
 	color: #fa6868;
 }
 .project_tags{
+<<<<<<< HEAD
+	margin-top: 15px;
+=======
 	margin-top: 35px;
+>>>>>>> yp
 }
 .project_tags>li{
 	float: left;
@@ -65,7 +69,11 @@ em{
 	}
 }
 .project_tags>li>em{
+<<<<<<< HEAD
+	margin-right: 5px;
+=======
 	margin:0 5px;
+>>>>>>> yp
 }
 i{
 	font-style: normal;
@@ -135,7 +143,11 @@ i{
 	padding-bottom: 30px;
 }
 /*调整字体大小*/
+<<<<<<< HEAD
+@media (max-width: 1200px) and (min-width: 767px){
+=======
 /* @media (max-width: 1200px) and (min-width: 767px){
+>>>>>>> yp
 	body,.navbar-header > .navbar-brand{
 		font-size: 20px;
 	}
@@ -146,4 +158,8 @@ i{
 		width: 150px;
 		height: 50px;
 	}
+<<<<<<< HEAD
+}
+=======
 } */
+>>>>>>> yp

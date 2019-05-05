@@ -96,12 +96,18 @@ footer{
     text-align: center;
     background-color: #1f2d3d;;
     z-index: 999;
-
-    /*    position: fixed;
-        bottom: 0;
-        left: 0;*/
+    
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-
+.footxwt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 .footer_warp{
     margin:0 auto;
     max-width: 1200px;
@@ -131,6 +137,7 @@ footer > p > span{
 
 /*侧边锚点*/
 .anchor{
+    display: none;
     position: absolute;
     right: 10px;
     transition: 500ms;
@@ -191,15 +198,15 @@ footer > p > span{
 .anchor > ul > .hover{
     border-radius: 8px 0 0 8px;
 }
-
-.anchor > span{
+/* 暂时不需要 */
+/* .anchor > span{
     width: 80px;
     height: 70px;
     position: absolute;
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
-}
+} */
 .container-fluid{
     position: relative;
 }
@@ -318,4 +325,12 @@ footer > p > span{
     .dropdown-menu>.mobile-none-767{
         display: none;
     }
+}
+@media screen and (max-width:1025px){
+    footer{
+        position: absolute;
+    }
+}
+.yenter,.enter{
+    display: none;
 }

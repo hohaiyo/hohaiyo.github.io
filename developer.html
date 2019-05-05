@@ -8,11 +8,11 @@
 	<!-- bootstrap框架 -->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<!-- 阿里小图标 -->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_akkp1t0pm4.css">
-    <!-- 头部 -->
-    <link rel="stylesheet" href="css/indexheader-footer.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_qtte94fy9sj.css">
     <!-- 这是自己页面的css -->
     <link rel="stylesheet" href="css/developer.css">
+    <!-- 通用头部 -->
+    <link rel="stylesheet" href="css/indexheader-footer.css">
     <!-- ico图标 -->
     <link rel="shortcut icon" href="img/logo.ico" />
     <!-- 清除原始样式 -->	
@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!-- 自己页面的js -->
     <script src="jQuery/developer.js"></script> 
-	<!-- 头部 锚点 尾部js -->
+    <!-- 头部 锚点 尾部js -->
     <script type="text/javascript" src="jQuery/indexheader-footer.js"></script>
 </head> 
 <body>
@@ -40,10 +40,10 @@
                         <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
                         <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
                         <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
-                        <p class="seek pull-left"><i class="iconfont icon-search-1-copy"></i><input type="text" placeholder="搜索工作室"></p> 
+                        <p class="worker-seek seek pull-left"><i class="iconfont icon-search-1-copy"></i><input type="text" placeholder="搜索工作室"></p> 
                     </div>
-                    
-                    <div class="navbar-collapse pull-right" id="example-navbar-collapse">
+                    <!-- 登陆后 -->
+                    <div class="navbar-collapse pull-right yenter">
                             <ul class="nav navbar-nav mobile">
                                 
                                 <li class="dropdown nav-oneself">
@@ -62,11 +62,15 @@
                                                 项目发布
                                             </a></li>
                                         <li class="divider mobile-none-767"></li>
-                                        <li><a href="userinfo.html">
+                                        <li class="seul"><a href="userinfo.html">
                                             <i class="iconfont icon-geren"></i>
                                             个人中心
                                         </a></li>
                                         <li class="divider"></li>
+                                        <li class="mobile-none-767"><a href="userinfo.html">
+                                                <i class="iconfont icon-kaifa"></i>
+                                                开发方
+                                            </a></li>
                                         <li><a href="account.html">
                                             <i class="iconfont icon-huaban-"></i>
                                             我的开发宝
@@ -85,11 +89,41 @@
                                             帮助
                                         </a></li>
                                         <li class="divider mobile-none-767"></li>
-                                        <li><a href="index-ready.html">
+                                        <li class="sortir"><a href="index.html">
                                             <i class="iconfont icon-tuichu"></i>
                                             退出登录
                                         </a></li>
                                     </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 登陆前 -->
+                        <div class="navbar-collapse pull-right visible-xs nenter">
+                            <ul class="nav navbar-nav mobile">
+                                <li class="dropdown nav-oneself">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="iconfont icon-huabanfuben1"></i>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="index-phone-nav">
+                                            <a href="enter.html">登录</a>
+                                        </li>
+                                        <hr>
+                                        <li class="index-phone-nav">
+                                            <a href="login.html">注册</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="navbar-collapse pull-right hidden-xs  nenter">
+                            <ul class="nav navbar-nav mobile">
+                                <li class="dropdown nav-oneself">
+                                    <a href="enter.html" class="asd">登录</a>
+                                </li>
+                                <li class="dropdown nav-oneself">
+                                    <a href="login.html" class="asd">注册</a>
                                 </li>
                             </ul>
                         </div>
@@ -107,9 +141,10 @@
                         <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
                         <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
                         <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
-                        <p class="seek-gray pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
+                        <p class="worker-seek seek-gray pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
                     </div>
-                    <div class="navbar-collapse pull-right">
+                    <!-- 登陆后 -->
+                    <div class="navbar-collapse pull-right yenter">
                             <ul class="nav navbar-nav mobile">
                                 <li class="dropdown nav-oneself">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -127,11 +162,15 @@
                                                 项目发布
                                             </a></li>
                                         <li class="divider mobile-none-767"></li>
-                                        <li><a href="userinfo.html">
+                                        <li class="seul"><a href="userinfo.html">
                                             <i class="iconfont icon-geren"></i>
                                             个人中心
                                         </a></li>
                                         <li class="divider"></li>
+                                        <li class="mobile-none-767"><a href="userinfo.html">
+                                            <i class="iconfont icon-kaifa"></i>
+                                            开发方
+                                        </a></li>
                                         <li><a href="account.html">
                                             <i class="iconfont icon-huaban-"></i>
                                             我的开发宝
@@ -150,13 +189,43 @@
                                             帮助
                                         </a></li>
                                         <li class="divider mobile-none-767"></li>
-                                        <li><a href="index.html">
+                                        <li class="sortir"><a href="index.html">
                                             <i class="iconfont icon-tuichu"></i>
                                             退出登录
                                         </a></li>
                                     </ul>
                                 </li>
                             </ul>
+                    </div>
+                    <!-- 登陆前 -->
+                    <div class="navbar-collapse pull-right visible-xs nenter">
+                        <ul class="nav navbar-nav mobile">
+                            <li class="dropdown nav-oneself">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="iconfont icon-huabanfuben1"></i>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="index-phone-nav">
+                                        <a href="enter.html">登录</a>
+                                    </li>
+                                    <hr>
+                                    <li class="index-phone-nav">
+                                        <a href="login.html">注册</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <div class="navbar-collapse pull-right hidden-xs  nenter">
+                        <ul class="nav navbar-nav mobile">
+                            <li class="dropdown nav-oneself">
+                                <a href="enter.html" class="asd">登录</a>
+                            </li>
+                            <li class="dropdown nav-oneself">
+                                <a href="login.html" class="asd">注册</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -1058,8 +1127,8 @@
     <!-- 底部2 -->
     <footer>
         <div class="footer_warp">
-            <a href="developer.html" class="pull-left">
-                <img src="./img/logo_white.png">
+            <a href="#" class="pull-left">
+                <img src="img/logo_white.png">
             </a>
             <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
         </div>
@@ -1098,5 +1167,8 @@
         </ul>
         <span></span>
     </div>
+    
+<script src="jQuery/cookie.js"></script>
+
 </body>
 </html>

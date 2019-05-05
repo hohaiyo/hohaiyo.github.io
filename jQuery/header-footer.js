@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     
     // 头部
     $(".navbar-toggle").on("click", function () {

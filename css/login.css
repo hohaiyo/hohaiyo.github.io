@@ -1,6 +1,130 @@
+/*头部导航栏*/
+header{
+    box-shadow: 0 1px 2px 1px #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+header ul{
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 15px;
+}
+
+.header-left{
+    float: left;
+    overflow: hidden;
+}
+.header-right{
+    float: right;
+    overflow: hidden;
+}
+header ul li{
+    /*margin-right: 20px;*/
+    font-size: 14px;
+    white-space: nowrap;
+	color:#757f8f;
+}
+
+header ul .header-name{
+    font-weight: bold;
+    color: #49a9ee;
+    transform: scale(1.0);
+    animation: name 2s;
+    cursor: pointer;
+	margin-right:20px;
+}
+
+/* @keyframes name{
+    0%{ transform: scale(1.4) }
+    50%{ transform: scale(1.8) }
+    100%{ transform: scale(1.4) }
+} */
+
+header .header-return{
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+header .top-enter>a{
+    display: block;
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 1px solid #49a9ee;
+    border-radius: 5px;
+    color: #49a9ee;
+    cursor: pointer;
+	margin: 0 20px 0 10px;
+}
+
+header .top-enter>a:hover{
+    text-decoration: none;
+    background-color: #49a9ee;
+}
+
+header .top-enter:hover a{
+    color: #fff;
+}
+
 .login-content{
     margin-top: 80px;
-    padding: 100px 300px;
+    /* padding: 100px 300px; */
+    width: 100%;
+    /*max-width: 1220px;*/
+    height: 550px;
+}
+.choicebox{
+    width: 100%;
+    margin: 0 auto;
+    height: 550px;
+}
+.xuanzehezi{
+    width: 100%;
+    height: 550px;
+    padding-top: 150px;
+}
+.loginchoice{
+    margin: 50px auto 0 auto;
+    max-width: 700px;
+    height: 150px;
+}
+.xuanzehezi h2{
+    text-align: center;
+}
+.gzs{
+    width: 300px;
+    height: 140px;
+    background-color: lightgray;
+    border-radius: 10px;
+    transition: 1s;
+}
+.gzs img{
+    width: 100px;
+    height: 70px;
+}
+.gzs a{
+    color: #333;
+    text-decoration: none;
+}
+.gzs:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.userimg{
+    margin-top: 35px;
 }
 .paddingnone{
     padding: 0;
@@ -33,36 +157,190 @@
 .kff img{
     height: 100%;
 }
-/* @media screen and (min-width:1024px) and (max-width:1280px){
+@media screen and (min-width:1024px) and (max-width:1280px){
     .login-content{
-        margin-top: 80px;
-        padding: 50px;
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
     }
 }
 @media screen and (min-width:331px) and (max-width: 767px){
     .login-content{
-        margin-top: 80px;
-        padding: 50px;
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
     }
     .login-box{
         margin-bottom: 20px;
     }
+    .header-span{
+        display: none;
+    }
 }
 @media screen and (min-width:320px) and (max-width:330px){
     .login-content{
-        margin-top: 80px;
-        padding: 50px;
+        margin-top: 0px;
+        padding: 100px 50px;
+        min-width: 100%;
     }
     .kff img{
         width: 100%;
     }
+    .login-box{
+        margin-bottom: 20px;
+    }
+    .header-span{
+        display: none;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1020px){
     .login-content{
-        margin-top: 80px;
-        padding: 50px 200px;
+        margin-top: 0px;
+        padding: 100px 200px;
+        min-width: 100%;
     }
     .login-box{
         margin-bottom: 50px;
     }
-} */
+}
+@media screen and (min-width:1290px){
+    .login-content{
+        margin-top: 80px;
+        padding: 50px;
+    }
+    .login-box{
+        width: 360px;
+        height: 120px;
+    }
+    .flex-center{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+/*小于766*/
+@media screen and (max-width: 766px){
+    /*头部小字隐藏*/
+    .header-hide{
+        display: none;
+    }
+    .enter > a{
+        display: block;
+        transform: scale(1.2 );
+    }
+
+    .loginchoice{
+        padding: 0 20px;
+    }
+    .gzs{
+        width: 230px;
+        height: 120px;
+    }
+    .enterprise{
+        float: right!important
+    }
+    .enterprise{
+        margin-left:20px;
+    }
+    .userimg{
+        margin-top: 20px;
+    }
+    .userword{
+        margin-top: 20px;
+    }
+}
+
+/*小于420*/
+@media screen and (max-width: 420px){
+    .xuanzehezi{
+        padding-top: 120px;
+    }
+    .xuanzehezi h2{
+        font-size: 24px;
+    }
+    .loginchoice{
+        margin-top: 40px;
+    }
+    .gzs{
+        width: 150px;
+    }
+    /*.enterprise{*/
+        /*float: right!important*/
+    /*}*/
+    .userimg{
+        margin-top: 4px;
+    }
+    .gzs img{
+        width: 55px;
+        height: 55px;
+        margin-left: 50px;
+    }
+    .userword{
+        margin: -12px 0 0 20px;
+        text-align: center;
+    }
+    .userword h3{
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    .userword p{
+        margin-top: 8px;
+    }
+}
+
+/*小于320*/
+@media screen and (max-width: 320px){
+    /*.xuanzehezi{*/
+        /*padding-top: 120px;*/
+    /*}*/
+    /*.xuanzehezi h2{*/
+        /*font-size: 24px;*/
+    /*}*/
+    /*.loginchoice{*/
+        /*margin-top: 40px;*/
+    /*}*/
+    .gzs{
+        width: 130px;
+    }
+    /*.enterprise{*/
+        /*float: right!important*/
+    /*}*/
+    /*.userimg{*/
+        /*margin-top: 4px;*/
+    /*}*/
+    .gzs img{
+        margin-left: 36px;
+    }
+    .userword{
+        margin: -12px 0 0 7px;
+    }
+    /*.userword h3{*/
+        /*font-size: 20px;*/
+        /*margin-bottom: 6px;*/
+    /*}*/
+    /*.userword p{*/
+        /*margin-top: 8px;*/
+    /*}*/
+}
+
+/*768——992*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+}
+
+/*992——1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/*大于1200px*/
+@media screen and (min-width: 1200px){
+
+}
+
+
+
+
+
+
+

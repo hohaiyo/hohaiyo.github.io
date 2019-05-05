@@ -1,4 +1,7 @@
 $(function(){
+    console.log(
+        1
+    )
     $(window).scroll(function(){
         if($(window).scrollTop()>640){
             $("#nav-white").fadeIn();

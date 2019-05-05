@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小白外包-专业的大学生外包服务平台</title>
+    <!--ico头像-->
+    <link rel="shortcut icon" href="./img/logo.ico" />
+    <!--阿里图库-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_8cox83o18hs.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--头部，尾部，锚点-->
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/application material.css">
+    <link rel="stylesheet" href="./css/registration-list.css">
+    <!--清除默认样式-->
+    <link rel="stylesheet" href="./css/initialize.css">
+
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./jQuery/header-footer.js"></script>
+    <script src="jQuery/registration-list.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <header id="nav-white">
+        <nav class="navbar navbar-default mobile-none-767" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-logo" href="index.html">
+                        <img src="./img/logo_blue.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+                    <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+                    <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
+                    <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+                    <p class="worker-seek seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+                            placeholder="搜索工作室"></p>
+                </div>
+                <!-- 登陆后 -->
+                <div class="navbar-collapse pull-right yenter">
+                    <ul class="nav navbar-nav mobile">
+                        <li class="dropdown nav-oneself">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="iconfont icon-huabanfuben1"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
+                                        项目列表
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li class="mobile-none-767"><a href="#">
+                                        <i class="iconfont icon-fabu1"></i>
+                                        项目发布
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li class="seul"><a href="userinfo.html">
+                                        <i class="iconfont icon-geren"></i>
+                                        个人中心
+                                    </a></li>
+                                <li class="divider"></li>
+                                <li class="mobile-none-767"><a href="userinfo.html">
+                                        <i class="iconfont icon-kaifa"></i>
+                                        开发方
+                                    </a></li>
+                                <li><a href="account.html">
+                                        <i class="iconfont icon-huaban-"></i>
+                                        我的开发宝
+                                    </a></li>
+                                <li><a href="published-project.html">
+                                        <i class="iconfont icon-xiangmu"></i>
+                                        我发布的项目
+                                    </a></li>
+                                <li><a href="businessscope.html">
+                                        <i class="iconfont icon-lanzi"></i>
+                                        广告位申请
+                                    </a></li>
+                                <li class="divider"></li>
+                                <li class="mobile-none-767"><a href="help/help.html">
+                                        <i class="iconfont icon-bangzhu"></i>
+                                        帮助
+                                    </a></li>
+                                <li class="divider mobile-none-767"></li>
+                                <li class="sortir"><a href="index.html">
+                                        <i class="iconfont icon-tuichu"></i>
+                                        退出登录
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 登陆前 -->
+                <div class="navbar-collapse pull-right visible-xs nenter">
+                    <ul class="nav navbar-nav mobile">
+                        <li class="dropdown nav-oneself">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="iconfont icon-huabanfuben1"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="index-phone-nav">
+                                    <a href="enter.html">登录</a>
+                                </li>
+                                <hr>
+                                <li class="index-phone-nav">
+                                    <a href="login.html">注册</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse pull-right hidden-xs nenter">
+                    <ul class="nav navbar-nav mobile">
+                        <li class="dropdown nav-oneself">
+                            <a href="enter.html" class="asd">登录</a>
+                        </li>
+                        <li class="dropdown nav-oneself">
+                            <a href="login.html" class="asd">注册</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--步骤-->
+    <div class="step-bg">
+        <div class="step">
+            <div class="step-publish ">
+                <i class="iconfont icon-fabu"></i>
+                <span class="step-black">发布</span>
+                <b class="line"></b>
+            </div>
+            <div class="step-recruit">
+                <i class="iconfont icon-xiangbaoleimu"></i>
+                <span class="step-black">招标中</span>
+                <b class="line"></b>
+            </div>
+            <div class="step-develop">
+                <i class="iconfont icon-kaifa"></i>
+                <span class="step-black">开发中</span>
+                <b class="line"></b>
+            </div>
+            <div class="step-finish">
+                <i class="iconfont icon-wancheng"></i>
+                <span class="step-black">已结束</span>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="container" id="header-top">
+        <!-- <div class="row container-title">
+            请问空腹可以吃饭吗？
+        </div> -->
+        <div class="main">
+            <div class="main-top">
+                <h2>报名列表</h2>
+                <div class="developer pull-right">
+                    <span>所有开发者</span>
+                    <b class="caret"></b>
+                </div>
+                <ul class="developer-pulldown">
+                    <li>所有开发者</li>
+                    <li>只看候选人</li>
+                </ul>
+            </div>
+            <div class="main-bottom clearfix">
+                <!--底部左侧-->
+                <div class="bottom-left clearfix pull-left">
+                    <img class="head-portrait" src="./img/studio.png">
+                    <div class="oneself-info">
+                        <div class="item item1">
+                            <h3>用户名</h3>
+                            <i class="iconfont icon-mingpian"></i>
+                        </div>
+                        <div class="item item2">
+                            <span class="item-hide">开发者团队</span>
+                            <span class="item-hide">较少事件兼职</span>
+                            <span class="marks">评分</span>
+                            <i class="iconfont icon-icon-test"></i>
+                            <i class="iconfont icon-icon-test"></i>
+                            <i class="iconfont icon-icon-test"></i>
+                            <i class="iconfont icon-icon-test"></i>
+                            <i class="iconfont icon-star"></i>
+                            <span class="marks">4.1</span>
+                        </div>
+                        <div class="item item3">
+                            <span class="infos">胜任理由:</span>
+                            <span>111</span>
+                        </div>
+                        <div class="item item4">
+                            <span class="infos">联系方式:</span>
+                            <a onclick="ShowDiv('contact_info','fade')" class="lookbtn" href="#">1008610086</a>
+                        </div>
+                        <div class="item item5">
+                            <span class="infos">报名时间:</span>
+                            <span>111</span>
+                        </div>
+                        <div class="item item6">
+                            <span class="infos">申请资料:</span>
+                            <a onclick="ShowDiv('material_main','fade')" class="lookbtn" href="#">查看</a>
+                        </div>
+                    </div>
+                </div>
+                <!--底部右侧-->
+                <div class="bottom-right pull-left">
+                    <i class="iconfont icon-qizi"></i>
+                    <button class="btn-rejuect" type="button">不合适</button>
+                    <button class="btn-agree" type="button">确认合作</button>
+                </div>
+            </div>
+
+
+            <!-- 点击查看 -->
+            <div id="fade" class="black_overlay"></div>
+            <div id='contact_info' class="contact_info_box">
+                <div class="contact_info_title">支付查看联系方式</div>
+                <div class="contact_info_content">
+                    <p>
+                        请注意: 您可以免费查看 5 位报名者联系方式。 如果您需要查看更多开发者，需要支付 10 元/人的服务费。
+                    </p>
+                    <p>
+                        您当前还可以免费查看 5 人联系方式
+                    </p>
+                </div>
+                <div class="contact_info_btn">
+                    <button class="contact_show">立即查看</button>
+                    <button class="contact_cancel" onclick="CloseDiv('contact_info','fade')">取消</button>
+                </div>
+            </div>
+            <div id="material_main" class="white_content">
+                <div>
+                    <span class="the_close_btn" onclick="CloseDiv('material_main','fade')">×</span>
+                    <!-- 关闭 -->
+                </div>
+                <div>
+                    <!-- 左边部分 -->
+                    <div class="pull-left material_left">
+                        <div class="material_title_box no_border">
+                            <p class="material_title">申请资料</p>
+                            <p>
+                                <span class="material_reason">胜任理由</span>
+                                <span>会断幺九</span>
+                            </p>
+
+                        </div>
+                        <div class="material_title_box">
+                            <p class="material_exp">项目经验</p>
+                            <div class="material_type_box">
+                                <p class="material_name">项目名称</p>
+                                <p>网站搭建</p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目周期</p>
+                                <p>
+                                    <span>2018/08/02</span>
+                                    <span>-</span>
+                                    <span>2019/04/07</span>
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目描述</p>
+                                <p>
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目行业</p>
+                                <p>
+                                    其他
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">我的职责</p>
+                                <p>
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                </p>
+                            </div>
+                        </div>
+                        <div class="material_title_box">
+                            <div class="material_type_box">
+                                <p class="material_name">项目名称</p>
+                                <p>网站搭建</p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目周期</p>
+                                <p>
+                                    <span>2018/08/02</span>
+                                    <span>-</span>
+                                    <span>2019/04/07</span>
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目描述</p>
+                                <p>
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">项目行业</p>
+                                <p>
+                                    其他
+                                </p>
+                            </div>
+                            <div class="material_type_box">
+                                <p class="material_name">我的职责</p>
+                                <p>
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                    断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九断幺九
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 右边部分 -->
+                    <div class="pull-right material_right">
+                        <div class="user_info_box">
+                            <div class="user_head_box">
+                                <img src="img/studio.png" class="user_head_picture">
+                                <img src="img/pass-logo.png" class="pass_picture">
+                            </div>
+                            <div class="material_right_box">
+                                <span>张震霆</span>
+                                <span>
+                                    <i class="iconfont icon-credentials_icon IDcard"></i>
+                                </span>
+                                <span><img src="img/normal_team.png" class="normal_team_picture"></span>
+                            </div>
+                            <div class="material_right_box">
+                                <span>浙江</span>
+                                <span>杭州</span>
+                            </div>
+                            <div class="material_right_box">
+                                <span class="material_grade">评分</span>
+                                <span>
+                                    <i class="iconfont icon-icon-test material_star"></i>
+                                    <i class="iconfont icon-icon-test material_star"></i>
+                                    <i class="iconfont icon-icon-test material_star"></i>
+                                    <i class="iconfont icon-star material_star"></i>
+                                    <i class="iconfont icon-star material_star"></i>
+                                </span>
+                                <span>3</span>
+                            </div>
+                            <a href="#" class="candidate">
+                                设置为候选人
+                            </a>
+                        </div>
+                        <div class="textarea_box">
+                            <textarea disabled="disabled" id="edit_textarea">断幺九</textarea>
+                            <textarea id="edit_textarea_two"></textarea>
+                            <i class="iconfont icon-xiugai" id="edit_btn"></i>
+                            <p id="edit_group_btn">
+                                <span id="edit_save">保存</span>
+                                <span id="edit_cancel">取消</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <div class="footer_warp">
+            <a href="#" class="pull-left">
+                <img src="./img/logo1.02.png">
+            </a>
+            <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="./jQuery/application material.js"></script>
+    <script src="jQuery/cookie.js"></script>
+    <script src="jQuery/indexheader-footer.js"></script>
+    <script>
+        $(function () {
+            $(".developer-pulldown > li").on("click", function () {
+                $(".developer > span").text($(this).text());
+            });
+        });
+    </script>
+</body>
+
+</html>
