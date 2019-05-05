@@ -36,6 +36,11 @@ $(function(){
 		$('.main').hide().eq($(this).index()).show()
 	})
 	// 企业登录
+	$(document).keydown(function(event){
+		if(event.keyCode==13){
+			$('.need-login').click()
+		}
+	})
 	$('.need-login').click(function(){
 		// console.log($('#need-login .enter-user').val())
 		$.ajax({
@@ -66,6 +71,11 @@ $(function(){
 
 	})
 	// 工作室登录
+	$(document).keydown(function(event){
+		if(event.keyCode==13){
+			$('.exploit-login').click()
+		}
+	})
 	$('.exploit-login').click(function(){
 		$.ajax({
 			type:"POST",//方式

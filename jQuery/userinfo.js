@@ -1,5 +1,9 @@
 $(function () {
     // 使底部logo居中
+    var user = JSON.parse(cookie.get("user"))
+    console.log(user)
+    $('#username').html(user.name)
+    $('#name').html(user.companyNickName)
     if ($(window).width() < 767) {
         $(".footer_warp").children(".pull-left").addClass("center-block").removeClass("pull-left")
     }
@@ -8,6 +12,12 @@ $(function () {
         $('#panel-body-file-two').click();
     })
     //个人信息修改的信息上传
+    
+	$(document).keydown(function(event){
+		if(event.keyCode==13){
+			$('.xiugaisub').click()
+		}
+	})
     $('.xiugaisub').click(function () {
         var name = $("#nicheng").val();
         var phone = $('#phone').val();
@@ -73,13 +83,12 @@ $(function () {
                 return true;
             }
         };
-        if (name != '' && phone.length == 11 && bank.length == 15 && bankname != '') {
-            console.log('8888')
+        if (name != '' && phone.length == 11 && bank.length !=""  && bankname != '') {
             $.ajax({
                 url: 'http://47.106.220.143:8080/worker/completion',
                 data: {
                     workerNickName: $('#nicheng').val(),
-                    id: $('#nichengid').val(),
+                    id: user.id,
                     phone: $('#phone').val(),
                     bankAccount: $('#bank').val(),
                     bankName: $('#bankname').val(),

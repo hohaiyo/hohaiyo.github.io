@@ -3,15 +3,21 @@
 $(document).ready(function(){
     
    var people = JSON.parse(localStorage.getItem('people'))
-
-   
-    if(cookie.get("user") && people=='company'){
+    if(cookie.get("user")){
 		$('.yenter').css({"display":"block"})
 		$('.nenter').css({"display":"none"})
 	}else{
 		$('.nenter').css({"display":"block"})
 		$('.yenter').css({"display":"none"})
     }
+    if(people=='company'){
+        $('.issue-project').css({"display":"blcok"})
+        $('.join-project').css({"display":"none"})
+	}else{
+        $('.join-project').css({"display":"block"})
+        $('.issue-project').css({"display":"none"})
+    }
+    
     console.log(cookie.get("user") )
     console.log(1)
 	// 退出登录

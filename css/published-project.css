@@ -359,7 +359,7 @@ body{
 }
 
 /*项目列表*/
-.container > .project-list{
+#join-project>.project-list{
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 20px;

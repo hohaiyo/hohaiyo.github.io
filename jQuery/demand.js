@@ -28,6 +28,8 @@
 		});
 		//验证码input
 		
+
+		// 项目类型选择
 		$('#list-inline-demand').children('li').click(function(){
 			$('#list-inline-demand').children('li').css({
 				'border-color':'',
@@ -39,13 +41,14 @@
 				'color':'dodgerblue'
 			});		
 		});	
-		$('demand_submit').click(function(){
+		// 项目类型选择
+
+		$('#demand_submit').click(function(){
 			$(this).css({
 				'text-decoration':'none',
 				'color':'white'
 			});
 		});
-		
 	});
 
 
@@ -124,31 +127,7 @@
 	    else{
 	    	demand_introduce.style.borderColor = '';
 	    }
-	    // 是否填写项目介绍
-
-	    // 是否填写招标要求
-	    var demand_call_for = document.getElementById('demand_call_for');
-	    if(demand_call_for.value == ''){
-	    	demand_call_for.style.borderColor = 'red';
-	    	alert('请填写招标要求');		    		    	
-	    	return false;	    	
-	    }	 
-	    else{
-	    	demand_call_for.style.borderColor = '';
-	    }   	    
-	    // 是否填写招标要求
-
-	    // 是否填写姓名
-	    var demand_user_name = document.getElementById('demand_user_name');
-	    if(demand_user_name.value == ''){
-	    	demand_user_name.style.borderColor = 'red';
-	    	alert('请填写您的姓名');		    		    	
-	    	return false;	    	
-	    }	
-	    else{
-	    	demand_user_name.style.borderColor = '';
-	    }    	    
-	    // 是否填写姓名    
+	    // 是否填写项目介绍  
 
 	    // 是否填写邮箱
 	    var demand_user_email = document.getElementById('demand_user_email');
@@ -161,18 +140,6 @@
 	    	demand_user_email.style.borderColor = '';
 	    }	    	    
 	    // 是否填写邮箱	
-
-	    // 是否填写手机号码或手机号码位数是否达到11位
-	    var demand_user_tel = document.getElementById('demand_user_tel');
-	    if(demand_user_tel.value == ''||demand_user_tel.value.length!==11){
-	    	demand_user_tel.style.borderColor = 'red';
-	    	alert('请正确填写您的手机号码');		    		    	
-	    	return false;	    	
-	    }
-	    else{
-	    	demand_user_tel.style.borderColor = '';
-	    }	    	    
-	    // 是否填写手机号码或手机号码位数是否达到11位
 	    
 	    // 是否填写验证码
 	    var security_code_input = document.getElementById('security_code_input');
@@ -192,21 +159,35 @@
 	    	return false;
     	}
     	// 检测是否勾选了同意条款
-
-		// 检测是否为数字
-			if (isNaN(demand_budget.value)) {
-				alert('项目预算填写必须全部为数字');
-				return false;
-			}			
-			if (isNaN(demand_day.value)) {
-				alert('期望周期填写必须全部为数字');
-				return false;
-			}
-		// 检测是否为数字		
+	
 	
 	}
-		// 检测预算
+
+	// 项目类型选择
+		var count_num = document.getElementById("item_count_num");
+		var count_name = document.getElementById("item_count_name");
+		var count_li = document.getElementById("list-inline-demand").children;
+		 function count(n,text){
+		 	count_li[n].onclick = function(){
+				count_num.value = "";
+				count_name.value = "";
+				count_num.value = n;
+				count_name.value = text;		 
+			}
+		 }
+		 count(0,"什么都没");
+		 count(1,"IT/软件开发");
+		 count(2,"UI设计");
+		 count(3,"营销策划");
+		 count(4,"APP/小程序");
+		 count(5,"其他类型");
+
+	// 项目类型选择
+
+
+		// 检测预算定金
 			var remind_money = document.getElementById('remind_money');
+			var deposit = document.getElementById('deposit');
 			demand_budget.onblur = function(){
 				if(isNaN(demand_budget.value)||demand_budget.value<50000){
 					this.value = '';
@@ -217,20 +198,28 @@
 				}
 				else{
 					this.style.borderColor = '';
-					remind_money.style.opacity = '0';			
+					remind_money.style.opacity = '0';	
+					
 				}
 			}			
 
-		// 检测预算
+			demand_budget.onkeyup = function(){
+				if(!isNaN(demand_budget.value)&&demand_budget.value>=50000){
+					deposit.innerHTML = Math.floor(demand_budget.value*0.3);
+					deposit.style.color = 'red';
+				}
+			}
+
+		// 检测预算定金
 
 		// 检测天数
 			var remind_day = document.getElementById('remind_day');			
 			demand_day.onblur = function(){
-				if(isNaN(demand_day.value)||demand_day.value!==0){
+				if(isNaN(demand_day.value)||demand_day.value==0){
 					this.value = '';
 					this.style.borderColor = 'red';
 					remind_day.style.opacity = '1';
-					remind_day.innerHTML = '期望周期必须填写阿拉伯数字且不能为0';
+					remind_day.innerHTML = '期望周期必须填写阿拉伯数字且天数不能为0';
 
 				}
 				else{
@@ -283,24 +272,27 @@
 			    settime(obj) }
 			    ,1000) 
 			}
+
+			$('#security_code_btn').click(function(){
+			    var email = $('#demand_user_email').val();
+			    console.log(email)
+			    $.ajax({
+			        type:"POST",
+			        url:"http://47.106.220.143:8080/project/getMail",
+			        data:{
+			            email:email
+			        },
+			        success:function(data){
+			            console.log(data);
+
+			        },
+			        error:function(a){
+			            console.log(a)
+			        }
+			    })
+			})
+
 		// 验证码
-
-		// 只能输入纯中文
-			var remind_name = document.getElementById('remind_name');
-			demand_user_name.onblur = function(){
-				if(!/^[\u4e00-\u9fa5]+$/gi.test(this.value)){
-					this.value = '';
-					this.style.borderColor = 'red';
-					remind_name.style.opacity = '1';
-					remind_name.innerHTML = '请使用中文填写姓名';
-
-				}
-				else{
-					this.style.borderColor = '';
-					remind_name.style.opacity = '0';			
-				}
-			}
-		// 只能输入纯中文
 		
 		// 检测邮箱格式
 			var remind_email = document.getElementById('remind_email');
@@ -318,22 +310,41 @@
 			}
 		// 检测邮箱格式
 		
-		// 检测手机输入
-			var remind_tel = document.getElementById('remind_tel');
-			demand_user_tel.onblur = function(){
-				if(!/^[0-9]*$/gi.test(this.value)||this.value == ''||this.value.length!==11){
-					this.value = '';
-					this.style.borderColor = 'red';
-					remind_tel.style.opacity = '1';
-					remind_tel.innerHTML = '手机号码需为11位';
+		$("#demand_submit").click(function(){
+			var typeId = $("#item_count_num").val();
+			var typeName = $("#item_count_name").val();//项目选择类型名字			
+			var title = $("#demand_name").val();//项目名称
+			var price = $("#demand_budget").val();//项目预算
+			var deposit = $("#deposit").html();//定金
+			var cycle = $("#demand_day").val();//期望周期
+			var desc = $("#demand_introduce").val();//项目介绍
+			var file = $("#demand_file").val();//相关文档
+			var email = $("#demand_user_email").val();//你的邮箱
+			var code = $("#security_code_input").val();//验证码
+			var companyId = 1;
+			// console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code,companyId);
+			$.ajax({
+				type:"POST",//方式
+				url:"http://47.106.220.143:8080/project",//地址
+				data:{//拿给后端的参数
+					typeId:typeId,
+					typeName:typeName,
+					title:title,		
+					price:price,
+					deposit:deposit,
+					cycle:cycle,		
+					desc:desc,
+					file:file,
+					email:email,
+					code:code,
+					companyId:companyId
+				},
+				success:function(data){//回调函数
+					console.log(data);
+					console.log('传输成功');
+				},
+				error:function(){ //请求发生异常后的回调
+					console.log('传输失败')
 				}
-				else{
-					this.style.borderColor = '';
-					remind_tel.style.opacity = '0';			
-				}				
-			}
-		// 检测手机输入
-		
-		// 检测验证码输入
-						
-		// 检测验证码输入
+			});
+		});

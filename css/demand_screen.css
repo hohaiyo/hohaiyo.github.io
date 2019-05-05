@@ -78,11 +78,15 @@
     /*同意条款*/
 
     .yes_img{
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
     }
 
     /*立即发布*/   
+    footer{
+       margin-top: 32px;
+
+    }
 }
 
 /*PAD屏幕下的专用样式*/

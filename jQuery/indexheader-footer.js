@@ -43,6 +43,7 @@
         }
         
 	})	
+
 	if(cookie.get("user")){
 		$('.yenter').css({"display":"block"})
 		$('.nenter').css({"display":"none"})
@@ -51,3 +52,14 @@
 		$('.yenter').css({"display":"none"})
 		location.href = "index.html"
 	}
+	
+	var people = JSON.parse(localStorage.getItem('people'))
+    if(people=='company'){
+        $('.issue-project').css({"display":"blcok"})
+        $('.join-project').css({"display":"none"})
+	}else{
+        $('.join-project').css({"display":"block"})
+        $('.issue-project').css({"display":"none"})
+	}
+	
+	

@@ -44,6 +44,10 @@ textarea:-ms-input-placeholder {
   font-size: 14px;
 }
 
+.count_none{
+	display: none !important;
+}
+
 .colorblue{
 	color: #337ab7;
 	font-size: 14px;
@@ -67,6 +71,10 @@ textarea:-ms-input-placeholder {
 .nothing_box{
 	width: 100%;
 	height: 80px;
+}
+
+.item_count_num,.item_count_name{
+	/*display: none;*/
 }
 /*左侧内容*/
 .demand_content_left{

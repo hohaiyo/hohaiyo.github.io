@@ -22,6 +22,12 @@ $(".enter").click(function () {
 
 
 // 企业方注册
+
+$(document).keydown(function(event){
+    if(event.keyCode==13){
+        $('.login-e').click()
+    }
+})
 $(".login-e").on("click", function () {
     var num = 0;
     $(".warn").each(function () {
@@ -93,6 +99,12 @@ $(".login-e").on("click", function () {
 
 
 // 工作室注册
+
+$(document).keydown(function(event){
+    if(event.keyCode==13){
+        $('.login-s').click()
+    }
+})
 $(".login-s").on("click", function () {
     var num = 0;
     $(".warn").each(function () {

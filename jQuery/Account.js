@@ -1,11 +1,17 @@
 $(function(){
 	
 	// 下拉按钮
+	var user = JSON.parse(cookie.get("user"))
+	if(user.money==null){
+		user.money = 0
+	}
+	var money = user.money.toLocaleString()
+	console.log(money)
+	$('.money').html(money)
+	
 	
 	$('.dropdown input').click(function(){
 		$('.dropdown-ul').toggle();
-	
-		 
 	})
 
 	$(".dropdown-ul li").click(function() {

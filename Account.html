@@ -19,112 +19,119 @@
 
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<script src="./jQuery/Account.js"></script>
-    <script src="./jQuery/cookie.js"></script>
-    <script src="./jQuery/indexheader-footer.js"></script>
+	<script src="./jQuery/account.js"></script>
 </head>
 <body>
 	<!--头部-->
     <header id="nav-white">
-        <nav class="navbar navbar-default mobile-none-767" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand navbar-logo" href="index.html">
-                        <img src="./img/logo_blue.png" alt="logo">
-                    </a>
-                    <a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
-                    <a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
-                    <a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
-                    <a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
-                    <p class="worker-seek seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text" placeholder="搜索工作室"></p> 
-                </div>
-                <!-- 登陆后 -->
-                <div class="navbar-collapse pull-right yenter">
-                        <ul class="nav navbar-nav mobile">
-                            <li class="dropdown nav-oneself">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="iconfont icon-huabanfuben1"></i>
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="mobile-none-767"><a href="#">
-                                        <i class="iconfont icon-chazhaobiaodanliebiao"></i>
-                                        项目列表
-                                    </a></li>
-                                    <li class="divider mobile-none-767"></li>
-                                    <li class="mobile-none-767"><a href="#">
-                                            <i class="iconfont icon-fabu1"></i>
-                                            项目发布
-                                        </a></li>
-                                    <li class="divider mobile-none-767"></li>
-                                    <li class="seul"><a href="userinfo.html">
-                                        <i class="iconfont icon-geren"></i>
-                                        个人中心
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li class="mobile-none-767"><a href="userinfo.html">
-                                        <i class="iconfont icon-kaifa"></i>
-                                        开发方
-                                    </a></li>
-                                    <li><a href="account.html">
-                                        <i class="iconfont icon-huaban-"></i>
-                                        我的开发宝
-                                    </a></li>
-                                    <li><a href="published-project.html">
-                                        <i class="iconfont icon-xiangmu"></i>
-                                        我发布的项目
-                                    </a></li>
-                                    <li><a href="businessscope.html">
-                                        <i class="iconfont icon-lanzi"></i>
-                                        广告位申请
-                                    </a></li>
-                                    <li class="divider"></li>
-                                    <li class="mobile-none-767"><a href="help/help.html">
-                                        <i class="iconfont icon-bangzhu"></i>
-                                        帮助
-                                    </a></li>
-                                    <li class="divider mobile-none-767"></li>
-                                    <li class="sortir"><a href="index.html">
-                                        <i class="iconfont icon-tuichu"></i>
-                                        退出登录
-                                    </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                </div>
-                <!-- 登陆前 -->
-                <div class="navbar-collapse pull-right visible-xs nenter">
-                    <ul class="nav navbar-nav mobile">
-                        <li class="dropdown nav-oneself">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="iconfont icon-huabanfuben1"></i>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="index-phone-nav">
-                                    <a href="enter.html">登录</a>
-                                </li>
-                                <hr>
-                                <li class="index-phone-nav">
-                                    <a href="login.html">注册</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-            </div>
-            <div class="navbar-collapse pull-right hidden-xs nenter">
-                    <ul class="nav navbar-nav mobile">
-                        <li class="dropdown nav-oneself">
-                            <a href="enter.html" class="asd">登录</a>
-                        </li>
-                        <li class="dropdown nav-oneself">
-                            <a href="login.html" class="asd">注册</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+			<nav class="navbar navbar-default mobile-none-767" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand navbar-logo" href="index.html">
+							<img src="./img/logo_blue.png" alt="logo">
+						</a>
+						<a class="navbar-brand navbar-hide" href="find_demand.html">项目列表</a>
+						<a class="navbar-brand navbar-hide" href="demand.html">项目发布</a>
+						<a class="navbar-brand navbar-hide" href="developer.html">开发方</a>
+						<a class="navbar-brand navbar-hide" href="help/help.html">帮助</a>
+						<p class="worker-seek seek pull-left"><i class="iconfont icon-search-1-copy"></i> <input type="text"
+								placeholder="搜索工作室"></p>
+					</div>
+					<!-- 登陆后 -->
+					<div class="navbar-collapse pull-right yenter">
+						<ul class="nav navbar-nav mobile">
+							<li class="dropdown nav-oneself">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="iconfont icon-huabanfuben1"></i>
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="mobile-none-767"><a href="#">
+											<i class="iconfont icon-chazhaobiaodanliebiao"></i>
+											项目列表
+										</a></li>
+									<li class="divider mobile-none-767"></li>
+									<li class="mobile-none-767"><a href="#">
+											<i class="iconfont icon-fabu1"></i>
+											项目发布
+										</a></li>
+									<li class="divider mobile-none-767"></li>
+									<li class="seul"><a href="userinfo.html">
+											<i class="iconfont icon-geren"></i>
+											个人中心
+										</a></li>
+									<li class="divider"></li>
+									<li class="mobile-none-767"><a href="userinfo.html">
+											<i class="iconfont icon-kaifa"></i>
+											开发方
+										</a></li>
+									<li><a href="account.html">
+											<i class="iconfont icon-huaban-"></i>
+											我的开发宝
+										</a></li>
+										<li class="issue-project">
+											<a href="published-project.html">
+												<i class="iconfont icon-xiangmu"></i>
+												我发布的项目
+											</a>
+										</li>
+										<li class="join-project">
+											<a href="involved-project.html">
+												<i class="iconfont icon-xiangmu"></i>
+												我参与的项目
+											</a>
+										</li>
+									<li><a href="businessscope.html">
+											<i class="iconfont icon-lanzi"></i>
+											广告位申请
+										</a></li>
+									<li class="divider"></li>
+									<li class="mobile-none-767"><a href="help/help.html">
+											<i class="iconfont icon-bangzhu"></i>
+											帮助
+										</a></li>
+									<li class="divider mobile-none-767"></li>
+									<li class="sortir"><a href="index.html">
+											<i class="iconfont icon-tuichu"></i>
+											退出登录
+										</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- 登陆前 -->
+					<div class="navbar-collapse pull-right visible-xs nenter">
+						<ul class="nav navbar-nav mobile">
+							<li class="dropdown nav-oneself">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="iconfont icon-huabanfuben1"></i>
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="index-phone-nav">
+										<a href="enter.html">登录</a>
+									</li>
+									<hr>
+									<li class="index-phone-nav">
+										<a href="login.html">注册</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar-collapse pull-right hidden-xs nenter">
+						<ul class="nav navbar-nav mobile">
+							<li class="dropdown nav-oneself">
+								<a href="enter.html" class="asd">登录</a>
+							</li>
+							<li class="dropdown nav-oneself">
+								<a href="login.html" class="asd">注册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 	<!-- 登陆内容 -->
 	<div class="Account container ">
 		
@@ -159,8 +166,8 @@
 					<p><span class="iconfont icon-shendunju" style="font-size:40px;color:#49a9ee;padding-left:15px;"></span></p>
 					<ul class="Account-right-head-ul center-block">
 						<li>开发宝余额</li>
-						<li>0<span>元</span></li>
-						<li>可提现余额：<span>0.00元</span></li>
+						<li><span class="money residue">0</span>元</li>
+						<li>可提现余额：<span class="money">0.00</span>元</li>
 					</ul>
 					<div class=" Account-right-head-div">
 						<input type="button" value="充值" class="Account-right-head-recharge">
@@ -327,10 +334,9 @@
 		<span></span>
 	</div>	
 
-
    
-</body>
-</html>
-	
+
+    <script src="./jQuery/cookie.js"></script>
+    <script src="./jQuery/indexheader-footer.js"></script>
 </body>
 </html>

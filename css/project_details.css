@@ -47,11 +47,7 @@ em{
 	color: #fa6868;
 }
 .project_tags{
-<<<<<<< HEAD
 	margin-top: 15px;
-=======
-	margin-top: 35px;
->>>>>>> yp
 }
 .project_tags>li{
 	float: left;
@@ -69,11 +65,7 @@ em{
 	}
 }
 .project_tags>li>em{
-<<<<<<< HEAD
 	margin-right: 5px;
-=======
-	margin:0 5px;
->>>>>>> yp
 }
 i{
 	font-style: normal;
@@ -100,7 +92,8 @@ i{
 .projec_contain{
 	background-color: #fff;
 	border: 1px solid #EDEDED;
-	padding: 30px;
+	padding: 30px 30px 137px 30px;
+	
 }
 .project_descript{
 	width: 88%;
@@ -143,11 +136,7 @@ i{
 	padding-bottom: 30px;
 }
 /*调整字体大小*/
-<<<<<<< HEAD
 @media (max-width: 1200px) and (min-width: 767px){
-=======
-/* @media (max-width: 1200px) and (min-width: 767px){
->>>>>>> yp
 	body,.navbar-header > .navbar-brand{
 		font-size: 20px;
 	}
@@ -158,8 +147,4 @@ i{
 		width: 150px;
 		height: 50px;
 	}
-<<<<<<< HEAD
 }
-=======
-} */
->>>>>>> yp

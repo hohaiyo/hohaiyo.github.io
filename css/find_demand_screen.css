@@ -18,6 +18,9 @@
         margin-bottom: 0px;
     }
 
+    .min-height{
+        min-height: 920px;
+    }
 }
 
 /*PAD屏幕下的专用样式*/
@@ -82,7 +85,7 @@
         width: 100%;
     }
 
-    .find_demand_content_left_item_type_right a{
+    .find_demand_content_left_item_type_right button{
         width: 90px;
         height: 30px;
         margin-bottom: 10px;
@@ -111,7 +114,7 @@
 
 @media screen and (max-width:414px){
 
-    .find_demand_content_left_item_type_right a{
+    .find_demand_content_left_item_type_right button{
         margin-right: 16px;
     }
 
@@ -119,10 +122,20 @@
 
 @media screen and (max-width:390px){
 
-    .find_demand_content_left_item_type_right a{
+    .find_demand_content_left_item_type_right button{
         margin-right: 0px;
     }
 
+}
+
+@media screen and (max-width:360px){
+
+     /*分页器*/
+    .nextbtn, .prebtn, span.disabled {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
 
 
@@ -134,11 +147,9 @@
 
      /*分页器*/
     .nextbtn, .prebtn, span.disabled {
-        width: 30px;
+        width: 26px;
         height: 30px;
         line-height: 30px;
-    }
-    .zxfinput {
-        width: 30px;
-    }  
+    } 
+    
 }
