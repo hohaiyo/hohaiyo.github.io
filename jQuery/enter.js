@@ -51,11 +51,11 @@ $(function(){
 				password:$('#need-login .enter-pwd').val()//自己页面拿到的值
 			},
 			success:function(data){//回调函数
+				console.log(data)
 				if(data.name != "" & data.data != -1){	//判断
 					var companys = JSON.stringify(data.data.company)
 					var people = JSON.stringify(data.data.role)
-					var day = cookie.setCookieDate(7)
-					cookie.set("user",companys,day,"/")
+					$.cookie("user",companys,{ expires: 7, path: '/' })
 					location.href = "index.html"
 					localStorage.setItem("people",people)
 				}
@@ -85,11 +85,11 @@ $(function(){
 				password:$('#exploit-login .enter-pwd').val()//自己页面拿到的值
 			},
 			success:function(data){//回调函数	
+				console.log(data)
 				if(data.name != "" & data.data != -1){	//判断
 					var workers = JSON.stringify(data.data.worker)
 					var people = JSON.stringify(data.data.role)
-					var day = cookie.setCookieDate(7)
-					cookie.set("user",workers,day,"/")
+					$.cookie("user",workers,{ expires: 7, path: '/' })
 					location.href = "index.html"
 					localStorage.setItem("people",people)
 				}

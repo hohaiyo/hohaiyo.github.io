@@ -2,13 +2,32 @@
 
 $(document).ready(function(){
     
+	var namework = $(".worker-seek>input").val()
+	// console.log(namework)
+	$(document).keydown(function(event){
+		if(event.keyCode==13){
+			$.ajax({
+                type:"GET",
+                url:"http://47.106.220.143:8080/worker/getByName",
+                data:{
+                    name:namework
+                },
+                success:function(data){
+                    console.log(data)
+                }
+            })
+		}
+	})
+
    var people = JSON.parse(localStorage.getItem('people'))
-    if(cookie.get("user")){
+    if($.cookie("user")){
 		$('.yenter').css({"display":"block"})
-		$('.nenter').css({"display":"none"})
+        $('.nenter').css({"display":"none"})
+        console.log(1)
 	}else{
 		$('.nenter').css({"display":"block"})
-		$('.yenter').css({"display":"none"})
+        $('.yenter').css({"display":"none"})
+        console.log(2)        
     }
     if(people=='company'){
         $('.issue-project').css({"display":"blcok"})
@@ -18,12 +37,12 @@ $(document).ready(function(){
         $('.issue-project').css({"display":"none"})
     }
     
-    console.log(cookie.get("user") )
-    console.log(1)
+    
 	// 退出登录
     $('.sortir').click(function(){
-		console.log()
-        cookie.remove("user","/")
+		console.log(3)
+        // $.removeCookie("user","/")
+        $.removeCookie('user', { path: '/' })
         location.href = "index.html"
 	})
 	$(window).scroll(function(){
@@ -147,9 +166,7 @@ $(document).ready(function(){
     })
    
     $.getJSON("http://47.106.220.143:8080/project/getByTime",function(data){
-        // 查询投标人数
         var result = data.data
-        // console.log(data.data)
         for(var i=0;i<=3;i++){
            
             var title = result[i].title;

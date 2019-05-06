@@ -1,9 +1,10 @@
 $(function () {
     // 使底部logo居中
     var user = JSON.parse(cookie.get("user"))
-    console.log(user)
+    
     $('#username').html(user.name)
-    $('#name').html(user.companyNickName)
+    $('#name').html(user.workerNickName)
+
     if ($(window).width() < 767) {
         $(".footer_warp").children(".pull-left").addClass("center-block").removeClass("pull-left")
     }
@@ -87,7 +88,7 @@ $(function () {
             $.ajax({
                 url: 'http://47.106.220.143:8080/worker/completion',
                 data: {
-                    workerNickName: $('#nicheng').val(),
+                    workerNickName: name,
                     id: user.id,
                     phone: $('#phone').val(),
                     bankAccount: $('#bank').val(),
@@ -97,6 +98,27 @@ $(function () {
                 success: function (str) {
                     console.log(str)
                     alert('保存成功')
+                    if(str.data == 1){
+                        $.ajax({
+                            type:'GET',
+                            url:'http://47.106.220.143:8080/worker/getByName',
+                            data:{
+                                name:user.name
+                            },
+                            success:function(data){
+                                console.log(data)
+                                var workers = JSON.stringify(data.data.worker)
+                                var day = cookie.setCookieDate(7)
+                                cookie.set("user",workers,day,"/")
+                                    $('#username').html(data.data.name)
+                                    $('#name').html(data.data.workerNickName)
+                                    
+                            },
+                            error:function(err){
+                                alert(err)
+                            }
+                        })
+                    }
                 },
                 error: function (err) {
                     alert(err);

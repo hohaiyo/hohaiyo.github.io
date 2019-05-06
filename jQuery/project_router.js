@@ -24,17 +24,18 @@ $(function(){
    the_data = the_year + "/" + the_month + "/" + the_day;  
        console.log(differTime)
     $('.period').html(differTime)
+    console.log(data.status)
 
-    // if(data.status==="0"){
-    //     data.status='招标中'
-    // }
-    // if(data.status==="1"){
-    //     data.status='开发中'
+    if(data.status==="0"){
+        data.status='招标中'
+    }
+    if(data.status==="1"){
+        data.status='开发中'
         
-    // }
-    // if(data.status==="-1"){
-    //     data.status='已结束'
+    }
+    if(data.status==="-1"){
+        data.status='已结束'
         
-    // }
+    }
     $('.recruit').html(data.status)
 })

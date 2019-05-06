@@ -156,14 +156,29 @@ footer{
         margin-bottom: 10px;
     }
 }
-@media screen  and (max-width: 328px){
+@media screen  and (max-width: 340px){
     .panel-body-border-title{
         margin-left: 0;
+        float: right;
+    }
+    .panel-body-padding{
+        padding: 10px 10px;
+    }
+    .panel-body-border{
+        height: 140px;
+        padding: 15px;
+    }
+    .userinfo-word-textcenter{
+        text-align: center;
+    }
+    .levelup{
+        display: none;
     }
     .xiugaiinfo{
         margin-bottom: 10px;
     }
 }
+
 @media screen and (min-width:1024px) and (max-width:1280px){
 	.panel-body-border-title{
         /* margin-left: 0; */

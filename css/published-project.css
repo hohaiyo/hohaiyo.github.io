@@ -3,8 +3,18 @@ body{
     height: auto;
 }
 
+.notyet{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #9eafc5;
+}
 /*768以下*/
 @media screen and (max-width: 767px){
+    .notyet{
+        width: 100%;
+        text-align: center;
+    }
     /*我发布的项目*/
     .form-project{
         padding: 0 12px;
@@ -190,7 +200,6 @@ body{
     .project-list > .list-top{
         padding-bottom: 15px;
     }
-
     /*项目列表底部*/
     .bottom-info > .bottom-btn > button{
         margin-left: 20px;
@@ -275,7 +284,7 @@ body{
     margin-top: 70px;
     margin-bottom: 60px;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container .row{
@@ -495,9 +504,9 @@ body{
 
 /*底部*/
 .pufoot{
-    position:  initial;
-    left: 0;
-    right: 0;
+    position:absolute;
+    /* left: 0;
+    right: 0; */
     bottom: 0;
     overflow: hidden;
     background-color: #1f2d3d;

@@ -2,14 +2,36 @@
 	// 退出登录
     $('.sortir').click(function(){
 		console.log()
-        cookie.remove("user","/")
+        $.removeCookie('user', { path: '/' })
         location.href = "index.html"
 	})
-	
-	// 个人中心
-	// $('.seul').click(function(){
-
+	var namework = $(".worker-seek>input").val()
+	// console.log(namework)
+	$(document).keydown(function(event){
+		if(event.keyCode==13){
+				$.ajax({
+					type:"GET",
+					url:"http://47.106.220.143:8080/worker/getByName",
+					data:{
+						name:namework
+					},
+					success:function(data){
+						console.log(data)
+					}
+				})
+		}
+	})
+	// console.log(cookie.get('user'))
+	// $('.issue-project').click(function(){
+	// 	$.ajax({
+	// 		type:"GET",
+	// 		url:"http://47.106.220.143:8080/project/getByCid",
+	// 		data:{
+	// 			cid:cid
+	// 		}
+	// 	})
 	// })
+	
 	$(window).scroll(function(){
 		$(".anchor").css("top",($(window).height() - $(	'.anchor').outerHeight())/2 + $(document).scrollTop())
 	})
@@ -44,7 +66,7 @@
         
 	})	
 
-	if(cookie.get("user")){
+	if($.cookie("user")){
 		$('.yenter').css({"display":"block"})
 		$('.nenter').css({"display":"none"})
 	}else{
@@ -55,11 +77,12 @@
 	
 	var people = JSON.parse(localStorage.getItem('people'))
     if(people=='company'){
+		$('.company-seul').css({"display":"block"})
         $('.issue-project').css({"display":"blcok"})
         $('.join-project').css({"display":"none"})
 	}else{
+		$('.worker-seul').css({"display":"block"})
         $('.join-project').css({"display":"block"})
         $('.issue-project').css({"display":"none"})
 	}
-	
 	

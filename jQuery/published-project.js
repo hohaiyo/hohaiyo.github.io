@@ -1,50 +1,70 @@
 $(function(){
-
-    $.getJSON("http://47.106.220.143:8080/project/getByTime", function(data){
-        console.log(data.data);
-        $.each(data.data, function (i) {
-            var stx = '<div class="project-list row">\
-            <div class="list-top row">\
-                <p class="pull-left">'+(data.data)[i].title+'</p>\
-                <div class="pull-right">\
-                    <div class="list-info row">\
-                        <p>\
-                            <i class="iconfont icon-yueduliang"></i>\
-                            浏览量 0\
-                        </p>\
-                        <p class="list-apply">\
-                            <i class="iconfont icon-shou"></i>\
-                            报名数 0\
-                        </p>\
-                        <p class="list-status list-recruit">'+(data.data)[i].status+'</p>\
+    
+        // 发布新的项目
+        $('.btn-default').click(function(){
+            location.href = "demand.html";
+        })
+    var user = JSON.parse($.cookie('user'))
+    var cid = user.id
+    console.log(user)
+    $.ajax({
+        type:"GET",
+        url:"http://47.106.220.143:8080/project/getByCid",
+        data:{
+            cid:cid
+        },
+        success:function(data){
+            console.log(data)
+            if(data.data == ''){
+                var notyet = '<div class="notyet">尚未发布项目，快去发布新的项目吧</div>'
+                $("#join-project").append(notyet)
+            }else{
+                $.each(data.data, function (i) {
+                    var stx = '<div class="project-list row">\
+                    <div class="list-top row">\
+                        <p class="pull-left">'+(data.data)[i].title+'</p>\
+                        <div class="pull-right">\
+                            <div class="list-info row">\
+                                <p>\
+                                    <i class="iconfont icon-yueduliang"></i>\
+                                    浏览量 0\
+                                </p>\
+                                <p class="list-apply">\
+                                    <i class="iconfont icon-shou"></i>\
+                                    报名数 0\
+                                </p>\
+                                <p class="list-status list-recruit">'+(data.data)[i].status+'</p>\
+                            </div>\
+                        </div>\
                     </div>\
-                </div>\
-            </div>\
-            <div class="list-bottom row">\
-                <img class="pull-left col-md-3 col-sm-5 col-xs-12" src="./img/project-logo.png">\
-                <div class="bottom-info col-md-9 pull-left">\
-                    <p>\
-                        <i class="i-computer iconfont icon-diannao1"></i>\
-                        <span>Web 网站</span>\
-                        <span class="bottom-gray">前端开发</span>\
-                    </p>\
-                    <p class="bottom-money">\
-                        <span>金额</span>\
-                        <span class="bottom-gray bottom-price">￥'+(data.data)[i].price+'</span>\
-                        <span>周期</span>\
-                        <span class="bottom-gray">11天</span>\
-                    </p>\
-                    <div class="bottom-btn form-inline pull-right">\
-                        <button class="btn-cancel form-control">取消发布</button>\
-                        <button class="btn-examine form-control">项目状态</button>\
+                    <div class="list-bottom row">\
+                        <img class="pull-left col-md-3 col-sm-5 col-xs-12" src="./img/project-logo.png">\
+                        <div class="bottom-info col-md-9 pull-left">\
+                            <p>\
+                                <i class="i-computer iconfont icon-diannao1"></i>\
+                                <span>Web 网站</span>\
+                                <span class="bottom-gray">前端开发</span>\
+                            </p>\
+                            <p class="bottom-money">\
+                                <span>金额</span>\
+                                <span class="bottom-gray bottom-price">￥'+(data.data)[i].price+'</span>\
+                                <span>周期</span>\
+                                <span class="bottom-gray">11天</span>\
+                            </p>\
+                            <div class="bottom-btn form-inline pull-right">\
+                                <button class="btn-cancel form-control">取消发布</button>\
+                                <button class="btn-examine form-control">项目状态</button>\
+                            </div>\
+                        </div>\
                     </div>\
-                </div>\
-            </div>\
-        </div>';
-            $("#join-project").append(stx)
-        });
-
-        //转换文字状态
+                </div>';
+                    $("#join-project").append(stx)
+                });
+            }
+        
+    }
+    })
+     //转换文字状态
         $(".list-status").each(function () {
             if($(this).text() == "1"){
                 $(".list-status").text("开发中").addClass("list-develop");
@@ -99,10 +119,6 @@ $(function(){
             });
         });
 
-        // 发布新的项目
-        $(".btn-publish").on("click", function () {
-            location.href = "demand.html";
-        });
         // 项目状态
         $(".btn-examine").on("click", function () {
             var _this = $(this).parent().parent().parent().parent().find(".list-status").text();
@@ -121,5 +137,8 @@ $(function(){
                 location.href = "cancel-condition.html";
             }
         });
-    });
-});
+    
+
+})
+
+       

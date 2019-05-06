@@ -6,7 +6,7 @@ $(function(){
 		user.money = 0
 	}
 	var money = user.money.toLocaleString()
-	console.log(money)
+	console.log(user)
 	$('.money').html(money)
 	
 	

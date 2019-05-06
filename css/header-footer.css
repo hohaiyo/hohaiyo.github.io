@@ -2,7 +2,9 @@
     padding: 18px 18px;
 }
 
-
+.worker-seul,.company-seul{
+    display: none;
+}
 /* 通用 */
 .navbar-default{
     height: 60px;
@@ -324,11 +326,6 @@ footer > p > span{
 @media(min-width:769px){
     .dropdown-menu>.mobile-none-767{
         display: none;
-    }
-}
-@media screen and (max-width:1025px){
-    footer{
-        position: absolute;
     }
 }
 .yenter,.enter{
