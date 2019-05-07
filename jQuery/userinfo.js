@@ -1,6 +1,6 @@
 $(function () {
     // 使底部logo居中
-    var user = JSON.parse(cookie.get("user"))
+    var user = JSON.parse($.cookie("user"))
     
     $('#username').html(user.name)
     $('#name').html(user.workerNickName)
@@ -108,8 +108,9 @@ $(function () {
                             success:function(data){
                                 console.log(data)
                                 var workers = JSON.stringify(data.data.worker)
-                                var day = cookie.setCookieDate(7)
-                                cookie.set("user",workers,day,"/")
+                                // var day = cookie.setCookieDate(7)
+                                // cookie.set("user",workers,day,"/")
+                                $.cookie("user",workers,{ expires: 7, path: '/' })
                                     $('#username').html(data.data.name)
                                     $('#name').html(data.data.workerNickName)
                                     

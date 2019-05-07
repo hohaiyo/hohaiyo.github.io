@@ -38,4 +38,23 @@ $(function(){
         
     }
     $('.recruit').html(data.status)
+    // var p = JSON.parse(localStorage.getItem('indetail'))
+    // var pid = p.id
+    // console.log(pid)
+    // var w = JSON.parse($.cookie('user'))
+    // var wid = w.id
+    // console.log(wid)
+    // $('.join_in').click(function(){
+    //     $.ajax({
+    //         type:'GET',
+    //         url:'http://47.106.220.143:8080/project/apply',
+    //         data:{
+    //             pid:pid,
+    //             wid:wid
+    //         },
+    //         success:function(data){
+    //             console.log(data)
+    //         }
+    //     })
+    // })
 })

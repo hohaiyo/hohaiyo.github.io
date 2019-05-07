@@ -2,10 +2,11 @@
 
 $(document).ready(function(){
     
-	var namework = $(".worker-seek>input").val()
-	// console.log(namework)
+	
 	$(document).keydown(function(event){
 		if(event.keyCode==13){
+            var namework = $(".worker-seek>input").val()
+            console.log(namework)
 			$.ajax({
                 type:"GET",
                 url:"http://47.106.220.143:8080/worker/getByName",
