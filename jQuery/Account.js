@@ -6,8 +6,8 @@ $(function(){
 		user.money = 0
 	}
 	var money = user.money.toLocaleString()
-	console.log(money)
-	$('.money').html(money)
+	// console.log(money);
+	$('.money').html(money)；
 	
 	
 	$('.dropdown input').click(function(){
@@ -47,9 +47,7 @@ $(function(){
 		$('.pull-left').click(function(){
 			$(this).children().children().toggle();
 
-		})
-		
-		
+		})		
 		
 		$('.more').click(function(){
 			$('#one').css('display','none')
@@ -59,16 +57,10 @@ $(function(){
 		$('.information').click(function(){
 			$('#three').css('display','none')
 			$('#one').css("display",'block')
-		})
-		
+		})		
 		
 	   if($(window).width()<767){
         $(".footer_warp").children(".pull-left").addClass("center-block").removeClass("pull-left")
-    }
-
-		
-
-	
-	
+    }	
 		
 })

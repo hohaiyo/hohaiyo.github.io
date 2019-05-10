@@ -1,6 +1,6 @@
 $(function(){
    var data = JSON.parse(localStorage.getItem('local-data'))
-   console.log(data)
+   // console.log(data)
    $('.title_h3').html(data.title)
    $('.sum').html(data.price.toLocaleString())
    $('#item_style').html(data.typeName)
@@ -23,6 +23,6 @@ $(function(){
    the_day = oldTime_two.getDate();//几号	  
 
    the_data = the_year + "/" + the_month + "/" + the_day;  
-    console.log(differTime)
+    // console.log(differTime)
     $('.period').html(differTime)
 })

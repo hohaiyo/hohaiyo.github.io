@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>小白-专业的大学生外包服务平台</title>
-    <!-- bootstrap框架 -->
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<!-- 阿里小图标 -->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1108524_bmzas3pw0se.css">
-    <!-- 头部 -->
-    <link rel="stylesheet" href="css/header-footer.css"> 
-    <!-- 这是自己页面的css -->
-    <link rel="stylesheet" href="css/own-cancel.css">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>小白-专业的大学生外包服务平台</title>
+    <!-- 清除原始样式 -->	
+	<link rel="stylesheet" type="text/css" href="css/initialize.css">
+	<!-- bootstrap框架 -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- 头部 尾部 样式 -->
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<!-- 阿里图标 -->
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1108524_akkp1t0pm4.css">
     <!-- ico图标 -->
     <link rel="shortcut icon" href="img/logo.ico" />
-    <!-- 清除原始样式 -->	
-	<link rel="stylesheet" href="css/initialize.css">
+	<!-- 本页主体样式 -->
+	<link rel="stylesheet" href="css/project_details.css">
 	<!-- jQuery框架 -->
 	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
 	<!-- bootstrap框架的js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<!-- 头部 锚点 尾部js -->
-    <script type="text/javascript" src="jQuery/header-footer.js"></script>
+    <!-- 头部 锚点 尾部js -->
+	<script type="text/javascript" src="jQuery/header-footer.js"></script>
+	<script src="jQuery/project_router.js"></script>
 </head>
 <body>
-    <div class="box">
-    <!--头部-->
-    <header id="nav-white">
+	<!-- 头部 -->
+	<header id="nav-white">
 		<nav class="navbar navbar-default mobile-none-767" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -135,66 +135,93 @@
 				</div>
 			</div>
 		</nav>
-	</header>
-        <div class="main">
-            <div class="top">
-                <p class="top-title">
-                	<a href="published-project.html">我发布的项目</a>
-                	<i class="arrows">→</i>
-                	<span class="title_h3">项目名称</span></p>
-                <div class="message clearfix">
-                    <div class="col-lg-3 col-sm-5">
-                        <div class="top-img">
-                        	<img src="img/xiangmu.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-sm-5">
-                        <h3 class="title_h3">项目名称:</h3>
-                        <p class="type">
-                        	<i class="iconfont icon-diannao"></i>
-                        	<span>项目类型:</span>
-                        	<span id="item_style"></span>
-                        </p>
-                        <p class="data">
-                        	<span>发布者:</span>
-                        	<span id="promulgator">123</span>
-                        	<span class="line">|</span>
-                        	<span>项目周期:</span>
-                        	<span class="period"></span>
-                        	<span>天</span>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-sm-2">
-                        <div class="white max">
-                            <p class="money">
-                            	<span>项目金额:</span>
-                            	<span class="sum"></span>
-                            	<span>元</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="status">
-                <p>项目详情:</p>
-                <div class="white min">
-                    <span id="item_particular">项目已取消</span>
-                </div>
-            </div>
-        </div>
-        
-        <footer class="footxwt">
-            <div class="footer_warp">
-                <a href="#" class="pull-left">
-                    <img src="./img/logo_white.png">
-                </a>
-                <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>
-            </div>
-        </footer>
-    </div>
- 	<script src="jQuery/jquery.cookie.js"></script>
+	</header>		
+	<!-- 主体 -->
+	<div class="container mian_content" id="header-top">
+		<div class="row ad_poster">
+			<div class="col-md-12">
+				<a href="javascript:;"><img src="https://dn-coding-net-production-pp.codehub.cn/c317efb2-f238-4c38-a7a0-4529a9468b68.png" alt=""></a>
+				<div class="project_box">
+					<div class="project_box_top">
+						<div class="clearfix project_name">
+							<h3 class="pull-left title"></h3>
+							<span class="pull-right project_states recruit">招标中</span>
+							<span class="pull-right project_states develop" style="display: none;">开发中</span>
+							<span class="pull-right project_states finish" style="display: none;">已结束</span>
+						</div>
+						<ul class="project_tags clearfix">
+							<li><em>金额</em><i>￥</i><span class="price"></span><em class="su">|</em></li>
+							<li><em>类型</em><span class="type"></span><em class="su">|</em></li>
+							<li><em>周期</em><span class="period"></span><em>天</em></li>
+							<li><input type="button" value="参与项目" class="join_in"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-12 projec_contain">
+					<div class="project_descript">
+						<!-- 项目描述 -->
+						<div class="project_maindetails">
+							<h3>项目详情</h3>
+							<p class="desc"></p>
+							
+						</div>
+						<!-- 项目参考 -->
+						<div class="project_reference">
+							<h3>相关文档</h3>
+							<p></p>
+						</div>
+						<!-- x项目规划 -->
+						<div class="project_plan">
+							<h3>项目周期</h3>
+							<h4><span class="period"></span>天</h4>
+						</div>
+						
+					</div>
+					<!-- 项目要求 -->
+					<!-- <div class="project_request"> -->
+						<!-- <h3>项目要求</h3> -->
+						<!-- <ol class="project_descript_through">
+							<li>1.熟悉liunx环境，有java项目开发经验、会python加分</li>
+							<li>2.有网页产品开发经验；</li>
+							<li>3.精通 Java 或 PHP，熟悉 jQuery、 JavaScript、Maven、Redis 等技术，熟练使用 MySQL、Oracle、SQLServer 等关系型数据库，熟悉 NoSQL 数据库如 mongo、redis 等；</li>
+							<li>4.参与项目的开发成员需要提前全面了解项目和代码管理工具 Coding 的使用方法；北京地区开发者优先；</li>
+							<li>5.时间较为自由充裕，可以在工作日的工作时间进行沟通交流。</li>
+						</ol> -->
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<footer>
+	    <div class="footer_warp">
+	        <a href="#" class="pull-left">
+	                <img src="img/logo1.02.png">
+	        </a>
+	        <span href="#" class="pull-right footer-text">Copyright &copy; 2014-2020</span>       
+	    </div>
+	</footer>
+	 <!--侧边栏-->
+    <div class="anchor">
+            <ul>
+                <li class="anchor-consult">
+                    <i class="iconfont icon-lianxi" style="transform:scale(1.4)"></i>
+                    咨询
+                </li>
+                <li class="anchor-about">
+                    <i class="iconfont icon-guanyu"></i>
+                    关于我们
+                </li>
+                <li class="anchor-top">
+                    <i class="iconfont icon-top"></i>
+                    TOP
+                    <a href="#header-top"></a>
+                </li>
+            </ul>
+            <span></span>
+	</div>	
+	<!-- cookie文件 -->
+	<script src="jQuery/jquery.cookie.js"></script>		
     <script src="jQuery/indexheader-footer.js"></script>
-    <!-- 自己页面的js -->
-    <script src="jQuery/own-cancel.js"></script>     
 </body>
 </html>

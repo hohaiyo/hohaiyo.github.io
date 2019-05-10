@@ -28,7 +28,6 @@
 		});
 		//验证码input
 		
-
 		// 项目类型选择
 		$('#list-inline-demand').children('li').click(function(){
 			$('#list-inline-demand').children('li').css({
@@ -49,9 +48,11 @@
 				'color':'white'
 			});
 		});
-
 	});
 
+	var user = JSON.parse($.cookie("user"));
+	// console.log(user);
+	// console.log(user.id);	
 
     window.onscroll = window.onresize= function(){
     	var demand_right = document.getElementById('demand_content_right');
@@ -60,7 +61,6 @@
     } 	
 		//右侧内容随随滚动条变换位置
 		
-		//单项选择项目类型
 	demand_submit.onclick = function(){
 	    var demand_content = document.getElementById('demand_content');
 	    var demand_input = demand_content.getElementsByTagName('input');
@@ -94,17 +94,17 @@
 	    }
 	    // 是否填写项目名称
 
-    	//金额是否大于等于50000元
+    	//金额是否大于等于1000元
     	var demand_budget = document.getElementById('demand_budget')
     	if(isNaN(demand_budget.value)){
     		demand_budget.style.borderColor = 'red';
-    		alert('个人项目金额不能为空或者低于50000元');
+    		alert('个人项目金额不能为空或者低于1000元');
     		return false;
     	}
     	else{
     		demand_budget.style.borderColor = '';
     	}
-    	//金额是否大于等于50000元
+    	//金额是否大于等于1000元
 
     	// 是否填写期望周期
 	    var demand_day = document.getElementById('demand_day');
@@ -161,7 +161,6 @@
     	}
     	// 检测是否勾选了同意条款
 	
-	
 	}
 
 	// 项目类型选择
@@ -190,22 +189,30 @@
 			var remind_money = document.getElementById('remind_money');
 			var deposit = document.getElementById('deposit');
 			demand_budget.onblur = function(){
-				if(isNaN(demand_budget.value)||demand_budget.value<50000){
+				if(isNaN(demand_budget.value)||demand_budget.value<1000){
 					this.value = '';
 					this.style.borderColor = 'red';
 					remind_money.style.opacity = '1';
-					remind_money.innerHTML = '预算必须填写阿拉伯数字且不得低于50000元';
+					remind_money.innerHTML = '预算必须填写阿拉伯数字且不得低于1000元';
 
 				}
+
+				if(user.money<demand_budget.value){
+					this.value = '';
+					this.style.borderColor = 'red';
+					remind_money.style.opacity = '1';
+					remind_money.innerHTML = '开发宝余额不足';					
+				}
+
 				else{
 					this.style.borderColor = '';
 					remind_money.style.opacity = '0';	
 					
 				}
-			}			
+			}	
 
 			demand_budget.onkeyup = function(){
-				if(!isNaN(demand_budget.value)&&demand_budget.value>=50000){
+				if(!isNaN(demand_budget.value)&&demand_budget.value>=1000){
 					deposit.innerHTML = Math.floor(demand_budget.value*0.3);
 					deposit.style.color = 'red';
 				}
@@ -247,7 +254,6 @@
 
 		// 检测字符数是否超过20
 
-
 		// 验证码
 			var maxtime = 60;
 			if(window.name == '' || window.name == '-1' || isNaN(window.name)) {
@@ -276,7 +282,7 @@
 
 			$('#security_code_btn').click(function(){
 			    var email = $('#demand_user_email').val();
-			    console.log(email)
+			    // console.log(email);
 			    $.ajax({
 			        type:"POST",
 			        url:"http://47.106.220.143:8080/project/getMail",
@@ -284,11 +290,11 @@
 			            email:email
 			        },
 			        success:function(data){
-			            console.log(data);
+			            // console.log(data);
 
 			        },
 			        error:function(a){
-			            console.log(a)
+			            // console.log(a);
 			        }
 			    })
 			})
@@ -322,8 +328,8 @@
 			var file = $("#demand_file").val();//相关文档
 			var email = $("#demand_user_email").val();//你的邮箱
 			var code = $("#security_code_input").val();//验证码
-			var companyId = 1;
-			// console.log(typeId,typeName,title,price,deposit,cycle,desc,file,email,code,companyId);
+			var companyId = user.id;
+
 			$.ajax({
 				type:"POST",//方式
 				url:"http://47.106.220.143:8080/project",//地址
@@ -341,11 +347,12 @@
 					companyId:companyId
 				},
 				success:function(data){//回调函数
-					console.log(data);
-					console.log('传输成功');
+					// console.log(data);
+					// console.log('传输成功');
+					// console.log($.cookie("user").money);
 				},
 				error:function(){ //请求发生异常后的回调
-					console.log('传输失败')
+					// console.log('传输失败')
 				}
 			});
 		});

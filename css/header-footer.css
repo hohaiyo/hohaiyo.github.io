@@ -1,91 +1,11 @@
-/* 透明背景头部 */
-.index-head .navbar-default{
-    background-color:transparent;
-    border: none;
-    border-radius: 0;
-    width: 100%;
-    min-width: 700px;
-    position: fixed;
-    top: 0;
-    z-index:2992;
-    padding: 2px 0;
-}
-.index-head .navbar-header{
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.index-head .navbar-header > .navbar-logo > img{
-    height: 30px;
-    transform: translate(0,-20%)
-}
-.index-head .navbar-default .navbar-nav>li>a{
-    color:#fff;
-}
-.index-head .navbar-default .navbar-nav>li>a:focus{
-    color:#ccc;
-}
-.index-head .navbar-default .navbar-nav>li>a:hover{
-    color:#ccc;
-}
-.index-head .navbar-header > .navbar-brand{
-    margin-right: 30px;
-    color:#fff;
-}
-.index-head .navbar-header > .navbar-brand:focus{
-    color:#fff;
-}
-.index-head .navbar-header > .navbar-brand{
-    font-size: 15px;
-}
-
-.index-head .navbar-header > .navbar-brand:hover{
-    color: #ccc;
-}
-
-.index-head .navbar-nav > .nav-information i{
-    display: block;
-    transform: scale(1.4);
-}
-
-.index-head .nav-oneself > .dropdown-toggle > i{
-    display: inline-block;
-    transform: scale(1.4);
-}
-
-.index-head .navbar-nav > .nav-oneself > .dropdown-menu{
-    left: -100px;
-    border-radius: 5px;
-}
-
-.index-head .dropdown-menu > li > a{
-    padding: 8px 30px 8px 20px;
-}
-
-.index-head .dropdown-menu > li > a > i{
-    margin-right: 10px;
-}
-
-.index-head .dropdown-menu > li > a:hover{
-    background-color: #49a9ee;
-    color: #fff;
-    transition: 500ms;
-}
-
-.index-head .dropdown-menu > .divider{
-    margin: 5px 0
-}
-
-.index-head .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #ccc;
-    background-color: transparent;
-}
 .navbar-nav>li>a {
-    padding: 22px 18px;
+    padding: 18px 18px;
 }
 
 
 /* 通用 */
 .navbar-default{
+    height: 60px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
     border: none;
@@ -101,7 +21,7 @@
     position: relative;
 }
 .container-fluid>.navbar-header{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
 }
 .navbar-header > .navbar-logo > img{
@@ -115,7 +35,7 @@
     color:#ccc;
 }
 .navbar-default .navbar-nav>li>a:hover{
-color:#ccc;
+    color:#ccc;
 }
 .navbar-header > .navbar-brand{
     margin-right: 30px;
@@ -176,18 +96,24 @@ footer{
     text-align: center;
     background-color: #1f2d3d;;
     z-index: 999;
-
-/*    position: fixed;
+    
+    
     bottom: 0;
-    left: 0;*/
+    left: 0;
+    width: 100%;
 }
-
+.footxwt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 .footer_warp{
     margin:0 auto;
-    /*max-width: 1200px;*/
+    max-width: 1200px;
     overflow: hidden;
     position: relative;
-    /*min-width: 700px;*/
+    /* min-width: 700px; */
     padding: 0 20px;
 }
 
@@ -211,6 +137,7 @@ footer > p > span{
 
 /*侧边锚点*/
 .anchor{
+    display: none;
     position: absolute;
     right: 10px;
     transition: 500ms;
@@ -271,21 +198,67 @@ footer > p > span{
 .anchor > ul > .hover{
     border-radius: 8px 0 0 8px;
 }
-
-.anchor > span{
+/* 暂时不需要 */
+/* .anchor > span{
     width: 80px;
     height: 70px;
     position: absolute;
     top: -70px;
     left: -80px;
     background: url(../img/get-started-label-black.png) center no-repeat;
+} */
+.container-fluid{
+    position: relative;
 }
-@media screen and (min-width: 767px){
-    .seek{
-        display: none;
-    }
+.navbar-collapse{
+    position: absolute;
+    right: 15px;
+    top: 0;
 }
-@media screen and (max-width: 767px){
+
+.navbar-logo>.mobile-none-767{
+    display: block;
+}
+.navbar-logo>.mobile-block{
+    display: none;
+}
+.seek{
+    margin-top: 7px;
+    height: 35px;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.seek>i{
+    padding: 0 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ccc;
+}
+.seek>input{
+    max-width: 160px;
+    border:none;
+    outline: none;
+    color: #ccc;
+    font-size: 15px;
+    vertical-align: 3px;
+    background: transparent;
+    text-indent: 5px;
+
+}
+.seek>input::placeholder{
+    font-size: 14px;
+    color: #c0c0c0;
+}
+.hide-dot>li{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+@media(max-width: 768px){
     .navbar-hide,.anchor{
         display: none;
     }
@@ -343,8 +316,17 @@ footer > p > span{
         width: 40px;
     }
 }
-@media screen and (max-width: 321px){
+@media(max-width: 321px){
     .seek{
         width: 120px;
     }
+}
+@media(min-width:769px){
+    .dropdown-menu>.mobile-none-767{
+        display: none;
+    }
+}
+
+.yenter,.enter{
+    display: none;
 }
