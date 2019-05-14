@@ -868,3 +868,18 @@ hr{
         padding-bottom: 30px;
     }
 }
+@media (min-width:492px) and (max-width:644px){
+    #ui,#it,#yingxiao,#app,#other{
+        height: 154px;
+    }
+}
+@media (min-width:408px) and (max-width:491px){
+    #ui,#it,#yingxiao,#app,#other{
+        height: 135px;
+    }
+}
+@media (max-width:407px){
+    #ui,#it,#yingxiao,#app,#other{
+        height: 141px;
+    }
+}

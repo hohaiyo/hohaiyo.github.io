@@ -16,7 +16,7 @@ $(function(){
         success:function(data){
             console.log(data)
             if(data.data == ''){
-                var notyet = '<div class="notyet">尚未发布项目，快去发布新的项目吧</div>'
+                var notyet = '<div class="notyet">尚未参与项目，快去参与项目吧</div>'
                 $("#join-project").append(notyet)
             }else{
                 $.each(data.data, function (i) {
@@ -52,7 +52,6 @@ $(function(){
                                 <span class="bottom-gray">11天</span>\
                             </p>\
                             <div class="bottom-btn form-inline pull-right">\
-                                <button class="btn-cancel form-control">取消发布</button>\
                                 <button class="btn-examine form-control">项目状态</button>\
                             </div>\
                         </div>\

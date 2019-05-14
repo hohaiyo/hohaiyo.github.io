@@ -13,7 +13,8 @@
 	<!-- 阿里图标 -->
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1108524_akkp1t0pm4.css"> 
 	<!-- 本页主体样式 -->
-	<link rel="stylesheet" href="css/project_details.css">
+    <link rel="stylesheet" href="css/project_details.css">
+    <link rel="stylesheet" href="css/room.css">
 	<!-- jQuery框架 -->
 	<script type="text/javascript" src="jQuery/jquery-1.12.4.js"></script>
 	<!-- bootstrap框架的js -->
@@ -22,7 +23,11 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>	
     <!-- 头部 锚点 尾部js -->
 	<script type="text/javascript" src="jQuery/header-footer.js"></script>
-	<title>工作室信息</title>
+    <title>工作室信息</title>
+    <script src="jQuery/room.js"></script>
+     <!-- 区分工作室和公司的js、css -->
+     <link rel="stylesheet" href="css/qufeng.css">
+     <script src="jQuery/qufeng.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -48,12 +53,12 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="mobile-none-767"><a href="#">
+                                    <li class="mobile-none-767"><a href="find_demand.html">
                                         <i class="iconfont icon-chazhaobiaodanliebiao"></i>
                                         项目列表
                                     </a></li>
                                     <li class="divider mobile-none-767"></li>
-                                    <li class="mobile-none-767"><a href="#">
+                                    <li class="mobile-none-767"><a href="demand.html">
                                             <i class="iconfont icon-fabu1"></i>
                                             项目发布
                                         </a></li>
@@ -142,7 +147,8 @@
 				<div class="project_box">
 					<div class="project_box_top">
 						<div class="clearfix project_name">
-							<h3 class="pull-left">团队名称</h3>
+                            <h3 class="pull-left">团队名称：</h3>
+                            <span class="workusername"></span>
 						</div>
 						<ul class="project_tags clearfix">
 							<li><input type="button" value="邀　请" class="join_in"></li>
@@ -154,9 +160,9 @@
 						<!-- 项目描述 -->
 						<div class="project_maindetails">
 							<h3>工作室信息</h3>
-							<p><span>工作室邮箱：</span><span>172115445@qq.com</span></p>
-							<p><span>工作室电话：</span><span>1515313154</span></p>
-							<p><span>QQ:</span><span>661316546848</span></p>
+							<p><span>工作室邮箱：</span><span class="work-email"></span></p>
+							<p><span>工作室电话：</span><span class="work-phone"></span></p>
+							<!-- <p><span>QQ:</span><span>661316546848</span></p> -->
 						</div>
 						<!-- 项目参考 -->
 						<div class="project_reference">
@@ -197,7 +203,7 @@
             </ul>
             <span></span>
     </div>	
-    <script src="jQuery/cookie.js"></script>
+    <script src="jQuery/jquery.cookie.js"></script>
     <script src="jQuery/indexheader-footer.js"></script>
 </body>
 </html>

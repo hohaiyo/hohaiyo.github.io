@@ -1,7 +1,7 @@
 $(function(){
 	
 	// 下拉按钮
-	var user = JSON.parse(cookie.get("user"))
+	var user = JSON.parse($.cookie("user"))
 	if(user.money==null){
 		user.money = 0
 	}
