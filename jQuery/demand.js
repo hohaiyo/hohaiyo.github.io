@@ -51,8 +51,8 @@
 	});
 
 	var user = JSON.parse($.cookie("user"));
-	// console.log(user);
-	// console.log(user.id);	
+	console.log(user);
+	console.log(user.id);	
 
     window.onscroll = window.onresize= function(){
     	var demand_right = document.getElementById('demand_content_right');
@@ -282,7 +282,7 @@
 
 			$('#security_code_btn').click(function(){
 			    var email = $('#demand_user_email').val();
-			    // console.log(email);
+			    console.log(email)
 			    $.ajax({
 			        type:"POST",
 			        url:"http://47.106.220.143:8080/project/getMail",
@@ -290,11 +290,11 @@
 			            email:email
 			        },
 			        success:function(data){
-			            // console.log(data);
+			            console.log(data);
 
 			        },
 			        error:function(a){
-			            // console.log(a);
+			            console.log(a)
 			        }
 			    })
 			})
@@ -347,12 +347,12 @@
 					companyId:companyId
 				},
 				success:function(data){//回调函数
-					// console.log(data);
-					// console.log('传输成功');
-					// console.log($.cookie("user").money);
+					console.log(data);
+					console.log('传输成功');
+					console.log($.cookie("user").money);
 				},
 				error:function(){ //请求发生异常后的回调
-					// console.log('传输失败')
+					console.log('传输失败')
 				}
 			});
 		});

@@ -5,7 +5,7 @@
     });
     var user = JSON.parse($.cookie('user'));
     var cid = user.id;
-    // console.log(user);
+    console.log(user);
 
     function get_data_all(){
         $.ajax({
@@ -103,6 +103,74 @@
                         </div>\
                         </div>';
                         $("#join-project").append(stx);
+                        //转换文字状态
+                        // $(".list-status").each(function () {
+                        //     if($(this).text() == "1"){
+                        //         $(".list-status").text("开发中").addClass("list-develop");
+                        //     };
+                        // });
+
+                        // //所有状态的点击
+                        // $(".form-pulldown li").click(function () {
+                        //     $(".form-status span").text($(this).text())
+                        // });
+
+                        // var _this;
+                        // var recruit;
+                        // // 点击取消弹出窗口
+                        // $(".btn-cancel").click(function () {
+                        //     // 存储当前取消发布按钮
+                        //     _this = $(this);
+                        //     //当前按钮所对应的 list-status
+                        //     recruit = $(this).parent().parent().parent().prev().find(".list-status");
+                        //     // 禁用所有取消发布按钮
+                        //     $(".btn-cancel").addClass("btn-disabled");
+                        //     //当前按钮的弹出窗口
+                        //     $(".cancel-alert").css("display","block").animate({ opacity: 1 },500);
+                        //     // 点击关闭的i标签
+                        //     $(".alert-close").click(function(){
+                        //         $(".cancel-alert").css("display","none");
+                        //         // 开启所有取消发布按钮
+                        //         $(".btn-cancel").removeClass("btn-disabled");
+                        //     });
+                        //     // yse按钮
+                        //     $(".alert-yes").click(function () {
+                        //         recruit.text("已取消").attr("class","list-status");
+                        //         $(".cancel-alert").css("display","none");
+                        //         // 去除当前的取消发布按钮和编辑按钮
+                        //         _this.css('display','none');
+                        //         // 开启所有取消发布按钮
+                        //         $(".btn-cancel").removeClass("btn-disabled");
+                        //         // 这里因为取消项目,所以要向服务器提交
+                        //         // $.ajax({
+                        //         //     type:"GET",
+                        //         //     url:"http://47.106.220.143:8080/project/getByCid",
+                        //         //     data:{
+                        //         //         pid:result_data[i].id,
+                        //         //         wid:result_data[i].companyId
+                        //         //     },  
+                        //         //     success:function(data){
+                        //         //         // window.location.reload();
+                        //         //         console.log(data);
+                        //         //         console.log(result_data[i].id);
+
+                        //         //     }
+                        //         // });
+                        //                 console.log(data);
+                        //                 console.log(result_data[i].id);
+
+                        //     });
+                        //     // no按钮
+                        //     $(".alert-no").click(function () {
+                        //         $(".cancel-alert").css("display","none");
+                        //         // 开启所有取消发布按钮
+                        //         $(".btn-cancel").removeClass("btn-disabled");
+                        //     });
+                        // });
+
+                        // console.log(result_data[i].id);
+                        // 取消发布
+                        // var
 
                         // 点击项目状态后跳转网页
                         $(".btn-examine").on("click", function () {
@@ -125,20 +193,23 @@
                             local_data_two(x);
                         };
 
+                        // function cancel(){
                             var tip = '是否取消该项目?';
+                        //     // var btn_cancel = document.getElementsByClassName('btn-cancel');
                         // console.log(result_data[i].id);
                         // console.log(result_data[i].companyId);
                             $(".btn-cancel").off("click").on("click", function(){
                                if(window.confirm(tip)){
                                     $.ajax({
-                                        type:"GET",
+                                        type:"DELETE",
                                         url:"http://47.106.220.143:8080/project/apply",
                                         data:{
                                             pid:39,
                                             wid:9
                                         },  
                                         success:function(data){
-                                            // console.log(data)
+                                            console.log(data);
+                                            window.location.reload();
                                         }
                                     });                               
                                 }                            
@@ -147,6 +218,17 @@
                             var stx_two = '<div class="project-list row">不好意思,没有符合要求的项目</div>'
                             $("#join-project").append(stx_two); 
                         };                            
+ 
+                        // }
+                        // 项目详情
+                        // $(".list-bottom > img").on("click", function () {
+                        //     var _this = $(this).parent().parent().find(".list-status").text();
+                        //     if(_this === "招标中"){
+                        //         location.href = "project_details.html";
+                        //     }else if(_this === "已取消"){
+                        //         location.href = "cancel-condition.html";
+                        //     }
+                        // }); 
                         
                     });
                 }        
@@ -272,7 +354,8 @@
                                             wid:9
                                         },  
                                         success:function(data){
-                                            // console.log(data)
+                                            console.log(data)
+                                            // window.location.reload();
                                         }
                                     });                               
                                 }                            
@@ -406,7 +489,8 @@
                                             wid:9
                                         },  
                                         success:function(data){
-                                            // console.log(data)；
+                                            console.log(data)
+                                            // window.location.reload();
                                         }
                                     });                               
                                 }                            
@@ -540,7 +624,8 @@
                                             wid:9
                                         },  
                                         success:function(data){
-                                            // console.log(data)
+                                            console.log(data)
+                                            // window.location.reload();
                                         }
                                     });                               
                                 }                            
@@ -573,6 +658,7 @@
     $('#data_end').on("click",function(){
         get_data_end();
     });        
+
 
     get_data_all();
      

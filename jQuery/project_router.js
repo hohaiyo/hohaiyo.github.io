@@ -1,6 +1,6 @@
 $(function(){
-   var data = JSON.parse(localStorage.getItem('indetail'))
-   // console.log(data)
+   var data = JSON.parse(localStorage.getItem('demand_data'))
+   console.log(data)
    $('.title').html(data.title)
    $('.price').html(data.price.toLocaleString())
    $('.type').html(data.typeName)
@@ -22,7 +22,19 @@ $(function(){
    the_day = oldTime_two.getDate();//几号	  
 
    the_data = the_year + "/" + the_month + "/" + the_day;  
-    // console.log(differTime)
+    console.log(differTime)
     $('.period').html(differTime)
+
+    // if(data.status==="0"){
+    //     data.status='招标中'
+    // }
+    // if(data.status==="1"){
+    //     data.status='开发中'
+        
+    // }
+    // if(data.status==="-1"){
+    //     data.status='已结束'
+        
+    // }
     $('.recruit').html(data.status)
 })
